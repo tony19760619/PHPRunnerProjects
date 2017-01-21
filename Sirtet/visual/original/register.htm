@@ -1,0 +1,139 @@
+<!doctype html>
+<html  {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link REL="stylesheet" href="styles/default.css" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+    {END pageCSSFiles}
+    <link rel="stylesheet" href="include/sirtet_custom.css" type="text/css">
+  </head>
+  <BODY class="{$stylename} function-register" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page" style="background: rgba(255,70,255,0.40);">
+        <DIV class="rnr-top {$blockclass_top}">
+          
+
+{BEGIN container_register}
+<div class="rnr-c rnr-cv rnr-c-register">
+
+{BEGIN regheader}
+<div  class="rnr-brickcontents style2 rnr-b-regheader {$brickclass_regheader}"><span>	<h1>{$pagetitlelabel  register}</h1>
+</span></div>{END regheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-regfields {$brickclass_regfields}"><table class="fieldGrid register">
+	{BEGIN username_fieldblock}
+<tr class="{$fielddispclass_username}" data-fieldname="username">
+	<td class="rnr-label">
+		{BEGIN username_label}{$label users username}{END username_label}
+	</td>
+	<td class="rnr-control style3">
+		{$username_editcontrol}
+	</td>
+</tr>
+{END username_fieldblock}
+	{BEGIN password_fieldblock}
+<tr class="{$fielddispclass_password}" data-fieldname="password">
+	<td class="rnr-label">
+		{BEGIN password_label}{$label users password}{END password_label}
+	</td>
+	<td class="rnr-control style3">
+		{$password_editcontrol}
+	</td>
+</tr>
+{END password_fieldblock}
+	{BEGIN confirm_block}
+<tr class="{$fielddispclass_password}" data-fieldname="password">
+	<td class="rnr-label">
+		{BEGIN confirm_label}Re-enter password{END confirm_label}
+	</td>
+	<td class="rnr-control style3">
+		{$confirm_editcontrol1}
+	</td>
+</tr>
+{END confirm_block}
+	{BEGIN fullname_fieldblock}
+<tr class="{$fielddispclass_fullname}" data-fieldname="fullname">
+	<td class="rnr-label">
+		{BEGIN fullname_label}{$label users fullname}{END fullname_label}
+	</td>
+	<td class="rnr-control style3">
+		{$fullname_editcontrol}
+	</td>
+</tr>
+{END fullname_fieldblock}
+	{BEGIN email_fieldblock}
+<tr class="{$fielddispclass_email}" data-fieldname="email">
+	<td class="rnr-label">
+		{BEGIN email_label}{$label users email}{END email_label}
+	</td>
+	<td class="rnr-control style3">
+		{$email_editcontrol}
+	</td>
+</tr>
+{END email_fieldblock}
+</table></div>
+
+
+{BEGIN regbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-regbuttons {$brickclass_regbuttons}"><div class="rnr-withsidelink">
+	<a href="#" class="rnr-button main" {$submit_attrs}>Register</a>
+	<a href="login.php" class="rnr-button link rnr-sidelink" {$backlink_attrs}>Back to login page</a>
+</div>
+
+</div>{END regbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_register}
+
+
+        </div>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+            
+          </div>
+          <DIV class="rnr-center {$blockclass_center}">
+            
+          </div>
+          <DIV class="rnr-right {$blockclass_right}">
+            
+          </div>
+        </div>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </div>
+      </div>
+      {$footer}
+    {END body}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+body {
+	background: #F5F9FC !important;
+}
+
+body.function-list >.rnr-page
+body.function-report >.rnr-page
+body.function-chart >.rnr-page {
+ 	width: 1100px;
+   	display: table;
+   	margin: auto;
+ }
+
+.rnr-top {
+ 	width: 100%;
+}
+
+.rnr-left, .rnr-center {
+ 	background: #f4f4f4 !important;
+ }
+    

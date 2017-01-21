@@ -1,0 +1,126 @@
+body.page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .rnr-c-pageheader,
+  .rnr-pagewrapper .page-preview .rnr-c-pageheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-pageheader
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-printheader,
+  .rnr-pagewrapper .page-preview .rnr-b-printheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printheader
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-printheader,
+  .rnr-pagewrapper .page-preview .rnr-b-printheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printheader
+{
+text-align: left;
+}
+.page-preview .rnr-b-printheader > *,
+  .rnr-pagewrapper .page-preview .rnr-b-printheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printheader > *
+{
+
+}
+.page-preview .rnr-b-page_of_print,
+  .rnr-pagewrapper .page-preview .rnr-b-page_of_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-page_of_print
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-page_of_print,
+  .rnr-pagewrapper .page-preview .rnr-b-page_of_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-page_of_print
+{
+text-align: left;
+}
+.page-preview .rnr-b-page_of_print > *,
+  .rnr-pagewrapper .page-preview .rnr-b-page_of_print > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-page_of_print > *
+{
+
+}
+.page-preview .rnr-c-grid,
+  .rnr-pagewrapper .page-preview .rnr-c-grid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-grid
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-printgridnext,
+  .rnr-pagewrapper .page-preview .rnr-b-printgridnext,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printgridnext
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-printgridnext,
+  .rnr-pagewrapper .page-preview .rnr-b-printgridnext,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printgridnext
+{
+text-align: left;
+}
+.page-preview .rnr-b-printgridnext > *,
+  .rnr-pagewrapper .page-preview .rnr-b-printgridnext > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printgridnext > *
+{
+
+}
+body.page-preview .rnr-center
+{
+padding-right: 5px;
+}
+.page-preview .rnr-c-pdf,
+  .rnr-pagewrapper .page-preview .rnr-c-pdf,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-pdf
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-printbuttons,
+  .rnr-pagewrapper .page-preview .rnr-b-printbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printbuttons
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-printbuttons,
+  .rnr-pagewrapper .page-preview .rnr-b-printbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printbuttons
+{
+text-align: left;
+}
+.page-preview .rnr-b-printbuttons > *,
+  .rnr-pagewrapper .page-preview .rnr-b-printbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-printbuttons > *
+{
+
+}
+.page-preview .rnr-c-master,
+  .rnr-pagewrapper .page-preview .rnr-c-master,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-master
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-masterinfoprint,
+  .rnr-pagewrapper .page-preview .rnr-b-masterinfoprint,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-masterinfoprint
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-masterinfoprint,
+  .rnr-pagewrapper .page-preview .rnr-b-masterinfoprint,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-masterinfoprint
+{
+text-align: left;
+}
+.page-preview .rnr-b-masterinfoprint > *,
+  .rnr-pagewrapper .page-preview .rnr-b-masterinfoprint > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-masterinfoprint > *
+{
+
+}
+body.page-preview .rnr-top
+{
+padding-right: 5px;
+}

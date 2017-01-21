@@ -1,0 +1,68 @@
+.preview .runner-s-2 > * > * > .runner-toprow.style1 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-2 > * > * > .runner-toprow.style1 > *.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-2 > * > * > .runner-row.style1 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-2 > * > * > .runner-row.style1 > *.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-2 > * > * > .runner-toprow.style2 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-2 > * > * > .runner-toprow.style2 > *.runner-cc a
+{
+color: #FFFFFF
+}
+.preview .runner-s-2 > * > * > .runner-row.style2 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-2 > * > * > .runner-row.style2 > *.runner-cc a
+{
+color: #FFFFFF
+}
+.preview .runner-s-2 > * > * > .runner-toprow.style3 > *.runner-cc a,
+.preview .runner-s-2 > * > * > .runner-toprow > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-2 > * > * > .runner-toprow.style3 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-2 > * > * > .runner-toprow > *.runner-cc a
+{
+color: #FFFF00
+}
+.preview .runner-s-2 > * > * > .runner-row.style3 > *.runner-cc a,
+.preview .runner-s-2 > * > * > .runner-row > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-2 > * > * > .runner-row.style3 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-2 > * > * > .runner-row > *.runner-cc a
+{
+color: #FFFF00
+}
+.preview .runner-s-disabled-2 > * > * > .runner-toprow.style1 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-disabled-2 > * > * > .runner-toprow.style1 > *.runner-cc a
+{
+color: #B3B3B3
+}
+.preview .runner-s-disabled-2 > * > * > .runner-row.style1 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-disabled-2 > * > * > .runner-row.style1 > *.runner-cc a
+{
+color: #B3B3B3
+}
+.preview .runner-s-disabled-2 > * > * > .runner-toprow.style2 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-disabled-2 > * > * > .runner-toprow.style2 > *.runner-cc a
+{
+color: #F1F1F1
+}
+.preview .runner-s-disabled-2 > * > * > .runner-row.style2 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-disabled-2 > * > * > .runner-row.style2 > *.runner-cc a
+{
+color: #F1F1F1
+}
+.preview .runner-s-disabled-2 > * > * > .runner-toprow.style3 > *.runner-cc a,
+.preview .runner-s-disabled-2 > * > * > .runner-toprow > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-disabled-2 > * > * > .runner-toprow.style3 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-disabled-2 > * > * > .runner-toprow > *.runner-cc a
+{
+color: #D6D6D6
+}
+.preview .runner-s-disabled-2 > * > * > .runner-row.style3 > *.runner-cc a,
+.preview .runner-s-disabled-2 > * > * > .runner-row > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-disabled-2 > * > * > .runner-row.style3 > *.runner-cc a,
+.preview  .runner-wrapper .runner-s-disabled-2 > * > * > .runner-row > *.runner-cc a
+{
+color: #D6D6D6
+}

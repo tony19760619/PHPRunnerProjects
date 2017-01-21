@@ -1,0 +1,514 @@
+<!doctype html>
+<html  {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link REL="stylesheet" href="styles/default.css" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+    {END pageCSSFiles}
+    <link rel="stylesheet" type="text/css" href="chatfiles/chatstyle.css" />
+  </head>
+  <body class="{$stylename} function-list" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <div class="rnr-page">
+        <div class="rnr-top {$blockclass_top}">
+          
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+
+{BEGIN security_block}
+<div  class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Logged on as&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Log out</a>
+	{END logoutbutton}
+
+</div></div>
+{END security_block}
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_toplinks}
+
+
+        </div>
+        <div class="rnr-middle">
+          <div class="rnr-left {$blockclass_left}">
+            
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN menu_block}
+{$menu main}
+{END menu_block}
+
+
+{BEGIN searchform_block}
+<div  class="rnr-brickcontents style1 rnr-b-vsearch1 {$brickclass_vsearch1}">	Search for:
+	{BEGIN searchPanelTopButtons}	
+	<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}"  data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	&nbsp;		
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+	</span>
+	{END searchPanelTopButtons}
+</div>{END searchform_block}
+
+
+{BEGIN searchform_block}
+<div  class="rnr-brickcontents style1 rnr-b-vsearch2 {$brickclass_vsearch2}"><div>
+	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		&nbsp;
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		&nbsp;
+		{BEGIN searchform_showall}
+			<a class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</a>
+		{END searchform_showall}
+	</span>	
+</div></div>{END searchform_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="rnr-brickcontents style1 rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>{END searchsaving_block}
+
+
+{BEGIN details_block}
+<div  class="rnr-brickcontents style2 rnr-b-vdetails_found {$brickclass_vdetails_found}"><span  {$details_attrs}>Details found: <span class="rnr-details_found_count">{$records_found}</span></span>
+</div>{END details_block}
+
+
+{BEGIN pages_block}
+<div  class="rnr-brickcontents style1 rnr-b-vpage_of {$brickclass_vpage_of}"><span id="pages_block{$id}">
+	<span {$pages_attrs}>Page {$page} of {$maxpages}</span>
+</span>
+</div>{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="rnr-brickcontents style1 rnr-b-vrecsperpage {$brickclass_vrecsperpage}"><span id="recordspp_block{$id}" name="recordspp_block{$id}">
+	Records Per Page:&nbsp;{$recsPerPage}
+</span>
+</div>{END recordspp_block}
+
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>all</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>any</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Search</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+{BEGIN filterPanel}
+<div  class="rnr-brickcontents  rnr-b-filterpanel {$brickclass_filterpanel}"><div class="filterPanelContainer {$filterPanelStateClass}">
+
+
+	
+	
+
+
+
+	
+	
+	
+		
+{BEGIN filter_control_Category}
+	<div class="filter-field filter-Category-container">
+		<div class="filter-expander rnr-bg style2">
+			<span class="filter-indicator">
+							&#x25B2;
+			</span>
+						{$label jobsjobs Category}
+			{BEGIN clearLink_Category}
+			<a href="#" class="filter-clear filter-clear-Category">Clear</a>
+			{END clearLink_Category}
+		</div>
+		{BEGIN filterCtrlBlock_Category}
+		<div class="filter-values rnr-bg style1 {$collapsedClass_Category} {$visibilityClass_Category}">
+			{$Category_filter}	
+		</div>
+		{END filterCtrlBlock_Category}
+		
+				{BEGIN filter_button_showmore_Category}
+		<div class="rnr-bg style1 filter-show-more {$collapsedClass_Category}">
+			<a class="filter-show-more-link filterShowMore_Category" href="#">Show {$numberOfItemsToSHow_Category} more</a>
+		</div>
+		{END filter_button_showmore_Category}
+		
+				
+			</div>
+{END filter_control_Category}
+</div></div>{END filterPanel}
+
+
+</div>
+{END container_left}
+
+
+          </div>
+          <div class="rnr-center {$blockclass_center}">
+            
+
+{BEGIN container_bigblock}
+<div class="rnr-c rnr-cv rnr-c-bigblock">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_recordcontrols} rnr-wrapper rnr-cbw-recordcontrols">
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}
+		<a href="jobsjobs_add.php" class="rnr-button" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+	
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}
+<span class="rnr-buttons-group">
+<a class="rnr-button {$withSelectedClass}" href="#" id="selectButtonsToggler{$id}">With selected...</a>
+<ul class="rnr-list" id="selectButtonsGroup{$id}">
+
+	
+		{BEGIN deleteselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</a>
+</li>
+	{END deleteselected_link}
+
+		{BEGIN exportselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export</a>
+</li>
+	{END exportselected_link}
+
+		{BEGIN printselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$printselectedlink_attrs} {$printselectedlink_span}>Print</a>
+</li>
+	{END printselected_link}
+</ul>
+</span>
+{END widhtSelected}
+	</div>
+{END record_controls_block}
+
+
+{BEGIN more_list}
+<div  class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><span class="rnr-buttons-group">
+{BEGIN moreButtons}
+<a class="rnr-button" id="extraButtonsToggler{$id}" href="#">More...</a>
+<ul class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+{BEGIN print_link}
+<li>
+	<a target="_blank" href="jobsjobs_print.php?{$crosstable_attrs}" class="rnr-button link" {$printlink_attrs}>Print this page</a>
+</li>
+{END print_link}
+{BEGIN printall_link}
+<li>
+	<a target="_blank" href="jobsjobs_print.php?all=1&amp;{$crosstable_attrs}" class="rnr-button link" {$printalllink_attrs}>Print all pages</a>
+</li>
+{END printall_link}
+
+{BEGIN asearch_link}
+<li>
+	<a href="jobsjobs_search.php" class="rnr-button link" {$advsearchlink_attrs}>Advanced search</a>
+</li>
+{END asearch_link}
+
+{BEGIN export_link}
+<li>
+	<a target="_blank" href="jobsjobs_export.php" class="rnr-button link" {$exportlink_attrs}>Export results</a>
+</li>
+{END export_link}
+
+{BEGIN import_link}
+<li>
+	<a href="jobsjobs_import.php?{$crosstable_attrs}" class="rnr-button link" {$importlink_attrs}>Import</a>
+</li>
+{END import_link}
+</ul>
+{END moreButtons}
+</span></div>
+{END more_list}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_message} rnr-wrapper rnr-cbw-message">
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_grid} rnr-wrapper rnr-cbw-grid">
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+						<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}
+								<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																			{BEGIN TypeID_fieldheadercolumn}
+<th class="rnr-gridfieldlabel">
+{BEGIN TypeID_fieldheader}
+		<a class="rnr-button" {$TypeID_orderlinkattrs}>
+		{$label jobsjobs TypeID}
+	</a>
+{END TypeID_fieldheader}
+</th>
+{END TypeID_fieldheadercolumn}
+	{BEGIN Title_fieldheadercolumn}
+<th class="rnr-gridfieldlabel">
+{BEGIN Title_fieldheader}
+		<a class="rnr-button" {$Title_orderlinkattrs}>
+		Job
+	</a>
+{END Title_fieldheader}
+</th>
+{END Title_fieldheadercolumn}
+	{BEGIN City_fieldheadercolumn}
+<th class="rnr-gridfieldlabel">
+{BEGIN City_fieldheader}
+		<a class="rnr-button" {$City_orderlinkattrs}>
+		Location
+	</a>
+{END City_fieldheader}
+</th>
+{END City_fieldheadercolumn}
+	{BEGIN DateAdded_fieldheadercolumn}
+<th class="rnr-gridfieldlabel">
+{BEGIN DateAdded_fieldheader}
+		<a class="rnr-button" {$DateAdded_orderlinkattrs}>
+		{$label jobsjobs DateAdded}
+	</a>
+{END DateAdded_fieldheader}
+</th>
+{END DateAdded_fieldheadercolumn}
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+																		{BEGIN edit_column}
+									{BEGIN edit_link}
+																			<a class="rnr-button-img" {$editlink_attrs} data-icon="edit" title="Edit"></a>
+									{END edit_link}
+									{END edit_column}
+
+									
+									
+																		{BEGIN view_column}
+									{BEGIN view_link}
+																			<a class="rnr-button-img" {$viewlink_attrs} data-icon="view" title="View"></a>
+									{END view_link}
+									{END view_column}
+									</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+
+										{BEGIN TypeID_fieldcolumn}
+	<td class="{$TypeID_class}" {$TypeID_style} {$recordattrs}>
+			{$TypeID_value}
+	</td>
+{END TypeID_fieldcolumn}
+
+	{BEGIN Title_fieldcolumn}
+	<td class="{$Title_class}" {$Title_style} {$recordattrs}>
+			{$Title_value}
+	</td>
+{END Title_fieldcolumn}
+
+	{BEGIN City_fieldcolumn}
+	<td class="{$City_class}" {$City_style} {$recordattrs}>
+			{$City_value},&nbsp;{$state_value}&nbsp;{$Zip_value}
+	</td>
+{END City_fieldcolumn}
+
+	{BEGIN DateAdded_fieldcolumn}
+	<td class="{$DateAdded_class}" {$DateAdded_style} {$recordattrs}>
+			{$DateAdded_value}
+	</td>
+{END DateAdded_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+															
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_pagination} rnr-wrapper rnr-cbw-pagination">
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+
+</div>
+{END container_pagination}
+
+</div>
+
+
+</div>
+{END container_bigblock}
+
+
+          </div>
+          <div class="rnr-right {$blockclass_right}">
+            
+          </div>
+        </div>
+        <div class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </div>
+      </div>
+      {$footer}
+    {END body}
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel offeraridemessages edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN OfferARideID_fieldblock}
+<tr class="{$fielddispclass_OfferARideID}" data-fieldname="OfferARideID">
+	<td class="rnr-label">
+		{BEGIN OfferARideID_label}{$label offeraridemessages OfferARideID}{END OfferARideID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$OfferARideID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END OfferARideID_fieldblock}
+	{BEGIN DateSent_fieldblock}
+<tr class="{$fielddispclass_DateSent}" data-fieldname="DateSent">
+	<td class="rnr-label">
+		{BEGIN DateSent_label}{$label offeraridemessages DateSent}{END DateSent_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DateSent_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DateSent_fieldblock}
+	{BEGIN FromUsername_fieldblock}
+<tr class="{$fielddispclass_FromUsername}" data-fieldname="FromUsername">
+	<td class="rnr-label">
+		{BEGIN FromUsername_label}{$label offeraridemessages FromUsername}{END FromUsername_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FromUsername_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FromUsername_fieldblock}
+	{BEGIN ToUsername_fieldblock}
+<tr class="{$fielddispclass_ToUsername}" data-fieldname="ToUsername">
+	<td class="rnr-label">
+		{BEGIN ToUsername_label}{$label offeraridemessages ToUsername}{END ToUsername_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ToUsername_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ToUsername_fieldblock}
+	{BEGIN Message_fieldblock}
+<tr class="{$fielddispclass_Message}" data-fieldname="Message">
+	<td class="rnr-label">
+		{BEGIN Message_label}{$label offeraridemessages Message}{END Message_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Message_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Message_fieldblock}
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+	{END close_button}
+		{BEGIN view_page_button}
+	<a href="#" class="rnr-button" {$view_page_button_attrs}>View</a>
+	{END view_page_button}
+</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

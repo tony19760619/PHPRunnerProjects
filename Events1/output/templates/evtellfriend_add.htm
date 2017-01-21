@@ -1,0 +1,184 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel evtellfriend add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN FromName_fieldblock}
+<tr class="{$fielddispclass_FromName}" data-fieldname="FromName">
+	<td class="rnr-label">
+		{BEGIN FromName_label}{$label evtellfriend FromName}{END FromName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FromName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FromName_fieldblock}
+	{BEGIN EmailAddress1_fieldblock}
+<tr class="{$fielddispclass_EmailAddress1}" data-fieldname="EmailAddress1">
+	<td class="rnr-label">
+		{BEGIN EmailAddress1_label}{$label evtellfriend EmailAddress1}{END EmailAddress1_label}
+	</td>
+	<td class="rnr-control style3">
+		{$EmailAddress1_editcontrol}&nbsp;
+	</td>
+</tr>
+{END EmailAddress1_fieldblock}
+	{BEGIN EmailAddress2_fieldblock}
+<tr class="{$fielddispclass_EmailAddress2}" data-fieldname="EmailAddress2">
+	<td class="rnr-label">
+		{BEGIN EmailAddress2_label}{$label evtellfriend EmailAddress2}{END EmailAddress2_label}
+	</td>
+	<td class="rnr-control style3">
+		{$EmailAddress2_editcontrol}&nbsp;
+	</td>
+</tr>
+{END EmailAddress2_fieldblock}
+	{BEGIN EmailAddress3_fieldblock}
+<tr class="{$fielddispclass_EmailAddress3}" data-fieldname="EmailAddress3">
+	<td class="rnr-label">
+		{BEGIN EmailAddress3_label}{$label evtellfriend EmailAddress3}{END EmailAddress3_label}
+	</td>
+	<td class="rnr-control style3">
+		{$EmailAddress3_editcontrol}&nbsp;
+	</td>
+</tr>
+{END EmailAddress3_fieldblock}
+	{BEGIN EmailAddress4_fieldblock}
+<tr class="{$fielddispclass_EmailAddress4}" data-fieldname="EmailAddress4">
+	<td class="rnr-label">
+		{BEGIN EmailAddress4_label}{$label evtellfriend EmailAddress4}{END EmailAddress4_label}
+	</td>
+	<td class="rnr-control style3">
+		{$EmailAddress4_editcontrol}&nbsp;
+	</td>
+</tr>
+{END EmailAddress4_fieldblock}
+	{BEGIN EmailAddress5_fieldblock}
+<tr class="{$fielddispclass_EmailAddress5}" data-fieldname="EmailAddress5">
+	<td class="rnr-label">
+		{BEGIN EmailAddress5_label}{$label evtellfriend EmailAddress5}{END EmailAddress5_label}
+	</td>
+	<td class="rnr-control style3">
+		{$EmailAddress5_editcontrol}&nbsp;
+	</td>
+</tr>
+{END EmailAddress5_fieldblock}
+	{BEGIN EmailSubject_fieldblock}
+<tr class="{$fielddispclass_EmailSubject}" data-fieldname="EmailSubject">
+	<td class="rnr-label">
+		{BEGIN EmailSubject_label}{$label evtellfriend EmailSubject}{END EmailSubject_label}
+	</td>
+	<td class="rnr-control style3">
+		{$EmailSubject_editcontrol}&nbsp;
+	</td>
+</tr>
+{END EmailSubject_fieldblock}
+	{BEGIN EmailBody_fieldblock}
+<tr class="{$fielddispclass_EmailBody}" data-fieldname="EmailBody">
+	<td class="rnr-label">
+		{BEGIN EmailBody_label}{$label evtellfriend EmailBody}{END EmailBody_label}
+	</td>
+	<td class="rnr-control style3">
+		{$EmailBody_editcontrol}&nbsp;
+	</td>
+</tr>
+{END EmailBody_fieldblock}
+</table></div>
+
+
+
+<div style="white-space: nowrap;" class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">{BEGIN save_button}
+<a href="#" class="rnr-button main" {$savebutton_attrs}>Save</a>
+{END save_button}
+{BEGIN cancel_button}
+<a href="#" class="rnr-button" {$cancelbutton_attrs}>Cancel</a>
+{END cancel_button}
+</div>
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,458 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel lead search}</h2>
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN CompanyName_fieldblock}		
+	<div class="container {$fielddispclass_CompanyName}" data-fieldname="CompanyName">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead CompanyName}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_CompanyName}
+			</div>
+			<div class="col-md-4" >
+				{$CompanyName_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CompanyName_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CompanyName_fieldblock}
+	{BEGIN ID_fieldblock}		
+	<div class="container {$fielddispclass_ID}" data-fieldname="ID">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead ID}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_ID}
+			</div>
+			<div class="col-md-4" >
+				{$ID_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ID_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ID_fieldblock}
+	{BEGIN Address_fieldblock}		
+	<div class="container {$fielddispclass_Address}" data-fieldname="Address">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead Address}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_Address}
+			</div>
+			<div class="col-md-4" >
+				{$Address_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Address_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Address_fieldblock}
+	{BEGIN TelNoAndEmailAddress_fieldblock}		
+	<div class="container {$fielddispclass_TelNoAndEmailAddress}" data-fieldname="TelNoAndEmailAddress">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead TelNoAndEmailAddress}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_TelNoAndEmailAddress}
+			</div>
+			<div class="col-md-4" >
+				{$TelNoAndEmailAddress_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TelNoAndEmailAddress_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TelNoAndEmailAddress_fieldblock}
+	{BEGIN WhoSpokenToAndWhoIsPersonInCharge_fieldblock}		
+	<div class="container {$fielddispclass_WhoSpokenToAndWhoIsPersonInCharge}" data-fieldname="WhoSpokenToAndWhoIsPersonInCharge">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead WhoSpokenToAndWhoIsPersonInCharge}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_WhoSpokenToAndWhoIsPersonInCharge}
+			</div>
+			<div class="col-md-4" >
+				{$WhoSpokenToAndWhoIsPersonInCharge_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$WhoSpokenToAndWhoIsPersonInCharge_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END WhoSpokenToAndWhoIsPersonInCharge_fieldblock}
+	{BEGIN RenewalDateOfCurrentContract_fieldblock}		
+	<div class="container {$fielddispclass_RenewalDateOfCurrentContract}" data-fieldname="RenewalDateOfCurrentContract">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead RenewalDateOfCurrentContract}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_RenewalDateOfCurrentContract}
+			</div>
+			<div class="col-md-4" >
+				{$RenewalDateOfCurrentContract_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RenewalDateOfCurrentContract_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RenewalDateOfCurrentContract_fieldblock}
+	{BEGIN DateSeen_fieldblock}		
+	<div class="container {$fielddispclass_DateSeen}" data-fieldname="DateSeen">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead DateSeen}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_DateSeen}
+			</div>
+			<div class="col-md-4" >
+				{$DateSeen_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$DateSeen_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END DateSeen_fieldblock}
+	{BEGIN NextContact_fieldblock}		
+	<div class="container {$fielddispclass_NextContact}" data-fieldname="NextContact">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead NextContact}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_NextContact}
+			</div>
+			<div class="col-md-4" >
+				{$NextContact_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NextContact_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NextContact_fieldblock}
+	{BEGIN Info_fieldblock}		
+	<div class="container {$fielddispclass_Info}" data-fieldname="Info">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead Info}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_Info}
+			</div>
+			<div class="col-md-4" >
+				{$Info_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Info_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Info_fieldblock}
+	{BEGIN Interested_fieldblock}		
+	<div class="container {$fielddispclass_Interested}" data-fieldname="Interested">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead Interested}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_Interested}
+			</div>
+			<div class="col-md-4" >
+				{$Interested_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$Interested_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END Interested_fieldblock}
+	{BEGIN NotInterested_fieldblock}		
+	<div class="container {$fielddispclass_NotInterested}" data-fieldname="NotInterested">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead NotInterested}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_NotInterested}
+			</div>
+			<div class="col-md-4" >
+				{$NotInterested_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NotInterested_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NotInterested_fieldblock}
+	{BEGIN NumberOfBins_fieldblock}		
+	<div class="container {$fielddispclass_NumberOfBins}" data-fieldname="NumberOfBins">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead NumberOfBins}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_NumberOfBins}
+			</div>
+			<div class="col-md-4" >
+				{$NumberOfBins_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NumberOfBins_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NumberOfBins_fieldblock}
+	{BEGIN WeeksInMonth_fieldblock}		
+	<div class="container {$fielddispclass_WeeksInMonth}" data-fieldname="WeeksInMonth">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead WeeksInMonth}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_WeeksInMonth}
+			</div>
+			<div class="col-md-4" >
+				{$WeeksInMonth_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$WeeksInMonth_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END WeeksInMonth_fieldblock}
+	{BEGIN PickupsPerWeek_fieldblock}		
+	<div class="container {$fielddispclass_PickupsPerWeek}" data-fieldname="PickupsPerWeek">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead PickupsPerWeek}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_PickupsPerWeek}
+			</div>
+			<div class="col-md-4" >
+				{$PickupsPerWeek_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PickupsPerWeek_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PickupsPerWeek_fieldblock}
+	{BEGIN ChargePerPickupPerBin_fieldblock}		
+	<div class="container {$fielddispclass_ChargePerPickupPerBin}" data-fieldname="ChargePerPickupPerBin">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead ChargePerPickupPerBin}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_ChargePerPickupPerBin}
+			</div>
+			<div class="col-md-4" >
+				{$ChargePerPickupPerBin_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ChargePerPickupPerBin_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ChargePerPickupPerBin_fieldblock}
+	{BEGIN TotalExclVAT_fieldblock}		
+	<div class="container {$fielddispclass_TotalExclVAT}" data-fieldname="TotalExclVAT">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead TotalExclVAT}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_TotalExclVAT}
+			</div>
+			<div class="col-md-4" >
+				{$TotalExclVAT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TotalExclVAT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TotalExclVAT_fieldblock}
+	{BEGIN VAT_fieldblock}		
+	<div class="container {$fielddispclass_VAT}" data-fieldname="VAT">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead VAT}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_VAT}
+			</div>
+			<div class="col-md-4" >
+				{$VAT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$VAT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END VAT_fieldblock}
+	{BEGIN TotalInclVAT_fieldblock}		
+	<div class="container {$fielddispclass_TotalInclVAT}" data-fieldname="TotalInclVAT">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label lead TotalInclVAT}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_TotalInclVAT}
+			</div>
+			<div class="col-md-4" >
+				{$TotalInclVAT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TotalInclVAT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TotalInclVAT_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-4"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Search</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reset</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

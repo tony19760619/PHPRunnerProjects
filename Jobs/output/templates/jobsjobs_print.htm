@@ -1,0 +1,200 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel jobsjobs print}</h1>
+</div>
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN Title_fieldheadercolumn}
+<th class="runner-cc {$Title_class}" {$Title_style}>
+	{BEGIN Title_fieldheader}
+	<b>{$label jobsjobs Title}</b>
+	{END Title_fieldheader}
+</th>
+{END Title_fieldheadercolumn}
+	{BEGIN HowToApply_fieldheadercolumn}
+<th class="runner-cc {$HowToApply_class}" {$HowToApply_style}>
+	{BEGIN HowToApply_fieldheader}
+	<b>{$label jobsjobs HowToApply}</b>
+	{END HowToApply_fieldheader}
+</th>
+{END HowToApply_fieldheadercolumn}
+	{BEGIN Zip_fieldheadercolumn}
+<th class="runner-cc {$Zip_class}" {$Zip_style}>
+	{BEGIN Zip_fieldheader}
+	<b>{$label jobsjobs Zip}</b>
+	{END Zip_fieldheader}
+</th>
+{END Zip_fieldheadercolumn}
+	{BEGIN City_fieldheadercolumn}
+<th class="runner-cc {$City_class}" {$City_style}>
+	{BEGIN City_fieldheader}
+	<b>{$label jobsjobs City}</b>
+	{END City_fieldheader}
+</th>
+{END City_fieldheadercolumn}
+	{BEGIN state_fieldheadercolumn}
+<th class="runner-cc {$state_class}" {$state_style}>
+	{BEGIN state_fieldheader}
+	<b>{$label jobsjobs state}</b>
+	{END state_fieldheader}
+</th>
+{END state_fieldheadercolumn}
+	{BEGIN DateAdded_fieldheadercolumn}
+<th class="runner-cc {$DateAdded_class}" {$DateAdded_style}>
+	{BEGIN DateAdded_fieldheader}
+	<b>{$label jobsjobs DateAdded}</b>
+	{END DateAdded_fieldheader}
+</th>
+{END DateAdded_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN Title_fieldcolumn}
+<td  class="runner-cc {$Title_class}" {$Title_style} {$recordattrs}>
+	{$Title_value}
+</td>
+{END Title_fieldcolumn}
+	{BEGIN HowToApply_fieldcolumn}
+<td  class="runner-cc {$HowToApply_class}" {$HowToApply_style} {$recordattrs}>
+	{$HowToApply_value}
+</td>
+{END HowToApply_fieldcolumn}
+	{BEGIN Zip_fieldcolumn}
+<td  class="runner-cc {$Zip_class}" {$Zip_style} {$recordattrs}>
+	{$Zip_value}
+</td>
+{END Zip_fieldcolumn}
+	{BEGIN City_fieldcolumn}
+<td  class="runner-cc {$City_class}" {$City_style} {$recordattrs}>
+	{$City_value}
+</td>
+{END City_fieldcolumn}
+	{BEGIN state_fieldcolumn}
+<td  class="runner-cc {$state_class}" {$state_style} {$recordattrs}>
+	{$state_value}
+</td>
+{END state_fieldcolumn}
+	{BEGIN DateAdded_fieldcolumn}
+<td  class="runner-cc {$DateAdded_class}" {$DateAdded_style} {$recordattrs}>
+	{$DateAdded_value}
+</td>
+{END DateAdded_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

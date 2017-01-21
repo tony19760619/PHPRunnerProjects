@@ -1,0 +1,12 @@
+CREATE TABLE `customer`(`Id` int NOT NULL AUTO_INCREMENT, `Name` varchar(30) NOT NULL, PRIMARY KEY (`Id`))CHARACTER SET utf8;
+CREATE TABLE `customerwaste`(`Id` int NOT NULL AUTO_INCREMENT, `CustomerId` int NOT NULL, `UserId` int NOT NULL, `WasteId` int NOT NULL, `DateTime` datetime NOT NULL DEFAULT 0, `Amount` decimal(10,2) NOT NULL, PRIMARY KEY (`Id`))CHARACTER SET utf8;
+CREATE TABLE `customerwastebyday`(`Id` int NOT NULL AUTO_INCREMENT, `CustomerId` int NOT NULL, `WasteId` int NOT NULL, `Date` date NOT NULL, `Amount` decimal(10,2) NOT NULL, PRIMARY KEY (`Id`))CHARACTER SET utf8;
+CREATE TABLE `customerwastebymonth`(`Id` int NOT NULL AUTO_INCREMENT, `CustomerId` int NOT NULL, `WasteId` int NOT NULL, `Year` int NOT NULL, `Month` int NOT NULL, `Amount` decimal(10,2) NOT NULL, PRIMARY KEY (`Id`))CHARACTER SET utf8;
+CREATE TABLE `customerwastebyweek`(`Id` int NOT NULL AUTO_INCREMENT, `CustomerId` int NOT NULL, `WasteId` int NOT NULL, `Year` int NOT NULL, `Week` int NOT NULL, `Amount` decimal(10,2) NOT NULL, PRIMARY KEY (`Id`))CHARACTER SET utf8;
+CREATE TABLE `customerwastebyyear`(`Id` int NOT NULL AUTO_INCREMENT, `CustomerId` int NOT NULL, `WasteId` int NOT NULL, `Year` int NOT NULL, `Amount` decimal(10,2) NOT NULL, PRIMARY KEY (`Id`))CHARACTER SET utf8;
+CREATE TABLE `tbs_locking`(`id` int NOT NULL AUTO_INCREMENT, `table` varchar(250) NOT NULL, `startdatetime` datetime NOT NULL, `confirmdatetime` datetime NOT NULL, `keys` varchar(250) NOT NULL, `sessionid` varchar(100) NOT NULL, `userid` varchar(250) NOT NULL, `action` int NULL, PRIMARY KEY (`id`))CHARACTER SET utf8;
+CREATE TABLE `tbs_uggroups`(`GroupID` int NOT NULL AUTO_INCREMENT, `Label` varchar(50) NULL, PRIMARY KEY (`GroupID`))CHARACTER SET utf8;
+CREATE TABLE `tbs_ugmembers`(`UserName` varchar(50) NOT NULL, `GroupID` int NOT NULL DEFAULT 0, PRIMARY KEY (`UserName`(50),`GroupID`))CHARACTER SET utf8;
+CREATE TABLE `tbs_ugrights`(`TableName` varchar(50) NOT NULL, `GroupID` int NOT NULL DEFAULT 0, `AccessMask` varchar(10) NULL, PRIMARY KEY (`TableName`(50),`GroupID`))CHARACTER SET utf8;
+CREATE TABLE `user`(`Id` int NOT NULL AUTO_INCREMENT, `UserType` int NOT NULL, `Username` varchar(30) NOT NULL, `Password` varchar(30) NOT NULL, `CustomerId` int NOT NULL, `Name` varchar(30) NOT NULL, `Active` int NOT NULL, `Email` varchar(60) NOT NULL, PRIMARY KEY (`Id`))CHARACTER SET utf8;
+CREATE TABLE `waste`(`Id` int NOT NULL AUTO_INCREMENT, `WasteDescr` varchar(30) NOT NULL, PRIMARY KEY (`Id`))CHARACTER SET utf8;

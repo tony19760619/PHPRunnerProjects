@@ -1,0 +1,62 @@
+body.page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .rnr-c-masterlistheader,
+  .rnr-pagewrapper .page-preview .rnr-c-masterlistheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-masterlistheader
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-masterlistheader,
+  .rnr-pagewrapper .page-preview .rnr-b-masterlistheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-masterlistheader
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-masterlistheader,
+  .rnr-pagewrapper .page-preview .rnr-b-masterlistheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-masterlistheader
+{
+text-align: left;
+}
+.page-preview .rnr-b-masterlistheader > *,
+  .rnr-pagewrapper .page-preview .rnr-b-masterlistheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-masterlistheader > *
+{
+
+}
+.page-preview .rnr-c-mastergrid,
+  .rnr-pagewrapper .page-preview .rnr-c-mastergrid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-mastergrid
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-c-mastergrid,
+  .rnr-pagewrapper .page-preview .rnr-c-mastergrid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-mastergrid
+{
+min-width: 100px;
+}
+.page-preview .rnr-b-masterlistfields,
+  .rnr-pagewrapper .page-preview .rnr-b-masterlistfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-masterlistfields
+{
+white-space: normal;
+}
+.page-preview .rnr-b-masterlistfields,
+  .rnr-pagewrapper .page-preview .rnr-b-masterlistfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-masterlistfields
+{
+text-align: left;
+}
+.page-preview .rnr-b-masterlistfields > *,
+  .rnr-pagewrapper .page-preview .rnr-b-masterlistfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-masterlistfields > *
+{
+
+}
+body.page-preview .rnr-bare
+{
+padding-right: 5px;
+}

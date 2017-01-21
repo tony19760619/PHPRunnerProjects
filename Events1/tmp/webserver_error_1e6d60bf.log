@@ -1,0 +1,12 @@
+[Wed Nov 11 20:48:07.725101 2015] [core:warn] [pid 14940:tid 340] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Toni/Documents/PHPRunnerProjects/Events1/tmp/webserver.conf.
+[Wed Nov 11 20:48:08.699978 2015] [mpm_winnt:notice] [pid 14940:tid 340] AH00455: Apache/2.4.10 (Win32) PHP/5.5.18 configured -- resuming normal operations
+[Wed Nov 11 20:48:08.699978 2015] [mpm_winnt:notice] [pid 14940:tid 340] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 11:50:08
+[Wed Nov 11 20:48:08.699978 2015] [core:notice] [pid 14940:tid 340] AH00094: Command line: 'C:\\Program Files\\PHPRunner8.1\\EmbeddedServer\\bin\\httpd.exe -d C:/Program Files/PHPRunner8.1/EmbeddedServer -d C:\\Program Files\\PHPRunner8.1\\EmbeddedServer -f C:\\Users\\Toni\\Documents\\PHPRunnerProjects\\Events1\\tmp\\webserver.conf'
+[Wed Nov 11 20:48:08.752025 2015] [mpm_winnt:notice] [pid 14940:tid 340] AH00418: Parent: Created child process 13784
+[Wed Nov 11 20:48:10.218353 2015] [core:warn] [pid 13784:tid 312] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Toni/Documents/PHPRunnerProjects/Events1/tmp/webserver.conf.
+[Wed Nov 11 20:48:11.129178 2015] [core:warn] [pid 13784:tid 312] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Toni/Documents/PHPRunnerProjects/Events1/tmp/webserver.conf.
+[Wed Nov 11 20:48:12.116078 2015] [mpm_winnt:notice] [pid 13784:tid 312] AH00354: Child: Starting 64 worker threads.
+[Wed Nov 11 21:15:40.179848 2015] [:error] [pid 13784:tid 1088] [client 127.0.0.1:57856] script 'C:/Users/Toni/Documents/PHPRunnerProjects/Events1/output/offeraride_list.php' not found or unable to stat, referer: http://localhost:8086/findaride_list.php?orderby=aTons&ctrl=1
+[Wed Nov 11 21:15:56.252123 2015] [mpm_winnt:notice] [pid 14940:tid 340] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Nov 11 21:15:58.275058 2015] [mpm_winnt:notice] [pid 13784:tid 312] AH00364: Child: All worker threads have exited.
+[Wed Nov 11 21:15:58.306269 2015] [mpm_winnt:notice] [pid 14940:tid 340] AH00430: Parent: Child process 13784 exited successfully.

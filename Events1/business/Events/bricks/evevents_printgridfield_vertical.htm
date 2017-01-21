@@ -1,0 +1,21 @@
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel" width="30%">
+	##if @f.strName=="EventID"##
+	<FONT color=#8b0000>&nbsp;<b>{$Category_value}</b></font>
+	##else##	
+	##label @TABLE.strDataSourceTable @f.strName##
+	##endif##
+	</td>
+	<td class="alt rnr-edge"{$##@f.strName g##_style}>
+	##if @f.strName=="EventID"##
+	Event ID#:
+	##endif##
+	{$##@f.strName g##_value}
+	##if @f.strName=="FromDate"##
+	{$ToDate_value}
+	##endif##
+	##if @f.strName=="FromTime"##
+	{$ToTime_value}
+	##endif##
+	</td>
+</tr>

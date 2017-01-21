@@ -1,0 +1,324 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN addheader}
+	<h2 {$addheader_hiddenattr} data-pageid="{$pageid}" data-brick="addheader" >{$pagetitlelabel cidades add}</h2>
+
+{END addheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Voltar à Lista</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Mostrar</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
+			{BEGIN terra_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_terra}" data-fieldname="terra" data-signal-error-for="terra{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_terra}">
+		{BEGIN terra_label}{$label cidades terra}{END terra_label}
+	</label>
+	<div class="col-md-6" >
+		{$terra_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="terra">
+		<div class="text-muted" >
+		{$tooltip cidades terra}
+		</div>
+	</div>
+</div>
+</div>
+{END terra_fieldblock}
+
+			{BEGIN regiao_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_regiao}" data-fieldname="regiao" data-signal-error-for="regiao{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_regiao}">
+		{BEGIN regiao_label}{$label cidades regiao}{END regiao_label}
+	</label>
+	<div class="col-md-6" >
+		{$regiao_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="regiao">
+		<div class="text-muted" >
+		{$tooltip cidades regiao}
+		</div>
+	</div>
+</div>
+</div>
+{END regiao_fieldblock}
+
+			{BEGIN cidade_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_cidade}" data-fieldname="cidade" data-signal-error-for="cidade{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_cidade}">
+		{BEGIN cidade_label}{$label cidades cidade}{END cidade_label}
+	</label>
+	<div class="col-md-6" >
+		{$cidade_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="cidade">
+		<div class="text-muted" >
+		{$tooltip cidades cidade}
+		</div>
+	</div>
+</div>
+</div>
+{END cidade_fieldblock}
+
+			{BEGIN locale_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_locale}" data-fieldname="locale" data-signal-error-for="locale{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_locale}">
+		{BEGIN locale_label}{$label cidades locale}{END locale_label}
+	</label>
+	<div class="col-md-6" >
+		{$locale_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="locale">
+		<div class="text-muted" >
+		{$tooltip cidades locale}
+		</div>
+	</div>
+</div>
+</div>
+{END locale_fieldblock}
+
+			{BEGIN longitude_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_longitude}" data-fieldname="longitude" data-signal-error-for="longitude{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_longitude}">
+		{BEGIN longitude_label}{$label cidades longitude}{END longitude_label}
+	</label>
+	<div class="col-md-6" >
+		{$longitude_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="longitude">
+		<div class="text-muted" >
+		{$tooltip cidades longitude}
+		</div>
+	</div>
+</div>
+</div>
+{END longitude_fieldblock}
+
+			{BEGIN latitude_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_latitude}" data-fieldname="latitude" data-signal-error-for="latitude{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_latitude}">
+		{BEGIN latitude_label}{$label cidades latitude}{END latitude_label}
+	</label>
+	<div class="col-md-6" >
+		{$latitude_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="latitude">
+		<div class="text-muted" >
+		{$tooltip cidades latitude}
+		</div>
+	</div>
+</div>
+</div>
+{END latitude_fieldblock}
+
+			{BEGIN v1diascript_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_v1diascript}" data-fieldname="v1diascript" data-signal-error-for="v1diascript{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_v1diascript}">
+		{BEGIN v1diascript_label}{$label cidades v1diascript}{END v1diascript_label}
+	</label>
+	<div class="col-md-6" >
+		{$v1diascript_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="v1diascript">
+		<div class="text-muted" >
+		{$tooltip cidades v1diascript}
+		</div>
+	</div>
+</div>
+</div>
+{END v1diascript_fieldblock}
+
+			{BEGIN v3diasscript_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_v3diasscript}" data-fieldname="v3diasscript" data-signal-error-for="v3diasscript{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_v3diasscript}">
+		{BEGIN v3diasscript_label}{$label cidades v3diasscript}{END v3diasscript_label}
+	</label>
+	<div class="col-md-6" >
+		{$v3diasscript_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="v3diasscript">
+		<div class="text-muted" >
+		{$tooltip cidades v3diasscript}
+		</div>
+	</div>
+</div>
+</div>
+{END v3diasscript_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN addbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Guardar</button>
+	{END save_button}
+	{BEGIN reset_button}
+	<button class="btn btn-default" id="resetButton{$id}">Limpar</button>
+	{END reset_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" id="backButton{$id}">Voltar à Lista</button>
+	{END back_button}
+	{BEGIN cancel_button}
+	<a href="#" class="btn btn-default" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+
+{END addbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html  {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link REL="stylesheet" href="styles/default.css" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+    {END pageCSSFiles}
+    <link rel="stylesheet" href="include/sirtet_custom1.css" type="text/css">
+  </head>
+  <BODY class="{$stylename} function-print" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+          <img id="logoimg" width="275px" src="include/Tetris.png" />
+        </div>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+            
+          </div>
+          <DIV class="rnr-center {$blockclass_center}">
+            
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel buildingcontrol print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN ID_fieldheadercolumn}
+<th class="runner-cc {$ID_class}" {$ID_style}>
+	{BEGIN ID_fieldheader}
+	<b>{$label buildingcontrol ID}</b>
+	{END ID_fieldheader}
+</th>
+{END ID_fieldheadercolumn}
+	{BEGIN JobID_fieldheadercolumn}
+<th class="runner-cc {$JobID_class}" {$JobID_style}>
+	{BEGIN JobID_fieldheader}
+	<b>{$label buildingcontrol JobID}</b>
+	{END JobID_fieldheader}
+</th>
+{END JobID_fieldheadercolumn}
+	{BEGIN Type_fieldheadercolumn}
+<th class="runner-cc {$Type_class}" {$Type_style}>
+	{BEGIN Type_fieldheader}
+	<b>{$label buildingcontrol Type}</b>
+	{END Type_fieldheader}
+</th>
+{END Type_fieldheadercolumn}
+	{BEGIN Files_fieldheadercolumn}
+<th class="runner-cc {$Files_class}" {$Files_style}>
+	{BEGIN Files_fieldheader}
+	<b>{$label buildingcontrol Files}</b>
+	{END Files_fieldheader}
+</th>
+{END Files_fieldheadercolumn}
+	{BEGIN SendEmailTo_fieldheadercolumn}
+<th class="runner-cc {$SendEmailTo_class}" {$SendEmailTo_style}>
+	{BEGIN SendEmailTo_fieldheader}
+	<b>{$label buildingcontrol SendEmailTo}</b>
+	{END SendEmailTo_fieldheader}
+</th>
+{END SendEmailTo_fieldheadercolumn}
+	{BEGIN EmailNote_fieldheadercolumn}
+<th class="runner-cc {$EmailNote_class}" {$EmailNote_style}>
+	{BEGIN EmailNote_fieldheader}
+	<b>{$label buildingcontrol EmailNote}</b>
+	{END EmailNote_fieldheader}
+</th>
+{END EmailNote_fieldheadercolumn}
+	{BEGIN LastEditedBy_fieldheadercolumn}
+<th class="runner-cc {$LastEditedBy_class}" {$LastEditedBy_style}>
+	{BEGIN LastEditedBy_fieldheader}
+	<b>{$label buildingcontrol LastEditedBy}</b>
+	{END LastEditedBy_fieldheader}
+</th>
+{END LastEditedBy_fieldheadercolumn}
+	{BEGIN LastEditedOn_fieldheadercolumn}
+<th class="runner-cc {$LastEditedOn_class}" {$LastEditedOn_style}>
+	{BEGIN LastEditedOn_fieldheader}
+	<b>{$label buildingcontrol LastEditedOn}</b>
+	{END LastEditedOn_fieldheader}
+</th>
+{END LastEditedOn_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN ID_fieldcolumn}
+<td  class="runner-cc {$ID_class}" {$ID_style} {$recordattrs}>
+	{$ID_value}
+</td>
+{END ID_fieldcolumn}
+	{BEGIN JobID_fieldcolumn}
+<td  class="runner-cc {$JobID_class}" {$JobID_style} {$recordattrs}>
+	{$JobID_value}
+</td>
+{END JobID_fieldcolumn}
+	{BEGIN Type_fieldcolumn}
+<td  class="runner-cc {$Type_class}" {$Type_style} {$recordattrs}>
+	{$Type_value}
+</td>
+{END Type_fieldcolumn}
+	{BEGIN Files_fieldcolumn}
+<td  class="runner-cc {$Files_class}" {$Files_style} {$recordattrs}>
+	{$Files_value}
+</td>
+{END Files_fieldcolumn}
+	{BEGIN SendEmailTo_fieldcolumn}
+<td  class="runner-cc {$SendEmailTo_class}" {$SendEmailTo_style} {$recordattrs}>
+	{$SendEmailTo_value}
+</td>
+{END SendEmailTo_fieldcolumn}
+	{BEGIN EmailNote_fieldcolumn}
+<td  class="runner-cc {$EmailNote_class}" {$EmailNote_style} {$recordattrs}>
+	{$EmailNote_value}
+</td>
+{END EmailNote_fieldcolumn}
+	{BEGIN LastEditedBy_fieldcolumn}
+<td  class="runner-cc {$LastEditedBy_class}" {$LastEditedBy_style} {$recordattrs}>
+	{$LastEditedBy_value}
+</td>
+{END LastEditedBy_fieldcolumn}
+	{BEGIN LastEditedOn_fieldcolumn}
+<td  class="runner-cc {$LastEditedOn_class}" {$LastEditedOn_style} {$recordattrs}>
+	{$LastEditedOn_value}
+</td>
+{END LastEditedOn_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+          </div>
+          <DIV class="rnr-right {$blockclass_right}">
+            
+          </div>
+        </div>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </div>
+      </div>
+      {$footer}
+    {END body}
+  </body>
+</html>

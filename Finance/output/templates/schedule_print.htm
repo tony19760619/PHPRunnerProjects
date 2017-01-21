@@ -1,0 +1,236 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel schedule print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN AccountNumber_fieldheadercolumn}
+<th class="runner-cc {$AccountNumber_class}" {$AccountNumber_style}>
+	{BEGIN AccountNumber_fieldheader}
+	<b>{$label schedule AccountNumber}</b>
+	{END AccountNumber_fieldheader}
+</th>
+{END AccountNumber_fieldheadercolumn}
+	{BEGIN PaymentNo_fieldheadercolumn}
+<th class="runner-cc {$PaymentNo_class}" {$PaymentNo_style}>
+	{BEGIN PaymentNo_fieldheader}
+	<b>{$label schedule PaymentNo}</b>
+	{END PaymentNo_fieldheader}
+</th>
+{END PaymentNo_fieldheadercolumn}
+	{BEGIN PaymentDate_fieldheadercolumn}
+<th class="runner-cc {$PaymentDate_class}" {$PaymentDate_style}>
+	{BEGIN PaymentDate_fieldheader}
+	<b>{$label schedule PaymentDate}</b>
+	{END PaymentDate_fieldheader}
+</th>
+{END PaymentDate_fieldheadercolumn}
+	{BEGIN PaymentAmount_fieldheadercolumn}
+<th class="runner-cc {$PaymentAmount_class}" {$PaymentAmount_style}>
+	{BEGIN PaymentAmount_fieldheader}
+	<b>{$label schedule PaymentAmount}</b>
+	{END PaymentAmount_fieldheader}
+</th>
+{END PaymentAmount_fieldheadercolumn}
+	{BEGIN LoanInterest_fieldheadercolumn}
+<th class="runner-cc {$LoanInterest_class}" {$LoanInterest_style}>
+	{BEGIN LoanInterest_fieldheader}
+	<b>{$label schedule LoanInterest}</b>
+	{END LoanInterest_fieldheader}
+</th>
+{END LoanInterest_fieldheadercolumn}
+	{BEGIN Depreciation_fieldheadercolumn}
+<th class="runner-cc {$Depreciation_class}" {$Depreciation_style}>
+	{BEGIN Depreciation_fieldheader}
+	<b>{$label schedule Depreciation}</b>
+	{END Depreciation_fieldheader}
+</th>
+{END Depreciation_fieldheadercolumn}
+	{BEGIN AmountPay_fieldheadercolumn}
+<th class="runner-cc {$AmountPay_class}" {$AmountPay_style}>
+	{BEGIN AmountPay_fieldheader}
+	<b>{$label schedule AmountPay}</b>
+	{END AmountPay_fieldheader}
+</th>
+{END AmountPay_fieldheadercolumn}
+	{BEGIN Remark_fieldheadercolumn}
+<th class="runner-cc {$Remark_class}" {$Remark_style}>
+	{BEGIN Remark_fieldheader}
+	<b>{$label schedule Remark}</b>
+	{END Remark_fieldheader}
+</th>
+{END Remark_fieldheadercolumn}
+	{BEGIN LoanID_fieldheadercolumn}
+<th class="runner-cc {$LoanID_class}" {$LoanID_style}>
+	{BEGIN LoanID_fieldheader}
+	<b>{$label schedule LoanID}</b>
+	{END LoanID_fieldheader}
+</th>
+{END LoanID_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN AccountNumber_fieldcolumn}
+<td  class="runner-cc {$AccountNumber_class}" {$AccountNumber_style} {$recordattrs}>
+	{$AccountNumber_value}
+</td>
+{END AccountNumber_fieldcolumn}
+	{BEGIN PaymentNo_fieldcolumn}
+<td  class="runner-cc {$PaymentNo_class}" {$PaymentNo_style} {$recordattrs}>
+	{$PaymentNo_value}
+</td>
+{END PaymentNo_fieldcolumn}
+	{BEGIN PaymentDate_fieldcolumn}
+<td  class="runner-cc {$PaymentDate_class}" {$PaymentDate_style} {$recordattrs}>
+	{$PaymentDate_value}
+</td>
+{END PaymentDate_fieldcolumn}
+	{BEGIN PaymentAmount_fieldcolumn}
+<td  class="runner-cc {$PaymentAmount_class}" {$PaymentAmount_style} {$recordattrs}>
+	{$PaymentAmount_value}
+</td>
+{END PaymentAmount_fieldcolumn}
+	{BEGIN LoanInterest_fieldcolumn}
+<td  class="runner-cc {$LoanInterest_class}" {$LoanInterest_style} {$recordattrs}>
+	{$LoanInterest_value}
+</td>
+{END LoanInterest_fieldcolumn}
+	{BEGIN Depreciation_fieldcolumn}
+<td  class="runner-cc {$Depreciation_class}" {$Depreciation_style} {$recordattrs}>
+	{$Depreciation_value}
+</td>
+{END Depreciation_fieldcolumn}
+	{BEGIN AmountPay_fieldcolumn}
+<td  class="runner-cc {$AmountPay_class}" {$AmountPay_style} {$recordattrs}>
+	{$AmountPay_value}
+</td>
+{END AmountPay_fieldcolumn}
+	{BEGIN Remark_fieldcolumn}
+<td  class="runner-cc {$Remark_class}" {$Remark_style} {$recordattrs}>
+	{$Remark_value}
+</td>
+{END Remark_fieldcolumn}
+	{BEGIN LoanID_fieldcolumn}
+<td  class="runner-cc {$LoanID_class}" {$LoanID_style} {$recordattrs}>
+	{$LoanID_value}
+</td>
+{END LoanID_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

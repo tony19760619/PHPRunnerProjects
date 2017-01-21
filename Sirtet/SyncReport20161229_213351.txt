@@ -1,0 +1,3 @@
+Modified tables ("-" means deleted field, "+" means new field):
+	● lookup:
+		 - ID

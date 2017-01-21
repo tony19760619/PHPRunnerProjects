@@ -1,0 +1,19 @@
+##if Fields[bAdvancedSearch=1 || bSearch=1].len##
+<span>
+##if @TABLE.simpleSearchOptions##
+	{$simpleSearchFieldCombo}
+	{$simpleSearchTypeCombo}
+##endif##
+	{BEGIN searchform_text}
+	<input type="text" {$searchfor_attrs} size="25">
+	{END searchform_text}
+	&nbsp;
+	{BEGIN searchform_search}
+	<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+	{END searchform_search}
+	&nbsp;
+	{BEGIN searchform_showall}
+	<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>##message SHOW_ALL##</a>
+	{END searchform_showall}
+</span>
+##endif##

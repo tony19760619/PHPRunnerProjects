@@ -1,0 +1,357 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel job search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_ID}">
+	{BEGIN ID_fieldblock}		
+	<td>
+		{$label job ID}
+	</td>
+	<td>
+		<input type="checkbox" {$ID_notbox}>
+	</td>
+	<td>
+		{$searchtype_ID}
+	</td>
+	<td>
+		{$ID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ID_editcontrol1}&nbsp;
+	</td>
+{END ID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ProjectName}">
+	{BEGIN ProjectName_fieldblock}		
+	<td>
+		{$label job ProjectName}
+	</td>
+	<td>
+		<input type="checkbox" {$ProjectName_notbox}>
+	</td>
+	<td>
+		{$searchtype_ProjectName}
+	</td>
+	<td>
+		{$ProjectName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ProjectName_editcontrol1}&nbsp;
+	</td>
+{END ProjectName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ProjectNo}">
+	{BEGIN ProjectNo_fieldblock}		
+	<td>
+		{$label job ProjectNo}
+	</td>
+	<td>
+		<input type="checkbox" {$ProjectNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_ProjectNo}
+	</td>
+	<td>
+		{$ProjectNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ProjectNo_editcontrol1}&nbsp;
+	</td>
+{END ProjectNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SiteProjectAddress}">
+	{BEGIN SiteProjectAddress_fieldblock}		
+	<td>
+		{$label job SiteProjectAddress}
+	</td>
+	<td>
+		<input type="checkbox" {$SiteProjectAddress_notbox}>
+	</td>
+	<td>
+		{$searchtype_SiteProjectAddress}
+	</td>
+	<td>
+		{$SiteProjectAddress_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SiteProjectAddress_editcontrol1}&nbsp;
+	</td>
+{END SiteProjectAddress_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_PurchaseOrderNo}">
+	{BEGIN PurchaseOrderNo_fieldblock}		
+	<td>
+		{$label job PurchaseOrderNo}
+	</td>
+	<td>
+		<input type="checkbox" {$PurchaseOrderNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_PurchaseOrderNo}
+	</td>
+	<td>
+		{$PurchaseOrderNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$PurchaseOrderNo_editcontrol1}&nbsp;
+	</td>
+{END PurchaseOrderNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_StartDate}">
+	{BEGIN StartDate_fieldblock}		
+	<td>
+		{$label job StartDate}
+	</td>
+	<td>
+		<input type="checkbox" {$StartDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_StartDate}
+	</td>
+	<td>
+		{$StartDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$StartDate_editcontrol1}&nbsp;
+	</td>
+{END StartDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_CompanyInsurance}">
+	{BEGIN CompanyInsurance_fieldblock}		
+	<td>
+		{$label job CompanyInsurance}
+	</td>
+	<td>
+		<input type="checkbox" {$CompanyInsurance_notbox}>
+	</td>
+	<td>
+		{$searchtype_CompanyInsurance}
+	</td>
+	<td>
+		{$CompanyInsurance_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$CompanyInsurance_editcontrol1}&nbsp;
+	</td>
+{END CompanyInsurance_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_StaffInvolved}">
+	{BEGIN StaffInvolved_fieldblock}		
+	<td>
+		{$label job StaffInvolved}
+	</td>
+	<td>
+		<input type="checkbox" {$StaffInvolved_notbox}>
+	</td>
+	<td>
+		{$searchtype_StaffInvolved}
+	</td>
+	<td>
+		{$StaffInvolved_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$StaffInvolved_editcontrol1}&nbsp;
+	</td>
+{END StaffInvolved_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Contractors}">
+	{BEGIN Contractors_fieldblock}		
+	<td>
+		{$label job Contractors}
+	</td>
+	<td>
+		<input type="checkbox" {$Contractors_notbox}>
+	</td>
+	<td>
+		{$searchtype_Contractors}
+	</td>
+	<td>
+		{$Contractors_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Contractors_editcontrol1}&nbsp;
+	</td>
+{END Contractors_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Program}">
+	{BEGIN Program_fieldblock}		
+	<td>
+		{$label job Program}
+	</td>
+	<td>
+		<input type="checkbox" {$Program_notbox}>
+	</td>
+	<td>
+		{$searchtype_Program}
+	</td>
+	<td>
+		{$Program_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Program_editcontrol1}&nbsp;
+	</td>
+{END Program_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_F10}">
+	{BEGIN F10_fieldblock}		
+	<td>
+		{$label job F10}
+	</td>
+	<td>
+		<input type="checkbox" {$F10_notbox}>
+	</td>
+	<td>
+		{$searchtype_F10}
+	</td>
+	<td>
+		{$F10_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$F10_editcontrol1}&nbsp;
+	</td>
+{END F10_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LastEditedOn}">
+	{BEGIN LastEditedOn_fieldblock}		
+	<td>
+		{$label job LastEditedOn}
+	</td>
+	<td>
+		<input type="checkbox" {$LastEditedOn_notbox}>
+	</td>
+	<td>
+		{$searchtype_LastEditedOn}
+	</td>
+	<td>
+		{$LastEditedOn_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LastEditedOn_editcontrol1}&nbsp;
+	</td>
+{END LastEditedOn_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_UserNo}">
+	{BEGIN UserNo_fieldblock}		
+	<td>
+		{$label job UserNo}
+	</td>
+	<td>
+		<input type="checkbox" {$UserNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_UserNo}
+	</td>
+	<td>
+		{$UserNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$UserNo_editcontrol1}&nbsp;
+	</td>
+{END UserNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_JobStatus}">
+	{BEGIN JobStatus_fieldblock}		
+	<td>
+		{$label job JobStatus}
+	</td>
+	<td>
+		<input type="checkbox" {$JobStatus_notbox}>
+	</td>
+	<td>
+		{$searchtype_JobStatus}
+	</td>
+	<td>
+		{$JobStatus_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$JobStatus_editcontrol1}&nbsp;
+	</td>
+{END JobStatus_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

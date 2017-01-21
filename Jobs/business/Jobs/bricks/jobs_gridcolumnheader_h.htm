@@ -1,0 +1,25 @@
+{BEGIN ##@f.strName g##_fieldheadercolumn}
+<th class="rnr-gridfieldlabel">
+{BEGIN ##@f.strName g##_fieldheader}
+	##if IsSortable(@f, @TABLE.strConnectionID)##
+	<a class="rnr-button" {$##@f.strName g##_orderlinkattrs}>
+	##if @f.strName=="City"##
+	Location
+	##elseif @f.strName=="Title"##
+	Job
+	##else##
+	##label @TABLE.strDataSourceTable @f.strName##
+	##endif##
+	</a>
+	##else##
+	##if @f.strName=="City"##
+	Location
+	##elseif @f.strName=="Title"##
+	Job
+	##else##
+	##label @TABLE.strDataSourceTable @f.strName##
+	##endif##
+	##endif##
+{END ##@f.strName g##_fieldheader}
+</th>
+{END ##@f.strName g##_fieldheadercolumn}

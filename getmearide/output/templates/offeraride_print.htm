@@ -1,0 +1,274 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel offeraride print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_fieldheadercolumn}
+<th class="runner-cc {$id_class}" {$id_style}>
+	{BEGIN id_fieldheader}
+	<b>{$label offeraride id}</b>
+	{END id_fieldheader}
+</th>
+{END id_fieldheadercolumn}
+	{BEGIN HomeLocation_fieldheadercolumn}
+<th class="runner-cc {$HomeLocation_class}" {$HomeLocation_style}>
+	{BEGIN HomeLocation_fieldheader}
+	<b>{$label offeraride HomeLocation}</b>
+	{END HomeLocation_fieldheader}
+</th>
+{END HomeLocation_fieldheadercolumn}
+	{BEGIN CurrentLocation_fieldheadercolumn}
+<th class="runner-cc {$CurrentLocation_class}" {$CurrentLocation_style}>
+	{BEGIN CurrentLocation_fieldheader}
+	<b>{$label offeraride CurrentLocation}</b>
+	{END CurrentLocation_fieldheader}
+</th>
+{END CurrentLocation_fieldheadercolumn}
+	{BEGIN TransportPicture_fieldheadercolumn}
+<th class="runner-cc {$TransportPicture_class}" {$TransportPicture_style}>
+	{BEGIN TransportPicture_fieldheader}
+	<b>{$label offeraride TransportPicture}</b>
+	{END TransportPicture_fieldheader}
+</th>
+{END TransportPicture_fieldheadercolumn}
+	{BEGIN TransportType_fieldheadercolumn}
+<th class="runner-cc {$TransportType_class}" {$TransportType_style}>
+	{BEGIN TransportType_fieldheader}
+	<b>{$label offeraride TransportType}</b>
+	{END TransportType_fieldheader}
+</th>
+{END TransportType_fieldheadercolumn}
+	{BEGIN WhoDoesTheDriving_fieldheadercolumn}
+<th class="runner-cc {$WhoDoesTheDriving_class}" {$WhoDoesTheDriving_style}>
+	{BEGIN WhoDoesTheDriving_fieldheader}
+	<b>{$label offeraride WhoDoesTheDriving}</b>
+	{END WhoDoesTheDriving_fieldheader}
+</th>
+{END WhoDoesTheDriving_fieldheadercolumn}
+	{BEGIN ChargingPerDay_fieldheadercolumn}
+<th class="runner-cc {$ChargingPerDay_class}" {$ChargingPerDay_style}>
+	{BEGIN ChargingPerDay_fieldheader}
+	<b>{$label offeraride ChargingPerDay}</b>
+	{END ChargingPerDay_fieldheader}
+</th>
+{END ChargingPerDay_fieldheadercolumn}
+	{BEGIN ChargingPerHalfDay_fieldheadercolumn}
+<th class="runner-cc {$ChargingPerHalfDay_class}" {$ChargingPerHalfDay_style}>
+	{BEGIN ChargingPerHalfDay_fieldheader}
+	<b>{$label offeraride ChargingPerHalfDay}</b>
+	{END ChargingPerHalfDay_fieldheader}
+</th>
+{END ChargingPerHalfDay_fieldheadercolumn}
+	{BEGIN ChargingCoverCharge_fieldheadercolumn}
+<th class="runner-cc {$ChargingCoverCharge_class}" {$ChargingCoverCharge_style}>
+	{BEGIN ChargingCoverCharge_fieldheader}
+	<b>{$label offeraride ChargingCoverCharge}</b>
+	{END ChargingCoverCharge_fieldheader}
+</th>
+{END ChargingCoverCharge_fieldheadercolumn}
+	{BEGIN ChargingPerCubicMeterPerKm_fieldheadercolumn}
+<th class="runner-cc {$ChargingPerCubicMeterPerKm_class}" {$ChargingPerCubicMeterPerKm_style}>
+	{BEGIN ChargingPerCubicMeterPerKm_fieldheader}
+	<b>{$label offeraride ChargingPerCubicMeterPerKm}</b>
+	{END ChargingPerCubicMeterPerKm_fieldheader}
+</th>
+{END ChargingPerCubicMeterPerKm_fieldheadercolumn}
+	{BEGIN Username_fieldheadercolumn}
+<th class="runner-cc {$Username_class}" {$Username_style}>
+	{BEGIN Username_fieldheader}
+	<b>{$label offeraride Username}</b>
+	{END Username_fieldheader}
+</th>
+{END Username_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_fieldcolumn}
+<td  class="runner-cc {$id_class}" {$id_style} {$recordattrs}>
+	{$id_value}
+</td>
+{END id_fieldcolumn}
+	{BEGIN HomeLocation_fieldcolumn}
+<td  class="runner-cc {$HomeLocation_class}" {$HomeLocation_style} {$recordattrs}>
+	{$HomeLocation_value}
+</td>
+{END HomeLocation_fieldcolumn}
+	{BEGIN CurrentLocation_fieldcolumn}
+<td  class="runner-cc {$CurrentLocation_class}" {$CurrentLocation_style} {$recordattrs}>
+	{$CurrentLocation_value}
+</td>
+{END CurrentLocation_fieldcolumn}
+	{BEGIN TransportPicture_fieldcolumn}
+<td  class="runner-cc {$TransportPicture_class}" {$TransportPicture_style} {$recordattrs}>
+	{$TransportPicture_value}
+</td>
+{END TransportPicture_fieldcolumn}
+	{BEGIN TransportType_fieldcolumn}
+<td  class="runner-cc {$TransportType_class}" {$TransportType_style} {$recordattrs}>
+	{$TransportType_value}
+</td>
+{END TransportType_fieldcolumn}
+	{BEGIN WhoDoesTheDriving_fieldcolumn}
+<td  class="runner-cc {$WhoDoesTheDriving_class}" {$WhoDoesTheDriving_style} {$recordattrs}>
+	{$WhoDoesTheDriving_value}
+</td>
+{END WhoDoesTheDriving_fieldcolumn}
+	{BEGIN ChargingPerDay_fieldcolumn}
+<td  class="runner-cc {$ChargingPerDay_class}" {$ChargingPerDay_style} {$recordattrs}>
+	{$ChargingPerDay_value}
+</td>
+{END ChargingPerDay_fieldcolumn}
+	{BEGIN ChargingPerHalfDay_fieldcolumn}
+<td  class="runner-cc {$ChargingPerHalfDay_class}" {$ChargingPerHalfDay_style} {$recordattrs}>
+	{$ChargingPerHalfDay_value}
+</td>
+{END ChargingPerHalfDay_fieldcolumn}
+	{BEGIN ChargingCoverCharge_fieldcolumn}
+<td  class="runner-cc {$ChargingCoverCharge_class}" {$ChargingCoverCharge_style} {$recordattrs}>
+	{$ChargingCoverCharge_value}
+</td>
+{END ChargingCoverCharge_fieldcolumn}
+	{BEGIN ChargingPerCubicMeterPerKm_fieldcolumn}
+<td  class="runner-cc {$ChargingPerCubicMeterPerKm_class}" {$ChargingPerCubicMeterPerKm_style} {$recordattrs}>
+	{$ChargingPerCubicMeterPerKm_value}
+</td>
+{END ChargingPerCubicMeterPerKm_fieldcolumn}
+	{BEGIN Username_fieldcolumn}
+<td  class="runner-cc {$Username_class}" {$Username_style} {$recordattrs}>
+	{$Username_value}
+</td>
+{END Username_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+		{BEGIN details_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN details_record}
+		<td  class="rnr-edge" colspan="12">
+			{BEGIN details_table}
+			{$details}
+			{END details_table}
+		</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+		{END details_record}
+	</tr>
+	{END details_row}
+{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

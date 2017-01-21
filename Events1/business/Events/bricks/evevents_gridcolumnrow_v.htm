@@ -1,0 +1,18 @@
+{BEGIN ##@f.strName g##_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel">##label @TABLE.strDataSourceTable @f.strName##</td>
+	<td class="alt rnr-edge {$##@f.strName g##_class}" {$##@f.strName g##_style} colspan="2">
+		{$##@f.strName g##_value}&nbsp;
+		##if @f.strName=="FromDate"##
+			{$ToDate_value}&nbsp;
+		##endif##
+		##if @f.strName=="FromTime"##
+			{$ToTime_value}&nbsp;
+		##endif##
+		##if @f.strName=="Location"##
+			{$Map_value}&nbsp;
+		##endif##
+	</td>
+</tr>
+{END ##@f.strName g##_fieldcolumn}
+

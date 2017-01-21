@@ -1,0 +1,287 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel mares edit}</h2>
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Voltar à Lista</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Mostrar</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+			{BEGIN cidade_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_cidade}" data-fieldname="cidade" data-signal-error-for="cidade{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_cidade}">
+		{BEGIN cidade_label}{$label mares cidade}{END cidade_label}
+	</label>
+	<div class="col-md-6" >
+		{$cidade_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="cidade">
+		<div class="text-muted" >
+		{$tooltip mares cidade}
+		</div>
+	</div>
+</div>
+</div>
+{END cidade_fieldblock}
+
+			{BEGIN dia_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_dia}" data-fieldname="dia" data-signal-error-for="dia{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_dia}">
+		{BEGIN dia_label}{$label mares dia}{END dia_label}
+	</label>
+	<div class="col-md-6" >
+		{$dia_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="dia">
+		<div class="text-muted" >
+		{$tooltip mares dia}
+		</div>
+	</div>
+</div>
+</div>
+{END dia_fieldblock}
+
+			{BEGIN tempo_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_tempo}" data-fieldname="tempo" data-signal-error-for="tempo{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_tempo}">
+		{BEGIN tempo_label}{$label mares tempo}{END tempo_label}
+	</label>
+	<div class="col-md-6" >
+		{$tempo_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="tempo">
+		<div class="text-muted" >
+		{$tooltip mares tempo}
+		</div>
+	</div>
+</div>
+</div>
+{END tempo_fieldblock}
+
+			{BEGIN altura_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_altura}" data-fieldname="altura" data-signal-error-for="altura{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_altura}">
+		{BEGIN altura_label}{$label mares altura}{END altura_label}
+	</label>
+	<div class="col-md-6" >
+		{$altura_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="altura">
+		<div class="text-muted" >
+		{$tooltip mares altura}
+		</div>
+	</div>
+</div>
+</div>
+{END altura_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Guardar</button>
+	{END save_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Voltar à Lista</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancelar</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Limpar</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>Mostrar</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

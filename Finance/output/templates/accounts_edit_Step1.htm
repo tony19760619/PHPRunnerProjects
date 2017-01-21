@@ -1,0 +1,65 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="fieldGrid">
+{BEGIN AccountNumber_tabfieldblock}
+<tr class="{$fielddispclass_AccountNumber}" data-fieldname="AccountNumber">
+	<td class="style1 rnr-label">
+		{BEGIN AccountNumber_label}{$label accounts AccountNumber}{END AccountNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AccountNumber_tabfieldblock}
+{BEGIN AccountBalance_tabfieldblock}
+<tr class="{$fielddispclass_AccountBalance}" data-fieldname="AccountBalance">
+	<td class="style1 rnr-label">
+		{BEGIN AccountBalance_label}{$label accounts AccountBalance}{END AccountBalance_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountBalance_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AccountBalance_tabfieldblock}
+{BEGIN LastTransactionDate_tabfieldblock}
+<tr class="{$fielddispclass_LastTransactionDate}" data-fieldname="LastTransactionDate">
+	<td class="style1 rnr-label">
+		{BEGIN LastTransactionDate_label}{$label accounts LastTransactionDate}{END LastTransactionDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LastTransactionDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LastTransactionDate_tabfieldblock}
+{BEGIN OpeningBalance_tabfieldblock}
+<tr class="{$fielddispclass_OpeningBalance}" data-fieldname="OpeningBalance">
+	<td class="style1 rnr-label">
+		{BEGIN OpeningBalance_label}{$label accounts OpeningBalance}{END OpeningBalance_label}
+	</td>
+	<td class="rnr-control style3">
+		{$OpeningBalance_editcontrol}&nbsp;
+	</td>
+</tr>
+{END OpeningBalance_tabfieldblock}
+{BEGIN InterestRate_tabfieldblock}
+<tr class="{$fielddispclass_InterestRate}" data-fieldname="InterestRate">
+	<td class="style1 rnr-label">
+		{BEGIN InterestRate_label}{$label accounts InterestRate}{END InterestRate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$InterestRate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END InterestRate_tabfieldblock}
+</table>
+
+
+
+
+{END container_1}
+
+</div>

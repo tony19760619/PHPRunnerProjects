@@ -1,0 +1,146 @@
+body.page-edit6
+{
+padding-top:10px; padding-left:10px;
+}
+.page-edit6 .rnr-c-edit,
+  .rnr-pagewrapper .page-edit6 .rnr-c-edit,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-c-edit
+{
+margin-bottom:5px;
+}
+.page-edit6 .rnr-c-edit,
+  .rnr-pagewrapper .page-edit6 .rnr-c-edit,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-c-edit
+{
+min-width: 500px; display:inline-block
+}
+.page-edit6 .rnr-cw-edit,
+  .rnr-pagewrapper .page-edit6 .rnr-cw-edit,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-cw-edit
+{
+text-align: left;
+}
+.page-edit6 .rnr-b-editheader,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editheader
+{
+white-space: nowrap;
+}
+.page-edit6 .rnr-b-editheader,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editheader
+{
+text-align: left;
+}
+.page-edit6 .rnr-b-editheader > *,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editheader > *
+{
+font-size: 120%;
+}
+.page-edit6 .rnr-b-message,
+  .rnr-pagewrapper .page-edit6 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-edit6 .rnr-b-message,
+  .rnr-pagewrapper .page-edit6 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-message
+{
+text-align: left;
+}
+.page-edit6 .rnr-b-message > *,
+  .rnr-pagewrapper .page-edit6 .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-message > *
+{
+
+}
+.page-edit6 .rnr-b-multistep_nav_edit,
+  .rnr-pagewrapper .page-edit6 .rnr-b-multistep_nav_edit,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-multistep_nav_edit
+{
+white-space: nowrap;
+}
+.page-edit6 .rnr-b-multistep_nav_edit,
+  .rnr-pagewrapper .page-edit6 .rnr-b-multistep_nav_edit,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-multistep_nav_edit
+{
+text-align: left;
+}
+.page-edit6 .rnr-b-multistep_nav_edit > *,
+  .rnr-pagewrapper .page-edit6 .rnr-b-multistep_nav_edit > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-multistep_nav_edit > *
+{
+
+}
+.page-edit6 .rnr-c-fields,
+  .rnr-pagewrapper .page-edit6 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-edit6 .rnr-b-editfields,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editfields
+{
+white-space: nowrap;
+}
+.page-edit6 .rnr-b-editfields,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editfields
+{
+text-align: left;
+}
+.page-edit6 .rnr-b-editfields > *,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editfields > *
+{
+
+}
+.page-edit6 .rnr-b-editbuttons,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editbuttons
+{
+white-space: nowrap;
+}
+.page-edit6 .rnr-b-editbuttons,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editbuttons
+{
+text-align: left;
+}
+.page-edit6 .rnr-b-editbuttons > *,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editbuttons > *
+{
+
+}
+.page-edit6 .rnr-c-details,
+  .rnr-pagewrapper .page-edit6 .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-c-details
+{
+margin-bottom:5px;
+}
+.page-edit6 .rnr-b-editdetails,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editdetails
+{
+white-space: nowrap;
+}
+.page-edit6 .rnr-b-editdetails,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editdetails
+{
+text-align: left;
+}
+.page-edit6 .rnr-b-editdetails > *,
+  .rnr-pagewrapper .page-edit6 .rnr-b-editdetails > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-edit6 .rnr-b-editdetails > *
+{
+
+}
+body.page-edit6 .rnr-top
+{
+padding-right: 5px;
+}

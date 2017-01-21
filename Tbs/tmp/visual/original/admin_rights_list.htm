@@ -1,0 +1,488 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+
+
+
+
+{BEGIN container_search}
+<table class="runner-c runner-c-search" cellpadding="0" >
+<tr class="{$cheaderclass_search}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+<td class="runner-cc filler"></td>
+{BEGIN details_block}
+<td  class="runner-cc runner-br runner-b-details_found" {$brickclass_details_found}><span>	<span {$details_attrs}>
+		Details found: <b><span class="runner-details_found_count">{$records_found}</span></b>
+	</span>
+</span></td>
+{END details_block}
+
+
+{BEGIN pages_block}
+<td  class="runner-cc runner-br runner-b-page_of" {$brickclass_page_of}><span>	<span {$pages_attrs}>
+		Page <b>{$page}</b> of <b>{$maxpages}</b>
+	</span>
+
+</span></td>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<td  class="runner-cc runner-br runner-b-recsperpage" {$brickclass_recsperpage}><span>	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Records Per Page:&nbsp;{$recsPerPage}
+	</span>	
+</span></td>
+{END recordspp_block}
+
+
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_search}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_search}
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+
+{BEGIN container_left}
+<table class="runner-c runner-c-left" cellpadding="0" >
+<tr class="{$cheaderclass_left}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+
+
+{BEGIN security_block}
+<tr  class="runner-row style1 runner-b-loggedas {$brickclass_loggedas}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" ><div id="login_block{$id}">
+	{BEGIN loggedas_message}
+	<span>Logged on as&nbsp;<b>{$username}</b><br><br>
+	</span>
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span class="runner-btnframe">
+	<span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a href="#" class="runner-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<span class="runner-btnframe">
+	<span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a class="runner-button" href="login.php?a=logout" {$logoutlink_attrs}>Log out</a>
+	</span>
+	{END logoutbutton}
+<!-- Permissions -->
+   {BEGIN exitadminarea_link}
+<div>
+	<span class="runner-btnframe">
+	<span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a href="#" class="runner-button" {$exitaalink_attrs}>Exit Admin Area</a>
+	</span>
+</div>
+  {END exitadminarea_link}
+{BEGIN changepwd_link}
+<div>
+	<span class="runner-btnframe">
+	<span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a class="runner-button" href="changepwd.php" {$changepwdlink_attrs}>Change password</a>
+	</span>
+</div>
+{END changepwd_link}
+</div>
+</td><td class="runner-cr"></td></tr>{END security_block}
+
+
+{BEGIN menu_block}
+{$mainmenu}
+{END menu_block}
+
+
+<tr class="{$cfooterclass_left}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_left}
+
+
+
+{BEGIN container_uggroup}
+<table class="runner-c runner-c-uggroup" cellpadding="0" >
+<tr class="{$cheaderclass_uggroup}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+
+
+<tr  class="runner-row style1 runner-b-ugrightsgroup {$brickclass_ugrightsgroup}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" >		<div class="runner-uglabel">
+			<span>Usergroup:</span>
+		</div><br>
+		
+		<span class="runner-btnframe">
+			<span class="runner-btnleft"></span>
+			<span class="runner-btnright"></span>
+			<a href="#" class="runner-button" {$addgroup_attrs}>Add group</a>
+		</span>
+	
+		<span class="runner-btnframe">
+			<span class="runner-btnleft"></span>
+			<span class="runner-btnright"></span>
+			<a href="#" class="runner-button" {$delgroup_attrs}>Del group</a>
+		</span>
+				<span class="runner-btnframe">
+			<span class="runner-btnleft"></span>
+			<span class="runner-btnright"></span>
+			<a href="#" class="runner-button" {$rengroup_attrs}>Rename</a>
+		</span>
+	
+		
+		<div class="runner-ugaddarea">
+			<span class="gmessage">Add new group :</span><br>
+			<input class="groupname" type="text"  size="20" maxsize="50" {$groupname_attrs} ><br>
+			<span class="runner-btnframe">
+				<span class="runner-btnleft"></span>
+				<span class="runner-btnright"></span>
+				<a href="#" class="runner-button" {$savegroup_attrs}>Save</a>
+			</span>
+			<span class="runner-btnframe">
+				<span class="runner-btnleft"></span>
+				<span class="runner-btnright"></span>
+				<a href="#" class="runner-button" {$cancelgroup_attrs}>Cancel</a>
+			</span>
+		</div>
+		<div class="runner-ugselgroup">
+			<select class="group">
+			{BEGIN groups}
+				<option {$group_attrs}>{$groupname}</option>
+			{END groups}
+			</select>
+		</div>	
+
+</td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_uggroup}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_uggroup}
+
+
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+
+{BEGIN container_ugcontrols}
+<table class="runner-c runner-c-ugcontrols" cellpadding="0" >
+<tr class="{$cheaderclass_ugcontrols}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+{BEGIN savebuttons_block}
+<td  class="runner-cc runner-bl runner-b-ugbuttons" {$brickclass_ugbuttons}><span><span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$savebutton_attrs}>Save</a>
+</span>
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$resetbutton_attrs}>Reset</a>
+</span></span></td>
+{END savebuttons_block}
+
+<td class="runner-cc filler"></td>
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_ugcontrols}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_ugcontrols}
+
+
+
+{BEGIN container_message}
+<table class="runner-c runner-c-message" cellpadding="0" >
+<tr class="{$cheaderclass_message}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+{BEGIN message_block}
+<td  class="runner-cc runner-bc runner-b-message" {$brickclass_message}><span><div class="runner-message">{$message}</div></span></td>
+{END message_block}
+
+
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_message}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_message}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN rights_block}
+{BEGIN grid_block}
+	<table class="runner-c" cellpadding="0">
+		<tr class="runner-toprow style1">
+			<th class="runner-cl"><img src="images/spacer.gif"></th>
+			<th style="width:100pt" class="runner-cc">Tables</th>
+			<th class="runner-cc">
+				Add
+			</th>
+			<th class="runner-cc">
+				Edit
+			</th>
+			<th class="runner-cc">
+				Delete
+			</th>
+			<th class="runner-cc">
+				List/View
+			</th>
+			<th class="runner-cc">
+				Print/Export
+			</th>
+			<th class="runner-cc">
+				Import
+			</th>
+			<th class="runner-cc" style="white-space:nowrap">
+				Admin mode<br>(access to all records)
+			</th>
+			<th class="runner-cr"></th>
+		</tr>
+		<tr valign="top" class="runner-row style1">
+			<td class="runner-cl"></td>
+			<td class="runner-cc">&nbsp;</td>
+			<td class="runner-cc runner-bc">
+				<input type="checkbox" {$add_headcheckbox}>
+			</td>
+			<td class="runner-cc runner-bc">
+				<input type="checkbox" {$edt_headcheckbox}>
+			</td>
+			<td class="runner-cc runner-bc">
+				<input type="checkbox" {$del_headcheckbox}>
+			</td>
+			<td class="runner-cc runner-bc">
+				<input type="checkbox" {$lst_headcheckbox}>
+			</td>
+			<td class="runner-cc runner-bc">
+				<input type="checkbox" {$exp_headcheckbox}>
+			</td>
+			<td class="runner-cc runner-bc">
+				<input type="checkbox"{$imp_headcheckbox}>
+			</td>
+			<td class="runner-cc runner-bc" style="white-space:nowrap">
+				<input type="checkbox" {$adm_headcheckbox}>
+			</td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+		{BEGIN grid_row}
+		<tr valign="top" class="runner-row style1">
+			<td class="runner-cl"></td>
+			<td class="runner-cc">
+				<input type="checkbox" {$tablecheckbox_attrs} align="absmiddle">&nbsp;{$tablename}
+			</td>
+			<td class="runner-cc runner-bc">
+			{BEGIN add_group}
+			{BEGIN add_groupboxes}
+				<input type="checkbox" {$add_checkbox}>
+			{END add_groupboxes}
+			{END add_group}
+			</td>
+			<td class="runner-cc runner-bc">
+			{BEGIN edt_group}
+			{BEGIN edt_groupboxes}
+				<input type="checkbox" {$edt_checkbox}>
+			{END edt_groupboxes}
+			{END edt_group}
+			</td>
+			<td class="runner-cc runner-bc">
+			{BEGIN del_group}
+			{BEGIN del_groupboxes}
+				<input type="checkbox" {$del_checkbox}>
+			{END del_groupboxes}
+			{END del_group}
+			</td>
+			<td class="runner-cc runner-bc">
+			{BEGIN lst_group}
+			{BEGIN lst_groupboxes}
+				<input type="checkbox" {$lst_checkbox}>
+			{END lst_groupboxes}
+			{END lst_group}
+			</td>
+			<td class="runner-cc runner-bc">
+			{BEGIN exp_group}
+			{BEGIN exp_groupboxes}
+			   <input type="checkbox" {$exp_checkbox}>
+			{END exp_groupboxes}
+			{END exp_group}
+			</td>
+			<td class="runner-cc runner-bc">
+			{BEGIN imp_group}
+			{BEGIN imp_groupboxes}
+			   <input type="checkbox" {$imp_checkbox}>
+			{END imp_groupboxes}
+			{END imp_group}
+			</td>
+			<td class="runner-cc runner-bc">
+			{BEGIN adm_groupboxes}
+			   <input type="checkbox" {$adm_checkbox}>
+			{END adm_groupboxes}
+			</td>
+			<td class="runner-cr"></td>
+		</tr>
+		{END grid_row}
+		<tr valign="top" class="runner-bottomrow style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			<td style="width:100pt" class="runner-cc runner-c1"></td>
+			<td class="runner-cc">
+			</td>
+			<td class="runner-cc">
+			</td>
+			<td class="runner-cc">
+			</td>
+			<td class="runner-cc">
+			</td>
+			<td class="runner-cc">
+			</td>
+			<td class="runner-cc">
+			</td>
+			<td class="runner-cc" style="white-space:nowrap">
+			</td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+	</table>
+{END grid_block}
+
+{END rights_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination}
+<table class="runner-c runner-c-pagination" cellpadding="0" >
+<tr class="{$cheaderclass_pagination}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+{BEGIN pagination_block}
+<td  class="runner-cc runner-bc runner-b-pagination" {$brickclass_pagination}><span>{$pagination}</span></td>
+{END pagination_block}
+
+
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_pagination}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_pagination}
+
+
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

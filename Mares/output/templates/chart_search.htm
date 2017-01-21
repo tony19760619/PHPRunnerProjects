@@ -1,0 +1,206 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel chart search}</h2>
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN id_fieldblock}		
+	<div class="container {$fielddispclass_id}" data-fieldname="id">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label chart id}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_id}
+			</div>
+			<div class="col-md-4" >
+				{$id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END id_fieldblock}
+	{BEGIN BackgroundColor_fieldblock}		
+	<div class="container {$fielddispclass_BackgroundColor}" data-fieldname="BackgroundColor">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label chart BackgroundColor}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_BackgroundColor}
+			</div>
+			<div class="col-md-4" >
+				{$BackgroundColor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$BackgroundColor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END BackgroundColor_fieldblock}
+	{BEGIN BackgroundImage_fieldblock}		
+	<div class="container {$fielddispclass_BackgroundImage}" data-fieldname="BackgroundImage">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label chart BackgroundImage}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_BackgroundImage}
+			</div>
+			<div class="col-md-4" >
+				{$BackgroundImage_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$BackgroundImage_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END BackgroundImage_fieldblock}
+	{BEGIN TextColor_fieldblock}		
+	<div class="container {$fielddispclass_TextColor}" data-fieldname="TextColor">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label chart TextColor}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_TextColor}
+			</div>
+			<div class="col-md-4" >
+				{$TextColor_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TextColor_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TextColor_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-4"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Procurar</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Limpar</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Voltar à Lista</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

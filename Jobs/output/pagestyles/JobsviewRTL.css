@@ -1,0 +1,170 @@
+body.page-Jobsview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-Jobsview .rnr-c-all,
+  .rnr-pagewrapper .page-Jobsview .rnr-c-all,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-c-all
+{
+margin-bottom:5px;
+}
+.page-Jobsview .rnr-c-all,
+  .rnr-pagewrapper .page-Jobsview .rnr-c-all,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-c-all
+{
+min-width:500px; display:inline-block
+}
+.page-Jobsview .rnr-cw-all,
+  .rnr-pagewrapper .page-Jobsview .rnr-cw-all,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-cw-all
+{
+text-align: center;
+}
+.page-Jobsview .rnr-c-view,
+  .rnr-pagewrapper .page-Jobsview .rnr-c-view,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-c-view
+{
+margin-bottom:5px;
+}
+.page-Jobsview .rnr-c-view,
+  .rnr-pagewrapper .page-Jobsview .rnr-c-view,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-c-view
+{
+min-width:500px; display:inline-block
+}
+.page-Jobsview .rnr-cw-view,
+  .rnr-pagewrapper .page-Jobsview .rnr-cw-view,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-cw-view
+{
+text-align: center;
+}
+.page-Jobsview .rnr-c-pdf,
+  .rnr-pagewrapper .page-Jobsview .rnr-c-pdf,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-c-pdf
+{
+margin-bottom:5px;
+}
+.page-Jobsview .rnr-cbw-pdf.rnr-cbw-pdf.rnr-cbw-pdf.rnr-cbw-pdf,
+  .rnr-pagewrapper .page-Jobsview .rnr-cbw-pdf.rnr-cbw-pdf.rnr-cbw-pdf.rnr-cbw-pdf,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-cbw-pdf.rnr-cbw-pdf.rnr-cbw-pdf.rnr-cbw-pdf
+{
+padding-top:0px;padding-bottom:0px;
+}
+.page-Jobsview .rnr-b-viewpdf,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewpdf,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewpdf
+{
+white-space: nowrap;
+}
+.page-Jobsview .rnr-b-viewpdf,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewpdf,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewpdf
+{
+text-align: right;
+}
+.page-Jobsview .rnr-b-viewpdf > *,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewpdf > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewpdf > *
+{
+
+}
+.page-Jobsview .rnr-c-fields,
+  .rnr-pagewrapper .page-Jobsview .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-Jobsview .rnr-cbw-fields.rnr-cbw-fields.rnr-cbw-fields.rnr-cbw-fields,
+  .rnr-pagewrapper .page-Jobsview .rnr-cbw-fields.rnr-cbw-fields.rnr-cbw-fields.rnr-cbw-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-cbw-fields.rnr-cbw-fields.rnr-cbw-fields.rnr-cbw-fields
+{
+padding-top:0px;padding-bottom:0px;
+}
+.page-Jobsview .rnr-b-view_header,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-view_header,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-view_header
+{
+white-space: nowrap;
+}
+.page-Jobsview .rnr-b-view_header,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-view_header,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-view_header
+{
+text-align: right;
+}
+.page-Jobsview .rnr-b-view_header > *,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-view_header > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-view_header > *
+{
+
+}
+.page-Jobsview .rnr-b-viewfields,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewfields
+{
+white-space: normal;
+}
+.page-Jobsview .rnr-b-viewfields,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewfields
+{
+text-align: right;
+}
+.page-Jobsview .rnr-b-viewfields > *,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewfields > *
+{
+
+}
+.page-Jobsview .rnr-b-viewbuttons,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewbuttons
+{
+white-space: nowrap;
+}
+.page-Jobsview .rnr-b-viewbuttons,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewbuttons
+{
+text-align: right;
+}
+.page-Jobsview .rnr-b-viewbuttons > *,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewbuttons > *
+{
+
+}
+.page-Jobsview .rnr-c-details,
+  .rnr-pagewrapper .page-Jobsview .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-c-details
+{
+margin-bottom:5px;
+}
+.page-Jobsview .rnr-c-details,
+  .rnr-pagewrapper .page-Jobsview .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-c-details
+{
+min-width:100px;
+}
+.page-Jobsview .rnr-b-viewdetails,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewdetails
+{
+white-space: nowrap;
+}
+.page-Jobsview .rnr-b-viewdetails,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewdetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewdetails
+{
+text-align: right;
+}
+.page-Jobsview .rnr-b-viewdetails > *,
+  .rnr-pagewrapper .page-Jobsview .rnr-b-viewdetails > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-Jobsview .rnr-b-viewdetails > *
+{
+
+}
+body.page-Jobsview .rnr-top
+{
+padding-right: 5px;
+}

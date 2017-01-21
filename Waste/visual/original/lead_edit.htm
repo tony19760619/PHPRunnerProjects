@@ -1,0 +1,262 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel lead edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN CompanyName_fieldblock}
+<tr class="{$fielddispclass_CompanyName}" data-fieldname="CompanyName">
+	<td class="rnr-label">
+		{BEGIN CompanyName_label}{$label lead CompanyName}{END CompanyName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$CompanyName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END CompanyName_fieldblock}
+	{BEGIN Address_fieldblock}
+<tr class="{$fielddispclass_Address}" data-fieldname="Address">
+	<td class="rnr-label">
+		{BEGIN Address_label}{$label lead Address}{END Address_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Address_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Address_fieldblock}
+	{BEGIN WhoSpokenToAndWhoIsPersonInCharge_fieldblock}
+<tr class="{$fielddispclass_WhoSpokenToAndWhoIsPersonInCharge}" data-fieldname="WhoSpokenToAndWhoIsPersonInCharge">
+	<td class="rnr-label">
+		{BEGIN WhoSpokenToAndWhoIsPersonInCharge_label}{$label lead WhoSpokenToAndWhoIsPersonInCharge}{END WhoSpokenToAndWhoIsPersonInCharge_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WhoSpokenToAndWhoIsPersonInCharge_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WhoSpokenToAndWhoIsPersonInCharge_fieldblock}
+	{BEGIN TelNoAndEmailAddress_fieldblock}
+<tr class="{$fielddispclass_TelNoAndEmailAddress}" data-fieldname="TelNoAndEmailAddress">
+	<td class="rnr-label">
+		{BEGIN TelNoAndEmailAddress_label}{$label lead TelNoAndEmailAddress}{END TelNoAndEmailAddress_label}
+	</td>
+	<td class="rnr-control style3">
+		{$TelNoAndEmailAddress_editcontrol}&nbsp;
+	</td>
+</tr>
+{END TelNoAndEmailAddress_fieldblock}
+	{BEGIN RenewalDateOfCurrentContract_fieldblock}
+<tr class="{$fielddispclass_RenewalDateOfCurrentContract}" data-fieldname="RenewalDateOfCurrentContract">
+	<td class="rnr-label">
+		{BEGIN RenewalDateOfCurrentContract_label}{$label lead RenewalDateOfCurrentContract}{END RenewalDateOfCurrentContract_label}
+	</td>
+	<td class="rnr-control style3">
+		{$RenewalDateOfCurrentContract_editcontrol}&nbsp;
+	</td>
+</tr>
+{END RenewalDateOfCurrentContract_fieldblock}
+	{BEGIN DateSeen_fieldblock}
+<tr class="{$fielddispclass_DateSeen}" data-fieldname="DateSeen">
+	<td class="rnr-label">
+		{BEGIN DateSeen_label}{$label lead DateSeen}{END DateSeen_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DateSeen_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DateSeen_fieldblock}
+	{BEGIN Interested_fieldblock}
+<tr class="{$fielddispclass_Interested}" data-fieldname="Interested">
+	<td class="rnr-label">
+		{BEGIN Interested_label}{$label lead Interested}{END Interested_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Interested_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Interested_fieldblock}
+	{BEGIN NumberOfBins_fieldblock}
+<tr class="{$fielddispclass_NumberOfBins}" data-fieldname="NumberOfBins">
+	<td class="rnr-label">
+		{BEGIN NumberOfBins_label}{$label lead NumberOfBins}{END NumberOfBins_label}
+	</td>
+	<td class="rnr-control style3">
+		{$NumberOfBins_editcontrol}&nbsp;
+	</td>
+</tr>
+{END NumberOfBins_fieldblock}
+	{BEGIN WeeksInMonth_fieldblock}
+<tr class="{$fielddispclass_WeeksInMonth}" data-fieldname="WeeksInMonth">
+	<td class="rnr-label">
+		{BEGIN WeeksInMonth_label}{$label lead WeeksInMonth}{END WeeksInMonth_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WeeksInMonth_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WeeksInMonth_fieldblock}
+	{BEGIN PickupsPerWeek_fieldblock}
+<tr class="{$fielddispclass_PickupsPerWeek}" data-fieldname="PickupsPerWeek">
+	<td class="rnr-label">
+		{BEGIN PickupsPerWeek_label}{$label lead PickupsPerWeek}{END PickupsPerWeek_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PickupsPerWeek_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PickupsPerWeek_fieldblock}
+	{BEGIN ChargePerPickupPerBin_fieldblock}
+<tr class="{$fielddispclass_ChargePerPickupPerBin}" data-fieldname="ChargePerPickupPerBin">
+	<td class="rnr-label">
+		{BEGIN ChargePerPickupPerBin_label}{$label lead ChargePerPickupPerBin}{END ChargePerPickupPerBin_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ChargePerPickupPerBin_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ChargePerPickupPerBin_fieldblock}
+	{BEGIN TotalExclVAT_fieldblock}
+<tr class="{$fielddispclass_TotalExclVAT}" data-fieldname="TotalExclVAT">
+	<td class="rnr-label">
+		{BEGIN TotalExclVAT_label}{$label lead TotalExclVAT}{END TotalExclVAT_label}
+	</td>
+	<td class="rnr-control style3">
+		{$TotalExclVAT_editcontrol}&nbsp;
+	</td>
+</tr>
+{END TotalExclVAT_fieldblock}
+	{BEGIN VAT_fieldblock}
+<tr class="{$fielddispclass_VAT}" data-fieldname="VAT">
+	<td class="rnr-label">
+		{BEGIN VAT_label}{$label lead VAT}{END VAT_label}
+	</td>
+	<td class="rnr-control style3">
+		{$VAT_editcontrol}&nbsp;
+	</td>
+</tr>
+{END VAT_fieldblock}
+	{BEGIN TotalInclVAT_fieldblock}
+<tr class="{$fielddispclass_TotalInclVAT}" data-fieldname="TotalInclVAT">
+	<td class="rnr-label">
+		{BEGIN TotalInclVAT_label}{$label lead TotalInclVAT}{END TotalInclVAT_label}
+	</td>
+	<td class="rnr-control style3">
+		{$TotalInclVAT_editcontrol}&nbsp;
+	</td>
+</tr>
+{END TotalInclVAT_fieldblock}
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN save_button}
+<a href="#" class="rnr-button main" {$savebutton_attrs}>Save</a>
+{END save_button}
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+{BEGIN view_page_button}
+<a href="#" class="rnr-button" {$view_page_button_attrs}>View</a>
+{END view_page_button}
+</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

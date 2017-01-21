@@ -1,0 +1,86 @@
+body.page-register_success2
+{
+padding-top:10px; padding-left:10px;
+}
+.page-register_success2 .rnr-c-register,
+  .rnr-pagewrapper .page-register_success2 .rnr-c-register,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-c-register
+{
+margin-bottom:5px;
+}
+.page-register_success2 .rnr-c-register,
+  .rnr-pagewrapper .page-register_success2 .rnr-c-register,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-c-register
+{
+min-width:400px; display:inline-block
+}
+.page-register_success2 .rnr-cw-register,
+  .rnr-pagewrapper .page-register_success2 .rnr-cw-register,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-cw-register
+{
+text-align: center;
+}
+.page-register_success2 .rnr-b-regheader,
+  .rnr-pagewrapper .page-register_success2 .rnr-b-regheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-b-regheader
+{
+white-space: nowrap;
+}
+.page-register_success2 .rnr-b-regheader,
+  .rnr-pagewrapper .page-register_success2 .rnr-b-regheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-b-regheader
+{
+text-align: right;
+}
+.page-register_success2 .rnr-b-regheader > *,
+  .rnr-pagewrapper .page-register_success2 .rnr-b-regheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-b-regheader > *
+{
+font-size: 120%;
+}
+.page-register_success2 .rnr-c-fields,
+  .rnr-pagewrapper .page-register_success2 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-register_success2 .rnr-b-activation,
+  .rnr-pagewrapper .page-register_success2 .rnr-b-activation,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-b-activation
+{
+white-space: nowrap;
+}
+.page-register_success2 .rnr-b-activation,
+  .rnr-pagewrapper .page-register_success2 .rnr-b-activation,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-b-activation
+{
+text-align: right;
+}
+.page-register_success2 .rnr-b-activation > *,
+  .rnr-pagewrapper .page-register_success2 .rnr-b-activation > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-b-activation > *
+{
+
+}
+.page-register_success2 .rnr-b-registered,
+  .rnr-pagewrapper .page-register_success2 .rnr-b-registered,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-b-registered
+{
+white-space: nowrap;
+}
+.page-register_success2 .rnr-b-registered,
+  .rnr-pagewrapper .page-register_success2 .rnr-b-registered,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-b-registered
+{
+text-align: center;
+}
+.page-register_success2 .rnr-b-registered > *,
+  .rnr-pagewrapper .page-register_success2 .rnr-b-registered > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-register_success2 .rnr-b-registered > *
+{
+
+}
+body.page-register_success2 .rnr-top
+{
+padding-right: 5px;
+}

@@ -1,0 +1,280 @@
+<!doctype html>
+<html  {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link REL="stylesheet" href="styles/default.css" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+    {END pageCSSFiles}
+    <link rel="stylesheet" href="include/sirtet_custom1.css" type="text/css">
+    <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
+    <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+    <?php include ("scripts/counter.php"); ?>
+    <script language="JavaScript" type="text/javascript" src="functions.js">
+    </script>
+  </head>
+  <BODY class="{$stylename} function-add" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel users add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN Company_fieldblock}
+<tr class="{$fielddispclass_Company}" data-fieldname="Company">
+	<td class="rnr-label">
+		{BEGIN Company_label}{$label users Company}{END Company_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Company_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Company_fieldblock}
+	{BEGIN DefaultCompanyContact_fieldblock}
+<tr class="{$fielddispclass_DefaultCompanyContact}" data-fieldname="DefaultCompanyContact">
+	<td class="rnr-label">
+		{BEGIN DefaultCompanyContact_label}{$label users DefaultCompanyContact}{END DefaultCompanyContact_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DefaultCompanyContact_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DefaultCompanyContact_fieldblock}
+	{BEGIN MobileNumber_fieldblock}
+<tr class="{$fielddispclass_MobileNumber}" data-fieldname="MobileNumber">
+	<td class="rnr-label">
+		{BEGIN MobileNumber_label}{$label users MobileNumber}{END MobileNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$MobileNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END MobileNumber_fieldblock}
+	{BEGIN FirstName_fieldblock}
+<tr class="{$fielddispclass_FirstName}" data-fieldname="FirstName">
+	<td class="rnr-label">
+		{BEGIN FirstName_label}{$label users FirstName}{END FirstName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FirstName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FirstName_fieldblock}
+	{BEGIN Surname_fieldblock}
+<tr class="{$fielddispclass_Surname}" data-fieldname="Surname">
+	<td class="rnr-label">
+		{BEGIN Surname_label}{$label users Surname}{END Surname_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Surname_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Surname_fieldblock}
+	{BEGIN JobID_fieldblock}
+<tr class="{$fielddispclass_JobID}" data-fieldname="JobID">
+	<td class="rnr-label">
+		{BEGIN JobID_label}{$label users JobID}{END JobID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$JobID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END JobID_fieldblock}
+	{BEGIN Type_fieldblock}
+<tr class="{$fielddispclass_Type}" data-fieldname="Type">
+	<td class="rnr-label">
+		{BEGIN Type_label}{$label users Type}{END Type_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Type_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Type_fieldblock}
+	{BEGIN Roles_fieldblock}
+<tr class="{$fielddispclass_Roles}" data-fieldname="Roles">
+	<td class="rnr-label">
+		{BEGIN Roles_label}{$label users Roles}{END Roles_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Roles_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Roles_fieldblock}
+	{BEGIN Status_fieldblock}
+<tr class="{$fielddispclass_Status}" data-fieldname="Status">
+	<td class="rnr-label">
+		{BEGIN Status_label}{$label users Status}{END Status_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Status_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Status_fieldblock}
+	{BEGIN username_fieldblock}
+<tr class="{$fielddispclass_username}" data-fieldname="username">
+	<td class="rnr-label">
+		{BEGIN username_label}{$label users username}{END username_label}
+	</td>
+	<td class="rnr-control style3">
+		{$username_editcontrol}&nbsp;
+	</td>
+</tr>
+{END username_fieldblock}
+	{BEGIN password_fieldblock}
+<tr class="{$fielddispclass_password}" data-fieldname="password">
+	<td class="rnr-label">
+		{BEGIN password_label}{$label users password}{END password_label}
+	</td>
+	<td class="rnr-control style3">
+		{$password_editcontrol}&nbsp;
+	</td>
+</tr>
+{END password_fieldblock}
+	{BEGIN email_fieldblock}
+<tr class="{$fielddispclass_email}" data-fieldname="email">
+	<td class="rnr-label">
+		{BEGIN email_label}{$label users email}{END email_label}
+	</td>
+	<td class="rnr-control style3">
+		{$email_editcontrol}&nbsp;
+	</td>
+</tr>
+{END email_fieldblock}
+	{BEGIN fullname_fieldblock}
+<tr class="{$fielddispclass_fullname}" data-fieldname="fullname">
+	<td class="rnr-label">
+		{BEGIN fullname_label}{$label users fullname}{END fullname_label}
+	</td>
+	<td class="rnr-control style3">
+		{$fullname_editcontrol}&nbsp;
+	</td>
+</tr>
+{END fullname_fieldblock}
+	{BEGIN Barcode_fieldblock}
+<tr class="{$fielddispclass_Barcode}" data-fieldname="Barcode">
+	<td class="rnr-label">
+		{BEGIN Barcode_label}{$label users Barcode}{END Barcode_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Barcode_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Barcode_fieldblock}
+	{BEGIN LoginCount_fieldblock}
+<tr class="{$fielddispclass_LoginCount}" data-fieldname="LoginCount">
+	<td class="rnr-label">
+		{BEGIN LoginCount_label}{$label users LoginCount}{END LoginCount_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoginCount_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoginCount_fieldblock}
+	{BEGIN LastEditedBy_fieldblock}
+<tr class="{$fielddispclass_LastEditedBy}" data-fieldname="LastEditedBy">
+	<td class="rnr-label">
+		{BEGIN LastEditedBy_label}{$label users LastEditedBy}{END LastEditedBy_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LastEditedBy_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LastEditedBy_fieldblock}
+	{BEGIN LastEditedOn_fieldblock}
+<tr class="{$fielddispclass_LastEditedOn}" data-fieldname="LastEditedOn">
+	<td class="rnr-label">
+		{BEGIN LastEditedOn_label}{$label users LastEditedOn}{END LastEditedOn_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LastEditedOn_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LastEditedOn_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+
+
+
+          <img id="logoimg" width="275px" src="include/Tetris.png" />
+        </div>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+            
+          </div>
+          <DIV class="rnr-center {$blockclass_center}">
+            
+          </div>
+          <DIV class="rnr-right {$blockclass_right}">
+            
+          </div>
+        </div>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </div>
+      </div>
+      {$footer}
+    {END body}
+  </body>
+</html>

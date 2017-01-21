@@ -1,0 +1,156 @@
+.page-preview,
+  .runner-pagewrapper .page-preview,
+  .runner-pagewrapper .runner-pagewrapper .page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .runner-c-fields,
+  .runner-pagewrapper .page-preview .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-c-fields
+{
+margin-bottom:5px;
+}
+.page-preview .runner-c-fields,
+  .runner-pagewrapper .page-preview .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-c-fields
+{
+width:500px;
+}
+body.page-preview .runner-c-fields
+{
+margin-left:auto; margin-right:auto;
+}
+.page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader,
+.page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader > *,
+  .runner-pagewrapper .page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader,
+  .runner-pagewrapper .page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader,
+.page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader > *,
+  .runner-pagewrapper .page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader,
+  .runner-pagewrapper .page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginheader, .page-preview .runner-b-loginheader > *
+{
+text-align: left;
+}
+.page-preview .runner-b-message, .page-preview .runner-b-message,
+.page-preview .runner-b-message, .page-preview .runner-b-message > *,
+  .runner-pagewrapper .page-preview .runner-b-message, .page-preview .runner-b-message,
+  .runner-pagewrapper .page-preview .runner-b-message, .page-preview .runner-b-message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-message, .page-preview .runner-b-message,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-message, .page-preview .runner-b-message > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-message, .page-preview .runner-b-message,
+.page-preview .runner-b-message, .page-preview .runner-b-message > *,
+  .runner-pagewrapper .page-preview .runner-b-message, .page-preview .runner-b-message,
+  .runner-pagewrapper .page-preview .runner-b-message, .page-preview .runner-b-message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-message, .page-preview .runner-b-message,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-message, .page-preview .runner-b-message > *
+{
+text-align: left;
+}
+.page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields,
+.page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields > *,
+  .runner-pagewrapper .page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields,
+  .runner-pagewrapper .page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields,
+.page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields > *,
+  .runner-pagewrapper .page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields,
+  .runner-pagewrapper .page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginfields, .page-preview .runner-b-loginfields > *
+{
+text-align: left;
+}
+.page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest,
+.page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest > *,
+  .runner-pagewrapper .page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest,
+  .runner-pagewrapper .page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest,
+.page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest > *,
+  .runner-pagewrapper .page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest,
+  .runner-pagewrapper .page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesguest, .page-preview .runner-b-mesguest > *
+{
+text-align: left;
+}
+.page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg,
+.page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg > *,
+  .runner-pagewrapper .page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg,
+  .runner-pagewrapper .page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg,
+.page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg > *,
+  .runner-pagewrapper .page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg,
+  .runner-pagewrapper .page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesreg, .page-preview .runner-b-mesreg > *
+{
+text-align: left;
+}
+.page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot,
+.page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot > *,
+  .runner-pagewrapper .page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot,
+  .runner-pagewrapper .page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot,
+.page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot > *,
+  .runner-pagewrapper .page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot,
+  .runner-pagewrapper .page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-mesforgot, .page-preview .runner-b-mesforgot > *
+{
+text-align: left;
+}
+.page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons,
+.page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons > *,
+  .runner-pagewrapper .page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons,
+  .runner-pagewrapper .page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons,
+.page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons > *,
+  .runner-pagewrapper .page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons,
+  .runner-pagewrapper .page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-loginbuttons, .page-preview .runner-b-loginbuttons > *
+{
+text-align: left;
+}
+body.page-preview .runner-toptable
+{
+width:100%;
+}
+body.page-preview .runner-top
+{
+padding-right: 5px;
+}

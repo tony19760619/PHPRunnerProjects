@@ -1,0 +1,272 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel loanaccounts print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN AccountName_fieldheadercolumn}
+<th class="runner-cc {$AccountName_class}" {$AccountName_style}>
+	{BEGIN AccountName_fieldheader}
+	<b>{$label loanaccounts AccountName}</b>
+	{END AccountName_fieldheader}
+</th>
+{END AccountName_fieldheadercolumn}
+	{BEGIN ClientNo_fieldheadercolumn}
+<th class="runner-cc {$ClientNo_class}" {$ClientNo_style}>
+	{BEGIN ClientNo_fieldheader}
+	<b>{$label loanaccounts ClientNo}</b>
+	{END ClientNo_fieldheader}
+</th>
+{END ClientNo_fieldheadercolumn}
+	{BEGIN AccountNumber_fieldheadercolumn}
+<th class="runner-cc {$AccountNumber_class}" {$AccountNumber_style}>
+	{BEGIN AccountNumber_fieldheader}
+	<b>{$label loanaccounts AccountNumber}</b>
+	{END AccountNumber_fieldheader}
+</th>
+{END AccountNumber_fieldheadercolumn}
+	{BEGIN OpeningBalance_fieldheadercolumn}
+<th class="runner-cc {$OpeningBalance_class}" {$OpeningBalance_style}>
+	{BEGIN OpeningBalance_fieldheader}
+	<b>{$label loanaccounts OpeningBalance}</b>
+	{END OpeningBalance_fieldheader}
+</th>
+{END OpeningBalance_fieldheadercolumn}
+	{BEGIN LoanCreditWitness_fieldheadercolumn}
+<th class="runner-cc {$LoanCreditWitness_class}" {$LoanCreditWitness_style}>
+	{BEGIN LoanCreditWitness_fieldheader}
+	<b>{$label loanaccounts LoanCreditWitness}</b>
+	{END LoanCreditWitness_fieldheader}
+</th>
+{END LoanCreditWitness_fieldheadercolumn}
+	{BEGIN AccountBalance_fieldheadercolumn}
+<th class="runner-cc {$AccountBalance_class}" {$AccountBalance_style}>
+	{BEGIN AccountBalance_fieldheader}
+	<b>{$label loanaccounts AccountBalance}</b>
+	{END AccountBalance_fieldheader}
+</th>
+{END AccountBalance_fieldheadercolumn}
+	{BEGIN InterestRate_fieldheadercolumn}
+<th class="runner-cc {$InterestRate_class}" {$InterestRate_style}>
+	{BEGIN InterestRate_fieldheader}
+	<b>{$label loanaccounts InterestRate}</b>
+	{END InterestRate_fieldheader}
+</th>
+{END InterestRate_fieldheadercolumn}
+	{BEGIN LastTransactionDate_fieldheadercolumn}
+<th class="runner-cc {$LastTransactionDate_class}" {$LastTransactionDate_style}>
+	{BEGIN LastTransactionDate_fieldheader}
+	<b>{$label loanaccounts LastTransactionDate}</b>
+	{END LastTransactionDate_fieldheader}
+</th>
+{END LastTransactionDate_fieldheadercolumn}
+	{BEGIN LoanCreditPaymentPurpose_fieldheadercolumn}
+<th class="runner-cc {$LoanCreditPaymentPurpose_class}" {$LoanCreditPaymentPurpose_style}>
+	{BEGIN LoanCreditPaymentPurpose_fieldheader}
+	<b>{$label loanaccounts LoanCreditPaymentPurpose}</b>
+	{END LoanCreditPaymentPurpose_fieldheader}
+</th>
+{END LoanCreditPaymentPurpose_fieldheadercolumn}
+	{BEGIN SetWithdrawDate_fieldheadercolumn}
+<th class="runner-cc {$SetWithdrawDate_class}" {$SetWithdrawDate_style}>
+	{BEGIN SetWithdrawDate_fieldheader}
+	<b>{$label loanaccounts SetWithdrawDate}</b>
+	{END SetWithdrawDate_fieldheader}
+</th>
+{END SetWithdrawDate_fieldheadercolumn}
+	{BEGIN LastModifiedBy_fieldheadercolumn}
+<th class="runner-cc {$LastModifiedBy_class}" {$LastModifiedBy_style}>
+	{BEGIN LastModifiedBy_fieldheader}
+	<b>{$label loanaccounts LastModifiedBy}</b>
+	{END LastModifiedBy_fieldheader}
+</th>
+{END LastModifiedBy_fieldheadercolumn}
+	{BEGIN LastModifiedDate_fieldheadercolumn}
+<th class="runner-cc {$LastModifiedDate_class}" {$LastModifiedDate_style}>
+	{BEGIN LastModifiedDate_fieldheader}
+	<b>{$label loanaccounts LastModifiedDate}</b>
+	{END LastModifiedDate_fieldheader}
+</th>
+{END LastModifiedDate_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN AccountName_fieldcolumn}
+<td  class="runner-cc {$AccountName_class}" {$AccountName_style} {$recordattrs}>
+	{$AccountName_value}
+</td>
+{END AccountName_fieldcolumn}
+	{BEGIN ClientNo_fieldcolumn}
+<td  class="runner-cc {$ClientNo_class}" {$ClientNo_style} {$recordattrs}>
+	{$ClientNo_value}
+</td>
+{END ClientNo_fieldcolumn}
+	{BEGIN AccountNumber_fieldcolumn}
+<td  class="runner-cc {$AccountNumber_class}" {$AccountNumber_style} {$recordattrs}>
+	{$AccountNumber_value}
+</td>
+{END AccountNumber_fieldcolumn}
+	{BEGIN OpeningBalance_fieldcolumn}
+<td  class="runner-cc {$OpeningBalance_class}" {$OpeningBalance_style} {$recordattrs}>
+	{$OpeningBalance_value}
+</td>
+{END OpeningBalance_fieldcolumn}
+	{BEGIN LoanCreditWitness_fieldcolumn}
+<td  class="runner-cc {$LoanCreditWitness_class}" {$LoanCreditWitness_style} {$recordattrs}>
+	{$LoanCreditWitness_value}
+</td>
+{END LoanCreditWitness_fieldcolumn}
+	{BEGIN AccountBalance_fieldcolumn}
+<td  class="runner-cc {$AccountBalance_class}" {$AccountBalance_style} {$recordattrs}>
+	{$AccountBalance_value}
+</td>
+{END AccountBalance_fieldcolumn}
+	{BEGIN InterestRate_fieldcolumn}
+<td  class="runner-cc {$InterestRate_class}" {$InterestRate_style} {$recordattrs}>
+	{$InterestRate_value}
+</td>
+{END InterestRate_fieldcolumn}
+	{BEGIN LastTransactionDate_fieldcolumn}
+<td  class="runner-cc {$LastTransactionDate_class}" {$LastTransactionDate_style} {$recordattrs}>
+	{$LastTransactionDate_value}
+</td>
+{END LastTransactionDate_fieldcolumn}
+	{BEGIN LoanCreditPaymentPurpose_fieldcolumn}
+<td  class="runner-cc {$LoanCreditPaymentPurpose_class}" {$LoanCreditPaymentPurpose_style} {$recordattrs}>
+	{$LoanCreditPaymentPurpose_value}
+</td>
+{END LoanCreditPaymentPurpose_fieldcolumn}
+	{BEGIN SetWithdrawDate_fieldcolumn}
+<td  class="runner-cc {$SetWithdrawDate_class}" {$SetWithdrawDate_style} {$recordattrs}>
+	{$SetWithdrawDate_value}
+</td>
+{END SetWithdrawDate_fieldcolumn}
+	{BEGIN LastModifiedBy_fieldcolumn}
+<td  class="runner-cc {$LastModifiedBy_class}" {$LastModifiedBy_style} {$recordattrs}>
+	{$LastModifiedBy_value}
+</td>
+{END LastModifiedBy_fieldcolumn}
+	{BEGIN LastModifiedDate_fieldcolumn}
+<td  class="runner-cc {$LastModifiedDate_class}" {$LastModifiedDate_style} {$recordattrs}>
+	{$LastModifiedDate_value}
+</td>
+{END LastModifiedDate_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

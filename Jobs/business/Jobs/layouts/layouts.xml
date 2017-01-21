@@ -1,0 +1,8 @@
+<layouts>
+<layout>
+    <file>view.ly</file>
+    <page>view</page>
+    <name>Jobs view</name>
+    <table>jobsjobs</table>
+</layout>
+</layouts>

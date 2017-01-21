@@ -1,0 +1,5 @@
+##foreach @TABLE.Fields as @f filter bListPage && @f.strName!="Zip" && @f.strName!="state" order nListPageOrder##
+{BEGIN ##@f.strName g##_fieldheadercolumn}
+<td></td>
+{END ##@f.strName g##_fieldheadercolumn}
+##endfor##

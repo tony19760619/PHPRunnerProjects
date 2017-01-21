@@ -1,0 +1,270 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel job view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields2 {$brickclass_viewfields2}"><table class="fieldGrid fieldGrid2">
+
+<tr>
+<td>
+	{BEGIN ID_fieldblock}
+<div data-fieldname="ID" class="rnr-field style1 {$fielddispclass_ID}">
+  <span class="rnr-label">{$label job ID}:</span>
+  <span class="rnr-control style3">{$ID_value}</span>
+</div>
+{END ID_fieldblock}
+	{BEGIN ProjectName_fieldblock}
+<div data-fieldname="ProjectName" class="rnr-field style1 {$fielddispclass_ProjectName}">
+  <span class="rnr-label">{$label job ProjectName}:</span>
+  <span class="rnr-control style3">{$ProjectName_value}</span>
+</div>
+{END ProjectName_fieldblock}
+	{BEGIN ProjectNo_fieldblock}
+<div data-fieldname="ProjectNo" class="rnr-field style1 {$fielddispclass_ProjectNo}">
+  <span class="rnr-label">{$label job ProjectNo}:</span>
+  <span class="rnr-control style3">{$ProjectNo_value}</span>
+</div>
+{END ProjectNo_fieldblock}
+	{BEGIN SiteProjectAddress_fieldblock}
+<div data-fieldname="SiteProjectAddress" class="rnr-field style1 {$fielddispclass_SiteProjectAddress}">
+  <span class="rnr-label">{$label job SiteProjectAddress}:</span>
+  <span class="rnr-control style3">{$SiteProjectAddress_value}</span>
+</div>
+{END SiteProjectAddress_fieldblock}
+	{BEGIN PurchaseOrderNo_fieldblock}
+<div data-fieldname="PurchaseOrderNo" class="rnr-field style1 {$fielddispclass_PurchaseOrderNo}">
+  <span class="rnr-label">{$label job PurchaseOrderNo}:</span>
+  <span class="rnr-control style3">{$PurchaseOrderNo_value}</span>
+</div>
+{END PurchaseOrderNo_fieldblock}
+	{BEGIN StartDate_fieldblock}
+<div data-fieldname="StartDate" class="rnr-field style1 {$fielddispclass_StartDate}">
+  <span class="rnr-label">{$label job StartDate}:</span>
+  <span class="rnr-control style3">{$StartDate_value}</span>
+</div>
+{END StartDate_fieldblock}
+	{BEGIN CompanyInsurance_fieldblock}
+<div data-fieldname="CompanyInsurance" class="rnr-field style1 {$fielddispclass_CompanyInsurance}">
+  <span class="rnr-label">{$label job CompanyInsurance}:</span>
+  <span class="rnr-control style3">{$CompanyInsurance_value}</span>
+</div>
+{END CompanyInsurance_fieldblock}
+	{BEGIN StaffInvolved_fieldblock}
+<div data-fieldname="StaffInvolved" class="rnr-field style1 {$fielddispclass_StaffInvolved}">
+  <span class="rnr-label">{$label job StaffInvolved}:</span>
+  <span class="rnr-control style3">{$StaffInvolved_value}</span>
+</div>
+{END StaffInvolved_fieldblock}
+</td>
+<td>
+	{BEGIN Contractors_fieldblock}
+<div data-fieldname="Contractors" class="rnr-field style1 {$fielddispclass_Contractors}">
+  <span class="rnr-label">{$label job Contractors}:</span>
+  <span class="rnr-control style3">{$Contractors_value}</span>
+</div>
+{END Contractors_fieldblock}
+	{BEGIN Program_fieldblock}
+<div data-fieldname="Program" class="rnr-field style1 {$fielddispclass_Program}">
+  <span class="rnr-label">{$label job Program}:</span>
+  <span class="rnr-control style3">{$Program_value}</span>
+</div>
+{END Program_fieldblock}
+	{BEGIN F10_fieldblock}
+<div data-fieldname="F10" class="rnr-field style1 {$fielddispclass_F10}">
+  <span class="rnr-label">{$label job F10}:</span>
+  <span class="rnr-control style3">{$F10_value}</span>
+</div>
+{END F10_fieldblock}
+	{BEGIN LastEditedOn_fieldblock}
+<div data-fieldname="LastEditedOn" class="rnr-field style1 {$fielddispclass_LastEditedOn}">
+  <span class="rnr-label">{$label job LastEditedOn}:</span>
+  <span class="rnr-control style3">{$LastEditedOn_value}</span>
+</div>
+{END LastEditedOn_fieldblock}
+	{BEGIN UserNo_fieldblock}
+<div data-fieldname="UserNo" class="rnr-field style1 {$fielddispclass_UserNo}">
+  <span class="rnr-label">{$label job UserNo}:</span>
+  <span class="rnr-control style3">{$UserNo_value}</span>
+</div>
+{END UserNo_fieldblock}
+	{BEGIN JobStatus_fieldblock}
+<div data-fieldname="JobStatus" class="rnr-field style1 {$fielddispclass_JobStatus}">
+  <span class="rnr-label">{$label job JobStatus}:</span>
+  <span class="rnr-control style3">{$JobStatus_value}</span>
+</div>
+{END JobStatus_fieldblock}
+	{BEGIN Lat_fieldblock}
+<div data-fieldname="Lat" class="rnr-field style1 {$fielddispclass_Lat}">
+  <span class="rnr-label">{$label job Lat}:</span>
+  <span class="rnr-control style3">{$Lat_value}</span>
+</div>
+{END Lat_fieldblock}
+	{BEGIN Lng_fieldblock}
+<div data-fieldname="Lng" class="rnr-field style1 {$fielddispclass_Lng}">
+  <span class="rnr-label">{$label job Lng}:</span>
+  <span class="rnr-control style3">{$Lng_value}</span>
+</div>
+{END Lng_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Edit</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+
+{BEGIN container_details}
+<div class="rnr-c rnr-cv rnr-c-details">
+
+{BEGIN detail_tables}
+		{BEGIN details_healthandsafetyphaseplan}
+<div class="rnr-cw-detailshealthandsafetyphaseplan rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailshealthandsafetyphaseplan rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-viewdetailshealthandsafetyphaseplan rnr-b-viewdetails">
+
+	<div class="rnr-dcaption">
+		Health And Safety Phase Plan
+	</div>
+	{$displayDetailTable_healthandsafetyphaseplan}
+</div>
+</div>
+</div>
+	{END details_healthandsafetyphaseplan}
+		{BEGIN details_siteinduction}
+<div class="rnr-cw-detailssiteinduction rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailssiteinduction rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-viewdetailssiteinduction rnr-b-viewdetails">
+
+	<div class="rnr-dcaption">
+		Site Induction
+	</div>
+	{$displayDetailTable_siteinduction}
+</div>
+</div>
+</div>
+	{END details_siteinduction}
+		{BEGIN details_permit}
+<div class="rnr-cw-detailspermit rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailspermit rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-viewdetailspermit rnr-b-viewdetails">
+
+	<div class="rnr-dcaption">
+		Permit
+	</div>
+	{$displayDetailTable_permit}
+</div>
+</div>
+</div>
+	{END details_permit}
+{END detail_tables}
+
+
+</div>
+{END container_details}
+
+</div>
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

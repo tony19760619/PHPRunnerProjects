@@ -1,0 +1,47 @@
+<?php
+$dalTabletransactions = array();
+$dalTabletransactions["id"] = array("type"=>3,"varname"=>"id");
+$dalTabletransactions["DebitAccount"] = array("type"=>3,"varname"=>"DebitAccount");
+$dalTabletransactions["CreditAccount"] = array("type"=>3,"varname"=>"CreditAccount");
+$dalTabletransactions["DebitAccountTransactionCharge"] = array("type"=>14,"varname"=>"DebitAccountTransactionCharge");
+$dalTabletransactions["CreditAccountTransactionCharge"] = array("type"=>14,"varname"=>"CreditAccountTransactionCharge");
+$dalTabletransactions["Amount"] = array("type"=>14,"varname"=>"Amount");
+$dalTabletransactions["DateTime"] = array("type"=>135,"varname"=>"DateTime");
+$dalTabletransactions["Description"] = array("type"=>200,"varname"=>"Description");
+$dalTabletransactions["CashDepositNo"] = array("type"=>200,"varname"=>"CashDepositNo");
+$dalTabletransactions["CashDepositorName"] = array("type"=>200,"varname"=>"CashDepositorName");
+$dalTabletransactions["CashDepositType"] = array("type"=>200,"varname"=>"CashDepositType");
+$dalTabletransactions["WithdrawlNo"] = array("type"=>200,"varname"=>"WithdrawlNo");
+$dalTabletransactions["WithdrawlName"] = array("type"=>200,"varname"=>"WithdrawlName");
+$dalTabletransactions["WithdrawlType"] = array("type"=>200,"varname"=>"WithdrawlType");
+$dalTabletransactions["LoanPaymentNo"] = array("type"=>200,"varname"=>"LoanPaymentNo");
+$dalTabletransactions["LoanPaymentName"] = array("type"=>200,"varname"=>"LoanPaymentName");
+$dalTabletransactions["LoanPaymentPurpose"] = array("type"=>200,"varname"=>"LoanPaymentPurpose");
+$dalTabletransactions["LoanCreditPaymentNo"] = array("type"=>200,"varname"=>"LoanCreditPaymentNo");
+$dalTabletransactions["LoanCreditPaymentName"] = array("type"=>200,"varname"=>"LoanCreditPaymentName");
+$dalTabletransactions["LoanCreditPaymentPurpose"] = array("type"=>200,"varname"=>"LoanCreditPaymentPurpose");
+$dalTabletransactions["AccountType"] = array("type"=>200,"varname"=>"AccountType");
+$dalTabletransactions["InterestAmount"] = array("type"=>14,"varname"=>"InterestAmount");
+$dalTabletransactions["PrincipalAmount"] = array("type"=>200,"varname"=>"PrincipalAmount");
+$dalTabletransactions["WithdrawlStatus"] = array("type"=>200,"varname"=>"WithdrawlStatus");
+$dalTabletransactions["NEFTTransferStatus"] = array("type"=>200,"varname"=>"NEFTTransferStatus");
+$dalTabletransactions["LoanCreditApplicationStatus"] = array("type"=>200,"varname"=>"LoanCreditApplicationStatus");
+$dalTabletransactions["LoanCreditWitness"] = array("type"=>200,"varname"=>"LoanCreditWitness");
+$dalTabletransactions["NEFTTransferNo"] = array("type"=>200,"varname"=>"NEFTTransferNo");
+$dalTabletransactions["NEFTTransferDepositorName"] = array("type"=>200,"varname"=>"NEFTTransferDepositorName");
+$dalTabletransactions["TransactionType"] = array("type"=>200,"varname"=>"TransactionType");
+$dalTabletransactions["Balance"] = array("type"=>14,"varname"=>"Balance");
+$dalTabletransactions["AccountNumber"] = array("type"=>200,"varname"=>"AccountNumber");
+$dalTabletransactions["ClientNo"] = array("type"=>200,"varname"=>"ClientNo");
+$dalTabletransactions["LastModifiedBy"] = array("type"=>200,"varname"=>"LastModifiedBy");
+$dalTabletransactions["LastModifiedDate"] = array("type"=>135,"varname"=>"LastModifiedDate");
+$dalTabletransactions["AccountName"] = array("type"=>200,"varname"=>"AccountName");
+$dalTabletransactions["TransactionNo"] = array("type"=>200,"varname"=>"TransactionNo");
+$dalTabletransactions["TransactionStatus"] = array("type"=>200,"varname"=>"TransactionStatus");
+$dalTabletransactions["SelectedClientNo"] = array("type"=>200,"varname"=>"SelectedClientNo");
+$dalTabletransactions["LoanPaymentStatus"] = array("type"=>200,"varname"=>"LoanPaymentStatus");
+$dalTabletransactions["CashDepositStatus"] = array("type"=>200,"varname"=>"CashDepositStatus");
+	$dalTabletransactions["id"]["key"]=true;
+
+$dal_info["finanace_at_localhost__transactions"] = &$dalTabletransactions;
+?>

@@ -1,0 +1,4 @@
+Deleted tables (Deleted tables can be restored under 'Deleted tables' on 'Datasource tables' screen):
+	● costplan
+	● finalaccounts
+	● procurement

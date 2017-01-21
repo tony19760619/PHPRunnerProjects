@@ -1,0 +1,102 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-import" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_import}
+<div class="rnr-c rnr-cv rnr-c-import">
+
+
+<div  class="rnr-brickcontents style2 rnr-b-importheader {$brickclass_importheader}"><span>	{$pagetitlelabel user import}
+</span></div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-errormessage {$brickclass_errormessage}">{$error_message}</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_importfields} rnr-wrapper rnr-cbw-importfields">
+
+{BEGIN container_importfields}
+<div class="rnr-c rnr-cv rnr-c-importfields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-importfields {$brickclass_importfields}"><table class="fieldGrid">
+	<tr>
+		<td>
+			Select file with data.
+		</td>
+		<td>
+			<input type="File" {$importfile_attrs}>
+		</td>
+	</tr>
+</table>
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-importheader_text {$brickclass_importheader_text}">Browse to the comma-separated (.csv) or to the Excel (.xls) file that you wish to import.<br>
+The first line in the file should contain the field names.
+</div>
+
+
+
+<div  class="rnr-brickcontents style2 rnr-b-importbuttons {$brickclass_importbuttons}"><a href="#" class="rnr-button main" {$importlink_attrs}>Import</a>
+<a href="#" class="rnr-button" {$backtolist_attrs}>Back to list</a>
+</div>
+
+
+</div>
+{END container_importfields}
+
+</div>
+
+
+</div>
+{END container_import}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,350 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel TransactionLog search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_TransactionNo}">
+	{BEGIN TransactionNo_fieldblock}		
+	<td>
+		{$label TransactionLog TransactionNo}
+	</td>
+	<td>
+		<input type="checkbox" {$TransactionNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_TransactionNo}
+	</td>
+	<td>
+		{$TransactionNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TransactionNo_editcontrol1}&nbsp;
+	</td>
+{END TransactionNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TransactionType}">
+	{BEGIN TransactionType_fieldblock}		
+	<td>
+		{$label TransactionLog TransactionType}
+	</td>
+	<td>
+		<input type="checkbox" {$TransactionType_notbox}>
+	</td>
+	<td>
+		{$searchtype_TransactionType}
+	</td>
+	<td>
+		{$TransactionType_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TransactionType_editcontrol1}&nbsp;
+	</td>
+{END TransactionType_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TransactionStatus}">
+	{BEGIN TransactionStatus_fieldblock}		
+	<td>
+		{$label TransactionLog TransactionStatus}
+	</td>
+	<td>
+		<input type="checkbox" {$TransactionStatus_notbox}>
+	</td>
+	<td>
+		{$searchtype_TransactionStatus}
+	</td>
+	<td>
+		{$TransactionStatus_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TransactionStatus_editcontrol1}&nbsp;
+	</td>
+{END TransactionStatus_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AccountNumber}">
+	{BEGIN AccountNumber_fieldblock}		
+	<td>
+		{$label TransactionLog AccountNumber}
+	</td>
+	<td>
+		<input type="checkbox" {$AccountNumber_notbox}>
+	</td>
+	<td>
+		{$searchtype_AccountNumber}
+	</td>
+	<td>
+		{$AccountNumber_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AccountNumber_editcontrol1}&nbsp;
+	</td>
+{END AccountNumber_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AccountName}">
+	{BEGIN AccountName_fieldblock}		
+	<td>
+		{$label TransactionLog AccountName}
+	</td>
+	<td>
+		<input type="checkbox" {$AccountName_notbox}>
+	</td>
+	<td>
+		{$searchtype_AccountName}
+	</td>
+	<td>
+		{$AccountName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AccountName_editcontrol1}&nbsp;
+	</td>
+{END AccountName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AccountType}">
+	{BEGIN AccountType_fieldblock}		
+	<td>
+		{$label TransactionLog AccountType}
+	</td>
+	<td>
+		<input type="checkbox" {$AccountType_notbox}>
+	</td>
+	<td>
+		{$searchtype_AccountType}
+	</td>
+	<td>
+		{$AccountType_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AccountType_editcontrol1}&nbsp;
+	</td>
+{END AccountType_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ClientNo}">
+	{BEGIN ClientNo_fieldblock}		
+	<td>
+		{$label TransactionLog ClientNo}
+	</td>
+	<td>
+		<input type="checkbox" {$ClientNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_ClientNo}
+	</td>
+	<td>
+		{$ClientNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ClientNo_editcontrol1}&nbsp;
+	</td>
+{END ClientNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_DateTime}">
+	{BEGIN DateTime_fieldblock}		
+	<td>
+		{$label TransactionLog DateTime}
+	</td>
+	<td>
+		<input type="checkbox" {$DateTime_notbox}>
+	</td>
+	<td>
+		{$searchtype_DateTime}
+	</td>
+	<td>
+		{$DateTime_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$DateTime_editcontrol1}&nbsp;
+	</td>
+{END DateTime_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Amount}">
+	{BEGIN Amount_fieldblock}		
+	<td>
+		{$label TransactionLog Amount}
+	</td>
+	<td>
+		<input type="checkbox" {$Amount_notbox}>
+	</td>
+	<td>
+		{$searchtype_Amount}
+	</td>
+	<td>
+		{$Amount_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Amount_editcontrol1}&nbsp;
+	</td>
+{END Amount_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Balance}">
+	{BEGIN Balance_fieldblock}		
+	<td>
+		{$label TransactionLog Balance}
+	</td>
+	<td>
+		<input type="checkbox" {$Balance_notbox}>
+	</td>
+	<td>
+		{$searchtype_Balance}
+	</td>
+	<td>
+		{$Balance_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Balance_editcontrol1}&nbsp;
+	</td>
+{END Balance_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Description}">
+	{BEGIN Description_fieldblock}		
+	<td>
+		{$label TransactionLog Description}
+	</td>
+	<td>
+		<input type="checkbox" {$Description_notbox}>
+	</td>
+	<td>
+		{$searchtype_Description}
+	</td>
+	<td>
+		{$Description_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Description_editcontrol1}&nbsp;
+	</td>
+{END Description_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LastModifiedBy}">
+	{BEGIN LastModifiedBy_fieldblock}		
+	<td>
+		{$label TransactionLog LastModifiedBy}
+	</td>
+	<td>
+		<input type="checkbox" {$LastModifiedBy_notbox}>
+	</td>
+	<td>
+		{$searchtype_LastModifiedBy}
+	</td>
+	<td>
+		{$LastModifiedBy_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LastModifiedBy_editcontrol1}&nbsp;
+	</td>
+{END LastModifiedBy_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LastModifiedDate}">
+	{BEGIN LastModifiedDate_fieldblock}		
+	<td>
+		{$label TransactionLog LastModifiedDate}
+	</td>
+	<td>
+		<input type="checkbox" {$LastModifiedDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_LastModifiedDate}
+	</td>
+	<td>
+		{$LastModifiedDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LastModifiedDate_editcontrol1}&nbsp;
+	</td>
+{END LastModifiedDate_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

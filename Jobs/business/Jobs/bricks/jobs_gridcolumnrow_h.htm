@@ -1,0 +1,9 @@
+{BEGIN ##@f.strName g##_fieldcolumn}
+	<td class="{$##@f.strName g##_class}" {$##@f.strName g##_style} {$recordattrs}>
+	##if @f.strName=="City"##
+		{$City_value},&nbsp;{$state_value}&nbsp;{$Zip_value}
+	##else##
+		{$##@f.strName g##_value}
+	##endif##
+	</td>
+{END ##@f.strName g##_fieldcolumn}

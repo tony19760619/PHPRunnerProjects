@@ -1,0 +1,3 @@
+myqsladdress|s:9:"127.0.0.1";MyURL|s:9:"/menu.php";OwnerID|N;snapshotcamdemo2_search|i:0;snapshotcamdemo2_key|a:1:{i:0;i:1;}snapshotcamdemo2_orderFieldsList|s:109:"a:1:{i:0;O:10:"OrderField":3:{s:10:"fieldIndex";i:1;s:14:"orderDirection";s:3:"ASC";s:11:"userDefined";b:1;}}";snapshotcamdemo2_sql|s:91:"SELECT
+`id`, `ProfilePicture`, `AttachedFile` 
+ FROM `snapshotcamdemo2`    ORDER BY 1 ASC";snapshotcamdemo2_where|s:0:"";snapshotcamdemo2_having|s:0:"";snapshotcamdemo2_criteria|s:3:"and";snapshotcamdemo2_order|s:15:" ORDER BY 1 ASC";snapshotcamdemo2_joinFromPart|s:0:"";snapshotcamdemo2_pagenumber|d:1;message_edit_type|i:1;mupload_ln4tq4no37yrmiq|a:0:{}snapshotcamdemo2_noNextPrev|i:0;mupload_kuj3he2kgjz0ydf|a:0:{}

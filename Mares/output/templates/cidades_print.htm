@@ -1,0 +1,212 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel cidades print}</h2>
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Página <span class="rp-pageno">{$pageno}</span> de <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN id_fieldheadercolumn}
+			<th class="{$id_class}" {$id_style}  data-field="id">
+				{$label cidades id}
+			</th>
+			{END id_fieldheadercolumn}
+			{BEGIN terra_fieldheadercolumn}
+			<th class="{$terra_class}" {$terra_style}  data-field="terra">
+				{$label cidades terra}
+			</th>
+			{END terra_fieldheadercolumn}
+			{BEGIN regiao_fieldheadercolumn}
+			<th class="{$regiao_class}" {$regiao_style}  data-field="regiao">
+				{$label cidades regiao}
+			</th>
+			{END regiao_fieldheadercolumn}
+			{BEGIN cidade_fieldheadercolumn}
+			<th class="{$cidade_class}" {$cidade_style}  data-field="cidade">
+				{$label cidades cidade}
+			</th>
+			{END cidade_fieldheadercolumn}
+			{BEGIN locale_fieldheadercolumn}
+			<th class="{$locale_class}" {$locale_style}  data-field="locale">
+				{$label cidades locale}
+			</th>
+			{END locale_fieldheadercolumn}
+			{BEGIN longitude_fieldheadercolumn}
+			<th class="{$longitude_class}" {$longitude_style}  data-field="longitude">
+				{$label cidades longitude}
+			</th>
+			{END longitude_fieldheadercolumn}
+			{BEGIN latitude_fieldheadercolumn}
+			<th class="{$latitude_class}" {$latitude_style}  data-field="latitude">
+				{$label cidades latitude}
+			</th>
+			{END latitude_fieldheadercolumn}
+			{BEGIN v1diascript_fieldheadercolumn}
+			<th class="{$v1diascript_class}" {$v1diascript_style}  data-field="v1diascript">
+				{$label cidades v1diascript}
+			</th>
+			{END v1diascript_fieldheadercolumn}
+			{BEGIN v3diasscript_fieldheadercolumn}
+			<th class="{$v3diasscript_class}" {$v3diasscript_style}  data-field="v3diasscript">
+				{$label cidades v3diasscript}
+			</th>
+			{END v3diasscript_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN id_fieldcolumn}
+			<td  class="{$id_class}" {$id_style} {$recordattrs}>
+				{$id_value}
+			</td>
+			{END id_fieldcolumn}
+			{BEGIN terra_fieldcolumn}
+			<td  class="{$terra_class}" {$terra_style} {$recordattrs}>
+				{$terra_value}
+			</td>
+			{END terra_fieldcolumn}
+			{BEGIN regiao_fieldcolumn}
+			<td  class="{$regiao_class}" {$regiao_style} {$recordattrs}>
+				{$regiao_value}
+			</td>
+			{END regiao_fieldcolumn}
+			{BEGIN cidade_fieldcolumn}
+			<td  class="{$cidade_class}" {$cidade_style} {$recordattrs}>
+				{$cidade_value}
+			</td>
+			{END cidade_fieldcolumn}
+			{BEGIN locale_fieldcolumn}
+			<td  class="{$locale_class}" {$locale_style} {$recordattrs}>
+				{$locale_value}
+			</td>
+			{END locale_fieldcolumn}
+			{BEGIN longitude_fieldcolumn}
+			<td  class="{$longitude_class}" {$longitude_style} {$recordattrs}>
+				{$longitude_value}
+			</td>
+			{END longitude_fieldcolumn}
+			{BEGIN latitude_fieldcolumn}
+			<td  class="{$latitude_class}" {$latitude_style} {$recordattrs}>
+				{$latitude_value}
+			</td>
+			{END latitude_fieldcolumn}
+			{BEGIN v1diascript_fieldcolumn}
+			<td  class="{$v1diascript_class}" {$v1diascript_style} {$recordattrs}>
+				{$v1diascript_value}
+			</td>
+			{END v1diascript_fieldcolumn}
+			{BEGIN v3diasscript_fieldcolumn}
+			<td  class="{$v3diasscript_class}" {$v3diasscript_style} {$recordattrs}>
+				{$v3diasscript_value}
+			</td>
+			{END v3diasscript_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

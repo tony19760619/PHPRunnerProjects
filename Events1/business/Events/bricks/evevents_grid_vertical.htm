@@ -1,0 +1,115 @@
+						<table cellpadding="0" class="rnr-cont rnr-c-grid rnr-b-grid vertical">
+							{BEGIN grid_row}
+							<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+								{BEGIN grid_record}
+								<td class="rnr-cg" {$recordattrs}>
+									{BEGIN grid_vrecord}
+									<table class="rnr-c rnr-vrecord ##if @TABLE.bRowHighlite## hoverable ##endif##" cellpadding="0" >
+										{BEGIN grid_recordheader}
+										<thead>
+										<tr class="rnr-toprow style1">
+											<th class="rnr-edge" iEditCont="all" width="25%">
+												<FONT color=#8b0000>&nbsp;<b>{$Category_value}</b></font>
+											</th>
+											<th class="rnr-edge" iEditCont="all">
+												##if @TABLE.bEdit##
+												{BEGIN edit_column}
+												{BEGIN edit_link}
+												##if @TABLE.bListIcons##
+												<a {$editlink_attrs} title="##message EDIT##" data-icon="edit" class="rnr-verticalicons"></a>
+												##else##
+												<a  {$editlink_attrs}>##message EDIT##</a>
+												##endif##
+												{END edit_link}
+												{END edit_column}
+												##endif##
+
+												##if @TABLE.bInlineEdit##
+												{BEGIN inlineedit_column}
+												{BEGIN inlineedit_link}
+												##if @TABLE.bListIcons##
+												<a  {$inlineeditlink_attrs} title="##message INLINE_EDIT##" data-icon="inlineedit" class="rnr-verticalicons"></a>
+												##else##
+												<a {$inlineeditlink_attrs}>##message INLINE_EDIT##</a>
+												##endif##
+												{END inlineedit_link}
+												{END inlineedit_column}
+												##endif##
+
+												##if @TABLE.bCopy##
+												{BEGIN copy_column}
+												{BEGIN copy_link}
+												##if @TABLE.bListIcons##
+												<a {$copylink_attrs} title="##message COPY##" data-icon="copy" class="rnr-verticalicons"></a>
+												##else##
+												<a  {$copylink_attrs}>##message COPY##</a>
+												##endif##
+												{END copy_link}
+												{END copy_column}
+												##endif##
+
+												##if @TABLE.bView##
+												{BEGIN view_column}
+												{BEGIN view_link}
+												##if @TABLE.bListIcons##
+												<a {$viewlink_attrs} title="##message VIEW##" data-icon="view" class="rnr-verticalicons"></a>
+												##else##
+												<a  {$viewlink_attrs}>##message VIEW##</a>
+												##endif##
+												{END view_link}
+												{END view_column}
+												##endif##
+
+												##if @TABLE.arrKeyFields.len && (@TABLE.bDelete || @TABLE.bExportTo || @TABLE.bPrinterFriendly || @TABLE.bInlineEdit)##
+												{BEGIN checkbox_column}
+												{BEGIN checkbox}
+												<input type="checkbox" {$checkbox_attrs} class="rnr-verticalcheckbox">
+												{END checkbox}
+												{END checkbox_column}
+												##endif##
+
+												##foreach @TABLE.arrDetailTables as @d##
+												{BEGIN ##@TABLE.strDataSourceTable g##_dtable_column}
+												<span>
+												{BEGIN ##@BUILDER.tables{@d}.strShortTableName##_dtable_link}
+												&nbsp;<a  {$##@BUILDER.tables{@d}.strShortTableName##_dtablelink_attrs}>##caption @d##
+												##if @BUILDER.tables{@d}.arrMasterTables{@TABLE.strDataSourceTable}.bDisplayChildCount##
+													<span {$##@BUILDER.tables{@d}.strShortTableName##_childnumber_attr} dir="ltr">
+													{BEGIN ##@BUILDER.tables{@d}.strShortTableName##_childcount}
+													({$##@BUILDER.tables{@d}.strShortTableName##_childnumber})
+													{END ##@BUILDER.tables{@d}.strShortTableName##_childcount}
+													</span>
+												##endif##
+												</a>&nbsp;
+												{END ##@BUILDER.tables{@d}.strShortTableName##_dtable_link}
+												</span>
+												{END ##@TABLE.strDataSourceTable g##_dtable_column}
+												##endfor##
+											</th>
+											<th class="rnr-edge" width="25%">
+												<b>Event ID#: {$EventID_value}</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											</th>
+										</tr>
+										</thead>
+										{END grid_recordheader}
+										<tbody>
+										##brick_param gridfieldsrow_vertical##
+										</tbody>
+									</table>
+									{END grid_vrecord}
+								</td>
+								{BEGIN endrecord_block}
+								<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+								{END endrecord_block}
+								{END grid_record}
+							</tr>
+							{BEGIN grid_rowspace}
+							<tr class="rnr-rs {$rsclass}">
+								{BEGIN grid_recordspace}
+								<td>&nbsp;</td>
+								{END grid_recordspace}
+							</tr>
+							{END grid_rowspace}
+							{END grid_row}
+						</table>
+				

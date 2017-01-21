@@ -1,0 +1,114 @@
+body.page-changepwd2
+{
+padding-top:10px; padding-left:10px;
+}
+.page-changepwd2 .rnr-c-changepwd,
+  .rnr-pagewrapper .page-changepwd2 .rnr-c-changepwd,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-c-changepwd
+{
+margin-bottom:5px;
+}
+.page-changepwd2 .rnr-c-changepwd,
+  .rnr-pagewrapper .page-changepwd2 .rnr-c-changepwd,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-c-changepwd
+{
+min-width:500px; display:inline-block
+}
+.page-changepwd2 .rnr-cw-changepwd,
+  .rnr-pagewrapper .page-changepwd2 .rnr-cw-changepwd,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-cw-changepwd
+{
+text-align: center;
+}
+.page-changepwd2 .rnr-b-changeheader,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-changeheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-changeheader
+{
+white-space: nowrap;
+}
+.page-changepwd2 .rnr-b-changeheader,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-changeheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-changeheader
+{
+text-align: right;
+}
+.page-changepwd2 .rnr-b-changeheader > *,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-changeheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-changeheader > *
+{
+font-size: 120%;
+}
+.page-changepwd2 .rnr-b-message,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-changepwd2 .rnr-b-message,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-message
+{
+text-align: right;
+}
+.page-changepwd2 .rnr-b-message > *,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-message > *
+{
+
+}
+.page-changepwd2 .rnr-c-fields,
+  .rnr-pagewrapper .page-changepwd2 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-changepwd2 .rnr-c-fields,
+  .rnr-pagewrapper .page-changepwd2 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-c-fields
+{
+min-width:100px;
+}
+.page-changepwd2 .rnr-b-changefields,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-changefields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-changefields
+{
+white-space: nowrap;
+}
+.page-changepwd2 .rnr-b-changefields,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-changefields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-changefields
+{
+text-align: right;
+}
+.page-changepwd2 .rnr-b-changefields > *,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-changefields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-changefields > *
+{
+
+}
+.page-changepwd2 .rnr-b-changebuttons,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-changebuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-changebuttons
+{
+white-space: nowrap;
+}
+.page-changepwd2 .rnr-b-changebuttons,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-changebuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-changebuttons
+{
+text-align: right;
+}
+.page-changepwd2 .rnr-b-changebuttons > *,
+  .rnr-pagewrapper .page-changepwd2 .rnr-b-changebuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-changepwd2 .rnr-b-changebuttons > *
+{
+
+}
+body.page-changepwd2 .rnr-toptable
+{
+width:100%;
+}
+body.page-changepwd2 .rnr-top
+{
+padding-right: 5px;
+}

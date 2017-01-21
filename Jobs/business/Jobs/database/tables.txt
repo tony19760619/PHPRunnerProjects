@@ -1,0 +1,4 @@
+jobsjobs
+jobsjobtype
+jobsusers
+jobsstate

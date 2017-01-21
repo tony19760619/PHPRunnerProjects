@@ -1,0 +1,762 @@
+.preview .runner-s-1 > * > * > .runner-toprow > .runner-cl img
+{
+height: 0px
+}
+.preview .runner-s-1 > * > * > .runner-toprow > .runner-cr img
+{
+height: 0px
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow > .runner-cl img
+{
+height: 0px
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow > .runner-cr img
+{
+height: 0px
+}
+.preview .runner-s-1 > * > * > * > .runner-cl ,
+.preview .runner-s-1 > * > * > * > .runner-cl  > img,
+.preview .runner-s-1 > * > * > * > .runner-cr ,
+.preview .runner-s-1 > * > * > * > .runner-cr  > img
+{
+width: 0px
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style1 > .runner-cl 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style1 > .runner-cc 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style1 > .runner-cr 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-row.style1 > .runner-cl 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-row.style1 > .runner-cc 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-row.style1 > .runner-cr 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style1 > .runner-cl 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style1 > .runner-cc 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style1 > .runner-cr 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style2 > .runner-cl 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style2 > .runner-cc 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style2 > .runner-cr 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-row.style2 > .runner-cl 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-row.style2 > .runner-cc 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-row.style2 > .runner-cr 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style2 > .runner-cl 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style2 > .runner-cc 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style2 > .runner-cr 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style3 > .runner-cl ,
+.preview .runner-s-1 > * > * > .runner-toprow > .runner-cl.alt 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style3 > .runner-cc ,
+.preview .runner-s-1 > * > * > .runner-toprow > .runner-cc.alt 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style3 > .runner-cr ,
+.preview .runner-s-1 > * > * > .runner-toprow > .runner-cr.alt 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-row.style3 > .runner-cl ,
+.preview .runner-s-1 > * > * > .runner-row > .runner-cl.alt 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-row.style3 > .runner-cc ,
+.preview .runner-s-1 > * > * > .runner-row > .runner-cc.alt 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-row.style3 > .runner-cr ,
+.preview .runner-s-1 > * > * > .runner-row > .runner-cr.alt 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style3 > .runner-cl ,
+.preview .runner-s-1 > * > * > .runner-bottomrow > .runner-cl.alt 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style3 > .runner-cc ,
+.preview .runner-s-1 > * > * > .runner-bottomrow > .runner-cc.alt 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style3 > .runner-cr ,
+.preview .runner-s-1 > * > * > .runner-bottomrow > .runner-cr.alt 
+{
+
+background: none;
+background-color:#494949;
+}
+.preview .runner-s-1 > * > * > .runner-toprow > .runner-cc2 
+{
+background-image:none;
+}
+.preview .runner-s-1 > * > * > .runner-row > .runner-cc2 
+{
+background-image:none;
+}
+.preview .runner-s-1  > .runner-c
+{
+border: solid #C4B1A2 1px
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style1 > *.runner-cc
+{
+color: #DCDCDC
+}
+.preview .runner-s-1 > * > * > .runner-row.style1 > *.runner-cc
+{
+color: #DCDCDC
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style1 > *.runner-cc
+{
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-1 > * > * > .runner-row.style1 > *.runner-cc
+{
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-1 .runner-row.style1 > * > .runner-hc > * > * > .runner-cc
+{
+padding: 5px 4px 5px 4px;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.header.style1 > .runner-cc 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-1 > * > * > .runner-row.style1 > .runner-cc 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style1 > .runner-cc 
+{
+padding: 0px;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style2 > *.runner-cc
+{
+color: #FFFFFF
+}
+.preview .runner-s-1 > * > * > .runner-row.style2 > *.runner-cc
+{
+color: #FFFFFF
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style2 > *.runner-cc
+{
+font-family: Tahoma, sans-serif; font-size: 13px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-1 > * > * > .runner-row.style2 > *.runner-cc
+{
+font-family: Tahoma, sans-serif; font-size: 13px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-1 .runner-row.style2 > * > .runner-hc > * > * > .runner-cc
+{
+padding: 5px 4px 5px 4px;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.header.style2 > .runner-cc 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-1 > * > * > .runner-row.style2 > .runner-cc 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style2 > .runner-cc 
+{
+padding: 0px;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style3 > *.runner-cc,
+.preview .runner-s-1 > * > * > .runner-toprow > *.runner-cc
+{
+color: #D1EEEE
+}
+.preview .runner-s-1 > * > * > .runner-row.style3 > *.runner-cc,
+.preview .runner-s-1 > * > * > .runner-row > *.runner-cc
+{
+color: #D1EEEE
+}
+.preview .runner-s-1 > * > * > .runner-toprow.style3 > *.runner-cc,
+.preview .runner-s-1 > * > * > .runner-toprow > *.runner-cc
+{
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-1 > * > * > .runner-row.style3 > *.runner-cc,
+.preview .runner-s-1 > * > * > .runner-row > *.runner-cc
+{
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-1 .runner-row.style3 > * > .runner-hc > * > * > .runner-cc
+{
+padding: 5px 4px 5px 4px;
+}
+.preview .runner-s-1 > * > * > .runner-toprow.header.style3 > .runner-cc ,
+.preview .runner-s-1 > * > * > .runner-toprow.header > .runner-cc.alt 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-1 > * > * > .runner-row.style3 > .runner-cc ,
+.preview .runner-s-1 > * > * > .runner-row > .runner-cc.alt 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-1 > * > * > .runner-bottomrow.style3 > .runner-cc ,
+.preview .runner-s-1 > * > * > .runner-bottomrow > .runner-cc.alt 
+{
+padding: 0px;
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe > .runner-button-img img,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe > .runner-button-img img
+{
+margin: 5px
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe > .runner-btnleft,
+.preview .runner-s-1 .runner-cc  span.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe > .runner-btnleft,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe > .runner-btnright
+{
+background-image: none;
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+line-height:25px; padding: 0 10px;
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe
+{
+height:25px;
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+border:none;
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+background-color:#C9C9C9;
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe.hover > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe.hover > a.runner-button
+{
+background-color:#DCDCDC;
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe.press > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe.press > a.runner-button
+{
+background-color:#DDDDDD;
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe.disabled > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe.disabled > a.runner-button
+{
+background-color:#333333;
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+color: #393939
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe.hover > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe.hover > a.runner-button
+{
+color: #CE1F00
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe.press > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe.press > a.runner-button
+{
+color: #808080
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe.disabled > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe.disabled > a.runner-button
+{
+color: #FFFFFF
+}
+.preview .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow > .runner-cl img
+{
+height: 0px
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow > .runner-cr img
+{
+height: 0px
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow > .runner-cl img
+{
+height: 0px
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow > .runner-cr img
+{
+height: 0px
+}
+.preview .runner-s-disabled-1 > * > * > * > .runner-cl ,
+.preview .runner-s-disabled-1 > * > * > * > .runner-cl  > img,
+.preview .runner-s-disabled-1 > * > * > * > .runner-cr ,
+.preview .runner-s-disabled-1 > * > * > * > .runner-cr  > img
+{
+width: 0px
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style1 > .runner-cl 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style1 > .runner-cc 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style1 > .runner-cr 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style1 > .runner-cl 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style1 > .runner-cc 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style1 > .runner-cr 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style1 > .runner-cl 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style1 > .runner-cc 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style1 > .runner-cr 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style2 > .runner-cl 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style2 > .runner-cc 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style2 > .runner-cr 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style2 > .runner-cl 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style2 > .runner-cc 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style2 > .runner-cr 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style2 > .runner-cl 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style2 > .runner-cc 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style2 > .runner-cr 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style3 > .runner-cl ,
+.preview .runner-s-disabled-1 > * > * > .runner-toprow > .runner-cl.alt 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style3 > .runner-cc ,
+.preview .runner-s-disabled-1 > * > * > .runner-toprow > .runner-cc.alt 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style3 > .runner-cr ,
+.preview .runner-s-disabled-1 > * > * > .runner-toprow > .runner-cr.alt 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style3 > .runner-cl ,
+.preview .runner-s-disabled-1 > * > * > .runner-row > .runner-cl.alt 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style3 > .runner-cc ,
+.preview .runner-s-disabled-1 > * > * > .runner-row > .runner-cc.alt 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style3 > .runner-cr ,
+.preview .runner-s-disabled-1 > * > * > .runner-row > .runner-cr.alt 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style3 > .runner-cl ,
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow > .runner-cl.alt 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style3 > .runner-cc ,
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow > .runner-cc.alt 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style3 > .runner-cr ,
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow > .runner-cr.alt 
+{
+
+background: none;
+background-color:#B9B9B9;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow > .runner-cc2 
+{
+background-image:none;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row > .runner-cc2 
+{
+background-image:none;
+}
+.preview .runner-s-disabled-1  > .runner-c
+{
+border: solid #D9D9D9 1px
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style1 > *.runner-cc
+{
+color: #E5E5E5
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style1 > *.runner-cc
+{
+color: #E5E5E5
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style1 > *.runner-cc
+{
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style1 > *.runner-cc
+{
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-disabled-1 .runner-row.style1 > * > .runner-hc > * > * > .runner-cc
+{
+padding: 5px 4px 5px 4px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.header.style1 > .runner-cc 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style1 > .runner-cc 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style1 > .runner-cc 
+{
+padding: 0px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style2 > *.runner-cc
+{
+color: #F1F1F1
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style2 > *.runner-cc
+{
+color: #F1F1F1
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style2 > *.runner-cc
+{
+font-family: Tahoma, sans-serif; font-size: 13px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style2 > *.runner-cc
+{
+font-family: Tahoma, sans-serif; font-size: 13px; font-weight: bold; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-disabled-1 .runner-row.style2 > * > .runner-hc > * > * > .runner-cc
+{
+padding: 5px 4px 5px 4px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.header.style2 > .runner-cc 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style2 > .runner-cc 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style2 > .runner-cc 
+{
+padding: 0px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style3 > *.runner-cc,
+.preview .runner-s-disabled-1 > * > * > .runner-toprow > *.runner-cc
+{
+color: #E8E8E8
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style3 > *.runner-cc,
+.preview .runner-s-disabled-1 > * > * > .runner-row > *.runner-cc
+{
+color: #E8E8E8
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.style3 > *.runner-cc,
+.preview .runner-s-disabled-1 > * > * > .runner-toprow > *.runner-cc
+{
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style3 > *.runner-cc,
+.preview .runner-s-disabled-1 > * > * > .runner-row > *.runner-cc
+{
+font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;
+}
+.preview .runner-s-disabled-1 .runner-row.style3 > * > .runner-hc > * > * > .runner-cc
+{
+padding: 5px 4px 5px 4px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.header.style3 > .runner-cc ,
+.preview .runner-s-disabled-1 > * > * > .runner-toprow.header > .runner-cc.alt 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-row.style3 > .runner-cc ,
+.preview .runner-s-disabled-1 > * > * > .runner-row > .runner-cc.alt 
+{
+padding: 5px 4px;
+}
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow.style3 > .runner-cc ,
+.preview .runner-s-disabled-1 > * > * > .runner-bottomrow > .runner-cc.alt 
+{
+padding: 0px;
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe > .runner-button-img img,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe > .runner-button-img img
+{
+margin: 5px
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe > .runner-btnleft,
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe > .runner-btnleft,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe > .runner-btnright
+{
+background-image: none;
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+line-height:25px; padding: 0 10px;
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe
+{
+height:25px;
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+border:none;
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+background-color:#E0E0E0;
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe.hover > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe.hover > a.runner-button
+{
+background-color:#E5E5E5;
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe.press > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe.press > a.runner-button
+{
+background-color:#E6E6E6;
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe.disabled > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe.disabled > a.runner-button
+{
+background-color:#B3B3B3;
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+color: #B4B4B4
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe.hover > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe.hover > a.runner-button
+{
+color: #BBBBBB
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe.press > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe.press > a.runner-button
+{
+color: #CACACA
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe.disabled > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe.disabled > a.runner-button
+{
+color: #F1F1F1
+}
+.preview .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button,
+.preview  .runner-wrapper .runner-s-disabled-1 .runner-cc  span.runner-btnframe > a.runner-button
+{
+font-family: Tahoma, sans-serif; font-size: 13px; font-weight: normal; font-style: normal; text-decoration: none;
+}

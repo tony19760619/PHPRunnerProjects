@@ -1,0 +1,120 @@
+.page-remind,
+  .runner-pagewrapper .page-remind,
+  .runner-pagewrapper .runner-pagewrapper .page-remind
+{
+padding-top:10px; padding-left:10px;
+}
+.page-remind .runner-c-fields,
+  .runner-pagewrapper .page-remind .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-c-fields
+{
+margin-bottom:5px;
+}
+.page-remind .runner-c-fields,
+  .runner-pagewrapper .page-remind .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-c-fields
+{
+width:500px;
+}
+body.page-remind .runner-c-fields
+{
+margin-left:auto; margin-right:auto;
+}
+.page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader,
+.page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader > *,
+  .runner-pagewrapper .page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader,
+  .runner-pagewrapper .page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader > *
+{
+white-space: nowrap;
+}
+.page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader,
+.page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader > *,
+  .runner-pagewrapper .page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader,
+  .runner-pagewrapper .page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindheader, .page-remind .runner-b-remindheader > *
+{
+text-align: left;
+}
+.page-remind .runner-b-message, .page-remind .runner-b-message,
+.page-remind .runner-b-message, .page-remind .runner-b-message > *,
+  .runner-pagewrapper .page-remind .runner-b-message, .page-remind .runner-b-message,
+  .runner-pagewrapper .page-remind .runner-b-message, .page-remind .runner-b-message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-message, .page-remind .runner-b-message,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-message, .page-remind .runner-b-message > *
+{
+white-space: nowrap;
+}
+.page-remind .runner-b-message, .page-remind .runner-b-message,
+.page-remind .runner-b-message, .page-remind .runner-b-message > *,
+  .runner-pagewrapper .page-remind .runner-b-message, .page-remind .runner-b-message,
+  .runner-pagewrapper .page-remind .runner-b-message, .page-remind .runner-b-message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-message, .page-remind .runner-b-message,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-message, .page-remind .runner-b-message > *
+{
+text-align: left;
+}
+.page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields,
+.page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields > *,
+  .runner-pagewrapper .page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields,
+  .runner-pagewrapper .page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields > *
+{
+white-space: nowrap;
+}
+.page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields,
+.page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields > *,
+  .runner-pagewrapper .page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields,
+  .runner-pagewrapper .page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindfields, .page-remind .runner-b-remindfields > *
+{
+text-align: left;
+}
+.page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message,
+.page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message > *,
+  .runner-pagewrapper .page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message,
+  .runner-pagewrapper .page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message > *
+{
+white-space: nowrap;
+}
+.page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message,
+.page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message > *,
+  .runner-pagewrapper .page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message,
+  .runner-pagewrapper .page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-enteremail_message, .page-remind .runner-b-enteremail_message > *
+{
+text-align: left;
+}
+.page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons,
+.page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons > *,
+  .runner-pagewrapper .page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons,
+  .runner-pagewrapper .page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons > *
+{
+white-space: nowrap;
+}
+.page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons,
+.page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons > *,
+  .runner-pagewrapper .page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons,
+  .runner-pagewrapper .page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons,
+  .runner-pagewrapper .runner-pagewrapper .page-remind .runner-b-remindbuttons, .page-remind .runner-b-remindbuttons > *
+{
+text-align: left;
+}
+body.page-remind .runner-toptable
+{
+width:100%;
+}
+body.page-remind .runner-top
+{
+padding-right: 5px;
+}

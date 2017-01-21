@@ -1,0 +1,192 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel evevents print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+		<table cellpadding="0" class="rnr-cont rnr-c-grid rnr-b-grid vertical rp-maintable">
+	{BEGIN grid_row}
+		<tr {$rowattrs} {$rowstyle}>
+			{BEGIN grid_record}
+			<td class="rnr-cg" {$recordattrs}>
+				<table class="rnr-c rnr-vrecord" cellpadding="0">
+					<thead>
+					<tr class="rnr-toprow style1">
+						<th class="rnr-cc" colspan="4">
+							&nbsp;
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+						{BEGIN EventID_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$EventID_label_class}" {$recordattrs}>{$label evevents EventID}</td>
+	<td class="alt rnr-edge {$EventID_class}" {$EventID_style} {$recordattrs}>{$EventID_value}</td>
+</tr>
+{END EventID_fieldcolumn}
+	{BEGIN Category_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$Category_label_class}" {$recordattrs}>{$label evevents Category}</td>
+	<td class="alt rnr-edge {$Category_class}" {$Category_style} {$recordattrs}>{$Category_value}</td>
+</tr>
+{END Category_fieldcolumn}
+	{BEGIN Subject_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$Subject_label_class}" {$recordattrs}>{$label evevents Subject}</td>
+	<td class="alt rnr-edge {$Subject_class}" {$Subject_style} {$recordattrs}>{$Subject_value}</td>
+</tr>
+{END Subject_fieldcolumn}
+	{BEGIN Description_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$Description_label_class}" {$recordattrs}>{$label evevents Description}</td>
+	<td class="alt rnr-edge {$Description_class}" {$Description_style} {$recordattrs}>{$Description_value}</td>
+</tr>
+{END Description_fieldcolumn}
+	{BEGIN FromDate_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$FromDate_label_class}" {$recordattrs}>{$label evevents FromDate}</td>
+	<td class="alt rnr-edge {$FromDate_class}" {$FromDate_style} {$recordattrs}>{$FromDate_value}</td>
+</tr>
+{END FromDate_fieldcolumn}
+	{BEGIN ToDate_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$ToDate_label_class}" {$recordattrs}>{$label evevents ToDate}</td>
+	<td class="alt rnr-edge {$ToDate_class}" {$ToDate_style} {$recordattrs}>{$ToDate_value}</td>
+</tr>
+{END ToDate_fieldcolumn}
+	{BEGIN FromTime_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$FromTime_label_class}" {$recordattrs}>{$label evevents FromTime}</td>
+	<td class="alt rnr-edge {$FromTime_class}" {$FromTime_style} {$recordattrs}>{$FromTime_value}</td>
+</tr>
+{END FromTime_fieldcolumn}
+	{BEGIN ToTime_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$ToTime_label_class}" {$recordattrs}>{$label evevents ToTime}</td>
+	<td class="alt rnr-edge {$ToTime_class}" {$ToTime_style} {$recordattrs}>{$ToTime_value}</td>
+</tr>
+{END ToTime_fieldcolumn}
+	{BEGIN Location_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$Location_label_class}" {$recordattrs}>{$label evevents Location}</td>
+	<td class="alt rnr-edge {$Location_class}" {$Location_style} {$recordattrs}>{$Location_value}</td>
+</tr>
+{END Location_fieldcolumn}
+	{BEGIN Price_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$Price_label_class}" {$recordattrs}>{$label evevents Price}</td>
+	<td class="alt rnr-edge {$Price_class}" {$Price_style} {$recordattrs}>{$Price_value}</td>
+</tr>
+{END Price_fieldcolumn}
+	{BEGIN Note_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$Note_label_class}" {$recordattrs}>{$label evevents Note}</td>
+	<td class="alt rnr-edge {$Note_class}" {$Note_style} {$recordattrs}>{$Note_value}</td>
+</tr>
+{END Note_fieldcolumn}
+
+					</tbody>
+				</table>
+			</td>
+			{BEGIN endrecord_block}
+			<td class="rnr-cs">&nbsp;</td>
+			{END endrecord_block}
+			{END grid_record}
+		</tr>
+				{BEGIN grid_rowspace}
+		<tr class="rnr-rs {$rsclass}">
+			{BEGIN grid_recordspace}
+			<td >&nbsp;</td>
+			{END grid_recordspace}
+		</tr>
+		{END grid_rowspace}
+	{END grid_row}
+	</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

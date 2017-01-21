@@ -1,0 +1,86 @@
+body.page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .rnr-c-register,
+  .rnr-pagewrapper .page-preview .rnr-c-register,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-register
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-c-register,
+  .rnr-pagewrapper .page-preview .rnr-c-register,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-register
+{
+min-width: 400px; display:inline-block
+}
+.page-preview .rnr-cw-register,
+  .rnr-pagewrapper .page-preview .rnr-cw-register,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-cw-register
+{
+text-align: center;
+}
+.page-preview .rnr-b-regheader,
+  .rnr-pagewrapper .page-preview .rnr-b-regheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-regheader
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-regheader,
+  .rnr-pagewrapper .page-preview .rnr-b-regheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-regheader
+{
+text-align: right;
+}
+.page-preview .rnr-b-regheader > *,
+  .rnr-pagewrapper .page-preview .rnr-b-regheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-regheader > *
+{
+font-size: 120%;
+}
+.page-preview .rnr-c-fields,
+  .rnr-pagewrapper .page-preview .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-activation,
+  .rnr-pagewrapper .page-preview .rnr-b-activation,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-activation
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-activation,
+  .rnr-pagewrapper .page-preview .rnr-b-activation,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-activation
+{
+text-align: right;
+}
+.page-preview .rnr-b-activation > *,
+  .rnr-pagewrapper .page-preview .rnr-b-activation > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-activation > *
+{
+
+}
+.page-preview .rnr-b-registered,
+  .rnr-pagewrapper .page-preview .rnr-b-registered,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-registered
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-registered,
+  .rnr-pagewrapper .page-preview .rnr-b-registered,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-registered
+{
+text-align: center;
+}
+.page-preview .rnr-b-registered > *,
+  .rnr-pagewrapper .page-preview .rnr-b-registered > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-registered > *
+{
+
+}
+body.page-preview .rnr-top
+{
+padding-right: 5px;
+}

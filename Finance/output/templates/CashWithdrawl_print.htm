@@ -1,0 +1,255 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel CashWithdrawl print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	
+
+
+	
+<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable rnr-columns rp-maintable" cellpadding="0" >
+	{BEGIN grid_row}
+	{BEGIN grid_record}
+	<tbody class="{$rowclass}">
+	<tr class="rnr-toprow" {$rowattrs} {$rowstyle}>
+			<td class="rnr-edge" colspan="8">&nbsp;
+			</td>
+		</tr>
+		<tr class="rnr-row {$rowclass}" {$rowattrs}>
+								<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN AccountName_fieldheadercolumn}
+					{$label CashWithdrawl AccountName}
+				{END AccountName_fieldheadercolumn}
+				</td>
+				<td  class="{$AccountName_class}"   {$recordattrs}>
+				{BEGIN AccountName_fieldcolumn}
+					{$AccountName_value}&nbsp;
+				{END AccountName_fieldcolumn}
+				</td>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN TransactionNo_fieldheadercolumn}
+					{$label CashWithdrawl TransactionNo}
+				{END TransactionNo_fieldheadercolumn}
+				</td>
+				<td  class="{$TransactionNo_class}"   {$recordattrs}>
+				{BEGIN TransactionNo_fieldcolumn}
+					{$TransactionNo_value}&nbsp;
+				{END TransactionNo_fieldcolumn}
+				</td>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN Amount_fieldheadercolumn}
+					{$label CashWithdrawl Amount}
+				{END Amount_fieldheadercolumn}
+				</td>
+				<td  class="{$Amount_class}"   {$recordattrs}>
+				{BEGIN Amount_fieldcolumn}
+					{$Amount_value}&nbsp;
+				{END Amount_fieldcolumn}
+				</td>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN LastModifiedDate_fieldheadercolumn}
+					{$label CashWithdrawl LastModifiedDate}
+				{END LastModifiedDate_fieldheadercolumn}
+				</td>
+				<td  style="width:16%" class="rnr-edge {$LastModifiedDate_class}"  {$recordattrs}>
+				{BEGIN LastModifiedDate_fieldcolumn}
+					{$LastModifiedDate_value}&nbsp;
+				{END LastModifiedDate_fieldcolumn}
+				</td>
+					</tr>
+		<tr class="rnr-row {$rowclass}" {$rowattrs}>
+												<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN AccountNumber_fieldheadercolumn}
+					{$label CashWithdrawl AccountNumber}
+				{END AccountNumber_fieldheadercolumn}
+				</td>
+				<td  class="{$AccountNumber_class}"   {$recordattrs}>
+				{BEGIN AccountNumber_fieldcolumn}
+					{$AccountNumber_value}&nbsp;
+				{END AccountNumber_fieldcolumn}
+				</td>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN TransactionStatus_fieldheadercolumn}
+					{$label CashWithdrawl TransactionStatus}
+				{END TransactionStatus_fieldheadercolumn}
+				</td>
+				<td  class="{$TransactionStatus_class}"   {$recordattrs}>
+				{BEGIN TransactionStatus_fieldcolumn}
+					{$TransactionStatus_value}&nbsp;
+				{END TransactionStatus_fieldcolumn}
+				</td>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN Balance_fieldheadercolumn}
+					{$label CashWithdrawl Balance}
+				{END Balance_fieldheadercolumn}
+				</td>
+				<td  class="{$Balance_class}"   {$recordattrs}>
+				{BEGIN Balance_fieldcolumn}
+					{$Balance_value}&nbsp;
+				{END Balance_fieldcolumn}
+				</td>
+																			<td class="rnr-gridfieldlabel" {$recordattrs}>&nbsp;</td>
+				<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		</tr>
+		<tr class="rnr-row {$rowclass}" {$rowattrs}>
+																<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN AccountType_fieldheadercolumn}
+					{$label CashWithdrawl AccountType}
+				{END AccountType_fieldheadercolumn}
+				</td>
+				<td  class="{$AccountType_class}"   {$recordattrs}>
+				{BEGIN AccountType_fieldcolumn}
+					{$AccountType_value}&nbsp;
+				{END AccountType_fieldcolumn}
+				</td>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN WithdrawlType_fieldheadercolumn}
+					{$label CashWithdrawl WithdrawlType}
+				{END WithdrawlType_fieldheadercolumn}
+				</td>
+				<td  class="{$WithdrawlType_class}"   {$recordattrs}>
+				{BEGIN WithdrawlType_fieldcolumn}
+					{$WithdrawlType_value}&nbsp;
+				{END WithdrawlType_fieldcolumn}
+				</td>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN Description_fieldheadercolumn}
+					{$label CashWithdrawl Description}
+				{END Description_fieldheadercolumn}
+				</td>
+				<td  class="{$Description_class}"   {$recordattrs}>
+				{BEGIN Description_fieldcolumn}
+					{$Description_value}&nbsp;
+				{END Description_fieldcolumn}
+				</td>
+															<td class="rnr-gridfieldlabel" {$recordattrs}>&nbsp;</td>
+				<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		</tr>
+		<tr class="rnr-row {$rowclass}" {$rowattrs}>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN ClientNo_fieldheadercolumn}
+					{$label CashWithdrawl ClientNo}
+				{END ClientNo_fieldheadercolumn}
+				</td>
+				<td  class="{$ClientNo_class}"   {$recordattrs}>
+				{BEGIN ClientNo_fieldcolumn}
+					{$ClientNo_value}&nbsp;
+				{END ClientNo_fieldcolumn}
+				</td>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN DateTime_fieldheadercolumn}
+					{$label CashWithdrawl DateTime}
+				{END DateTime_fieldheadercolumn}
+				</td>
+				<td  class="{$DateTime_class}"   {$recordattrs}>
+				{BEGIN DateTime_fieldcolumn}
+					{$DateTime_value}&nbsp;
+				{END DateTime_fieldcolumn}
+				</td>
+																				<td class="rnr-gridfieldlabel" style="width:8%" {$recordattrs}>
+				{BEGIN LastModifiedBy_fieldheadercolumn}
+					{$label CashWithdrawl LastModifiedBy}
+				{END LastModifiedBy_fieldheadercolumn}
+				</td>
+				<td  class="{$LastModifiedBy_class}"   {$recordattrs}>
+				{BEGIN LastModifiedBy_fieldcolumn}
+					{$LastModifiedBy_value}&nbsp;
+				{END LastModifiedBy_fieldcolumn}
+				</td>
+											<td class="rnr-gridfieldlabel" {$recordattrs}>&nbsp;</td>
+				<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		</tr>
+			</tbody>
+	{END grid_record}
+	{END grid_row}
+</table>						
+	
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

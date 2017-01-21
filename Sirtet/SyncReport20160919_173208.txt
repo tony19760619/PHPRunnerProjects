@@ -1,0 +1,10 @@
+Modified tables ("-" means deleted field, "+" means new field):
+	● job:
+		 - BuildingName
+		 - HouseNumber
+		 - OfficesLevels
+		 - Province/State
+		 - StreetName
+		 + Lat
+		 + Lng
+		 + ProjectName/No

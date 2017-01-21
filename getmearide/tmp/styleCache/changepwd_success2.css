@@ -1,0 +1,96 @@
+body.page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .rnr-c-changepwd,
+  .rnr-pagewrapper .page-preview .rnr-c-changepwd,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-changepwd
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-c-changepwd,
+  .rnr-pagewrapper .page-preview .rnr-c-changepwd,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-changepwd
+{
+min-width: 500px; display:inline-block
+}
+.page-preview .rnr-cw-changepwd,
+  .rnr-pagewrapper .page-preview .rnr-cw-changepwd,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-cw-changepwd
+{
+text-align: center;
+}
+.page-preview .rnr-b-changeheader,
+  .rnr-pagewrapper .page-preview .rnr-b-changeheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-changeheader
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-changeheader,
+  .rnr-pagewrapper .page-preview .rnr-b-changeheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-changeheader
+{
+text-align: left;
+}
+.page-preview .rnr-b-changeheader > *,
+  .rnr-pagewrapper .page-preview .rnr-b-changeheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-changeheader > *
+{
+font-size: 120%;
+}
+.page-preview .rnr-c-fields,
+  .rnr-pagewrapper .page-preview .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-c-fields,
+  .rnr-pagewrapper .page-preview .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-fields
+{
+min-width: 100px;
+}
+.page-preview .rnr-b-changepwd_message,
+  .rnr-pagewrapper .page-preview .rnr-b-changepwd_message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-changepwd_message
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-changepwd_message,
+  .rnr-pagewrapper .page-preview .rnr-b-changepwd_message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-changepwd_message
+{
+text-align: left;
+}
+.page-preview .rnr-b-changepwd_message > *,
+  .rnr-pagewrapper .page-preview .rnr-b-changepwd_message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-changepwd_message > *
+{
+
+}
+.page-preview .rnr-b-changesuccessbutton,
+  .rnr-pagewrapper .page-preview .rnr-b-changesuccessbutton,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-changesuccessbutton
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-changesuccessbutton,
+  .rnr-pagewrapper .page-preview .rnr-b-changesuccessbutton,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-changesuccessbutton
+{
+text-align: left;
+}
+.page-preview .rnr-b-changesuccessbutton > *,
+  .rnr-pagewrapper .page-preview .rnr-b-changesuccessbutton > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-changesuccessbutton > *
+{
+
+}
+body.page-preview .rnr-toptable
+{
+width:100%;
+}
+body.page-preview .rnr-top
+{
+padding-right: 5px;
+}

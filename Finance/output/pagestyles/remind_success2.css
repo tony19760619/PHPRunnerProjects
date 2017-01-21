@@ -1,0 +1,96 @@
+body.page-remind_success2
+{
+padding-top:10px; padding-left:10px;
+}
+.page-remind_success2 .rnr-c-remindsuccess,
+  .rnr-pagewrapper .page-remind_success2 .rnr-c-remindsuccess,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-c-remindsuccess
+{
+margin-bottom:5px;
+}
+.page-remind_success2 .rnr-c-remindsuccess,
+  .rnr-pagewrapper .page-remind_success2 .rnr-c-remindsuccess,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-c-remindsuccess
+{
+min-width: 500px; display:inline-block
+}
+.page-remind_success2 .rnr-cw-remindsuccess,
+  .rnr-pagewrapper .page-remind_success2 .rnr-cw-remindsuccess,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-cw-remindsuccess
+{
+text-align: center;
+}
+.page-remind_success2 .rnr-b-remindheader,
+  .rnr-pagewrapper .page-remind_success2 .rnr-b-remindheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-b-remindheader
+{
+white-space: nowrap;
+}
+.page-remind_success2 .rnr-b-remindheader,
+  .rnr-pagewrapper .page-remind_success2 .rnr-b-remindheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-b-remindheader
+{
+text-align: left;
+}
+.page-remind_success2 .rnr-b-remindheader > *,
+  .rnr-pagewrapper .page-remind_success2 .rnr-b-remindheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-b-remindheader > *
+{
+font-size: 120%;
+}
+.page-remind_success2 .rnr-c-fields,
+  .rnr-pagewrapper .page-remind_success2 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-remind_success2 .rnr-c-fields,
+  .rnr-pagewrapper .page-remind_success2 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-c-fields
+{
+min-width: 100px;
+}
+.page-remind_success2 .rnr-b-weresent_message,
+  .rnr-pagewrapper .page-remind_success2 .rnr-b-weresent_message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-b-weresent_message
+{
+white-space: nowrap;
+}
+.page-remind_success2 .rnr-b-weresent_message,
+  .rnr-pagewrapper .page-remind_success2 .rnr-b-weresent_message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-b-weresent_message
+{
+text-align: left;
+}
+.page-remind_success2 .rnr-b-weresent_message > *,
+  .rnr-pagewrapper .page-remind_success2 .rnr-b-weresent_message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-b-weresent_message > *
+{
+
+}
+.page-remind_success2 .rnr-b-remindsucbuttons,
+  .rnr-pagewrapper .page-remind_success2 .rnr-b-remindsucbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-b-remindsucbuttons
+{
+white-space: nowrap;
+}
+.page-remind_success2 .rnr-b-remindsucbuttons,
+  .rnr-pagewrapper .page-remind_success2 .rnr-b-remindsucbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-b-remindsucbuttons
+{
+text-align: left;
+}
+.page-remind_success2 .rnr-b-remindsucbuttons > *,
+  .rnr-pagewrapper .page-remind_success2 .rnr-b-remindsucbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind_success2 .rnr-b-remindsucbuttons > *
+{
+
+}
+body.page-remind_success2 .rnr-toptable
+{
+width:100%;
+}
+body.page-remind_success2 .rnr-top
+{
+padding-right: 5px;
+}

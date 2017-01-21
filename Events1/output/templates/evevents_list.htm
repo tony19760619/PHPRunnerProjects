@@ -1,0 +1,576 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+
+{BEGIN security_block}
+<div  class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Logged on as&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Log out</a>
+	{END logoutbutton}
+
+</div></div>
+{END security_block}
+
+
+<div class="rnr-hfiller"></div>
+
+<div  class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}">{BEGIN print_friendly}
+<div class="rnr-printpanelblock" id="printpanelblock{$id}">
+<div class="rnr-printtab">
+<a data-icon="printdown" class="rnr-printicon" id="print_friendly_togger{$id}" title="Print-friendly page"></a>
+</div>
+<div class="rnr-printpanel" >
+<table class="rnr-printscope" id="print_friendly_scope{$id}">
+	<tr>
+		<td class="rnr-printScopeCell">Scope:</td>
+		{BEGIN print_friendly_all}
+		<td class="rnr-printScopeCell"><input type="radio" id="printAll{$id}" data-href="evevents_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">&nbsp;<label for="printAll{$id}">Print all pages</label></td>
+		{END print_friendly_all}
+
+	</tr>
+	<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printPage{$id}" data-href="evevents_print.php?{$crosstable_attrs}" name="printScope" checked>&nbsp;<label for="printPage{$id}">Print this page</label></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">&nbsp;<label for="printSelection{$id}" style="color: gray;">Print selected</label></td>
+	</tr>
+</table>
+
+
+<div class="rnr-printdetails">
+<label for="printPerPage{$id}">
+	Records Per Page:
+</label>&nbsp;<input type=number id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">&nbsp;
+</div>
+
+<div class="rnr-printbutton">
+<a href=# class="rnr-button button" id="print_friendly_button{$id}" >Print</a>
+</div>
+</div>
+</div>
+{END print_friendly}
+</div>
+
+
+
+</div>
+{END container_toplinks}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN menu_block}
+{$menu main}
+{END menu_block}
+
+
+{BEGIN searchform_block}
+<div  class="rnr-brickcontents style1 rnr-b-vsearch1 {$brickclass_vsearch1}">	Search for:
+	{BEGIN searchPanelTopButtons}	
+	<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}"  data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	&nbsp;		
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+	</span>
+	{END searchPanelTopButtons}
+</div>{END searchform_block}
+
+
+{BEGIN searchform_block}
+<div  class="rnr-brickcontents style1 rnr-b-vsearch2 {$brickclass_vsearch2}"><div>
+	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		&nbsp;
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		&nbsp;
+		{BEGIN searchform_showall}
+			<a class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</a>
+		{END searchform_showall}
+	</span>	
+</div></div>{END searchform_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="rnr-brickcontents style1 rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>{END searchsaving_block}
+
+
+{BEGIN details_block}
+<div  class="rnr-brickcontents style2 rnr-b-vdetails_found {$brickclass_vdetails_found}"><span  {$details_attrs}>Details found: <span class="rnr-details_found_count">{$records_found}</span></span>
+</div>{END details_block}
+
+
+{BEGIN pages_block}
+<div  class="rnr-brickcontents style1 rnr-b-vpage_of {$brickclass_vpage_of}"><span id="pages_block{$id}">
+	<span {$pages_attrs}>Page {$page} of {$maxpages}</span>
+</span>
+</div>{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="rnr-brickcontents style1 rnr-b-vrecsperpage {$brickclass_vrecsperpage}"><span id="recordspp_block{$id}" name="recordspp_block{$id}">
+	Records Per Page:&nbsp;{$recsPerPage}
+</span>
+</div>{END recordspp_block}
+
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>all</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>any</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Search</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+{BEGIN filterPanel}
+<div  class="rnr-brickcontents  rnr-b-filterpanel {$brickclass_filterpanel}"><div class="filterPanelContainer {$filterPanelStateClass}">
+
+
+	
+	
+
+
+
+	
+	
+	
+		
+{BEGIN filter_control_Category}
+	<div class="filter-field filter-Category-container">
+		<div class="filter-expander rnr-bg style2">
+			<span class="filter-indicator">
+							&#x25B2;
+			</span>
+						{$label evevents Category}
+			{BEGIN clearLink_Category}
+			<a href="#" class="filter-clear filter-clear-Category">Clear</a>
+			{END clearLink_Category}
+		</div>
+		{BEGIN filterCtrlBlock_Category}
+		<div class="filter-values rnr-bg style1 {$collapsedClass_Category} {$visibilityClass_Category}">
+			{$Category_filter}	
+		</div>
+		{END filterCtrlBlock_Category}
+		
+				{BEGIN filter_button_showmore_Category}
+		<div class="rnr-bg style1 filter-show-more {$collapsedClass_Category}">
+			<a class="filter-show-more-link filterShowMore_Category" href="#">Show {$numberOfItemsToSHow_Category} more</a>
+		</div>
+		{END filter_button_showmore_Category}
+		
+				
+			</div>
+{END filter_control_Category}
+
+
+	
+	
+
+
+
+	
+	
+	
+		
+{BEGIN filter_control_month_year}
+	<div class="filter-field filter-month_year-container">
+		<div class="filter-expander rnr-bg style2">
+			<span class="filter-indicator">
+							&#x25B2;
+			</span>
+						{$label evevents month_year}
+			{BEGIN clearLink_month_year}
+			<a href="#" class="filter-clear filter-clear-month_year">Clear</a>
+			{END clearLink_month_year}
+		</div>
+		{BEGIN filterCtrlBlock_month_year}
+		<div class="filter-values rnr-bg style1 {$collapsedClass_month_year} {$visibilityClass_month_year}">
+			{$month_year_filter}	
+		</div>
+		{END filterCtrlBlock_month_year}
+		
+				{BEGIN filter_button_showmore_month_year}
+		<div class="rnr-bg style1 filter-show-more {$collapsedClass_month_year}">
+			<a class="filter-show-more-link filterShowMore_month_year" href="#">Show {$numberOfItemsToSHow_month_year} more</a>
+		</div>
+		{END filter_button_showmore_month_year}
+		
+				
+			</div>
+{END filter_control_month_year}
+</div></div>{END filterPanel}
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_bigblock}
+<div class="rnr-c rnr-cv rnr-c-bigblock">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_recordcontrols} rnr-wrapper rnr-cbw-recordcontrols">
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}
+		<a href="evevents_add.php" class="rnr-button" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+		{BEGIN inlineadd_link}
+		<a href="#" class="rnr-button" {$inlineaddlink_attrs}>Inline Add</a>
+	{END inlineadd_link}
+
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN selectall_link}
+	<a href="#" class="rnr-button" {$selectalllink_span} {$selectalllink_attrs}>Select all</a>
+{END selectall_link}
+{BEGIN widhtSelected}
+<span class="rnr-buttons-group">
+<a class="rnr-button {$withSelectedClass}" href="#" id="selectButtonsToggler{$id}">With selected...</a>
+<ul class="rnr-list" id="selectButtonsGroup{$id}">
+
+		{BEGIN editselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$editselectedlink_attrs} {$editselectedlink_span}>Edit</a>
+</li>
+	{END editselected_link}
+
+		{BEGIN deleteselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</a>
+</li>
+	{END deleteselected_link}
+
+		{BEGIN exportselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export</a>
+</li>
+	{END exportselected_link}
+
+</ul>
+</span>
+{END widhtSelected}
+		{BEGIN saveall_link}
+		<a href="#" class="rnr-button" {$savealllink_attrs} {$savealllink_span}>Save all</a>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<a href="#" class="rnr-button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</a>
+	{END cancelall_link}
+</div>
+{END record_controls_block}
+
+
+{BEGIN more_list}
+<div  class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><span class="rnr-buttons-group">
+{BEGIN moreButtons}
+<a class="rnr-button" id="extraButtonsToggler{$id}" href="#">More...</a>
+<ul class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+
+{BEGIN asearch_link}
+<li>
+	<a href="evevents_search.php" class="rnr-button link" {$advsearchlink_attrs}>Advanced search</a>
+</li>
+{END asearch_link}
+
+{BEGIN export_link}
+<li>
+	<a target="_blank" href="evevents_export.php" class="rnr-button link" {$exportlink_attrs}>Export results</a>
+</li>
+{END export_link}
+
+</ul>
+{END moreButtons}
+</span></div>
+{END more_list}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_message} rnr-wrapper rnr-cbw-message">
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_grid} rnr-wrapper rnr-cbw-grid">
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+							<table cellpadding="0" class="rnr-cont rnr-c-grid rnr-b-grid vertical">
+							{BEGIN grid_row}
+							<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+								{BEGIN grid_record}
+								<td class="rnr-cg" {$recordattrs}>
+									{BEGIN grid_vrecord}
+									<table class="rnr-c rnr-vrecord  hoverable " cellpadding="0" >
+										{BEGIN grid_recordheader}
+										<thead>
+										<tr class="rnr-toprow style1">
+											<th class="rnr-edge" iEditCont="all" width="25%">
+												<FONT color=#8b0000>&nbsp;<b>{$Category_value}</b></font>
+											</th>
+											<th class="rnr-edge" iEditCont="all">
+																								{BEGIN edit_column}
+												{BEGIN edit_link}
+																								<a  {$editlink_attrs}>Edit</a>
+												{END edit_link}
+												{END edit_column}
+
+																								{BEGIN inlineedit_column}
+												{BEGIN inlineedit_link}
+																								<a {$inlineeditlink_attrs}>Inline Edit</a>
+												{END inlineedit_link}
+												{END inlineedit_column}
+
+												
+																								{BEGIN view_column}
+												{BEGIN view_link}
+																								<a  {$viewlink_attrs}>View</a>
+												{END view_link}
+												{END view_column}
+
+																								{BEGIN checkbox_column}
+												{BEGIN checkbox}
+												<input type="checkbox" {$checkbox_attrs} class="rnr-verticalcheckbox">
+												{END checkbox}
+												{END checkbox_column}
+
+											</th>
+											<th class="rnr-edge" width="25%">
+												<b>Event ID#: {$EventID_value}</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											</th>
+										</tr>
+										</thead>
+										{END grid_recordheader}
+										<tbody>
+											{BEGIN Subject_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel">{$label evevents Subject}</td>
+	<td class="alt rnr-edge {$Subject_class}" {$Subject_style} colspan="2">
+		{$Subject_value}&nbsp;
+							</td>
+</tr>
+{END Subject_fieldcolumn}
+
+
+	{BEGIN FromDate_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel">{$label evevents FromDate}</td>
+	<td class="alt rnr-edge {$FromDate_class}" {$FromDate_style} colspan="2">
+		{$FromDate_value}&nbsp;
+					{$ToDate_value}&nbsp;
+					</td>
+</tr>
+{END FromDate_fieldcolumn}
+
+
+	{BEGIN FromTime_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel">{$label evevents FromTime}</td>
+	<td class="alt rnr-edge {$FromTime_class}" {$FromTime_style} colspan="2">
+		{$FromTime_value}&nbsp;
+							{$ToTime_value}&nbsp;
+			</td>
+</tr>
+{END FromTime_fieldcolumn}
+
+
+	{BEGIN Location_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel">{$label evevents Location}</td>
+	<td class="alt rnr-edge {$Location_class}" {$Location_style} colspan="2">
+		{$Location_value}&nbsp;
+									{$Map_value}&nbsp;
+	</td>
+</tr>
+{END Location_fieldcolumn}
+
+
+	{BEGIN Price_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel">{$label evevents Price}</td>
+	<td class="alt rnr-edge {$Price_class}" {$Price_style} colspan="2">
+		{$Price_value}&nbsp;
+							</td>
+</tr>
+{END Price_fieldcolumn}
+
+
+
+										</tbody>
+									</table>
+									{END grid_vrecord}
+								</td>
+								{BEGIN endrecord_block}
+								<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+								{END endrecord_block}
+								{END grid_record}
+							</tr>
+							{BEGIN grid_rowspace}
+							<tr class="rnr-rs {$rsclass}">
+								{BEGIN grid_recordspace}
+								<td>&nbsp;</td>
+								{END grid_recordspace}
+							</tr>
+							{END grid_rowspace}
+							{END grid_row}
+						</table>
+				
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_pagination} rnr-wrapper rnr-cbw-pagination">
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+
+</div>
+{END container_pagination}
+
+</div>
+
+
+</div>
+{END container_bigblock}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

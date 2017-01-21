@@ -1,0 +1,634 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+
+{BEGIN security_block}
+<div  class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Logged on as&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Log out</a>
+	{END logoutbutton}
+	{BEGIN adminarea_link}
+	<a href="admin_rights_list.php" class="rnr-button" {$adminarealink_attrs}>Admin Area</a>
+	{END adminarea_link}
+
+	{BEGIN changepwd_link}
+	<a href="#" class="rnr-button" {$changepwdlink_attrs}>Change password</a>
+	{END changepwd_link}
+</div></div>
+{END security_block}
+
+
+{BEGIN asearch_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_advsearch {$brickclass_toplinks_advsearch}">	<a href="ClientCashWithdrawl_search.php" class="rnr-button" {$advsearchlink_attrs}>Advanced search</a>
+</div>
+{END asearch_link}
+
+
+{BEGIN import_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_import {$brickclass_toplinks_import}">	<a href="ClientCashWithdrawl_import.php?{$crosstable_attrs}" class="rnr-button" {$importlink_attrs}>Import</a>
+</div>
+{END import_link}
+
+
+{BEGIN export_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_export {$brickclass_toplinks_export}">	<a target="_blank" href="ClientCashWithdrawl_export.php" class="rnr-button" {$exportlink_attrs}>Export results</a>
+</div>
+{END export_link}
+
+
+
+{BEGIN print_friendly}
+<div  class="style1 rnr-bl rnr-b-printpanel {$brickclass_printpanel}"><div class="rnr-printpanelblock" id="printpanelblock{$id}">
+<div class="rnr-printtab">
+<a data-icon="printdown" class="rnr-printicon" id="print_friendly_togger{$id}" title="Print-friendly page"></a>
+</div>
+<div class="rnr-printpanel" >
+<table class="rnr-printscope" id="print_friendly_scope{$id}">
+	<tr>
+		<td class="rnr-printScopeCell">Scope:</td>
+		{BEGIN print_friendly_all}
+		<td class="rnr-printScopeCell"><input type="radio" id="printAll{$id}" data-href="ClientCashWithdrawl_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">&nbsp;<label for="printAll{$id}">Print all pages</label></td>
+		{END print_friendly_all}
+
+	</tr>
+	<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printPage{$id}" data-href="ClientCashWithdrawl_print.php?{$crosstable_attrs}" name="printScope" checked>&nbsp;<label for="printPage{$id}">Print this page</label></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">&nbsp;<label for="printSelection{$id}" style="color: gray;">Print selected</label></td>
+	</tr>
+</table>
+
+
+<div class="rnr-printdetails">
+<label for="printPerPage{$id}">
+	Records Per Page:
+</label>&nbsp;<input type=number id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">&nbsp;
+</div>
+
+<div class="rnr-printbutton">
+<a href=# class="rnr-button button" id="print_friendly_button{$id}" >Print</a>
+</div>
+</div>
+</div>
+</div>
+{END print_friendly}
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}
+<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN menu_block}
+{$menu main horizontal}{END menu_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_hmenu}
+
+
+
+{BEGIN container_search}
+<div class="rnr-c rnr-ch rnr-c-search">
+
+{BEGIN searchform_block}
+<div  class="style1 rnr-bl rnr-b-search {$brickclass_search}">	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		{BEGIN searchform_showall}	
+		<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</a>
+		{END searchform_showall}
+	</span>
+</div>
+{END searchform_block}
+
+
+{BEGIN searchformbuttons_block}
+<div  class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}
+<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}" data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+</span>
+{END searchPanelTopButtons}
+</div>
+{END searchformbuttons_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}">	{BEGIN saveSeachButton}
+		<a href="#" class="rnr-button" id="saveSearch{$id}">Save search</a>
+	{END saveSeachButton}
+	{BEGIN savedSeachesButton}
+	<span class="rnr-buttons-group">
+		<a href="#" class="rnr-button" {$saveSearchButtonAttrs} id="savedSearches{$id}">Saved searches</a>
+	</span>
+	{END savedSeachesButton}
+</div>
+{END searchsaving_block}
+
+<div class="rnr-hfiller"></div>
+{BEGIN details_block}
+<div  class="style1 rnr-br rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Details found: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Page <b>{$page}</b> of <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Records Per Page:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+
+</div>
+{END container_search}
+
+
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}
+		<a href="ClientCashWithdrawl_add.php{$addlink_getparams}" class="rnr-button" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+	
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">			{BEGIN selectall_link}
+		<a href="#" class="rnr-button" {$selectalllink_span} {$selectalllink_attrs}>Select all</a>
+	{END selectall_link}
+
+	
+	
+		{BEGIN exportselected_link}
+		<a href="#" class="rnr-button" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export selected</a>
+	{END exportselected_link}
+
+</div>
+{END record_controls_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>all</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>any</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Search</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+						<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}
+								<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																																			{BEGIN id_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$id_class}">
+									{BEGIN id_fieldheader}
+																				<span {$id_orderlinkattrs}>
+											{$label ClientCashWithdrawl id}
+										</span>
+									{END id_fieldheader}
+									</th>
+									{END id_fieldheadercolumn}
+
+																	{BEGIN AccountName_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AccountName_class}">
+									{BEGIN AccountName_fieldheader}
+																				<span {$AccountName_orderlinkattrs}>
+											{$label ClientCashWithdrawl AccountName}
+										</span>
+									{END AccountName_fieldheader}
+									</th>
+									{END AccountName_fieldheadercolumn}
+
+																	{BEGIN ClientNo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ClientNo_class}">
+									{BEGIN ClientNo_fieldheader}
+																				<span {$ClientNo_orderlinkattrs}>
+											{$label ClientCashWithdrawl ClientNo}
+										</span>
+									{END ClientNo_fieldheader}
+									</th>
+									{END ClientNo_fieldheadercolumn}
+
+																	{BEGIN AccountNumber_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AccountNumber_class}">
+									{BEGIN AccountNumber_fieldheader}
+																				<span {$AccountNumber_orderlinkattrs}>
+											{$label ClientCashWithdrawl AccountNumber}
+										</span>
+									{END AccountNumber_fieldheader}
+									</th>
+									{END AccountNumber_fieldheadercolumn}
+
+																	{BEGIN WithdrawlType_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$WithdrawlType_class}">
+									{BEGIN WithdrawlType_fieldheader}
+																				<span {$WithdrawlType_orderlinkattrs}>
+											{$label ClientCashWithdrawl WithdrawlType}
+										</span>
+									{END WithdrawlType_fieldheader}
+									</th>
+									{END WithdrawlType_fieldheadercolumn}
+
+																	{BEGIN WithdrawlNo_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$WithdrawlNo_class}">
+									{BEGIN WithdrawlNo_fieldheader}
+																				<span {$WithdrawlNo_orderlinkattrs}>
+											{$label ClientCashWithdrawl WithdrawlNo}
+										</span>
+									{END WithdrawlNo_fieldheader}
+									</th>
+									{END WithdrawlNo_fieldheadercolumn}
+
+																	{BEGIN DateTime_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$DateTime_class}">
+									{BEGIN DateTime_fieldheader}
+																				<span {$DateTime_orderlinkattrs}>
+											{$label ClientCashWithdrawl DateTime}
+										</span>
+									{END DateTime_fieldheader}
+									</th>
+									{END DateTime_fieldheadercolumn}
+
+																	{BEGIN WithdrawlStatus_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$WithdrawlStatus_class}">
+									{BEGIN WithdrawlStatus_fieldheader}
+																				<span {$WithdrawlStatus_orderlinkattrs}>
+											{$label ClientCashWithdrawl WithdrawlStatus}
+										</span>
+									{END WithdrawlStatus_fieldheader}
+									</th>
+									{END WithdrawlStatus_fieldheadercolumn}
+
+																	{BEGIN Amount_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Amount_class}">
+									{BEGIN Amount_fieldheader}
+																				<span {$Amount_orderlinkattrs}>
+											{$label ClientCashWithdrawl Amount}
+										</span>
+									{END Amount_fieldheader}
+									</th>
+									{END Amount_fieldheadercolumn}
+
+																	{BEGIN Balance_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Balance_class}">
+									{BEGIN Balance_fieldheader}
+																				<span {$Balance_orderlinkattrs}>
+											{$label ClientCashWithdrawl Balance}
+										</span>
+									{END Balance_fieldheader}
+									</th>
+									{END Balance_fieldheadercolumn}
+
+																	{BEGIN Description_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Description_class}">
+									{BEGIN Description_fieldheader}
+																				<span {$Description_orderlinkattrs}>
+											{$label ClientCashWithdrawl Description}
+										</span>
+									{END Description_fieldheader}
+									</th>
+									{END Description_fieldheadercolumn}
+
+																	{BEGIN LastModifiedBy_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$LastModifiedBy_class}">
+									{BEGIN LastModifiedBy_fieldheader}
+																				<span {$LastModifiedBy_orderlinkattrs}>
+											{$label ClientCashWithdrawl LastModifiedBy}
+										</span>
+									{END LastModifiedBy_fieldheader}
+									</th>
+									{END LastModifiedBy_fieldheadercolumn}
+
+																	{BEGIN LastModifiedDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$LastModifiedDate_class}">
+									{BEGIN LastModifiedDate_fieldheader}
+																				<span {$LastModifiedDate_orderlinkattrs}>
+											{$label ClientCashWithdrawl LastModifiedDate}
+										</span>
+									{END LastModifiedDate_fieldheader}
+									</th>
+									{END LastModifiedDate_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+																		{BEGIN edit_column}
+									{BEGIN edit_link}
+																			<a class="rnr-button-img" {$editlink_attrs} data-icon="edit" title="Edit"></a>
+									{END edit_link}
+									{END edit_column}
+
+									
+									
+																		{BEGIN view_column}
+									{BEGIN view_link}
+																			<a class="rnr-button-img" {$viewlink_attrs} data-icon="view" title="View"></a>
+									{END view_link}
+									{END view_column}
+									</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+									
+										{BEGIN id_fieldcolumn}
+	<td class="{$id_class}" {$id_style} {$recordattrs}>
+		{$id_value}
+	</td>
+{END id_fieldcolumn}
+
+	{BEGIN AccountName_fieldcolumn}
+	<td class="{$AccountName_class}" {$AccountName_style} {$recordattrs}>
+		{$AccountName_value}
+	</td>
+{END AccountName_fieldcolumn}
+
+	{BEGIN ClientNo_fieldcolumn}
+	<td class="{$ClientNo_class}" {$ClientNo_style} {$recordattrs}>
+		{$ClientNo_value}
+	</td>
+{END ClientNo_fieldcolumn}
+
+	{BEGIN AccountNumber_fieldcolumn}
+	<td class="{$AccountNumber_class}" {$AccountNumber_style} {$recordattrs}>
+		{$AccountNumber_value}
+	</td>
+{END AccountNumber_fieldcolumn}
+
+	{BEGIN WithdrawlType_fieldcolumn}
+	<td class="{$WithdrawlType_class}" {$WithdrawlType_style} {$recordattrs}>
+		{$WithdrawlType_value}
+	</td>
+{END WithdrawlType_fieldcolumn}
+
+	{BEGIN WithdrawlNo_fieldcolumn}
+	<td class="{$WithdrawlNo_class}" {$WithdrawlNo_style} {$recordattrs}>
+		{$WithdrawlNo_value}
+	</td>
+{END WithdrawlNo_fieldcolumn}
+
+	{BEGIN DateTime_fieldcolumn}
+	<td class="{$DateTime_class}" {$DateTime_style} {$recordattrs}>
+		{$DateTime_value}
+	</td>
+{END DateTime_fieldcolumn}
+
+	{BEGIN WithdrawlStatus_fieldcolumn}
+	<td class="{$WithdrawlStatus_class}" {$WithdrawlStatus_style} {$recordattrs}>
+		{$WithdrawlStatus_value}
+	</td>
+{END WithdrawlStatus_fieldcolumn}
+
+	{BEGIN Amount_fieldcolumn}
+	<td class="{$Amount_class}" {$Amount_style} {$recordattrs}>
+		{$Amount_value}
+	</td>
+{END Amount_fieldcolumn}
+
+	{BEGIN Balance_fieldcolumn}
+	<td class="{$Balance_class}" {$Balance_style} {$recordattrs}>
+		{$Balance_value}
+	</td>
+{END Balance_fieldcolumn}
+
+	{BEGIN Description_fieldcolumn}
+	<td class="{$Description_class}" {$Description_style} {$recordattrs}>
+		{$Description_value}
+	</td>
+{END Description_fieldcolumn}
+
+	{BEGIN LastModifiedBy_fieldcolumn}
+	<td class="{$LastModifiedBy_class}" {$LastModifiedBy_style} {$recordattrs}>
+		{$LastModifiedBy_value}
+	</td>
+{END LastModifiedBy_fieldcolumn}
+
+	{BEGIN LastModifiedDate_fieldcolumn}
+	<td class="{$LastModifiedDate_class}" {$LastModifiedDate_style} {$recordattrs}>
+		{$LastModifiedDate_value}
+	</td>
+{END LastModifiedDate_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+															
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+
+</div>
+{END container_pagination}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

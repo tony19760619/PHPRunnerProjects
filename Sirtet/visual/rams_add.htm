@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">
+    {END pageCSSFiles}
+    <LINK href="include/sirtet_custom.css" 
+rel="stylesheet" type="text/css">
+    <META name="GENERATOR" content="MSHTML 11.00.10240.16412">
+  </HEAD>
+  <BODY class="{$stylename} function-add" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page" style="background: rgba(255, 70, 255, 0.4);">
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_add}
+            <DIV class="rnr-c rnr-cv rnr-c-add">
+              {BEGIN addheader}
+                <DIV class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}">
+                  <SPAN>
+                    <H1>
+                      {$pagetitlelabel rams add}
+                    </H1>
+                  </SPAN>
+                </DIV>
+              {END addheader}
+              {BEGIN message_block}
+                <DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+                  <DIV class="rnr-message">
+                    {$message}
+                  </DIV>
+                </DIV>
+              {END message_block}
+              <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+                {BEGIN container_fields}
+                  <DIV class="rnr-c rnr-cv rnr-c-fields">
+                    <DIV class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}">
+                      <TABLE class="fieldGrid">
+                        <TBODY>
+                          {BEGIN JobID_fieldblock}
+                            <TR class="{$fielddispclass_JobID}" data-fieldname="JobID">
+                              <TD class="rnr-label">
+                                {BEGIN JobID_label}
+                                  {$label rams JobID}
+                                {END JobID_label}
+                              </TD>
+                              <TD class="rnr-control style3">
+                                {$JobID_editcontrol}
+                                &nbsp;
+                              </TD>
+                            </TR>
+                          {END JobID_fieldblock}
+                          {BEGIN Type_fieldblock}
+                            <TR class="{$fielddispclass_Type}" data-fieldname="Type">
+                              <TD class="rnr-label">
+                                {BEGIN Type_label}
+                                  {$label rams Type}
+                                {END Type_label}
+                              </TD>
+                              <TD class="rnr-control style3">
+                                {$Type_editcontrol}
+                                &nbsp;
+                              </TD>
+                            </TR>
+                          {END Type_fieldblock}
+                          {BEGIN ReviewForm_fieldblock}
+                            <TR class="{$fielddispclass_ReviewForm}" data-fieldname="ReviewForm">
+                              <TD class="rnr-label">
+                                {BEGIN ReviewForm_label}
+                                  {$label rams ReviewForm}
+                                {END ReviewForm_label}
+                              </TD>
+                              <TD class="rnr-control style3">
+                                {$ReviewForm_editcontrol}
+                                &nbsp;
+                                <A href="filestemplates/Sirtet RAMS Review Form.docx">
+                                  RAMS Review Form Template
+                                </A>
+                              </TD>
+                            </TR>
+                          {END ReviewForm_fieldblock}
+                          {BEGIN RAMS_fieldblock}
+                            <TR class="{$fielddispclass_RAMS}" data-fieldname="RAMS">
+                              <TD class="rnr-label">
+                                {BEGIN RAMS_label}
+                                  {$label rams RAMS}
+                                {END RAMS_label}
+                              </TD>
+                              <TD class="rnr-control style3">
+                                {$RAMS_editcontrol}
+                                &nbsp;
+                                <A id="RAMS_DOC" href="#">
+                                  RAMS Form Template
+                                </A>
+                              </TD>
+                            </TR>
+                          {END RAMS_fieldblock}
+                        </TBODY>
+                      </TABLE>
+                    </DIV>
+                    {BEGIN addbuttons}
+                      <DIV class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">
+                        <DIV class="rnr-buttons-left">
+                          {BEGIN save_button}
+                            <A class="rnr-button main" id="saveButton{$id}" href="#" {$savebutton_attrs}>
+                              Save
+                            </A>
+                          {END save_button}
+                          {BEGIN reset_button}
+                            <A class="rnr-button" id="resetButton{$id}" href="#">
+                              Reset
+                            </A>
+                          {END reset_button}
+                          {BEGIN cancel_button}
+                            <A class="rnr-button" id="cancelButton{$id}" href="#">
+                              Cancel
+                            </A>
+                          {END cancel_button}
+                          {BEGIN back_button}
+                            <A class="rnr-button" id="backButton{$id}" href="#">
+                              Back to list
+                            </A>
+                          {END back_button}
+                          {BEGIN backToMenu_button}
+                            <A class="rnr-button" id="backToMenuButton{$id}" href="#">
+                              Back to menu
+                            </A>
+                          {END backToMenu_button}
+                        </DIV>
+                      </DIV>
+                    {END addbuttons}
+                  </DIV>
+                {END container_fields}
+              </DIV>
+            </DIV>
+          {END container_add}
+        </DIV>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

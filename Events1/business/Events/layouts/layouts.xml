@@ -1,0 +1,8 @@
+<layouts>
+<layout>
+    <file>evevents_view.ly</file>
+    <page>view</page>
+    <name>Events</name>
+    <table>evevents</table>
+</layout>
+</layouts>

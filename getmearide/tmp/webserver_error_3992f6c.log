@@ -1,0 +1,14 @@
+[Tue Dec 27 11:51:22.148139 2016] [core:warn] [pid 7972:tid 548] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Tony/Documents/PHPRunnerProjects/getmearide/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::b9f3:6875:2403:aad9. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 27 11:51:22.210642 2016] [mpm_winnt:notice] [pid 7972:tid 548] AH00455: Apache/2.4.10 (Win32) PHP/5.5.18 configured -- resuming normal operations
+[Tue Dec 27 11:51:22.210642 2016] [mpm_winnt:notice] [pid 7972:tid 548] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 11:50:08
+[Tue Dec 27 11:51:22.210642 2016] [core:notice] [pid 7972:tid 548] AH00094: Command line: 'C:\\Program Files\\PHPRunner9.0\\EmbeddedServer\\bin\\httpd.exe -d C:/Program Files/PHPRunner9.0/EmbeddedServer -d C:\\Program Files\\PHPRunner9.0\\EmbeddedServer -f C:\\Users\\Tony\\Documents\\PHPRunnerProjects\\getmearide\\tmp\\webserver.conf'
+[Tue Dec 27 11:51:22.210642 2016] [mpm_winnt:notice] [pid 7972:tid 548] AH00418: Parent: Created child process 4532
+[Tue Dec 27 11:51:23.269540 2016] [core:warn] [pid 4532:tid 544] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Tony/Documents/PHPRunnerProjects/getmearide/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::b9f3:6875:2403:aad9. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 27 11:51:23.287543 2016] [core:warn] [pid 4532:tid 544] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Tony/Documents/PHPRunnerProjects/getmearide/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::b9f3:6875:2403:aad9. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 27 11:51:23.315583 2016] [mpm_winnt:notice] [pid 4532:tid 544] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 27 12:09:31.897816 2016] [mpm_winnt:notice] [pid 7972:tid 548] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 27 12:09:33.929217 2016] [mpm_winnt:notice] [pid 4532:tid 544] AH00364: Child: All worker threads have exited.
+[Tue Dec 27 12:09:33.960470 2016] [mpm_winnt:notice] [pid 7972:tid 548] AH00430: Parent: Child process 4532 exited successfully.

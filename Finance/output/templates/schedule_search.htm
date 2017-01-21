@@ -1,0 +1,274 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel schedule search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_AccountNumber}">
+	{BEGIN AccountNumber_fieldblock}		
+	<td>
+		{$label schedule AccountNumber}
+	</td>
+	<td>
+		<input type="checkbox" {$AccountNumber_notbox}>
+	</td>
+	<td>
+		{$searchtype_AccountNumber}
+	</td>
+	<td>
+		{$AccountNumber_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AccountNumber_editcontrol1}&nbsp;
+	</td>
+{END AccountNumber_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_PaymentNo}">
+	{BEGIN PaymentNo_fieldblock}		
+	<td>
+		{$label schedule PaymentNo}
+	</td>
+	<td>
+		<input type="checkbox" {$PaymentNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_PaymentNo}
+	</td>
+	<td>
+		{$PaymentNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$PaymentNo_editcontrol1}&nbsp;
+	</td>
+{END PaymentNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_PaymentDate}">
+	{BEGIN PaymentDate_fieldblock}		
+	<td>
+		{$label schedule PaymentDate}
+	</td>
+	<td>
+		<input type="checkbox" {$PaymentDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_PaymentDate}
+	</td>
+	<td>
+		{$PaymentDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$PaymentDate_editcontrol1}&nbsp;
+	</td>
+{END PaymentDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_PaymentAmount}">
+	{BEGIN PaymentAmount_fieldblock}		
+	<td>
+		{$label schedule PaymentAmount}
+	</td>
+	<td>
+		<input type="checkbox" {$PaymentAmount_notbox}>
+	</td>
+	<td>
+		{$searchtype_PaymentAmount}
+	</td>
+	<td>
+		{$PaymentAmount_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$PaymentAmount_editcontrol1}&nbsp;
+	</td>
+{END PaymentAmount_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LoanInterest}">
+	{BEGIN LoanInterest_fieldblock}		
+	<td>
+		{$label schedule LoanInterest}
+	</td>
+	<td>
+		<input type="checkbox" {$LoanInterest_notbox}>
+	</td>
+	<td>
+		{$searchtype_LoanInterest}
+	</td>
+	<td>
+		{$LoanInterest_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LoanInterest_editcontrol1}&nbsp;
+	</td>
+{END LoanInterest_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Depreciation}">
+	{BEGIN Depreciation_fieldblock}		
+	<td>
+		{$label schedule Depreciation}
+	</td>
+	<td>
+		<input type="checkbox" {$Depreciation_notbox}>
+	</td>
+	<td>
+		{$searchtype_Depreciation}
+	</td>
+	<td>
+		{$Depreciation_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Depreciation_editcontrol1}&nbsp;
+	</td>
+{END Depreciation_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AmountPay}">
+	{BEGIN AmountPay_fieldblock}		
+	<td>
+		{$label schedule AmountPay}
+	</td>
+	<td>
+		<input type="checkbox" {$AmountPay_notbox}>
+	</td>
+	<td>
+		{$searchtype_AmountPay}
+	</td>
+	<td>
+		{$AmountPay_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AmountPay_editcontrol1}&nbsp;
+	</td>
+{END AmountPay_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Remark}">
+	{BEGIN Remark_fieldblock}		
+	<td>
+		{$label schedule Remark}
+	</td>
+	<td>
+		<input type="checkbox" {$Remark_notbox}>
+	</td>
+	<td>
+		{$searchtype_Remark}
+	</td>
+	<td>
+		{$Remark_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Remark_editcontrol1}&nbsp;
+	</td>
+{END Remark_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LoanID}">
+	{BEGIN LoanID_fieldblock}		
+	<td>
+		{$label schedule LoanID}
+	</td>
+	<td>
+		<input type="checkbox" {$LoanID_notbox}>
+	</td>
+	<td>
+		{$searchtype_LoanID}
+	</td>
+	<td>
+		{$LoanID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LoanID_editcontrol1}&nbsp;
+	</td>
+{END LoanID_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

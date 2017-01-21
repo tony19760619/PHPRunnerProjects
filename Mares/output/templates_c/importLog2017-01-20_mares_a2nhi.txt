@@ -1,0 +1,6 @@
+Import into mares
+20/01/2017 12:43:25
+
+9 out of 9 records processed successfully.
+9 records added.
+0 records updated.

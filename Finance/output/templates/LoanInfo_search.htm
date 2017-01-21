@@ -1,0 +1,274 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel LoanInfo search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_schedule_AccountNumber}">
+	{BEGIN schedule_AccountNumber_fieldblock}		
+	<td>
+		{$label LoanInfo schedule_AccountNumber}
+	</td>
+	<td>
+		<input type="checkbox" {$schedule_AccountNumber_notbox}>
+	</td>
+	<td>
+		{$searchtype_schedule_AccountNumber}
+	</td>
+	<td>
+		{$schedule_AccountNumber_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$schedule_AccountNumber_editcontrol1}&nbsp;
+	</td>
+{END schedule_AccountNumber_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_schedule_PaymentNo}">
+	{BEGIN schedule_PaymentNo_fieldblock}		
+	<td>
+		{$label LoanInfo schedule_PaymentNo}
+	</td>
+	<td>
+		<input type="checkbox" {$schedule_PaymentNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_schedule_PaymentNo}
+	</td>
+	<td>
+		{$schedule_PaymentNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$schedule_PaymentNo_editcontrol1}&nbsp;
+	</td>
+{END schedule_PaymentNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_schedule_PaymentDate}">
+	{BEGIN schedule_PaymentDate_fieldblock}		
+	<td>
+		{$label LoanInfo schedule_PaymentDate}
+	</td>
+	<td>
+		<input type="checkbox" {$schedule_PaymentDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_schedule_PaymentDate}
+	</td>
+	<td>
+		{$schedule_PaymentDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$schedule_PaymentDate_editcontrol1}&nbsp;
+	</td>
+{END schedule_PaymentDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_schedule_PaymentAmount}">
+	{BEGIN schedule_PaymentAmount_fieldblock}		
+	<td>
+		{$label LoanInfo schedule_PaymentAmount}
+	</td>
+	<td>
+		<input type="checkbox" {$schedule_PaymentAmount_notbox}>
+	</td>
+	<td>
+		{$searchtype_schedule_PaymentAmount}
+	</td>
+	<td>
+		{$schedule_PaymentAmount_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$schedule_PaymentAmount_editcontrol1}&nbsp;
+	</td>
+{END schedule_PaymentAmount_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_schedule_LoanInterest}">
+	{BEGIN schedule_LoanInterest_fieldblock}		
+	<td>
+		{$label LoanInfo schedule_LoanInterest}
+	</td>
+	<td>
+		<input type="checkbox" {$schedule_LoanInterest_notbox}>
+	</td>
+	<td>
+		{$searchtype_schedule_LoanInterest}
+	</td>
+	<td>
+		{$schedule_LoanInterest_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$schedule_LoanInterest_editcontrol1}&nbsp;
+	</td>
+{END schedule_LoanInterest_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_schedule_Depreciation}">
+	{BEGIN schedule_Depreciation_fieldblock}		
+	<td>
+		{$label LoanInfo schedule_Depreciation}
+	</td>
+	<td>
+		<input type="checkbox" {$schedule_Depreciation_notbox}>
+	</td>
+	<td>
+		{$searchtype_schedule_Depreciation}
+	</td>
+	<td>
+		{$schedule_Depreciation_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$schedule_Depreciation_editcontrol1}&nbsp;
+	</td>
+{END schedule_Depreciation_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_schedule_AmountPay}">
+	{BEGIN schedule_AmountPay_fieldblock}		
+	<td>
+		{$label LoanInfo schedule_AmountPay}
+	</td>
+	<td>
+		<input type="checkbox" {$schedule_AmountPay_notbox}>
+	</td>
+	<td>
+		{$searchtype_schedule_AmountPay}
+	</td>
+	<td>
+		{$schedule_AmountPay_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$schedule_AmountPay_editcontrol1}&nbsp;
+	</td>
+{END schedule_AmountPay_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_schedule_Remark}">
+	{BEGIN schedule_Remark_fieldblock}		
+	<td>
+		{$label LoanInfo schedule_Remark}
+	</td>
+	<td>
+		<input type="checkbox" {$schedule_Remark_notbox}>
+	</td>
+	<td>
+		{$searchtype_schedule_Remark}
+	</td>
+	<td>
+		{$schedule_Remark_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$schedule_Remark_editcontrol1}&nbsp;
+	</td>
+{END schedule_Remark_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_schedule_LoanID}">
+	{BEGIN schedule_LoanID_fieldblock}		
+	<td>
+		{$label LoanInfo schedule_LoanID}
+	</td>
+	<td>
+		<input type="checkbox" {$schedule_LoanID_notbox}>
+	</td>
+	<td>
+		{$searchtype_schedule_LoanID}
+	</td>
+	<td>
+		{$schedule_LoanID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$schedule_LoanID_editcontrol1}&nbsp;
+	</td>
+{END schedule_LoanID_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to Dashboard</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

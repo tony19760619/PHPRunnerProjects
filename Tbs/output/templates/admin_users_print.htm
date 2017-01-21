@@ -1,0 +1,204 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+{BEGIN page}
+<h1>Add/Edit users</h1>
+<span>
+{BEGIN page_number}
+Page {$pageno} of {$maxpages} 
+{END page_number}
+</span>
+
+	<div class="rnr-s-grid {$pageStyleName}">	
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable" cellpadding="0">
+		<thead>
+		{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN Id_fieldheadercolumn}
+<th class="runner-cc {$Id_class}" {$Id_style}>
+	{BEGIN Id_fieldheader}
+	<b>{$label admin_users Id}</b>
+	{END Id_fieldheader}
+</th>
+{END Id_fieldheadercolumn}
+	{BEGIN UserType_fieldheadercolumn}
+<th class="runner-cc {$UserType_class}" {$UserType_style}>
+	{BEGIN UserType_fieldheader}
+	<b>{$label admin_users UserType}</b>
+	{END UserType_fieldheader}
+</th>
+{END UserType_fieldheadercolumn}
+	{BEGIN Username_fieldheadercolumn}
+<th class="runner-cc {$Username_class}" {$Username_style}>
+	{BEGIN Username_fieldheader}
+	<b>{$label admin_users Username}</b>
+	{END Username_fieldheader}
+</th>
+{END Username_fieldheadercolumn}
+	{BEGIN Password_fieldheadercolumn}
+<th class="runner-cc {$Password_class}" {$Password_style}>
+	{BEGIN Password_fieldheader}
+	<b>{$label admin_users Password}</b>
+	{END Password_fieldheader}
+</th>
+{END Password_fieldheadercolumn}
+	{BEGIN CustomerId_fieldheadercolumn}
+<th class="runner-cc {$CustomerId_class}" {$CustomerId_style}>
+	{BEGIN CustomerId_fieldheader}
+	<b>{$label admin_users CustomerId}</b>
+	{END CustomerId_fieldheader}
+</th>
+{END CustomerId_fieldheadercolumn}
+	{BEGIN Name_fieldheadercolumn}
+<th class="runner-cc {$Name_class}" {$Name_style}>
+	{BEGIN Name_fieldheader}
+	<b>{$label admin_users Name}</b>
+	{END Name_fieldheader}
+</th>
+{END Name_fieldheadercolumn}
+	{BEGIN Active_fieldheadercolumn}
+<th class="runner-cc {$Active_class}" {$Active_style}>
+	{BEGIN Active_fieldheader}
+	<b>{$label admin_users Active}</b>
+	{END Active_fieldheader}
+</th>
+{END Active_fieldheadercolumn}
+	{BEGIN Email_fieldheadercolumn}
+<th class="runner-cc {$Email_class}" {$Email_style}>
+	{BEGIN Email_fieldheader}
+	<b>{$label admin_users Email}</b>
+	{END Email_fieldheader}
+</th>
+{END Email_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+		</thead>
+		<tbody>	
+		{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN Id_fieldcolumn}
+<td  class="runner-cc {$Id_class}" {$Id_style}>
+	{$Id_value}
+</td>
+{END Id_fieldcolumn}
+	{BEGIN UserType_fieldcolumn}
+<td  class="runner-cc {$UserType_class}" {$UserType_style}>
+	{$UserType_value}
+</td>
+{END UserType_fieldcolumn}
+	{BEGIN Username_fieldcolumn}
+<td  class="runner-cc {$Username_class}" {$Username_style}>
+	{$Username_value}
+</td>
+{END Username_fieldcolumn}
+	{BEGIN Password_fieldcolumn}
+<td  class="runner-cc {$Password_class}" {$Password_style}>
+	{$Password_value}
+</td>
+{END Password_fieldcolumn}
+	{BEGIN CustomerId_fieldcolumn}
+<td  class="runner-cc {$CustomerId_class}" {$CustomerId_style}>
+	{$CustomerId_value}
+</td>
+{END CustomerId_fieldcolumn}
+	{BEGIN Name_fieldcolumn}
+<td  class="runner-cc {$Name_class}" {$Name_style}>
+	{$Name_value}
+</td>
+{END Name_fieldcolumn}
+	{BEGIN Active_fieldcolumn}
+<td  class="runner-cc {$Active_class}" {$Active_style}>
+	{$Active_value}
+</td>
+{END Active_fieldcolumn}
+	{BEGIN Email_fieldcolumn}
+<td  class="runner-cc {$Email_class}" {$Email_style}>
+	{$Email_value}
+</td>
+{END Email_fieldcolumn}
+
+		<td class="rnr-edge">&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+{END grid_row}
+
+
+		
+		</tbody>
+	</table>
+</div>	
+{END page}
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,296 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel cidades search}</h2>
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN id_fieldblock}		
+	<div class="container {$fielddispclass_id}" data-fieldname="id">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label cidades id}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_id}
+			</div>
+			<div class="col-md-4" >
+				{$id_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$id_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END id_fieldblock}
+	{BEGIN terra_fieldblock}		
+	<div class="container {$fielddispclass_terra}" data-fieldname="terra">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label cidades terra}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_terra}
+			</div>
+			<div class="col-md-4" >
+				{$terra_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$terra_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END terra_fieldblock}
+	{BEGIN regiao_fieldblock}		
+	<div class="container {$fielddispclass_regiao}" data-fieldname="regiao">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label cidades regiao}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_regiao}
+			</div>
+			<div class="col-md-4" >
+				{$regiao_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$regiao_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END regiao_fieldblock}
+	{BEGIN cidade_fieldblock}		
+	<div class="container {$fielddispclass_cidade}" data-fieldname="cidade">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label cidades cidade}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_cidade}
+			</div>
+			<div class="col-md-4" >
+				{$cidade_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$cidade_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END cidade_fieldblock}
+	{BEGIN locale_fieldblock}		
+	<div class="container {$fielddispclass_locale}" data-fieldname="locale">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label cidades locale}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_locale}
+			</div>
+			<div class="col-md-4" >
+				{$locale_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$locale_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END locale_fieldblock}
+	{BEGIN longitude_fieldblock}		
+	<div class="container {$fielddispclass_longitude}" data-fieldname="longitude">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label cidades longitude}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_longitude}
+			</div>
+			<div class="col-md-4" >
+				{$longitude_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$longitude_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END longitude_fieldblock}
+	{BEGIN latitude_fieldblock}		
+	<div class="container {$fielddispclass_latitude}" data-fieldname="latitude">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label cidades latitude}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_latitude}
+			</div>
+			<div class="col-md-4" >
+				{$latitude_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$latitude_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END latitude_fieldblock}
+	{BEGIN v1diascript_fieldblock}		
+	<div class="container {$fielddispclass_v1diascript}" data-fieldname="v1diascript">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label cidades v1diascript}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_v1diascript}
+			</div>
+			<div class="col-md-4" >
+				{$v1diascript_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$v1diascript_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END v1diascript_fieldblock}
+	{BEGIN v3diasscript_fieldblock}		
+	<div class="container {$fielddispclass_v3diasscript}" data-fieldname="v3diasscript">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label cidades v3diasscript}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_v3diasscript}
+			</div>
+			<div class="col-md-4" >
+				{$v3diasscript_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$v3diasscript_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END v3diasscript_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-4"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Procurar</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Limpar</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Voltar à Lista</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

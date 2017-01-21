@@ -1,0 +1,293 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel loan search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_LoanID}">
+	{BEGIN LoanID_fieldblock}		
+	<td>
+		{$label loan LoanID}
+	</td>
+	<td>
+		<input type="checkbox" {$LoanID_notbox}>
+	</td>
+	<td>
+		{$searchtype_LoanID}
+	</td>
+	<td>
+		{$LoanID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LoanID_editcontrol1}&nbsp;
+	</td>
+{END LoanID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AccountName}">
+	{BEGIN AccountName_fieldblock}		
+	<td>
+		{$label loan AccountName}
+	</td>
+	<td>
+		<input type="checkbox" {$AccountName_notbox}>
+	</td>
+	<td>
+		{$searchtype_AccountName}
+	</td>
+	<td>
+		{$AccountName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AccountName_editcontrol1}&nbsp;
+	</td>
+{END AccountName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ClientNo}">
+	{BEGIN ClientNo_fieldblock}		
+	<td>
+		{$label loan ClientNo}
+	</td>
+	<td>
+		<input type="checkbox" {$ClientNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_ClientNo}
+	</td>
+	<td>
+		{$ClientNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ClientNo_editcontrol1}&nbsp;
+	</td>
+{END ClientNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AccountNumber}">
+	{BEGIN AccountNumber_fieldblock}		
+	<td>
+		{$label loan AccountNumber}
+	</td>
+	<td>
+		<input type="checkbox" {$AccountNumber_notbox}>
+	</td>
+	<td>
+		{$searchtype_AccountNumber}
+	</td>
+	<td>
+		{$AccountNumber_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AccountNumber_editcontrol1}&nbsp;
+	</td>
+{END AccountNumber_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TelephoneNo}">
+	{BEGIN TelephoneNo_fieldblock}		
+	<td>
+		{$label loan TelephoneNo}
+	</td>
+	<td>
+		<input type="checkbox" {$TelephoneNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_TelephoneNo}
+	</td>
+	<td>
+		{$TelephoneNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TelephoneNo_editcontrol1}&nbsp;
+	</td>
+{END TelephoneNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_DateLoanApproved}">
+	{BEGIN DateLoanApproved_fieldblock}		
+	<td>
+		{$label loan DateLoanApproved}
+	</td>
+	<td>
+		<input type="checkbox" {$DateLoanApproved_notbox}>
+	</td>
+	<td>
+		{$searchtype_DateLoanApproved}
+	</td>
+	<td>
+		{$DateLoanApproved_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$DateLoanApproved_editcontrol1}&nbsp;
+	</td>
+{END DateLoanApproved_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LoanAmount}">
+	{BEGIN LoanAmount_fieldblock}		
+	<td>
+		{$label loan LoanAmount}
+	</td>
+	<td>
+		<input type="checkbox" {$LoanAmount_notbox}>
+	</td>
+	<td>
+		{$searchtype_LoanAmount}
+	</td>
+	<td>
+		{$LoanAmount_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LoanAmount_editcontrol1}&nbsp;
+	</td>
+{END LoanAmount_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LoanInterest}">
+	{BEGIN LoanInterest_fieldblock}		
+	<td>
+		{$label loan LoanInterest}
+	</td>
+	<td>
+		<input type="checkbox" {$LoanInterest_notbox}>
+	</td>
+	<td>
+		{$searchtype_LoanInterest}
+	</td>
+	<td>
+		{$LoanInterest_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LoanInterest_editcontrol1}&nbsp;
+	</td>
+{END LoanInterest_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LoanPeriod}">
+	{BEGIN LoanPeriod_fieldblock}		
+	<td>
+		{$label loan LoanPeriod}
+	</td>
+	<td>
+		<input type="checkbox" {$LoanPeriod_notbox}>
+	</td>
+	<td>
+		{$searchtype_LoanPeriod}
+	</td>
+	<td>
+		{$LoanPeriod_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LoanPeriod_editcontrol1}&nbsp;
+	</td>
+{END LoanPeriod_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_FirstPaymentDate}">
+	{BEGIN FirstPaymentDate_fieldblock}		
+	<td>
+		{$label loan FirstPaymentDate}
+	</td>
+	<td>
+		<input type="checkbox" {$FirstPaymentDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_FirstPaymentDate}
+	</td>
+	<td>
+		{$FirstPaymentDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$FirstPaymentDate_editcontrol1}&nbsp;
+	</td>
+{END FirstPaymentDate_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

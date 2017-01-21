@@ -1,0 +1,65 @@
+<div {$pageattrs}>
+
+{BEGIN container_0}
+<table class="runner-c runner-c-0" cellpadding="0" >
+<tr class="{$cheaderclass_0}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+
+<td  class="runner-cc runner-bl runner-b-masterlistheader" {$brickclass_masterlistheader}><span><b><span dir="LTR">Customer: [{$showKeys}]</span></b></span></td>
+
+
+<td class="runner-cc filler"></td>
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_0}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_0}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<table class="runner-c runner-c-mastergrid runner-b-masterlistfields" cellpadding="0">
+		<tr class="runner-toprow style1">
+			<th class="runner-cl"><img src="images/spacer.gif"></th>
+			<th class="runner-cc ">Id</th>
+			<th class="runner-cc runner-clast">Name</th>
+			<th class="runner-cr"><img src="images/spacer.gif"></th>
+		</tr>
+		<tr class="runner-row style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			<td class="runner-cc ">{$Id_mastervalue}</td>
+			<td class="runner-cc runner-clast">{$Name_mastervalue}</td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+		<tr class="runner-bottomrow style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+				<td class="runner-cc "></td>
+				<td class="runner-cc runner-clast"></td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+	</table>
+ 
+
+
+
+
+{END container_mastergrid}
+
+</div>

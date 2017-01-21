@@ -1,0 +1,312 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel offeraride search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id}">
+	{BEGIN id_fieldblock}		
+	<td>
+		{$label offeraride id}
+	</td>
+	<td>
+		<input type="checkbox" {$id_notbox}>
+	</td>
+	<td>
+		{$searchtype_id}
+	</td>
+	<td>
+		{$id_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_editcontrol1}&nbsp;
+	</td>
+{END id_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_HomeLocation}">
+	{BEGIN HomeLocation_fieldblock}		
+	<td>
+		{$label offeraride HomeLocation}
+	</td>
+	<td>
+		<input type="checkbox" {$HomeLocation_notbox}>
+	</td>
+	<td>
+		{$searchtype_HomeLocation}
+	</td>
+	<td>
+		{$HomeLocation_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$HomeLocation_editcontrol1}&nbsp;
+	</td>
+{END HomeLocation_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_CurrentLocation}">
+	{BEGIN CurrentLocation_fieldblock}		
+	<td>
+		{$label offeraride CurrentLocation}
+	</td>
+	<td>
+		<input type="checkbox" {$CurrentLocation_notbox}>
+	</td>
+	<td>
+		{$searchtype_CurrentLocation}
+	</td>
+	<td>
+		{$CurrentLocation_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$CurrentLocation_editcontrol1}&nbsp;
+	</td>
+{END CurrentLocation_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TransportPicture}">
+	{BEGIN TransportPicture_fieldblock}		
+	<td>
+		{$label offeraride TransportPicture}
+	</td>
+	<td>
+		<input type="checkbox" {$TransportPicture_notbox}>
+	</td>
+	<td>
+		{$searchtype_TransportPicture}
+	</td>
+	<td>
+		{$TransportPicture_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TransportPicture_editcontrol1}&nbsp;
+	</td>
+{END TransportPicture_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TransportType}">
+	{BEGIN TransportType_fieldblock}		
+	<td>
+		{$label offeraride TransportType}
+	</td>
+	<td>
+		<input type="checkbox" {$TransportType_notbox}>
+	</td>
+	<td>
+		{$searchtype_TransportType}
+	</td>
+	<td>
+		{$TransportType_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TransportType_editcontrol1}&nbsp;
+	</td>
+{END TransportType_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_WhoDoesTheDriving}">
+	{BEGIN WhoDoesTheDriving_fieldblock}		
+	<td>
+		{$label offeraride WhoDoesTheDriving}
+	</td>
+	<td>
+		<input type="checkbox" {$WhoDoesTheDriving_notbox}>
+	</td>
+	<td>
+		{$searchtype_WhoDoesTheDriving}
+	</td>
+	<td>
+		{$WhoDoesTheDriving_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$WhoDoesTheDriving_editcontrol1}&nbsp;
+	</td>
+{END WhoDoesTheDriving_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ChargingPerDay}">
+	{BEGIN ChargingPerDay_fieldblock}		
+	<td>
+		{$label offeraride ChargingPerDay}
+	</td>
+	<td>
+		<input type="checkbox" {$ChargingPerDay_notbox}>
+	</td>
+	<td>
+		{$searchtype_ChargingPerDay}
+	</td>
+	<td>
+		{$ChargingPerDay_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ChargingPerDay_editcontrol1}&nbsp;
+	</td>
+{END ChargingPerDay_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ChargingPerHalfDay}">
+	{BEGIN ChargingPerHalfDay_fieldblock}		
+	<td>
+		{$label offeraride ChargingPerHalfDay}
+	</td>
+	<td>
+		<input type="checkbox" {$ChargingPerHalfDay_notbox}>
+	</td>
+	<td>
+		{$searchtype_ChargingPerHalfDay}
+	</td>
+	<td>
+		{$ChargingPerHalfDay_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ChargingPerHalfDay_editcontrol1}&nbsp;
+	</td>
+{END ChargingPerHalfDay_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ChargingCoverCharge}">
+	{BEGIN ChargingCoverCharge_fieldblock}		
+	<td>
+		{$label offeraride ChargingCoverCharge}
+	</td>
+	<td>
+		<input type="checkbox" {$ChargingCoverCharge_notbox}>
+	</td>
+	<td>
+		{$searchtype_ChargingCoverCharge}
+	</td>
+	<td>
+		{$ChargingCoverCharge_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ChargingCoverCharge_editcontrol1}&nbsp;
+	</td>
+{END ChargingCoverCharge_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ChargingPerCubicMeterPerKm}">
+	{BEGIN ChargingPerCubicMeterPerKm_fieldblock}		
+	<td>
+		{$label offeraride ChargingPerCubicMeterPerKm}
+	</td>
+	<td>
+		<input type="checkbox" {$ChargingPerCubicMeterPerKm_notbox}>
+	</td>
+	<td>
+		{$searchtype_ChargingPerCubicMeterPerKm}
+	</td>
+	<td>
+		{$ChargingPerCubicMeterPerKm_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ChargingPerCubicMeterPerKm_editcontrol1}&nbsp;
+	</td>
+{END ChargingPerCubicMeterPerKm_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Username}">
+	{BEGIN Username_fieldblock}		
+	<td>
+		{$label offeraride Username}
+	</td>
+	<td>
+		<input type="checkbox" {$Username_notbox}>
+	</td>
+	<td>
+		{$searchtype_Username}
+	</td>
+	<td>
+		{$Username_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Username_editcontrol1}&nbsp;
+	</td>
+{END Username_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

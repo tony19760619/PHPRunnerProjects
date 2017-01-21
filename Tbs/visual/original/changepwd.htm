@@ -1,0 +1,118 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+{BEGIN container_fields}
+<table class="runner-c runner-c-fields" cellpadding="0" align=center>
+
+
+<tr class="runner-toprow style2 header"><td class="runner-cl"><img src="images/spacer.gif"></td><td class="runner-cc" colspan=2><div  class="runner-b-changeheader {$brickclass_changeheader}"><b><font size=+1>Change password</font></b></div></td><td class="runner-cr"><img src="images/spacer.gif"></td></tr>
+
+
+{BEGIN message_block}
+<tr  class="runner-row style1 runner-b-message {$brickclass_message}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=2><div class="runner-message">{$message}</div></td><td class="runner-cr"></td></tr>{END message_block}
+
+
+
+<tr class="runner-row style1 runner-b-changefields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+		<div align="left">Old password:</div>
+	</td>
+	<td class="runner-cc alt">
+		<input name="opass" type="password" {$opass_attrs}>
+	</td>
+<td class="runner-cr alt"></td></tr>
+<tr class="runner-row style1 runner-b-changefields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+		<div align="left">New password:</div>
+	</td>
+	<td class="runner-cc alt">
+		<input type="password" name="newpass" {$npass_attrs}>
+	</td>
+<td class="runner-cr alt"></td></tr>
+<tr class="runner-row style1 runner-b-changefields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+		<div align="left">Confirm password:</div>
+	</td>
+	<td class="runner-cc alt">
+		<input type="password" name="cpass" {$cpass_attrs}>
+	</td>
+<td class="runner-cr alt"></td></tr>
+
+
+
+
+<tr  class="runner-row style2 runner-b-changebuttons {$brickclass_changebuttons}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=2><span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$loginlink_attrs}>Submit</a>
+</span>
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a  class="runner-button" {$backlink_attrs}>Back</a>
+</span></td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_fields}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_fields}
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

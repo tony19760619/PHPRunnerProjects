@@ -1,0 +1,312 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel jobsjobs search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Company}">
+	{BEGIN Company_fieldblock}		
+	<td>
+		{$label jobsjobs Company}
+	</td>
+	<td>
+		<input type="checkbox" {$Company_notbox}>
+	</td>
+	<td>
+		{$searchtype_Company}
+	</td>
+	<td>
+		{$Company_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Company_editcontrol1}&nbsp;
+	</td>
+{END Company_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Title}">
+	{BEGIN Title_fieldblock}		
+	<td>
+		{$label jobsjobs Title}
+	</td>
+	<td>
+		<input type="checkbox" {$Title_notbox}>
+	</td>
+	<td>
+		{$searchtype_Title}
+	</td>
+	<td>
+		{$Title_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Title_editcontrol1}&nbsp;
+	</td>
+{END Title_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Description}">
+	{BEGIN Description_fieldblock}		
+	<td>
+		{$label jobsjobs Description}
+	</td>
+	<td>
+		<input type="checkbox" {$Description_notbox}>
+	</td>
+	<td>
+		{$searchtype_Description}
+	</td>
+	<td>
+		{$Description_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Description_editcontrol1}&nbsp;
+	</td>
+{END Description_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_HowToApply}">
+	{BEGIN HowToApply_fieldblock}		
+	<td>
+		{$label jobsjobs HowToApply}
+	</td>
+	<td>
+		<input type="checkbox" {$HowToApply_notbox}>
+	</td>
+	<td>
+		{$searchtype_HowToApply}
+	</td>
+	<td>
+		{$HowToApply_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$HowToApply_editcontrol1}&nbsp;
+	</td>
+{END HowToApply_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Zip}">
+	{BEGIN Zip_fieldblock}		
+	<td>
+		{$label jobsjobs Zip}
+	</td>
+	<td>
+		<input type="checkbox" {$Zip_notbox}>
+	</td>
+	<td>
+		{$searchtype_Zip}
+	</td>
+	<td>
+		{$Zip_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Zip_editcontrol1}&nbsp;
+	</td>
+{END Zip_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_City}">
+	{BEGIN City_fieldblock}		
+	<td>
+		{$label jobsjobs City}
+	</td>
+	<td>
+		<input type="checkbox" {$City_notbox}>
+	</td>
+	<td>
+		{$searchtype_City}
+	</td>
+	<td>
+		{$City_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$City_editcontrol1}&nbsp;
+	</td>
+{END City_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_state}">
+	{BEGIN state_fieldblock}		
+	<td>
+		{$label jobsjobs state}
+	</td>
+	<td>
+		<input type="checkbox" {$state_notbox}>
+	</td>
+	<td>
+		{$searchtype_state}
+	</td>
+	<td>
+		{$state_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$state_editcontrol1}&nbsp;
+	</td>
+{END state_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Country}">
+	{BEGIN Country_fieldblock}		
+	<td>
+		{$label jobsjobs Country}
+	</td>
+	<td>
+		<input type="checkbox" {$Country_notbox}>
+	</td>
+	<td>
+		{$searchtype_Country}
+	</td>
+	<td>
+		{$Country_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Country_editcontrol1}&nbsp;
+	</td>
+{END Country_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Website}">
+	{BEGIN Website_fieldblock}		
+	<td>
+		{$label jobsjobs Website}
+	</td>
+	<td>
+		<input type="checkbox" {$Website_notbox}>
+	</td>
+	<td>
+		{$searchtype_Website}
+	</td>
+	<td>
+		{$Website_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Website_editcontrol1}&nbsp;
+	</td>
+{END Website_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LogoURL}">
+	{BEGIN LogoURL_fieldblock}		
+	<td>
+		{$label jobsjobs LogoURL}
+	</td>
+	<td>
+		<input type="checkbox" {$LogoURL_notbox}>
+	</td>
+	<td>
+		{$searchtype_LogoURL}
+	</td>
+	<td>
+		{$LogoURL_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LogoURL_editcontrol1}&nbsp;
+	</td>
+{END LogoURL_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Category}">
+	{BEGIN Category_fieldblock}		
+	<td>
+		{$label jobsjobs Category}
+	</td>
+	<td>
+		<input type="checkbox" {$Category_notbox}>
+	</td>
+	<td>
+		{$searchtype_Category}
+	</td>
+	<td>
+		{$Category_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Category_editcontrol1}&nbsp;
+	</td>
+{END Category_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

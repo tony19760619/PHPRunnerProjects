@@ -1,0 +1,302 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel lead print}</h2>
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN CompanyName_fieldheadercolumn}
+			<th class="{$CompanyName_class}" {$CompanyName_style}  data-field="CompanyName">
+				{$label lead CompanyName}
+			</th>
+			{END CompanyName_fieldheadercolumn}
+			{BEGIN ID_fieldheadercolumn}
+			<th class="{$ID_class}" {$ID_style}  data-field="ID">
+				{$label lead ID}
+			</th>
+			{END ID_fieldheadercolumn}
+			{BEGIN Address_fieldheadercolumn}
+			<th class="{$Address_class}" {$Address_style}  data-field="Address">
+				{$label lead Address}
+			</th>
+			{END Address_fieldheadercolumn}
+			{BEGIN TelNoAndEmailAddress_fieldheadercolumn}
+			<th class="{$TelNoAndEmailAddress_class}" {$TelNoAndEmailAddress_style}  data-field="TelNoAndEmailAddress">
+				{$label lead TelNoAndEmailAddress}
+			</th>
+			{END TelNoAndEmailAddress_fieldheadercolumn}
+			{BEGIN WhoSpokenToAndWhoIsPersonInCharge_fieldheadercolumn}
+			<th class="{$WhoSpokenToAndWhoIsPersonInCharge_class}" {$WhoSpokenToAndWhoIsPersonInCharge_style}  data-field="WhoSpokenToAndWhoIsPersonInCharge">
+				{$label lead WhoSpokenToAndWhoIsPersonInCharge}
+			</th>
+			{END WhoSpokenToAndWhoIsPersonInCharge_fieldheadercolumn}
+			{BEGIN RenewalDateOfCurrentContract_fieldheadercolumn}
+			<th class="{$RenewalDateOfCurrentContract_class}" {$RenewalDateOfCurrentContract_style}  data-field="RenewalDateOfCurrentContract">
+				{$label lead RenewalDateOfCurrentContract}
+			</th>
+			{END RenewalDateOfCurrentContract_fieldheadercolumn}
+			{BEGIN DateSeen_fieldheadercolumn}
+			<th class="{$DateSeen_class}" {$DateSeen_style}  data-field="DateSeen">
+				{$label lead DateSeen}
+			</th>
+			{END DateSeen_fieldheadercolumn}
+			{BEGIN NextContact_fieldheadercolumn}
+			<th class="{$NextContact_class}" {$NextContact_style}  data-field="NextContact">
+				{$label lead NextContact}
+			</th>
+			{END NextContact_fieldheadercolumn}
+			{BEGIN Info_fieldheadercolumn}
+			<th class="{$Info_class}" {$Info_style}  data-field="Info">
+				{$label lead Info}
+			</th>
+			{END Info_fieldheadercolumn}
+			{BEGIN Interested_fieldheadercolumn}
+			<th class="{$Interested_class}" {$Interested_style}  data-field="Interested">
+				{$label lead Interested}
+			</th>
+			{END Interested_fieldheadercolumn}
+			{BEGIN NotInterested_fieldheadercolumn}
+			<th class="{$NotInterested_class}" {$NotInterested_style}  data-field="NotInterested">
+				{$label lead NotInterested}
+			</th>
+			{END NotInterested_fieldheadercolumn}
+			{BEGIN NumberOfBins_fieldheadercolumn}
+			<th class="{$NumberOfBins_class}" {$NumberOfBins_style}  data-field="NumberOfBins">
+				{$label lead NumberOfBins}
+			</th>
+			{END NumberOfBins_fieldheadercolumn}
+			{BEGIN WeeksInMonth_fieldheadercolumn}
+			<th class="{$WeeksInMonth_class}" {$WeeksInMonth_style}  data-field="WeeksInMonth">
+				{$label lead WeeksInMonth}
+			</th>
+			{END WeeksInMonth_fieldheadercolumn}
+			{BEGIN PickupsPerWeek_fieldheadercolumn}
+			<th class="{$PickupsPerWeek_class}" {$PickupsPerWeek_style}  data-field="PickupsPerWeek">
+				{$label lead PickupsPerWeek}
+			</th>
+			{END PickupsPerWeek_fieldheadercolumn}
+			{BEGIN ChargePerPickupPerBin_fieldheadercolumn}
+			<th class="{$ChargePerPickupPerBin_class}" {$ChargePerPickupPerBin_style}  data-field="ChargePerPickupPerBin">
+				{$label lead ChargePerPickupPerBin}
+			</th>
+			{END ChargePerPickupPerBin_fieldheadercolumn}
+			{BEGIN TotalExclVAT_fieldheadercolumn}
+			<th class="{$TotalExclVAT_class}" {$TotalExclVAT_style}  data-field="TotalExclVAT">
+				{$label lead TotalExclVAT}
+			</th>
+			{END TotalExclVAT_fieldheadercolumn}
+			{BEGIN VAT_fieldheadercolumn}
+			<th class="{$VAT_class}" {$VAT_style}  data-field="VAT">
+				{$label lead VAT}
+			</th>
+			{END VAT_fieldheadercolumn}
+			{BEGIN TotalInclVAT_fieldheadercolumn}
+			<th class="{$TotalInclVAT_class}" {$TotalInclVAT_style}  data-field="TotalInclVAT">
+				{$label lead TotalInclVAT}
+			</th>
+			{END TotalInclVAT_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN CompanyName_fieldcolumn}
+			<td  class="{$CompanyName_class}" {$CompanyName_style} {$recordattrs}>
+				{$CompanyName_value}
+			</td>
+			{END CompanyName_fieldcolumn}
+			{BEGIN ID_fieldcolumn}
+			<td  class="{$ID_class}" {$ID_style} {$recordattrs}>
+				{$ID_value}
+			</td>
+			{END ID_fieldcolumn}
+			{BEGIN Address_fieldcolumn}
+			<td  class="{$Address_class}" {$Address_style} {$recordattrs}>
+				{$Address_value}
+			</td>
+			{END Address_fieldcolumn}
+			{BEGIN TelNoAndEmailAddress_fieldcolumn}
+			<td  class="{$TelNoAndEmailAddress_class}" {$TelNoAndEmailAddress_style} {$recordattrs}>
+				{$TelNoAndEmailAddress_value}
+			</td>
+			{END TelNoAndEmailAddress_fieldcolumn}
+			{BEGIN WhoSpokenToAndWhoIsPersonInCharge_fieldcolumn}
+			<td  class="{$WhoSpokenToAndWhoIsPersonInCharge_class}" {$WhoSpokenToAndWhoIsPersonInCharge_style} {$recordattrs}>
+				{$WhoSpokenToAndWhoIsPersonInCharge_value}
+			</td>
+			{END WhoSpokenToAndWhoIsPersonInCharge_fieldcolumn}
+			{BEGIN RenewalDateOfCurrentContract_fieldcolumn}
+			<td  class="{$RenewalDateOfCurrentContract_class}" {$RenewalDateOfCurrentContract_style} {$recordattrs}>
+				{$RenewalDateOfCurrentContract_value}
+			</td>
+			{END RenewalDateOfCurrentContract_fieldcolumn}
+			{BEGIN DateSeen_fieldcolumn}
+			<td  class="{$DateSeen_class}" {$DateSeen_style} {$recordattrs}>
+				{$DateSeen_value}
+			</td>
+			{END DateSeen_fieldcolumn}
+			{BEGIN NextContact_fieldcolumn}
+			<td  class="{$NextContact_class}" {$NextContact_style} {$recordattrs}>
+				{$NextContact_value}
+			</td>
+			{END NextContact_fieldcolumn}
+			{BEGIN Info_fieldcolumn}
+			<td  class="{$Info_class}" {$Info_style} {$recordattrs}>
+				{$Info_value}
+			</td>
+			{END Info_fieldcolumn}
+			{BEGIN Interested_fieldcolumn}
+			<td  class="{$Interested_class}" {$Interested_style} {$recordattrs}>
+				{$Interested_value}
+			</td>
+			{END Interested_fieldcolumn}
+			{BEGIN NotInterested_fieldcolumn}
+			<td  class="{$NotInterested_class}" {$NotInterested_style} {$recordattrs}>
+				{$NotInterested_value}
+			</td>
+			{END NotInterested_fieldcolumn}
+			{BEGIN NumberOfBins_fieldcolumn}
+			<td  class="{$NumberOfBins_class}" {$NumberOfBins_style} {$recordattrs}>
+				{$NumberOfBins_value}
+			</td>
+			{END NumberOfBins_fieldcolumn}
+			{BEGIN WeeksInMonth_fieldcolumn}
+			<td  class="{$WeeksInMonth_class}" {$WeeksInMonth_style} {$recordattrs}>
+				{$WeeksInMonth_value}
+			</td>
+			{END WeeksInMonth_fieldcolumn}
+			{BEGIN PickupsPerWeek_fieldcolumn}
+			<td  class="{$PickupsPerWeek_class}" {$PickupsPerWeek_style} {$recordattrs}>
+				{$PickupsPerWeek_value}
+			</td>
+			{END PickupsPerWeek_fieldcolumn}
+			{BEGIN ChargePerPickupPerBin_fieldcolumn}
+			<td  class="{$ChargePerPickupPerBin_class}" {$ChargePerPickupPerBin_style} {$recordattrs}>
+				{$ChargePerPickupPerBin_value}
+			</td>
+			{END ChargePerPickupPerBin_fieldcolumn}
+			{BEGIN TotalExclVAT_fieldcolumn}
+			<td  class="{$TotalExclVAT_class}" {$TotalExclVAT_style} {$recordattrs}>
+				{$TotalExclVAT_value}
+			</td>
+			{END TotalExclVAT_fieldcolumn}
+			{BEGIN VAT_fieldcolumn}
+			<td  class="{$VAT_class}" {$VAT_style} {$recordattrs}>
+				{$VAT_value}
+			</td>
+			{END VAT_fieldcolumn}
+			{BEGIN TotalInclVAT_fieldcolumn}
+			<td  class="{$TotalInclVAT_class}" {$TotalInclVAT_style} {$recordattrs}>
+				{$TotalInclVAT_value}
+			</td>
+			{END TotalInclVAT_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,140 @@
+body.page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .rnr-c-fields,
+  .rnr-pagewrapper .page-preview .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-c-fields,
+  .rnr-pagewrapper .page-preview .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-fields
+{
+min-width: 500px; display:inline-block
+}
+.page-preview .rnr-cw-fields,
+  .rnr-pagewrapper .page-preview .rnr-cw-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-cw-fields
+{
+text-align: left;
+}
+.page-preview .rnr-b-addheader,
+  .rnr-pagewrapper .page-preview .rnr-b-addheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-addheader
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-addheader,
+  .rnr-pagewrapper .page-preview .rnr-b-addheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-addheader
+{
+text-align: right;
+}
+.page-preview .rnr-b-addheader > *,
+  .rnr-pagewrapper .page-preview .rnr-b-addheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-addheader > *
+{
+font-size: 120%;
+}
+.page-preview .rnr-b-message,
+  .rnr-pagewrapper .page-preview .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-message,
+  .rnr-pagewrapper .page-preview .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-message
+{
+text-align: right;
+}
+.page-preview .rnr-b-message > *,
+  .rnr-pagewrapper .page-preview .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-message > *
+{
+
+}
+.page-preview .rnr-b-multistep_nav_add,
+  .rnr-pagewrapper .page-preview .rnr-b-multistep_nav_add,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-multistep_nav_add
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-multistep_nav_add,
+  .rnr-pagewrapper .page-preview .rnr-b-multistep_nav_add,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-multistep_nav_add
+{
+text-align: right;
+}
+.page-preview .rnr-b-multistep_nav_add > *,
+  .rnr-pagewrapper .page-preview .rnr-b-multistep_nav_add > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-multistep_nav_add > *
+{
+
+}
+.page-preview .rnr-b-addfields_simple,
+  .rnr-pagewrapper .page-preview .rnr-b-addfields_simple,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-addfields_simple
+{
+white-space: normal;
+}
+.page-preview .rnr-b-addfields_simple,
+  .rnr-pagewrapper .page-preview .rnr-b-addfields_simple,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-addfields_simple
+{
+text-align: right;
+}
+.page-preview .rnr-b-addfields_simple > *,
+  .rnr-pagewrapper .page-preview .rnr-b-addfields_simple > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-addfields_simple > *
+{
+
+}
+.page-preview .rnr-b-addbuttons,
+  .rnr-pagewrapper .page-preview .rnr-b-addbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-addbuttons
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-addbuttons,
+  .rnr-pagewrapper .page-preview .rnr-b-addbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-addbuttons
+{
+text-align: right;
+}
+.page-preview .rnr-b-addbuttons > *,
+  .rnr-pagewrapper .page-preview .rnr-b-addbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-addbuttons > *
+{
+
+}
+.page-preview .rnr-c-details,
+  .rnr-pagewrapper .page-preview .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-details
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-b-adddetails,
+  .rnr-pagewrapper .page-preview .rnr-b-adddetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-adddetails
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-adddetails,
+  .rnr-pagewrapper .page-preview .rnr-b-adddetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-adddetails
+{
+text-align: right;
+}
+.page-preview .rnr-b-adddetails > *,
+  .rnr-pagewrapper .page-preview .rnr-b-adddetails > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-adddetails > *
+{
+
+}
+body.page-preview .rnr-top
+{
+padding-right: 5px;
+}

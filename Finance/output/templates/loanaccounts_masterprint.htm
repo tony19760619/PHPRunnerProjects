@@ -1,0 +1,64 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}">	<h1>{$pagetitlelabel loanaccounts masterprint}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-masterprintfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$AccountHolder_class}">{$label loanaccounts AccountHolder}</th>
+			<th class="{$AccountName_class}">{$label loanaccounts AccountName}</th>
+			<th class="{$id_class}">{$label loanaccounts id}</th>
+			<th class="{$ClientNo_class}">{$label loanaccounts ClientNo}</th>
+			<th class="{$AccountNumber_class}">{$label loanaccounts AccountNumber}</th>
+			<th class="{$OpeningBalance_class}">{$label loanaccounts OpeningBalance}</th>
+			<th class="{$InterestRate_class}">{$label loanaccounts InterestRate}</th>
+			<th class="{$LastTransactionDate_class}">{$label loanaccounts LastTransactionDate}</th>
+			<th class="{$LoanCreditPaymentPurpose_class}">{$label loanaccounts LoanCreditPaymentPurpose}</th>
+			<th class="{$SetWithdrawDate_class}">{$label loanaccounts SetWithdrawDate}</th>
+			<th class="{$LastModifiedBy_class}">{$label loanaccounts LastModifiedBy}</th>
+			<th class="{$LastModifiedDate_class}">{$label loanaccounts LastModifiedDate}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$AccountHolder_class}">{$AccountHolder_mastervalue}</td>
+			<td class="{$AccountName_class}">{$AccountName_mastervalue}</td>
+			<td class="{$id_class}">{$id_mastervalue}</td>
+			<td class="{$ClientNo_class}">{$ClientNo_mastervalue}</td>
+			<td class="{$AccountNumber_class}">{$AccountNumber_mastervalue}</td>
+			<td class="{$OpeningBalance_class}">{$OpeningBalance_mastervalue}</td>
+			<td class="{$InterestRate_class}">{$InterestRate_mastervalue}</td>
+			<td class="{$LastTransactionDate_class}">{$LastTransactionDate_mastervalue}</td>
+			<td class="{$LoanCreditPaymentPurpose_class}">{$LoanCreditPaymentPurpose_mastervalue}</td>
+			<td class="{$SetWithdrawDate_class}">{$SetWithdrawDate_mastervalue}</td>
+			<td class="{$LastModifiedBy_class}">{$LastModifiedBy_mastervalue}</td>
+			<td class="{$LastModifiedDate_class}">{$LastModifiedDate_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+
+{END container_mastergrid}
+
+</div>

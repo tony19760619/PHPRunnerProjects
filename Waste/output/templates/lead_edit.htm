@@ -1,0 +1,521 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN editheader}
+	<h2 {$editheader_hiddenattr} data-pageid="{$pageid}" data-brick="editheader" >{$pagetitlelabel lead edit}</h2>
+
+{END editheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$editfields_hiddenattr} data-pageid="{$pageid}" data-brick="editfields" class="form-horizontal" role="form">
+
+
+
+			{BEGIN CompanyName_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_CompanyName}" data-fieldname="CompanyName" data-signal-error-for="CompanyName{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_CompanyName}">
+		{BEGIN CompanyName_label}{$label lead CompanyName}{END CompanyName_label}
+	</label>
+	<div class="col-md-6" >
+		{$CompanyName_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="CompanyName">
+		<div class="text-muted" >
+		{$tooltip lead CompanyName}
+		</div>
+	</div>
+</div>
+</div>
+{END CompanyName_fieldblock}
+
+			{BEGIN Address_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Address}" data-fieldname="Address" data-signal-error-for="Address{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Address}">
+		{BEGIN Address_label}{$label lead Address}{END Address_label}
+	</label>
+	<div class="col-md-6" >
+		{$Address_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Address">
+		<div class="text-muted" >
+		{$tooltip lead Address}
+		</div>
+	</div>
+</div>
+</div>
+{END Address_fieldblock}
+
+			{BEGIN TelNoAndEmailAddress_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TelNoAndEmailAddress}" data-fieldname="TelNoAndEmailAddress" data-signal-error-for="TelNoAndEmailAddress{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TelNoAndEmailAddress}">
+		{BEGIN TelNoAndEmailAddress_label}{$label lead TelNoAndEmailAddress}{END TelNoAndEmailAddress_label}
+	</label>
+	<div class="col-md-6" >
+		{$TelNoAndEmailAddress_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TelNoAndEmailAddress">
+		<div class="text-muted" >
+		{$tooltip lead TelNoAndEmailAddress}
+		</div>
+	</div>
+</div>
+</div>
+{END TelNoAndEmailAddress_fieldblock}
+
+			{BEGIN WhoSpokenToAndWhoIsPersonInCharge_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_WhoSpokenToAndWhoIsPersonInCharge}" data-fieldname="WhoSpokenToAndWhoIsPersonInCharge" data-signal-error-for="WhoSpokenToAndWhoIsPersonInCharge{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_WhoSpokenToAndWhoIsPersonInCharge}">
+		{BEGIN WhoSpokenToAndWhoIsPersonInCharge_label}{$label lead WhoSpokenToAndWhoIsPersonInCharge}{END WhoSpokenToAndWhoIsPersonInCharge_label}
+	</label>
+	<div class="col-md-6" >
+		{$WhoSpokenToAndWhoIsPersonInCharge_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="WhoSpokenToAndWhoIsPersonInCharge">
+		<div class="text-muted" >
+		{$tooltip lead WhoSpokenToAndWhoIsPersonInCharge}
+		</div>
+	</div>
+</div>
+</div>
+{END WhoSpokenToAndWhoIsPersonInCharge_fieldblock}
+
+			{BEGIN RenewalDateOfCurrentContract_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_RenewalDateOfCurrentContract}" data-fieldname="RenewalDateOfCurrentContract" data-signal-error-for="RenewalDateOfCurrentContract{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_RenewalDateOfCurrentContract}">
+		{BEGIN RenewalDateOfCurrentContract_label}{$label lead RenewalDateOfCurrentContract}{END RenewalDateOfCurrentContract_label}
+	</label>
+	<div class="col-md-6" >
+		{$RenewalDateOfCurrentContract_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="RenewalDateOfCurrentContract">
+		<div class="text-muted" >
+		{$tooltip lead RenewalDateOfCurrentContract}
+		</div>
+	</div>
+</div>
+</div>
+{END RenewalDateOfCurrentContract_fieldblock}
+
+			{BEGIN DateSeen_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_DateSeen}" data-fieldname="DateSeen" data-signal-error-for="DateSeen{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_DateSeen}">
+		{BEGIN DateSeen_label}{$label lead DateSeen}{END DateSeen_label}
+	</label>
+	<div class="col-md-6" >
+		{$DateSeen_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="DateSeen">
+		<div class="text-muted" >
+		{$tooltip lead DateSeen}
+		</div>
+	</div>
+</div>
+</div>
+{END DateSeen_fieldblock}
+
+			{BEGIN NextContact_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NextContact}" data-fieldname="NextContact" data-signal-error-for="NextContact{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NextContact}">
+		{BEGIN NextContact_label}{$label lead NextContact}{END NextContact_label}
+	</label>
+	<div class="col-md-6" >
+		{$NextContact_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NextContact">
+		<div class="text-muted" >
+		{$tooltip lead NextContact}
+		</div>
+	</div>
+</div>
+</div>
+{END NextContact_fieldblock}
+
+			{BEGIN Info_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Info}" data-fieldname="Info" data-signal-error-for="Info{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Info}">
+		{BEGIN Info_label}{$label lead Info}{END Info_label}
+	</label>
+	<div class="col-md-6" >
+		{$Info_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Info">
+		<div class="text-muted" >
+		{$tooltip lead Info}
+		</div>
+	</div>
+</div>
+</div>
+{END Info_fieldblock}
+
+			{BEGIN Interested_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_Interested}" data-fieldname="Interested" data-signal-error-for="Interested{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_Interested}">
+		{BEGIN Interested_label}{$label lead Interested}{END Interested_label}
+	</label>
+	<div class="col-md-6" >
+		{$Interested_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="Interested">
+		<div class="text-muted" >
+		{$tooltip lead Interested}
+		</div>
+	</div>
+</div>
+</div>
+{END Interested_fieldblock}
+
+			{BEGIN NotInterested_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NotInterested}" data-fieldname="NotInterested" data-signal-error-for="NotInterested{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NotInterested}">
+		{BEGIN NotInterested_label}{$label lead NotInterested}{END NotInterested_label}
+	</label>
+	<div class="col-md-6" >
+		{$NotInterested_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NotInterested">
+		<div class="text-muted" >
+		{$tooltip lead NotInterested}
+		</div>
+	</div>
+</div>
+</div>
+{END NotInterested_fieldblock}
+
+			{BEGIN NumberOfBins_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_NumberOfBins}" data-fieldname="NumberOfBins" data-signal-error-for="NumberOfBins{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_NumberOfBins}">
+		{BEGIN NumberOfBins_label}{$label lead NumberOfBins}{END NumberOfBins_label}
+	</label>
+	<div class="col-md-6" >
+		{$NumberOfBins_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="NumberOfBins">
+		<div class="text-muted" >
+		{$tooltip lead NumberOfBins}
+		</div>
+	</div>
+</div>
+</div>
+{END NumberOfBins_fieldblock}
+
+			{BEGIN WeeksInMonth_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_WeeksInMonth}" data-fieldname="WeeksInMonth" data-signal-error-for="WeeksInMonth{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_WeeksInMonth}">
+		{BEGIN WeeksInMonth_label}{$label lead WeeksInMonth}{END WeeksInMonth_label}
+	</label>
+	<div class="col-md-6" >
+		{$WeeksInMonth_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="WeeksInMonth">
+		<div class="text-muted" >
+		{$tooltip lead WeeksInMonth}
+		</div>
+	</div>
+</div>
+</div>
+{END WeeksInMonth_fieldblock}
+
+			{BEGIN PickupsPerWeek_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_PickupsPerWeek}" data-fieldname="PickupsPerWeek" data-signal-error-for="PickupsPerWeek{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_PickupsPerWeek}">
+		{BEGIN PickupsPerWeek_label}{$label lead PickupsPerWeek}{END PickupsPerWeek_label}
+	</label>
+	<div class="col-md-6" >
+		{$PickupsPerWeek_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="PickupsPerWeek">
+		<div class="text-muted" >
+		{$tooltip lead PickupsPerWeek}
+		</div>
+	</div>
+</div>
+</div>
+{END PickupsPerWeek_fieldblock}
+
+			{BEGIN ChargePerPickupPerBin_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_ChargePerPickupPerBin}" data-fieldname="ChargePerPickupPerBin" data-signal-error-for="ChargePerPickupPerBin{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_ChargePerPickupPerBin}">
+		{BEGIN ChargePerPickupPerBin_label}{$label lead ChargePerPickupPerBin}{END ChargePerPickupPerBin_label}
+	</label>
+	<div class="col-md-6" >
+		{$ChargePerPickupPerBin_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="ChargePerPickupPerBin">
+		<div class="text-muted" >
+		{$tooltip lead ChargePerPickupPerBin}
+		</div>
+	</div>
+</div>
+</div>
+{END ChargePerPickupPerBin_fieldblock}
+
+			{BEGIN TotalExclVAT_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TotalExclVAT}" data-fieldname="TotalExclVAT" data-signal-error-for="TotalExclVAT{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TotalExclVAT}">
+		{BEGIN TotalExclVAT_label}{$label lead TotalExclVAT}{END TotalExclVAT_label}
+	</label>
+	<div class="col-md-6" >
+		{$TotalExclVAT_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TotalExclVAT">
+		<div class="text-muted" >
+		{$tooltip lead TotalExclVAT}
+		</div>
+	</div>
+</div>
+</div>
+{END TotalExclVAT_fieldblock}
+
+			{BEGIN VAT_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_VAT}" data-fieldname="VAT" data-signal-error-for="VAT{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_VAT}">
+		{BEGIN VAT_label}{$label lead VAT}{END VAT_label}
+	</label>
+	<div class="col-md-6" >
+		{$VAT_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="VAT">
+		<div class="text-muted" >
+		{$tooltip lead VAT}
+		</div>
+	</div>
+</div>
+</div>
+{END VAT_fieldblock}
+
+			{BEGIN TotalInclVAT_fieldblock}
+<div class=container>
+<div class="form-group {$fielddispclass_TotalInclVAT}" data-fieldname="TotalInclVAT" data-signal-error-for="TotalInclVAT{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_TotalInclVAT}">
+		{BEGIN TotalInclVAT_label}{$label lead TotalInclVAT}{END TotalInclVAT_label}
+	</label>
+	<div class="col-md-6" >
+		{$TotalInclVAT_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="TotalInclVAT">
+		<div class="text-muted" >
+		{$tooltip lead TotalInclVAT}
+		</div>
+	</div>
+</div>
+</div>
+{END TotalInclVAT_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN editbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Save</button>
+	{END save_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="btn btn-default" {$closebutton_attrs}>Cancel</a>
+	{END close_button}
+
+{END editbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="  text-right col-md-3 "> 
+
+{BEGIN righteditbuttons}
+<div class="btn-group" role="group">
+
+	{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default  {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+	<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+			{BEGIN reset_button}
+				<li><a href="#" {$resetbutton_attrs}>Reset</a></li>
+			{END reset_button}
+			{BEGIN view_page_button}
+				<li><a href="#" {$view_page_button_attrs}>View</a></li>
+			{END view_page_button}
+		</ul>
+	</div>
+</div>
+{END righteditbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,84 @@
+.page-register_success,
+  .runner-pagewrapper .page-register_success,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success
+{
+padding-top:10px; padding-left:10px;
+}
+.page-register_success .runner-c-fields,
+  .runner-pagewrapper .page-register_success .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-c-fields
+{
+margin-bottom:5px;
+}
+.page-register_success .runner-c-fields,
+  .runner-pagewrapper .page-register_success .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-c-fields
+{
+width:500px;
+}
+body.page-register_success .runner-c-fields
+{
+margin-left:auto; margin-right:auto;
+}
+.page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader,
+.page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader > *,
+  .runner-pagewrapper .page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader,
+  .runner-pagewrapper .page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader > *
+{
+white-space: nowrap;
+}
+.page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader,
+.page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader > *,
+  .runner-pagewrapper .page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader,
+  .runner-pagewrapper .page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-regheader, .page-register_success .runner-b-regheader > *
+{
+text-align: right;
+}
+.page-register_success .runner-b-activation, .page-register_success .runner-b-activation,
+.page-register_success .runner-b-activation, .page-register_success .runner-b-activation > *,
+  .runner-pagewrapper .page-register_success .runner-b-activation, .page-register_success .runner-b-activation,
+  .runner-pagewrapper .page-register_success .runner-b-activation, .page-register_success .runner-b-activation > *,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-activation, .page-register_success .runner-b-activation,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-activation, .page-register_success .runner-b-activation > *
+{
+white-space: nowrap;
+}
+.page-register_success .runner-b-activation, .page-register_success .runner-b-activation,
+.page-register_success .runner-b-activation, .page-register_success .runner-b-activation > *,
+  .runner-pagewrapper .page-register_success .runner-b-activation, .page-register_success .runner-b-activation,
+  .runner-pagewrapper .page-register_success .runner-b-activation, .page-register_success .runner-b-activation > *,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-activation, .page-register_success .runner-b-activation,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-activation, .page-register_success .runner-b-activation > *
+{
+text-align: right;
+}
+.page-register_success .runner-b-registered, .page-register_success .runner-b-registered,
+.page-register_success .runner-b-registered, .page-register_success .runner-b-registered > *,
+  .runner-pagewrapper .page-register_success .runner-b-registered, .page-register_success .runner-b-registered,
+  .runner-pagewrapper .page-register_success .runner-b-registered, .page-register_success .runner-b-registered > *,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-registered, .page-register_success .runner-b-registered,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-registered, .page-register_success .runner-b-registered > *
+{
+white-space: nowrap;
+}
+.page-register_success .runner-b-registered, .page-register_success .runner-b-registered,
+.page-register_success .runner-b-registered, .page-register_success .runner-b-registered > *,
+  .runner-pagewrapper .page-register_success .runner-b-registered, .page-register_success .runner-b-registered,
+  .runner-pagewrapper .page-register_success .runner-b-registered, .page-register_success .runner-b-registered > *,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-registered, .page-register_success .runner-b-registered,
+  .runner-pagewrapper .runner-pagewrapper .page-register_success .runner-b-registered, .page-register_success .runner-b-registered > *
+{
+text-align: right;
+}
+body.page-register_success .runner-toptable
+{
+width:100%;
+}
+body.page-register_success .runner-top
+{
+padding-right: 5px;
+}

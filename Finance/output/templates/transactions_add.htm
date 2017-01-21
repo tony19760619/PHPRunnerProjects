@@ -1,0 +1,466 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel transactions add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN LoanPaymentStatus_fieldblock}
+<tr class="{$fielddispclass_LoanPaymentStatus}" data-fieldname="LoanPaymentStatus">
+	<td class="rnr-label">
+		{BEGIN LoanPaymentStatus_label}{$label transactions LoanPaymentStatus}{END LoanPaymentStatus_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanPaymentStatus_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanPaymentStatus_fieldblock}
+	{BEGIN CashDepositStatus_fieldblock}
+<tr class="{$fielddispclass_CashDepositStatus}" data-fieldname="CashDepositStatus">
+	<td class="rnr-label">
+		{BEGIN CashDepositStatus_label}{$label transactions CashDepositStatus}{END CashDepositStatus_label}
+	</td>
+	<td class="rnr-control style3">
+		{$CashDepositStatus_editcontrol}&nbsp;
+	</td>
+</tr>
+{END CashDepositStatus_fieldblock}
+	{BEGIN SelectedClientNo_fieldblock}
+<tr class="{$fielddispclass_SelectedClientNo}" data-fieldname="SelectedClientNo">
+	<td class="rnr-label">
+		{BEGIN SelectedClientNo_label}{$label transactions SelectedClientNo}{END SelectedClientNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SelectedClientNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SelectedClientNo_fieldblock}
+	{BEGIN Amount_fieldblock}
+<tr class="{$fielddispclass_Amount}" data-fieldname="Amount">
+	<td class="rnr-label">
+		{BEGIN Amount_label}{$label transactions Amount}{END Amount_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Amount_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Amount_fieldblock}
+	{BEGIN DateTime_fieldblock}
+<tr class="{$fielddispclass_DateTime}" data-fieldname="DateTime">
+	<td class="rnr-label">
+		{BEGIN DateTime_label}{$label transactions DateTime}{END DateTime_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DateTime_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DateTime_fieldblock}
+	{BEGIN Description_fieldblock}
+<tr class="{$fielddispclass_Description}" data-fieldname="Description">
+	<td class="rnr-label">
+		{BEGIN Description_label}{$label transactions Description}{END Description_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Description_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Description_fieldblock}
+	{BEGIN CashDepositNo_fieldblock}
+<tr class="{$fielddispclass_CashDepositNo}" data-fieldname="CashDepositNo">
+	<td class="rnr-label">
+		{BEGIN CashDepositNo_label}{$label transactions CashDepositNo}{END CashDepositNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$CashDepositNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END CashDepositNo_fieldblock}
+	{BEGIN CashDepositType_fieldblock}
+<tr class="{$fielddispclass_CashDepositType}" data-fieldname="CashDepositType">
+	<td class="rnr-label">
+		{BEGIN CashDepositType_label}{$label transactions CashDepositType}{END CashDepositType_label}
+	</td>
+	<td class="rnr-control style3">
+		{$CashDepositType_editcontrol}&nbsp;
+	</td>
+</tr>
+{END CashDepositType_fieldblock}
+	{BEGIN WithdrawlNo_fieldblock}
+<tr class="{$fielddispclass_WithdrawlNo}" data-fieldname="WithdrawlNo">
+	<td class="rnr-label">
+		{BEGIN WithdrawlNo_label}{$label transactions WithdrawlNo}{END WithdrawlNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WithdrawlNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WithdrawlNo_fieldblock}
+	{BEGIN WithdrawlName_fieldblock}
+<tr class="{$fielddispclass_WithdrawlName}" data-fieldname="WithdrawlName">
+	<td class="rnr-label">
+		{BEGIN WithdrawlName_label}{$label transactions WithdrawlName}{END WithdrawlName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WithdrawlName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WithdrawlName_fieldblock}
+	{BEGIN WithdrawlType_fieldblock}
+<tr class="{$fielddispclass_WithdrawlType}" data-fieldname="WithdrawlType">
+	<td class="rnr-label">
+		{BEGIN WithdrawlType_label}{$label transactions WithdrawlType}{END WithdrawlType_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WithdrawlType_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WithdrawlType_fieldblock}
+	{BEGIN LoanPaymentNo_fieldblock}
+<tr class="{$fielddispclass_LoanPaymentNo}" data-fieldname="LoanPaymentNo">
+	<td class="rnr-label">
+		{BEGIN LoanPaymentNo_label}{$label transactions LoanPaymentNo}{END LoanPaymentNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanPaymentNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanPaymentNo_fieldblock}
+	{BEGIN LoanPaymentName_fieldblock}
+<tr class="{$fielddispclass_LoanPaymentName}" data-fieldname="LoanPaymentName">
+	<td class="rnr-label">
+		{BEGIN LoanPaymentName_label}{$label transactions LoanPaymentName}{END LoanPaymentName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanPaymentName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanPaymentName_fieldblock}
+	{BEGIN LoanPaymentPurpose_fieldblock}
+<tr class="{$fielddispclass_LoanPaymentPurpose}" data-fieldname="LoanPaymentPurpose">
+	<td class="rnr-label">
+		{BEGIN LoanPaymentPurpose_label}{$label transactions LoanPaymentPurpose}{END LoanPaymentPurpose_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanPaymentPurpose_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanPaymentPurpose_fieldblock}
+	{BEGIN LoanCreditPaymentNo_fieldblock}
+<tr class="{$fielddispclass_LoanCreditPaymentNo}" data-fieldname="LoanCreditPaymentNo">
+	<td class="rnr-label">
+		{BEGIN LoanCreditPaymentNo_label}{$label transactions LoanCreditPaymentNo}{END LoanCreditPaymentNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanCreditPaymentNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanCreditPaymentNo_fieldblock}
+	{BEGIN LoanCreditPaymentName_fieldblock}
+<tr class="{$fielddispclass_LoanCreditPaymentName}" data-fieldname="LoanCreditPaymentName">
+	<td class="rnr-label">
+		{BEGIN LoanCreditPaymentName_label}{$label transactions LoanCreditPaymentName}{END LoanCreditPaymentName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanCreditPaymentName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanCreditPaymentName_fieldblock}
+	{BEGIN LoanCreditPaymentPurpose_fieldblock}
+<tr class="{$fielddispclass_LoanCreditPaymentPurpose}" data-fieldname="LoanCreditPaymentPurpose">
+	<td class="rnr-label">
+		{BEGIN LoanCreditPaymentPurpose_label}{$label transactions LoanCreditPaymentPurpose}{END LoanCreditPaymentPurpose_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanCreditPaymentPurpose_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanCreditPaymentPurpose_fieldblock}
+	{BEGIN AccountType_fieldblock}
+<tr class="{$fielddispclass_AccountType}" data-fieldname="AccountType">
+	<td class="rnr-label">
+		{BEGIN AccountType_label}{$label transactions AccountType}{END AccountType_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountType_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AccountType_fieldblock}
+	{BEGIN InterestAmount_fieldblock}
+<tr class="{$fielddispclass_InterestAmount}" data-fieldname="InterestAmount">
+	<td class="rnr-label">
+		{BEGIN InterestAmount_label}{$label transactions InterestAmount}{END InterestAmount_label}
+	</td>
+	<td class="rnr-control style3">
+		{$InterestAmount_editcontrol}&nbsp;
+	</td>
+</tr>
+{END InterestAmount_fieldblock}
+	{BEGIN PrincipalAmount_fieldblock}
+<tr class="{$fielddispclass_PrincipalAmount}" data-fieldname="PrincipalAmount">
+	<td class="rnr-label">
+		{BEGIN PrincipalAmount_label}{$label transactions PrincipalAmount}{END PrincipalAmount_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PrincipalAmount_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PrincipalAmount_fieldblock}
+	{BEGIN WithdrawlStatus_fieldblock}
+<tr class="{$fielddispclass_WithdrawlStatus}" data-fieldname="WithdrawlStatus">
+	<td class="rnr-label">
+		{BEGIN WithdrawlStatus_label}{$label transactions WithdrawlStatus}{END WithdrawlStatus_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WithdrawlStatus_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WithdrawlStatus_fieldblock}
+	{BEGIN NEFTTransferStatus_fieldblock}
+<tr class="{$fielddispclass_NEFTTransferStatus}" data-fieldname="NEFTTransferStatus">
+	<td class="rnr-label">
+		{BEGIN NEFTTransferStatus_label}{$label transactions NEFTTransferStatus}{END NEFTTransferStatus_label}
+	</td>
+	<td class="rnr-control style3">
+		{$NEFTTransferStatus_editcontrol}&nbsp;
+	</td>
+</tr>
+{END NEFTTransferStatus_fieldblock}
+	{BEGIN LoanCreditApplicationStatus_fieldblock}
+<tr class="{$fielddispclass_LoanCreditApplicationStatus}" data-fieldname="LoanCreditApplicationStatus">
+	<td class="rnr-label">
+		{BEGIN LoanCreditApplicationStatus_label}{$label transactions LoanCreditApplicationStatus}{END LoanCreditApplicationStatus_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanCreditApplicationStatus_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanCreditApplicationStatus_fieldblock}
+	{BEGIN LoanCreditWitness_fieldblock}
+<tr class="{$fielddispclass_LoanCreditWitness}" data-fieldname="LoanCreditWitness">
+	<td class="rnr-label">
+		{BEGIN LoanCreditWitness_label}{$label transactions LoanCreditWitness}{END LoanCreditWitness_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanCreditWitness_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanCreditWitness_fieldblock}
+	{BEGIN NEFTTransferNo_fieldblock}
+<tr class="{$fielddispclass_NEFTTransferNo}" data-fieldname="NEFTTransferNo">
+	<td class="rnr-label">
+		{BEGIN NEFTTransferNo_label}{$label transactions NEFTTransferNo}{END NEFTTransferNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$NEFTTransferNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END NEFTTransferNo_fieldblock}
+	{BEGIN NEFTTransferDepositorName_fieldblock}
+<tr class="{$fielddispclass_NEFTTransferDepositorName}" data-fieldname="NEFTTransferDepositorName">
+	<td class="rnr-label">
+		{BEGIN NEFTTransferDepositorName_label}{$label transactions NEFTTransferDepositorName}{END NEFTTransferDepositorName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$NEFTTransferDepositorName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END NEFTTransferDepositorName_fieldblock}
+	{BEGIN TransactionType_fieldblock}
+<tr class="{$fielddispclass_TransactionType}" data-fieldname="TransactionType">
+	<td class="rnr-label">
+		{BEGIN TransactionType_label}{$label transactions TransactionType}{END TransactionType_label}
+	</td>
+	<td class="rnr-control style3">
+		{$TransactionType_editcontrol}&nbsp;
+	</td>
+</tr>
+{END TransactionType_fieldblock}
+	{BEGIN Balance_fieldblock}
+<tr class="{$fielddispclass_Balance}" data-fieldname="Balance">
+	<td class="rnr-label">
+		{BEGIN Balance_label}{$label transactions Balance}{END Balance_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Balance_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Balance_fieldblock}
+	{BEGIN AccountNumber_fieldblock}
+<tr class="{$fielddispclass_AccountNumber}" data-fieldname="AccountNumber">
+	<td class="rnr-label">
+		{BEGIN AccountNumber_label}{$label transactions AccountNumber}{END AccountNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AccountNumber_fieldblock}
+	{BEGIN ClientNo_fieldblock}
+<tr class="{$fielddispclass_ClientNo}" data-fieldname="ClientNo">
+	<td class="rnr-label">
+		{BEGIN ClientNo_label}{$label transactions ClientNo}{END ClientNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ClientNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ClientNo_fieldblock}
+	{BEGIN LastModifiedBy_fieldblock}
+<tr class="{$fielddispclass_LastModifiedBy}" data-fieldname="LastModifiedBy">
+	<td class="rnr-label">
+		{BEGIN LastModifiedBy_label}{$label transactions LastModifiedBy}{END LastModifiedBy_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LastModifiedBy_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LastModifiedBy_fieldblock}
+	{BEGIN LastModifiedDate_fieldblock}
+<tr class="{$fielddispclass_LastModifiedDate}" data-fieldname="LastModifiedDate">
+	<td class="rnr-label">
+		{BEGIN LastModifiedDate_label}{$label transactions LastModifiedDate}{END LastModifiedDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LastModifiedDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LastModifiedDate_fieldblock}
+	{BEGIN AccountName_fieldblock}
+<tr class="{$fielddispclass_AccountName}" data-fieldname="AccountName">
+	<td class="rnr-label">
+		{BEGIN AccountName_label}{$label transactions AccountName}{END AccountName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AccountName_fieldblock}
+	{BEGIN TransactionNo_fieldblock}
+<tr class="{$fielddispclass_TransactionNo}" data-fieldname="TransactionNo">
+	<td class="rnr-label">
+		{BEGIN TransactionNo_label}{$label transactions TransactionNo}{END TransactionNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$TransactionNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END TransactionNo_fieldblock}
+	{BEGIN TransactionStatus_fieldblock}
+<tr class="{$fielddispclass_TransactionStatus}" data-fieldname="TransactionStatus">
+	<td class="rnr-label">
+		{BEGIN TransactionStatus_label}{$label transactions TransactionStatus}{END TransactionStatus_label}
+	</td>
+	<td class="rnr-control style3">
+		{$TransactionStatus_editcontrol}&nbsp;
+	</td>
+</tr>
+{END TransactionStatus_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

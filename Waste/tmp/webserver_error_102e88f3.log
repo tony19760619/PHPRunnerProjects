@@ -1,0 +1,14 @@
+[Sat Jan 21 15:39:12.374401 2017] [core:warn] [pid 1532:tid 516] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Tony/Documents/PHPRunnerProjects/Waste/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::4dff:a013:16e:129e. Set the 'ServerName' directive globally to suppress this message
+[Sat Jan 21 15:39:12.427788 2017] [mpm_winnt:notice] [pid 1532:tid 516] AH00455: Apache/2.4.10 (Win32) PHP/5.5.18 configured -- resuming normal operations
+[Sat Jan 21 15:39:12.427788 2017] [mpm_winnt:notice] [pid 1532:tid 516] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 11:50:08
+[Sat Jan 21 15:39:12.427788 2017] [core:notice] [pid 1532:tid 516] AH00094: Command line: 'C:\\Program Files\\PHPRunner9.0\\EmbeddedServer\\bin\\httpd.exe -d C:/Program Files/PHPRunner9.0/EmbeddedServer -d C:\\Program Files\\PHPRunner9.0\\EmbeddedServer -f C:\\Users\\Tony\\Documents\\PHPRunnerProjects\\Waste\\tmp\\webserver.conf'
+[Sat Jan 21 15:39:12.443446 2017] [mpm_winnt:notice] [pid 1532:tid 516] AH00418: Parent: Created child process 7472
+[Sat Jan 21 15:39:13.144723 2017] [core:warn] [pid 7472:tid 528] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Tony/Documents/PHPRunnerProjects/Waste/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::4dff:a013:16e:129e. Set the 'ServerName' directive globally to suppress this message
+[Sat Jan 21 15:39:13.160345 2017] [core:warn] [pid 7472:tid 528] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Tony/Documents/PHPRunnerProjects/Waste/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::4dff:a013:16e:129e. Set the 'ServerName' directive globally to suppress this message
+[Sat Jan 21 15:39:13.191560 2017] [mpm_winnt:notice] [pid 7472:tid 528] AH00354: Child: Starting 64 worker threads.
+[Sat Jan 21 17:27:37.310451 2017] [mpm_winnt:notice] [pid 1532:tid 516] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Jan 21 17:27:39.346818 2017] [mpm_winnt:notice] [pid 7472:tid 528] AH00364: Child: All worker threads have exited.
+[Sat Jan 21 17:27:39.451090 2017] [mpm_winnt:notice] [pid 1532:tid 516] AH00430: Parent: Child process 7472 exited successfully.

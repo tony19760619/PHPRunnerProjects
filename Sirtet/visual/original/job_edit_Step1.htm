@@ -1,0 +1,65 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="fieldGrid">
+{BEGIN ProjectName_tabfieldblock}
+<tr class="{$fielddispclass_ProjectName}" data-fieldname="ProjectName">
+	<td class="style1 rnr-label">
+		{BEGIN ProjectName_label}{$label job ProjectName}{END ProjectName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ProjectName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ProjectName_tabfieldblock}
+{BEGIN ProjectNo_tabfieldblock}
+<tr class="{$fielddispclass_ProjectNo}" data-fieldname="ProjectNo">
+	<td class="style1 rnr-label">
+		{BEGIN ProjectNo_label}{$label job ProjectNo}{END ProjectNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ProjectNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ProjectNo_tabfieldblock}
+{BEGIN JobStatus_tabfieldblock}
+<tr class="{$fielddispclass_JobStatus}" data-fieldname="JobStatus">
+	<td class="style1 rnr-label">
+		{BEGIN JobStatus_label}{$label job JobStatus}{END JobStatus_label}
+	</td>
+	<td class="rnr-control style3">
+		{$JobStatus_editcontrol}&nbsp;
+	</td>
+</tr>
+{END JobStatus_tabfieldblock}
+{BEGIN StartDate_tabfieldblock}
+<tr class="{$fielddispclass_StartDate}" data-fieldname="StartDate">
+	<td class="style1 rnr-label">
+		{BEGIN StartDate_label}{$label job StartDate}{END StartDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$StartDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END StartDate_tabfieldblock}
+{BEGIN FinishDate_tabfieldblock}
+<tr class="{$fielddispclass_FinishDate}" data-fieldname="FinishDate">
+	<td class="style1 rnr-label">
+		{BEGIN FinishDate_label}{$label job FinishDate}{END FinishDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FinishDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FinishDate_tabfieldblock}
+</table>
+
+
+
+
+{END container_1}
+
+</div>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfoprint {$brickclass_masterinfoprint}">{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+{BEGIN page}
+<h1>Customer Waste</h1>
+<span>
+{BEGIN page_number}
+Page {$pageno} of {$maxpages} 
+{END page_number}
+</span>
+
+	<div class="rnr-s-grid {$pageStyleName}">	
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable" cellpadding="0">
+		<thead>
+		{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN Id_fieldheadercolumn}
+<th class="runner-cc {$Id_class}" {$Id_style}>
+	{BEGIN Id_fieldheader}
+	<b>{$label customerwaste Id}</b>
+	{END Id_fieldheader}
+</th>
+{END Id_fieldheadercolumn}
+	{BEGIN CustomerId_fieldheadercolumn}
+<th class="runner-cc {$CustomerId_class}" {$CustomerId_style}>
+	{BEGIN CustomerId_fieldheader}
+	<b>{$label customerwaste CustomerId}</b>
+	{END CustomerId_fieldheader}
+</th>
+{END CustomerId_fieldheadercolumn}
+	{BEGIN WasteId_fieldheadercolumn}
+<th class="runner-cc {$WasteId_class}" {$WasteId_style}>
+	{BEGIN WasteId_fieldheader}
+	<b>{$label customerwaste WasteId}</b>
+	{END WasteId_fieldheader}
+</th>
+{END WasteId_fieldheadercolumn}
+	{BEGIN DateTime_fieldheadercolumn}
+<th class="runner-cc {$DateTime_class}" {$DateTime_style}>
+	{BEGIN DateTime_fieldheader}
+	<b>{$label customerwaste DateTime}</b>
+	{END DateTime_fieldheader}
+</th>
+{END DateTime_fieldheadercolumn}
+	{BEGIN Amount_fieldheadercolumn}
+<th class="runner-cc {$Amount_class}" {$Amount_style}>
+	{BEGIN Amount_fieldheader}
+	<b>{$label customerwaste Amount}</b>
+	{END Amount_fieldheader}
+</th>
+{END Amount_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+		</thead>
+		<tbody>	
+		{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN Id_fieldcolumn}
+<td  class="runner-cc {$Id_class}" {$Id_style}>
+	{$Id_value}
+</td>
+{END Id_fieldcolumn}
+	{BEGIN CustomerId_fieldcolumn}
+<td  class="runner-cc {$CustomerId_class}" {$CustomerId_style}>
+	{$CustomerId_value}
+</td>
+{END CustomerId_fieldcolumn}
+	{BEGIN WasteId_fieldcolumn}
+<td  class="runner-cc {$WasteId_class}" {$WasteId_style}>
+	{$WasteId_value}
+</td>
+{END WasteId_fieldcolumn}
+	{BEGIN DateTime_fieldcolumn}
+<td  class="runner-cc {$DateTime_class}" {$DateTime_style}>
+	{$DateTime_value}
+</td>
+{END DateTime_fieldcolumn}
+	{BEGIN Amount_fieldcolumn}
+<td  class="runner-cc {$Amount_class}" {$Amount_style}>
+	{$Amount_value}
+</td>
+{END Amount_fieldcolumn}
+
+		<td class="rnr-edge">&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+{END grid_row}
+
+
+		
+		</tbody>
+	</table>
+</div>	
+{END page}
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

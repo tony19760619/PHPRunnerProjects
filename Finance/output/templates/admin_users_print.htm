@@ -1,0 +1,452 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel admin_users print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN InterestRate_fieldheadercolumn}
+<th class="runner-cc {$InterestRate_class}" {$InterestRate_style}>
+	{BEGIN InterestRate_fieldheader}
+	<b>{$label admin_users InterestRate}</b>
+	{END InterestRate_fieldheader}
+</th>
+{END InterestRate_fieldheadercolumn}
+	{BEGIN UserLevel_fieldheadercolumn}
+<th class="runner-cc {$UserLevel_class}" {$UserLevel_style}>
+	{BEGIN UserLevel_fieldheader}
+	<b>{$label admin_users UserLevel}</b>
+	{END UserLevel_fieldheader}
+</th>
+{END UserLevel_fieldheadercolumn}
+	{BEGIN OpeningAccountBalance_fieldheadercolumn}
+<th class="runner-cc {$OpeningAccountBalance_class}" {$OpeningAccountBalance_style}>
+	{BEGIN OpeningAccountBalance_fieldheader}
+	<b>{$label admin_users OpeningAccountBalance}</b>
+	{END OpeningAccountBalance_fieldheader}
+</th>
+{END OpeningAccountBalance_fieldheadercolumn}
+	{BEGIN OpeningAccountDate_fieldheadercolumn}
+<th class="runner-cc {$OpeningAccountDate_class}" {$OpeningAccountDate_style}>
+	{BEGIN OpeningAccountDate_fieldheader}
+	<b>{$label admin_users OpeningAccountDate}</b>
+	{END OpeningAccountDate_fieldheader}
+</th>
+{END OpeningAccountDate_fieldheadercolumn}
+	{BEGIN AccountNumber_fieldheadercolumn}
+<th class="runner-cc {$AccountNumber_class}" {$AccountNumber_style}>
+	{BEGIN AccountNumber_fieldheader}
+	<b>{$label admin_users AccountNumber}</b>
+	{END AccountNumber_fieldheader}
+</th>
+{END AccountNumber_fieldheadercolumn}
+	{BEGIN AccountName_fieldheadercolumn}
+<th class="runner-cc {$AccountName_class}" {$AccountName_style}>
+	{BEGIN AccountName_fieldheader}
+	<b>{$label admin_users AccountName}</b>
+	{END AccountName_fieldheader}
+</th>
+{END AccountName_fieldheadercolumn}
+	{BEGIN SetWithdrawDate_fieldheadercolumn}
+<th class="runner-cc {$SetWithdrawDate_class}" {$SetWithdrawDate_style}>
+	{BEGIN SetWithdrawDate_fieldheader}
+	<b>{$label admin_users SetWithdrawDate}</b>
+	{END SetWithdrawDate_fieldheader}
+</th>
+{END SetWithdrawDate_fieldheadercolumn}
+	{BEGIN id_fieldheadercolumn}
+<th class="runner-cc {$id_class}" {$id_style}>
+	{BEGIN id_fieldheader}
+	<b>{$label admin_users id}</b>
+	{END id_fieldheader}
+</th>
+{END id_fieldheadercolumn}
+	{BEGIN FirstName_fieldheadercolumn}
+<th class="runner-cc {$FirstName_class}" {$FirstName_style}>
+	{BEGIN FirstName_fieldheader}
+	<b>{$label admin_users FirstName}</b>
+	{END FirstName_fieldheader}
+</th>
+{END FirstName_fieldheadercolumn}
+	{BEGIN LastName_fieldheadercolumn}
+<th class="runner-cc {$LastName_class}" {$LastName_style}>
+	{BEGIN LastName_fieldheader}
+	<b>{$label admin_users LastName}</b>
+	{END LastName_fieldheader}
+</th>
+{END LastName_fieldheadercolumn}
+	{BEGIN Sex_fieldheadercolumn}
+<th class="runner-cc {$Sex_class}" {$Sex_style}>
+	{BEGIN Sex_fieldheader}
+	<b>{$label admin_users Sex}</b>
+	{END Sex_fieldheader}
+</th>
+{END Sex_fieldheadercolumn}
+	{BEGIN DateOfBirth_fieldheadercolumn}
+<th class="runner-cc {$DateOfBirth_class}" {$DateOfBirth_style}>
+	{BEGIN DateOfBirth_fieldheader}
+	<b>{$label admin_users DateOfBirth}</b>
+	{END DateOfBirth_fieldheader}
+</th>
+{END DateOfBirth_fieldheadercolumn}
+	{BEGIN TelephoneNo_fieldheadercolumn}
+<th class="runner-cc {$TelephoneNo_class}" {$TelephoneNo_style}>
+	{BEGIN TelephoneNo_fieldheader}
+	<b>{$label admin_users TelephoneNo}</b>
+	{END TelephoneNo_fieldheader}
+</th>
+{END TelephoneNo_fieldheadercolumn}
+	{BEGIN EmailAddress_fieldheadercolumn}
+<th class="runner-cc {$EmailAddress_class}" {$EmailAddress_style}>
+	{BEGIN EmailAddress_fieldheader}
+	<b>{$label admin_users EmailAddress}</b>
+	{END EmailAddress_fieldheader}
+</th>
+{END EmailAddress_fieldheadercolumn}
+	{BEGIN CurrentAddress_fieldheadercolumn}
+<th class="runner-cc {$CurrentAddress_class}" {$CurrentAddress_style}>
+	{BEGIN CurrentAddress_fieldheader}
+	<b>{$label admin_users CurrentAddress}</b>
+	{END CurrentAddress_fieldheader}
+</th>
+{END CurrentAddress_fieldheadercolumn}
+	{BEGIN PlaceOfBirth_fieldheadercolumn}
+<th class="runner-cc {$PlaceOfBirth_class}" {$PlaceOfBirth_style}>
+	{BEGIN PlaceOfBirth_fieldheader}
+	<b>{$label admin_users PlaceOfBirth}</b>
+	{END PlaceOfBirth_fieldheader}
+</th>
+{END PlaceOfBirth_fieldheadercolumn}
+	{BEGIN PassportOrID_fieldheadercolumn}
+<th class="runner-cc {$PassportOrID_class}" {$PassportOrID_style}>
+	{BEGIN PassportOrID_fieldheader}
+	<b>{$label admin_users PassportOrID}</b>
+	{END PassportOrID_fieldheader}
+</th>
+{END PassportOrID_fieldheadercolumn}
+	{BEGIN ProfilePhoto_fieldheadercolumn}
+<th class="runner-cc {$ProfilePhoto_class}" {$ProfilePhoto_style}>
+	{BEGIN ProfilePhoto_fieldheader}
+	<b>{$label admin_users ProfilePhoto}</b>
+	{END ProfilePhoto_fieldheader}
+</th>
+{END ProfilePhoto_fieldheadercolumn}
+	{BEGIN AttachedFile_fieldheadercolumn}
+<th class="runner-cc {$AttachedFile_class}" {$AttachedFile_style}>
+	{BEGIN AttachedFile_fieldheader}
+	<b>{$label admin_users AttachedFile}</b>
+	{END AttachedFile_fieldheader}
+</th>
+{END AttachedFile_fieldheadercolumn}
+	{BEGIN ClientNo_fieldheadercolumn}
+<th class="runner-cc {$ClientNo_class}" {$ClientNo_style}>
+	{BEGIN ClientNo_fieldheader}
+	<b>{$label admin_users ClientNo}</b>
+	{END ClientNo_fieldheader}
+</th>
+{END ClientNo_fieldheadercolumn}
+	{BEGIN EmergencyContactPerson_fieldheadercolumn}
+<th class="runner-cc {$EmergencyContactPerson_class}" {$EmergencyContactPerson_style}>
+	{BEGIN EmergencyContactPerson_fieldheader}
+	<b>{$label admin_users EmergencyContactPerson}</b>
+	{END EmergencyContactPerson_fieldheader}
+</th>
+{END EmergencyContactPerson_fieldheadercolumn}
+	{BEGIN EmergencyContactRelation_fieldheadercolumn}
+<th class="runner-cc {$EmergencyContactRelation_class}" {$EmergencyContactRelation_style}>
+	{BEGIN EmergencyContactRelation_fieldheader}
+	<b>{$label admin_users EmergencyContactRelation}</b>
+	{END EmergencyContactRelation_fieldheader}
+</th>
+{END EmergencyContactRelation_fieldheadercolumn}
+	{BEGIN EmergencyContactTel_fieldheadercolumn}
+<th class="runner-cc {$EmergencyContactTel_class}" {$EmergencyContactTel_style}>
+	{BEGIN EmergencyContactTel_fieldheader}
+	<b>{$label admin_users EmergencyContactTel}</b>
+	{END EmergencyContactTel_fieldheader}
+</th>
+{END EmergencyContactTel_fieldheadercolumn}
+	{BEGIN Username_fieldheadercolumn}
+<th class="runner-cc {$Username_class}" {$Username_style}>
+	{BEGIN Username_fieldheader}
+	<b>{$label admin_users Username}</b>
+	{END Username_fieldheader}
+</th>
+{END Username_fieldheadercolumn}
+	{BEGIN Password_fieldheadercolumn}
+<th class="runner-cc {$Password_class}" {$Password_style}>
+	{BEGIN Password_fieldheader}
+	<b>{$label admin_users Password}</b>
+	{END Password_fieldheader}
+</th>
+{END Password_fieldheadercolumn}
+	{BEGIN LastModifiedBy_fieldheadercolumn}
+<th class="runner-cc {$LastModifiedBy_class}" {$LastModifiedBy_style}>
+	{BEGIN LastModifiedBy_fieldheader}
+	<b>{$label admin_users LastModifiedBy}</b>
+	{END LastModifiedBy_fieldheader}
+</th>
+{END LastModifiedBy_fieldheadercolumn}
+	{BEGIN LastModifiedDate_fieldheadercolumn}
+<th class="runner-cc {$LastModifiedDate_class}" {$LastModifiedDate_style}>
+	{BEGIN LastModifiedDate_fieldheader}
+	<b>{$label admin_users LastModifiedDate}</b>
+	{END LastModifiedDate_fieldheader}
+</th>
+{END LastModifiedDate_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN InterestRate_fieldcolumn}
+<td  class="runner-cc {$InterestRate_class}" {$InterestRate_style} {$recordattrs}>
+	{$InterestRate_value}
+</td>
+{END InterestRate_fieldcolumn}
+	{BEGIN UserLevel_fieldcolumn}
+<td  class="runner-cc {$UserLevel_class}" {$UserLevel_style} {$recordattrs}>
+	{$UserLevel_value}
+</td>
+{END UserLevel_fieldcolumn}
+	{BEGIN OpeningAccountBalance_fieldcolumn}
+<td  class="runner-cc {$OpeningAccountBalance_class}" {$OpeningAccountBalance_style} {$recordattrs}>
+	{$OpeningAccountBalance_value}
+</td>
+{END OpeningAccountBalance_fieldcolumn}
+	{BEGIN OpeningAccountDate_fieldcolumn}
+<td  class="runner-cc {$OpeningAccountDate_class}" {$OpeningAccountDate_style} {$recordattrs}>
+	{$OpeningAccountDate_value}
+</td>
+{END OpeningAccountDate_fieldcolumn}
+	{BEGIN AccountNumber_fieldcolumn}
+<td  class="runner-cc {$AccountNumber_class}" {$AccountNumber_style} {$recordattrs}>
+	{$AccountNumber_value}
+</td>
+{END AccountNumber_fieldcolumn}
+	{BEGIN AccountName_fieldcolumn}
+<td  class="runner-cc {$AccountName_class}" {$AccountName_style} {$recordattrs}>
+	{$AccountName_value}
+</td>
+{END AccountName_fieldcolumn}
+	{BEGIN SetWithdrawDate_fieldcolumn}
+<td  class="runner-cc {$SetWithdrawDate_class}" {$SetWithdrawDate_style} {$recordattrs}>
+	{$SetWithdrawDate_value}
+</td>
+{END SetWithdrawDate_fieldcolumn}
+	{BEGIN id_fieldcolumn}
+<td  class="runner-cc {$id_class}" {$id_style} {$recordattrs}>
+	{$id_value}
+</td>
+{END id_fieldcolumn}
+	{BEGIN FirstName_fieldcolumn}
+<td  class="runner-cc {$FirstName_class}" {$FirstName_style} {$recordattrs}>
+	{$FirstName_value}
+</td>
+{END FirstName_fieldcolumn}
+	{BEGIN LastName_fieldcolumn}
+<td  class="runner-cc {$LastName_class}" {$LastName_style} {$recordattrs}>
+	{$LastName_value}
+</td>
+{END LastName_fieldcolumn}
+	{BEGIN Sex_fieldcolumn}
+<td  class="runner-cc {$Sex_class}" {$Sex_style} {$recordattrs}>
+	{$Sex_value}
+</td>
+{END Sex_fieldcolumn}
+	{BEGIN DateOfBirth_fieldcolumn}
+<td  class="runner-cc {$DateOfBirth_class}" {$DateOfBirth_style} {$recordattrs}>
+	{$DateOfBirth_value}
+</td>
+{END DateOfBirth_fieldcolumn}
+	{BEGIN TelephoneNo_fieldcolumn}
+<td  class="runner-cc {$TelephoneNo_class}" {$TelephoneNo_style} {$recordattrs}>
+	{$TelephoneNo_value}
+</td>
+{END TelephoneNo_fieldcolumn}
+	{BEGIN EmailAddress_fieldcolumn}
+<td  class="runner-cc {$EmailAddress_class}" {$EmailAddress_style} {$recordattrs}>
+	{$EmailAddress_value}
+</td>
+{END EmailAddress_fieldcolumn}
+	{BEGIN CurrentAddress_fieldcolumn}
+<td  class="runner-cc {$CurrentAddress_class}" {$CurrentAddress_style} {$recordattrs}>
+	{$CurrentAddress_value}
+</td>
+{END CurrentAddress_fieldcolumn}
+	{BEGIN PlaceOfBirth_fieldcolumn}
+<td  class="runner-cc {$PlaceOfBirth_class}" {$PlaceOfBirth_style} {$recordattrs}>
+	{$PlaceOfBirth_value}
+</td>
+{END PlaceOfBirth_fieldcolumn}
+	{BEGIN PassportOrID_fieldcolumn}
+<td  class="runner-cc {$PassportOrID_class}" {$PassportOrID_style} {$recordattrs}>
+	{$PassportOrID_value}
+</td>
+{END PassportOrID_fieldcolumn}
+	{BEGIN ProfilePhoto_fieldcolumn}
+<td  class="runner-cc {$ProfilePhoto_class}" {$ProfilePhoto_style} {$recordattrs}>
+	{$ProfilePhoto_value}
+</td>
+{END ProfilePhoto_fieldcolumn}
+	{BEGIN AttachedFile_fieldcolumn}
+<td  class="runner-cc {$AttachedFile_class}" {$AttachedFile_style} {$recordattrs}>
+	{$AttachedFile_value}
+</td>
+{END AttachedFile_fieldcolumn}
+	{BEGIN ClientNo_fieldcolumn}
+<td  class="runner-cc {$ClientNo_class}" {$ClientNo_style} {$recordattrs}>
+	{$ClientNo_value}
+</td>
+{END ClientNo_fieldcolumn}
+	{BEGIN EmergencyContactPerson_fieldcolumn}
+<td  class="runner-cc {$EmergencyContactPerson_class}" {$EmergencyContactPerson_style} {$recordattrs}>
+	{$EmergencyContactPerson_value}
+</td>
+{END EmergencyContactPerson_fieldcolumn}
+	{BEGIN EmergencyContactRelation_fieldcolumn}
+<td  class="runner-cc {$EmergencyContactRelation_class}" {$EmergencyContactRelation_style} {$recordattrs}>
+	{$EmergencyContactRelation_value}
+</td>
+{END EmergencyContactRelation_fieldcolumn}
+	{BEGIN EmergencyContactTel_fieldcolumn}
+<td  class="runner-cc {$EmergencyContactTel_class}" {$EmergencyContactTel_style} {$recordattrs}>
+	{$EmergencyContactTel_value}
+</td>
+{END EmergencyContactTel_fieldcolumn}
+	{BEGIN Username_fieldcolumn}
+<td  class="runner-cc {$Username_class}" {$Username_style} {$recordattrs}>
+	{$Username_value}
+</td>
+{END Username_fieldcolumn}
+	{BEGIN Password_fieldcolumn}
+<td  class="runner-cc {$Password_class}" {$Password_style} {$recordattrs}>
+	{$Password_value}
+</td>
+{END Password_fieldcolumn}
+	{BEGIN LastModifiedBy_fieldcolumn}
+<td  class="runner-cc {$LastModifiedBy_class}" {$LastModifiedBy_style} {$recordattrs}>
+	{$LastModifiedBy_value}
+</td>
+{END LastModifiedBy_fieldcolumn}
+	{BEGIN LastModifiedDate_fieldcolumn}
+<td  class="runner-cc {$LastModifiedDate_class}" {$LastModifiedDate_style} {$recordattrs}>
+	{$LastModifiedDate_value}
+</td>
+{END LastModifiedDate_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

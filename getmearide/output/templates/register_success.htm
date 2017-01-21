@@ -1,0 +1,80 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-register_success" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_register}
+<div class="rnr-c rnr-cv rnr-c-register">
+
+{BEGIN regheader}
+<div  class="rnr-brickcontents style2 rnr-b-regheader {$brickclass_regheader}"><span>	<h1>{$pagetitlelabel  register_success}</h1>
+</span></div>{END regheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN activation_block}
+<div  class="rnr-brickcontents style1 rnr-b-activation {$brickclass_activation}">Your registration was successful.<br>An email has been sent to <b>{$email}</b> containing further instructions. Click on the link provided in the email to complete the registration.</div>{END activation_block}
+
+
+{BEGIN registered_block}
+<div  class="rnr-brickcontents style1 rnr-b-registered {$brickclass_registered}"><a href="login.php" class="rnr-button main" {$loginlink_attrs}>Proceed to login page</a>
+<a href="#" class="rnr-button main" {$closewindow_attrs}>Close window</a></div>{END registered_block}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_register}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

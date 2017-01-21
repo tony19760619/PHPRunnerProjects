@@ -1,0 +1,38 @@
+body.page-tab
+{
+padding-top:10px; padding-left:10px;
+}
+.page-tab .rnr-c-1,
+  .rnr-pagewrapper .page-tab .rnr-c-1,
+  .rnr-pagewrapper .rnr-pagewrapper .page-tab .rnr-c-1
+{
+margin-bottom:5px;
+}
+.page-tab .rnr-c-1,
+  .rnr-pagewrapper .page-tab .rnr-c-1,
+  .rnr-pagewrapper .rnr-pagewrapper .page-tab .rnr-c-1
+{
+min-width: 100px;
+}
+.page-tab .rnr-b-addtabfield,
+  .rnr-pagewrapper .page-tab .rnr-b-addtabfield,
+  .rnr-pagewrapper .rnr-pagewrapper .page-tab .rnr-b-addtabfield
+{
+white-space: nowrap;
+}
+.page-tab .rnr-b-addtabfield,
+  .rnr-pagewrapper .page-tab .rnr-b-addtabfield,
+  .rnr-pagewrapper .rnr-pagewrapper .page-tab .rnr-b-addtabfield
+{
+text-align: right;
+}
+.page-tab .rnr-b-addtabfield > *,
+  .rnr-pagewrapper .page-tab .rnr-b-addtabfield > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-tab .rnr-b-addtabfield > *
+{
+
+}
+body.page-tab .rnr-bare
+{
+padding-right: 5px;
+}

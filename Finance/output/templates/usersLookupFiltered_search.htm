@@ -1,0 +1,540 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel usersLookupFiltered search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id}">
+	{BEGIN id_fieldblock}		
+	<td>
+		{$label usersLookupFiltered id}
+	</td>
+	<td>
+		<input type="checkbox" {$id_notbox}>
+	</td>
+	<td>
+		{$searchtype_id}
+	</td>
+	<td>
+		{$id_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_editcontrol1}&nbsp;
+	</td>
+{END id_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_FirstName}">
+	{BEGIN FirstName_fieldblock}		
+	<td>
+		{$label usersLookupFiltered FirstName}
+	</td>
+	<td>
+		<input type="checkbox" {$FirstName_notbox}>
+	</td>
+	<td>
+		{$searchtype_FirstName}
+	</td>
+	<td>
+		{$FirstName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$FirstName_editcontrol1}&nbsp;
+	</td>
+{END FirstName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LastName}">
+	{BEGIN LastName_fieldblock}		
+	<td>
+		{$label usersLookupFiltered LastName}
+	</td>
+	<td>
+		<input type="checkbox" {$LastName_notbox}>
+	</td>
+	<td>
+		{$searchtype_LastName}
+	</td>
+	<td>
+		{$LastName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LastName_editcontrol1}&nbsp;
+	</td>
+{END LastName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Sex}">
+	{BEGIN Sex_fieldblock}		
+	<td>
+		{$label usersLookupFiltered Sex}
+	</td>
+	<td>
+		<input type="checkbox" {$Sex_notbox}>
+	</td>
+	<td>
+		{$searchtype_Sex}
+	</td>
+	<td>
+		{$Sex_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Sex_editcontrol1}&nbsp;
+	</td>
+{END Sex_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_DateOfBirth}">
+	{BEGIN DateOfBirth_fieldblock}		
+	<td>
+		{$label usersLookupFiltered DateOfBirth}
+	</td>
+	<td>
+		<input type="checkbox" {$DateOfBirth_notbox}>
+	</td>
+	<td>
+		{$searchtype_DateOfBirth}
+	</td>
+	<td>
+		{$DateOfBirth_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$DateOfBirth_editcontrol1}&nbsp;
+	</td>
+{END DateOfBirth_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TelephoneNo}">
+	{BEGIN TelephoneNo_fieldblock}		
+	<td>
+		{$label usersLookupFiltered TelephoneNo}
+	</td>
+	<td>
+		<input type="checkbox" {$TelephoneNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_TelephoneNo}
+	</td>
+	<td>
+		{$TelephoneNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TelephoneNo_editcontrol1}&nbsp;
+	</td>
+{END TelephoneNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_EmailAddress}">
+	{BEGIN EmailAddress_fieldblock}		
+	<td>
+		{$label usersLookupFiltered EmailAddress}
+	</td>
+	<td>
+		<input type="checkbox" {$EmailAddress_notbox}>
+	</td>
+	<td>
+		{$searchtype_EmailAddress}
+	</td>
+	<td>
+		{$EmailAddress_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$EmailAddress_editcontrol1}&nbsp;
+	</td>
+{END EmailAddress_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_CurrentAddress}">
+	{BEGIN CurrentAddress_fieldblock}		
+	<td>
+		{$label usersLookupFiltered CurrentAddress}
+	</td>
+	<td>
+		<input type="checkbox" {$CurrentAddress_notbox}>
+	</td>
+	<td>
+		{$searchtype_CurrentAddress}
+	</td>
+	<td>
+		{$CurrentAddress_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$CurrentAddress_editcontrol1}&nbsp;
+	</td>
+{END CurrentAddress_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_PlaceOfBirth}">
+	{BEGIN PlaceOfBirth_fieldblock}		
+	<td>
+		{$label usersLookupFiltered PlaceOfBirth}
+	</td>
+	<td>
+		<input type="checkbox" {$PlaceOfBirth_notbox}>
+	</td>
+	<td>
+		{$searchtype_PlaceOfBirth}
+	</td>
+	<td>
+		{$PlaceOfBirth_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$PlaceOfBirth_editcontrol1}&nbsp;
+	</td>
+{END PlaceOfBirth_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_PassportOrID}">
+	{BEGIN PassportOrID_fieldblock}		
+	<td>
+		{$label usersLookupFiltered PassportOrID}
+	</td>
+	<td>
+		<input type="checkbox" {$PassportOrID_notbox}>
+	</td>
+	<td>
+		{$searchtype_PassportOrID}
+	</td>
+	<td>
+		{$PassportOrID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$PassportOrID_editcontrol1}&nbsp;
+	</td>
+{END PassportOrID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ProfilePhoto}">
+	{BEGIN ProfilePhoto_fieldblock}		
+	<td>
+		{$label usersLookupFiltered ProfilePhoto}
+	</td>
+	<td>
+		<input type="checkbox" {$ProfilePhoto_notbox}>
+	</td>
+	<td>
+		{$searchtype_ProfilePhoto}
+	</td>
+	<td>
+		{$ProfilePhoto_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ProfilePhoto_editcontrol1}&nbsp;
+	</td>
+{END ProfilePhoto_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AttachedFile}">
+	{BEGIN AttachedFile_fieldblock}		
+	<td>
+		{$label usersLookupFiltered AttachedFile}
+	</td>
+	<td>
+		<input type="checkbox" {$AttachedFile_notbox}>
+	</td>
+	<td>
+		{$searchtype_AttachedFile}
+	</td>
+	<td>
+		{$AttachedFile_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AttachedFile_editcontrol1}&nbsp;
+	</td>
+{END AttachedFile_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ClientNo}">
+	{BEGIN ClientNo_fieldblock}		
+	<td>
+		{$label usersLookupFiltered ClientNo}
+	</td>
+	<td>
+		<input type="checkbox" {$ClientNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_ClientNo}
+	</td>
+	<td>
+		{$ClientNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ClientNo_editcontrol1}&nbsp;
+	</td>
+{END ClientNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_EmergencyContactPerson}">
+	{BEGIN EmergencyContactPerson_fieldblock}		
+	<td>
+		{$label usersLookupFiltered EmergencyContactPerson}
+	</td>
+	<td>
+		<input type="checkbox" {$EmergencyContactPerson_notbox}>
+	</td>
+	<td>
+		{$searchtype_EmergencyContactPerson}
+	</td>
+	<td>
+		{$EmergencyContactPerson_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$EmergencyContactPerson_editcontrol1}&nbsp;
+	</td>
+{END EmergencyContactPerson_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_EmergencyContactRelation}">
+	{BEGIN EmergencyContactRelation_fieldblock}		
+	<td>
+		{$label usersLookupFiltered EmergencyContactRelation}
+	</td>
+	<td>
+		<input type="checkbox" {$EmergencyContactRelation_notbox}>
+	</td>
+	<td>
+		{$searchtype_EmergencyContactRelation}
+	</td>
+	<td>
+		{$EmergencyContactRelation_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$EmergencyContactRelation_editcontrol1}&nbsp;
+	</td>
+{END EmergencyContactRelation_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_EmergencyContactTel}">
+	{BEGIN EmergencyContactTel_fieldblock}		
+	<td>
+		{$label usersLookupFiltered EmergencyContactTel}
+	</td>
+	<td>
+		<input type="checkbox" {$EmergencyContactTel_notbox}>
+	</td>
+	<td>
+		{$searchtype_EmergencyContactTel}
+	</td>
+	<td>
+		{$EmergencyContactTel_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$EmergencyContactTel_editcontrol1}&nbsp;
+	</td>
+{END EmergencyContactTel_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Username}">
+	{BEGIN Username_fieldblock}		
+	<td>
+		{$label usersLookupFiltered Username}
+	</td>
+	<td>
+		<input type="checkbox" {$Username_notbox}>
+	</td>
+	<td>
+		{$searchtype_Username}
+	</td>
+	<td>
+		{$Username_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Username_editcontrol1}&nbsp;
+	</td>
+{END Username_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Password}">
+	{BEGIN Password_fieldblock}		
+	<td>
+		{$label usersLookupFiltered Password}
+	</td>
+	<td>
+		<input type="checkbox" {$Password_notbox}>
+	</td>
+	<td>
+		{$searchtype_Password}
+	</td>
+	<td>
+		{$Password_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Password_editcontrol1}&nbsp;
+	</td>
+{END Password_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AccountName}">
+	{BEGIN AccountName_fieldblock}		
+	<td>
+		{$label usersLookupFiltered AccountName}
+	</td>
+	<td>
+		<input type="checkbox" {$AccountName_notbox}>
+	</td>
+	<td>
+		{$searchtype_AccountName}
+	</td>
+	<td>
+		{$AccountName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AccountName_editcontrol1}&nbsp;
+	</td>
+{END AccountName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AccountNumber}">
+	{BEGIN AccountNumber_fieldblock}		
+	<td>
+		{$label usersLookupFiltered AccountNumber}
+	</td>
+	<td>
+		<input type="checkbox" {$AccountNumber_notbox}>
+	</td>
+	<td>
+		{$searchtype_AccountNumber}
+	</td>
+	<td>
+		{$AccountNumber_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AccountNumber_editcontrol1}&nbsp;
+	</td>
+{END AccountNumber_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_OpeningAccountDate}">
+	{BEGIN OpeningAccountDate_fieldblock}		
+	<td>
+		{$label usersLookupFiltered OpeningAccountDate}
+	</td>
+	<td>
+		<input type="checkbox" {$OpeningAccountDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_OpeningAccountDate}
+	</td>
+	<td>
+		{$OpeningAccountDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$OpeningAccountDate_editcontrol1}&nbsp;
+	</td>
+{END OpeningAccountDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_OpeningAccountBalance}">
+	{BEGIN OpeningAccountBalance_fieldblock}		
+	<td>
+		{$label usersLookupFiltered OpeningAccountBalance}
+	</td>
+	<td>
+		<input type="checkbox" {$OpeningAccountBalance_notbox}>
+	</td>
+	<td>
+		{$searchtype_OpeningAccountBalance}
+	</td>
+	<td>
+		{$OpeningAccountBalance_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$OpeningAccountBalance_editcontrol1}&nbsp;
+	</td>
+{END OpeningAccountBalance_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_UserLevel}">
+	{BEGIN UserLevel_fieldblock}		
+	<td>
+		{$label usersLookupFiltered UserLevel}
+	</td>
+	<td>
+		<input type="checkbox" {$UserLevel_notbox}>
+	</td>
+	<td>
+		{$searchtype_UserLevel}
+	</td>
+	<td>
+		{$UserLevel_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$UserLevel_editcontrol1}&nbsp;
+	</td>
+{END UserLevel_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

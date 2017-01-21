@@ -1,0 +1,355 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel lead view}</h2>
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+					{BEGIN CompanyName_fieldblock}
+	<div class="{$fielddispclass_CompanyName} col-md-6 bs-viewcontrolgroup" data-fieldname="CompanyName">
+		<label class="control-label" for="{$labelfor_CompanyName}">
+			{$label lead CompanyName}
+		</label>
+		<div class="" >
+			{$CompanyName_value}&nbsp;
+		</div>
+	</div>
+{END CompanyName_fieldblock}
+					{BEGIN ID_fieldblock}
+	<div class="{$fielddispclass_ID} col-md-6 bs-viewcontrolgroup" data-fieldname="ID">
+		<label class="control-label" for="{$labelfor_ID}">
+			{$label lead ID}
+		</label>
+		<div class="" >
+			{$ID_value}&nbsp;
+		</div>
+	</div>
+{END ID_fieldblock}
+					{BEGIN Address_fieldblock}
+	<div class="{$fielddispclass_Address} col-md-6 bs-viewcontrolgroup" data-fieldname="Address">
+		<label class="control-label" for="{$labelfor_Address}">
+			{$label lead Address}
+		</label>
+		<div class="" >
+			{$Address_value}&nbsp;
+		</div>
+	</div>
+{END Address_fieldblock}
+					{BEGIN TelNoAndEmailAddress_fieldblock}
+	<div class="{$fielddispclass_TelNoAndEmailAddress} col-md-6 bs-viewcontrolgroup" data-fieldname="TelNoAndEmailAddress">
+		<label class="control-label" for="{$labelfor_TelNoAndEmailAddress}">
+			{$label lead TelNoAndEmailAddress}
+		</label>
+		<div class="" >
+			{$TelNoAndEmailAddress_value}&nbsp;
+		</div>
+	</div>
+{END TelNoAndEmailAddress_fieldblock}
+					{BEGIN WhoSpokenToAndWhoIsPersonInCharge_fieldblock}
+	<div class="{$fielddispclass_WhoSpokenToAndWhoIsPersonInCharge} col-md-6 bs-viewcontrolgroup" data-fieldname="WhoSpokenToAndWhoIsPersonInCharge">
+		<label class="control-label" for="{$labelfor_WhoSpokenToAndWhoIsPersonInCharge}">
+			{$label lead WhoSpokenToAndWhoIsPersonInCharge}
+		</label>
+		<div class="" >
+			{$WhoSpokenToAndWhoIsPersonInCharge_value}&nbsp;
+		</div>
+	</div>
+{END WhoSpokenToAndWhoIsPersonInCharge_fieldblock}
+					{BEGIN RenewalDateOfCurrentContract_fieldblock}
+	<div class="{$fielddispclass_RenewalDateOfCurrentContract} col-md-6 bs-viewcontrolgroup" data-fieldname="RenewalDateOfCurrentContract">
+		<label class="control-label" for="{$labelfor_RenewalDateOfCurrentContract}">
+			{$label lead RenewalDateOfCurrentContract}
+		</label>
+		<div class="" >
+			{$RenewalDateOfCurrentContract_value}&nbsp;
+		</div>
+	</div>
+{END RenewalDateOfCurrentContract_fieldblock}
+					{BEGIN DateSeen_fieldblock}
+	<div class="{$fielddispclass_DateSeen} col-md-6 bs-viewcontrolgroup" data-fieldname="DateSeen">
+		<label class="control-label" for="{$labelfor_DateSeen}">
+			{$label lead DateSeen}
+		</label>
+		<div class="" >
+			{$DateSeen_value}&nbsp;
+		</div>
+	</div>
+{END DateSeen_fieldblock}
+					{BEGIN NextContact_fieldblock}
+	<div class="{$fielddispclass_NextContact} col-md-6 bs-viewcontrolgroup" data-fieldname="NextContact">
+		<label class="control-label" for="{$labelfor_NextContact}">
+			{$label lead NextContact}
+		</label>
+		<div class="" >
+			{$NextContact_value}&nbsp;
+		</div>
+	</div>
+{END NextContact_fieldblock}
+					{BEGIN Info_fieldblock}
+	<div class="{$fielddispclass_Info} col-md-6 bs-viewcontrolgroup" data-fieldname="Info">
+		<label class="control-label" for="{$labelfor_Info}">
+			{$label lead Info}
+		</label>
+		<div class="" >
+			{$Info_value}&nbsp;
+		</div>
+	</div>
+{END Info_fieldblock}
+					{BEGIN Interested_fieldblock}
+	<div class="{$fielddispclass_Interested} col-md-6 bs-viewcontrolgroup" data-fieldname="Interested">
+		<label class="control-label" for="{$labelfor_Interested}">
+			{$label lead Interested}
+		</label>
+		<div class="" >
+			{$Interested_value}&nbsp;
+		</div>
+	</div>
+{END Interested_fieldblock}
+					{BEGIN NotInterested_fieldblock}
+	<div class="{$fielddispclass_NotInterested} col-md-6 bs-viewcontrolgroup" data-fieldname="NotInterested">
+		<label class="control-label" for="{$labelfor_NotInterested}">
+			{$label lead NotInterested}
+		</label>
+		<div class="" >
+			{$NotInterested_value}&nbsp;
+		</div>
+	</div>
+{END NotInterested_fieldblock}
+					{BEGIN NumberOfBins_fieldblock}
+	<div class="{$fielddispclass_NumberOfBins} col-md-6 bs-viewcontrolgroup" data-fieldname="NumberOfBins">
+		<label class="control-label" for="{$labelfor_NumberOfBins}">
+			{$label lead NumberOfBins}
+		</label>
+		<div class="" >
+			{$NumberOfBins_value}&nbsp;
+		</div>
+	</div>
+{END NumberOfBins_fieldblock}
+					{BEGIN WeeksInMonth_fieldblock}
+	<div class="{$fielddispclass_WeeksInMonth} col-md-6 bs-viewcontrolgroup" data-fieldname="WeeksInMonth">
+		<label class="control-label" for="{$labelfor_WeeksInMonth}">
+			{$label lead WeeksInMonth}
+		</label>
+		<div class="" >
+			{$WeeksInMonth_value}&nbsp;
+		</div>
+	</div>
+{END WeeksInMonth_fieldblock}
+					{BEGIN PickupsPerWeek_fieldblock}
+	<div class="{$fielddispclass_PickupsPerWeek} col-md-6 bs-viewcontrolgroup" data-fieldname="PickupsPerWeek">
+		<label class="control-label" for="{$labelfor_PickupsPerWeek}">
+			{$label lead PickupsPerWeek}
+		</label>
+		<div class="" >
+			{$PickupsPerWeek_value}&nbsp;
+		</div>
+	</div>
+{END PickupsPerWeek_fieldblock}
+					{BEGIN ChargePerPickupPerBin_fieldblock}
+	<div class="{$fielddispclass_ChargePerPickupPerBin} col-md-6 bs-viewcontrolgroup" data-fieldname="ChargePerPickupPerBin">
+		<label class="control-label" for="{$labelfor_ChargePerPickupPerBin}">
+			{$label lead ChargePerPickupPerBin}
+		</label>
+		<div class="" >
+			{$ChargePerPickupPerBin_value}&nbsp;
+		</div>
+	</div>
+{END ChargePerPickupPerBin_fieldblock}
+					{BEGIN TotalExclVAT_fieldblock}
+	<div class="{$fielddispclass_TotalExclVAT} col-md-6 bs-viewcontrolgroup" data-fieldname="TotalExclVAT">
+		<label class="control-label" for="{$labelfor_TotalExclVAT}">
+			{$label lead TotalExclVAT}
+		</label>
+		<div class="" >
+			{$TotalExclVAT_value}&nbsp;
+		</div>
+	</div>
+{END TotalExclVAT_fieldblock}
+					{BEGIN VAT_fieldblock}
+	<div class="{$fielddispclass_VAT} col-md-6 bs-viewcontrolgroup" data-fieldname="VAT">
+		<label class="control-label" for="{$labelfor_VAT}">
+			{$label lead VAT}
+		</label>
+		<div class="" >
+			{$VAT_value}&nbsp;
+		</div>
+	</div>
+{END VAT_fieldblock}
+					{BEGIN TotalInclVAT_fieldblock}
+	<div class="{$fielddispclass_TotalInclVAT} col-md-6 bs-viewcontrolgroup" data-fieldname="TotalInclVAT">
+		<label class="control-label" for="{$labelfor_TotalInclVAT}">
+			{$label lead TotalInclVAT}
+		</label>
+		<div class="" >
+			{$TotalInclVAT_value}&nbsp;
+		</div>
+	</div>
+{END TotalInclVAT_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Back to list</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Close window</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Edit</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

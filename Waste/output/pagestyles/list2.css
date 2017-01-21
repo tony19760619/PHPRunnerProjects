@@ -1,0 +1,536 @@
+body.page-list2
+{
+padding-top:10px; padding-left:10px;
+}
+.page-list2 .rnr-c-recordcontrols,
+  .rnr-pagewrapper .page-list2 .rnr-c-recordcontrols,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-recordcontrols
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-c-recordcontrols,
+  .rnr-pagewrapper .page-list2 .rnr-c-recordcontrols,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-recordcontrols
+{
+min-width:100px;
+}
+.page-list2 .rnr-b-recordcontrols_new,
+  .rnr-pagewrapper .page-list2 .rnr-b-recordcontrols_new,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-recordcontrols_new
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-recordcontrols_new,
+  .rnr-pagewrapper .page-list2 .rnr-b-recordcontrols_new,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-recordcontrols_new
+{
+text-align: left;
+}
+.page-list2 .rnr-b-recordcontrols_new > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-recordcontrols_new > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-recordcontrols_new > *
+{
+
+}
+.page-list2 .rnr-b-recordcontrol,
+  .rnr-pagewrapper .page-list2 .rnr-b-recordcontrol,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-recordcontrol
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-recordcontrol,
+  .rnr-pagewrapper .page-list2 .rnr-b-recordcontrol,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-recordcontrol
+{
+text-align: left;
+}
+.page-list2 .rnr-b-recordcontrol > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-recordcontrol > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-recordcontrol > *
+{
+
+}
+.page-list2 .rnr-c-message,
+  .rnr-pagewrapper .page-list2 .rnr-c-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-message
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-c-message,
+  .rnr-pagewrapper .page-list2 .rnr-c-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-message
+{
+min-width:100px;
+}
+.page-list2 .rnr-b-message,
+  .rnr-pagewrapper .page-list2 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-message,
+  .rnr-pagewrapper .page-list2 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-message
+{
+text-align: center;
+}
+.page-list2 .rnr-b-message > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-message > *
+{
+
+}
+.page-list2 .rnr-c-grid .rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs,
+  .rnr-pagewrapper .page-list2 .rnr-c-grid .rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-grid .rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs.rnr-cs
+{
+width: 10px;
+}
+.page-list2 .rnr-c-grid .rnr-rs,
+  .rnr-pagewrapper .page-list2 .rnr-c-grid .rnr-rs,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-grid .rnr-rs
+{
+height: 10px;
+}
+.page-list2 .rnr-c-grid,
+  .rnr-pagewrapper .page-list2 .rnr-c-grid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-grid
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-b-grid,
+  .rnr-pagewrapper .page-list2 .rnr-b-grid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-grid
+{
+white-space: normal;
+}
+.page-list2 .rnr-b-grid,
+  .rnr-pagewrapper .page-list2 .rnr-b-grid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-grid
+{
+text-align: left;
+}
+.page-list2 .rnr-b-grid > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-grid > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-grid > *
+{
+
+}
+.page-list2 .rnr-c-pagination,
+  .rnr-pagewrapper .page-list2 .rnr-c-pagination,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-pagination
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-c-pagination,
+  .rnr-pagewrapper .page-list2 .rnr-c-pagination,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-pagination
+{
+min-width:100px;
+}
+.page-list2 .rnr-b-pagination,
+  .rnr-pagewrapper .page-list2 .rnr-b-pagination,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-pagination
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-pagination,
+  .rnr-pagewrapper .page-list2 .rnr-b-pagination,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-pagination
+{
+text-align: center;
+}
+.page-list2 .rnr-b-pagination > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-pagination > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-pagination > *
+{
+
+}
+body.page-list2 .rnr-center
+{
+padding-right: 5px;
+}
+.page-list2 .rnr-c-lang,
+  .rnr-pagewrapper .page-list2 .rnr-c-lang,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-lang
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-c-lang,
+  .rnr-pagewrapper .page-list2 .rnr-c-lang,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-lang
+{
+min-width:100px;
+}
+.page-list2 .rnr-b-languages,
+  .rnr-pagewrapper .page-list2 .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-languages
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-languages,
+  .rnr-pagewrapper .page-list2 .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-languages
+{
+text-align: left;
+}
+.page-list2 .rnr-b-languages > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-languages > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-languages > *
+{
+
+}
+.page-list2 .rnr-c-logg,
+  .rnr-pagewrapper .page-list2 .rnr-c-logg,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-logg
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-c-logg,
+  .rnr-pagewrapper .page-list2 .rnr-c-logg,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-logg
+{
+min-width:100px;
+}
+.page-list2 .rnr-b-loggedas,
+  .rnr-pagewrapper .page-list2 .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-loggedas
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-loggedas,
+  .rnr-pagewrapper .page-list2 .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-loggedas
+{
+text-align: left;
+}
+.page-list2 .rnr-b-loggedas > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-loggedas > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-loggedas > *
+{
+
+}
+.page-list2 .rnr-c-left,
+  .rnr-pagewrapper .page-list2 .rnr-c-left,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-left
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-c-left,
+  .rnr-pagewrapper .page-list2 .rnr-c-left,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-left
+{
+min-width:100px;
+}
+.page-list2 .rnr-b-searchpanel,
+  .rnr-pagewrapper .page-list2 .rnr-b-searchpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-searchpanel
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-searchpanel,
+  .rnr-pagewrapper .page-list2 .rnr-b-searchpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-searchpanel
+{
+text-align: left;
+}
+.page-list2 .rnr-b-searchpanel > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-searchpanel > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-searchpanel > *
+{
+
+}
+.page-list2 .rnr-b-filterpanel,
+  .rnr-pagewrapper .page-list2 .rnr-b-filterpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-filterpanel
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-filterpanel,
+  .rnr-pagewrapper .page-list2 .rnr-b-filterpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-filterpanel
+{
+text-align: left;
+}
+.page-list2 .rnr-b-filterpanel > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-filterpanel > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-filterpanel > *
+{
+
+}
+.page-list2 .rnr-b-vmenu,
+  .rnr-pagewrapper .page-list2 .rnr-b-vmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-vmenu
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-vmenu,
+  .rnr-pagewrapper .page-list2 .rnr-b-vmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-vmenu
+{
+text-align: left;
+}
+.page-list2 .rnr-b-vmenu > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-vmenu > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-vmenu > *
+{
+
+}
+body.page-list2  > * > * > .rnr-left
+{
+min-width:260px;
+}
+body.page-list2 .rnr-left
+{
+padding-right: 5px;
+}
+.page-list2 .rnr-c-master,
+  .rnr-pagewrapper .page-list2 .rnr-c-master,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-master
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-b-masterinfo,
+  .rnr-pagewrapper .page-list2 .rnr-b-masterinfo,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-masterinfo
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-masterinfo,
+  .rnr-pagewrapper .page-list2 .rnr-b-masterinfo,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-masterinfo
+{
+text-align: left;
+}
+.page-list2 .rnr-b-masterinfo > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-masterinfo > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-masterinfo > *
+{
+
+}
+.page-list2 .rnr-c-toplinks,
+  .rnr-pagewrapper .page-list2 .rnr-c-toplinks,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-toplinks
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-c-toplinks,
+  .rnr-pagewrapper .page-list2 .rnr-c-toplinks,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-toplinks
+{
+min-width:100px;
+}
+.page-list2 .rnr-b-toplinks_print,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_print
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-toplinks_print,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_print
+{
+text-align: right;
+}
+.page-list2 .rnr-b-toplinks_print > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_print > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_print > *
+{
+
+}
+.page-list2 .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_advsearch
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_advsearch
+{
+text-align: right;
+}
+.page-list2 .rnr-b-toplinks_advsearch > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_advsearch > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_advsearch > *
+{
+
+}
+.page-list2 .rnr-b-toplinks_import,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_import,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_import
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-toplinks_import,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_import,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_import
+{
+text-align: right;
+}
+.page-list2 .rnr-b-toplinks_import > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_import > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_import > *
+{
+
+}
+.page-list2 .rnr-b-toplinks_export,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-toplinks_export,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export
+{
+text-align: right;
+}
+.page-list2 .rnr-b-toplinks_export > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export > *
+{
+
+}
+.page-list2 .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export_links
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export_links
+{
+text-align: right;
+}
+.page-list2 .rnr-b-toplinks_export_links > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export_links > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-toplinks_export_links > *
+{
+
+}
+.page-list2 .rnr-c-search,
+  .rnr-pagewrapper .page-list2 .rnr-c-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-search
+{
+margin-bottom:5px;
+}
+.page-list2 .rnr-c-search,
+  .rnr-pagewrapper .page-list2 .rnr-c-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-c-search
+{
+min-width:100px;
+}
+.page-list2 .rnr-b-search,
+  .rnr-pagewrapper .page-list2 .rnr-b-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-search
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-search,
+  .rnr-pagewrapper .page-list2 .rnr-b-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-search
+{
+text-align: left;
+}
+.page-list2 .rnr-b-search > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-search > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-search > *
+{
+
+}
+.page-list2 .rnr-b-search_buttons,
+  .rnr-pagewrapper .page-list2 .rnr-b-search_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-search_buttons
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-search_buttons,
+  .rnr-pagewrapper .page-list2 .rnr-b-search_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-search_buttons
+{
+text-align: left;
+}
+.page-list2 .rnr-b-search_buttons > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-search_buttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-search_buttons > *
+{
+
+}
+.page-list2 .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .page-list2 .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-search_saving_buttons
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .page-list2 .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-search_saving_buttons
+{
+text-align: left;
+}
+.page-list2 .rnr-b-search_saving_buttons > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-search_saving_buttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-search_saving_buttons > *
+{
+
+}
+.page-list2 .rnr-b-details_found,
+  .rnr-pagewrapper .page-list2 .rnr-b-details_found,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-details_found
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-details_found,
+  .rnr-pagewrapper .page-list2 .rnr-b-details_found,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-details_found
+{
+text-align: right;
+}
+.page-list2 .rnr-b-details_found > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-details_found > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-details_found > *
+{
+
+}
+.page-list2 .rnr-b-page_of,
+  .rnr-pagewrapper .page-list2 .rnr-b-page_of,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-page_of
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-page_of,
+  .rnr-pagewrapper .page-list2 .rnr-b-page_of,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-page_of
+{
+text-align: right;
+}
+.page-list2 .rnr-b-page_of > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-page_of > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-page_of > *
+{
+
+}
+.page-list2 .rnr-b-recsperpage,
+  .rnr-pagewrapper .page-list2 .rnr-b-recsperpage,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-recsperpage
+{
+white-space: nowrap;
+}
+.page-list2 .rnr-b-recsperpage,
+  .rnr-pagewrapper .page-list2 .rnr-b-recsperpage,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-recsperpage
+{
+text-align: right;
+}
+.page-list2 .rnr-b-recsperpage > *,
+  .rnr-pagewrapper .page-list2 .rnr-b-recsperpage > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-list2 .rnr-b-recsperpage > *
+{
+
+}
+body.page-list2 .rnr-top
+{
+padding-right: 5px;
+}

@@ -1,0 +1,168 @@
+body.page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .rnr-c-search,
+  .rnr-pagewrapper .page-preview .rnr-c-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-search
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-c-search,
+  .rnr-pagewrapper .page-preview .rnr-c-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-search
+{
+min-width: 500px; display:inline-block
+}
+.page-preview .rnr-cw-search,
+  .rnr-pagewrapper .page-preview .rnr-cw-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-cw-search
+{
+text-align: center;
+}
+.page-preview .rnr-b-loginheader,
+  .rnr-pagewrapper .page-preview .rnr-b-loginheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loginheader
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-loginheader,
+  .rnr-pagewrapper .page-preview .rnr-b-loginheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loginheader
+{
+text-align: left;
+}
+.page-preview .rnr-b-loginheader > *,
+  .rnr-pagewrapper .page-preview .rnr-b-loginheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loginheader > *
+{
+font-size: 120%;
+}
+.page-preview .rnr-b-message,
+  .rnr-pagewrapper .page-preview .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-message,
+  .rnr-pagewrapper .page-preview .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-message
+{
+text-align: left;
+}
+.page-preview .rnr-b-message > *,
+  .rnr-pagewrapper .page-preview .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-message > *
+{
+
+}
+.page-preview .rnr-c-fields,
+  .rnr-pagewrapper .page-preview .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-preview .rnr-c-fields,
+  .rnr-pagewrapper .page-preview .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-c-fields
+{
+min-width: 100px;
+}
+.page-preview .rnr-b-loginfields,
+  .rnr-pagewrapper .page-preview .rnr-b-loginfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loginfields
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-loginfields,
+  .rnr-pagewrapper .page-preview .rnr-b-loginfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loginfields
+{
+text-align: left;
+}
+.page-preview .rnr-b-loginfields > *,
+  .rnr-pagewrapper .page-preview .rnr-b-loginfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loginfields > *
+{
+
+}
+.page-preview .rnr-b-mesguest,
+  .rnr-pagewrapper .page-preview .rnr-b-mesguest,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-mesguest
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-mesguest,
+  .rnr-pagewrapper .page-preview .rnr-b-mesguest,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-mesguest
+{
+text-align: left;
+}
+.page-preview .rnr-b-mesguest > *,
+  .rnr-pagewrapper .page-preview .rnr-b-mesguest > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-mesguest > *
+{
+
+}
+.page-preview .rnr-b-mesreg,
+  .rnr-pagewrapper .page-preview .rnr-b-mesreg,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-mesreg
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-mesreg,
+  .rnr-pagewrapper .page-preview .rnr-b-mesreg,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-mesreg
+{
+text-align: left;
+}
+.page-preview .rnr-b-mesreg > *,
+  .rnr-pagewrapper .page-preview .rnr-b-mesreg > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-mesreg > *
+{
+
+}
+.page-preview .rnr-b-mesforgot,
+  .rnr-pagewrapper .page-preview .rnr-b-mesforgot,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-mesforgot
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-mesforgot,
+  .rnr-pagewrapper .page-preview .rnr-b-mesforgot,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-mesforgot
+{
+text-align: left;
+}
+.page-preview .rnr-b-mesforgot > *,
+  .rnr-pagewrapper .page-preview .rnr-b-mesforgot > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-mesforgot > *
+{
+
+}
+.page-preview .rnr-b-loginbuttons,
+  .rnr-pagewrapper .page-preview .rnr-b-loginbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loginbuttons
+{
+white-space: nowrap;
+}
+.page-preview .rnr-b-loginbuttons,
+  .rnr-pagewrapper .page-preview .rnr-b-loginbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loginbuttons
+{
+text-align: left;
+}
+.page-preview .rnr-b-loginbuttons > *,
+  .rnr-pagewrapper .page-preview .rnr-b-loginbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-preview .rnr-b-loginbuttons > *
+{
+
+}
+body.page-preview .rnr-toptable
+{
+width:100%;
+}
+body.page-preview .rnr-top
+{
+padding-right: 5px;
+}

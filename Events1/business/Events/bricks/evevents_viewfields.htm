@@ -1,0 +1,11 @@
+<table class="fieldGrid">
+##foreach @TABLE.arrViewPageLayout as @l filter @l.id!="Category" && @l.id!="EventID" && @l.id!="ToDate" && @l.id!="ToTime" && @l.id!="Map" && @l.id!="Image" order @l.order##
+##if !@l.type##	
+	##brick_param viewfield##
+##elseif @l.type==2##	
+	##brick_param viewsection##
+##elseif @l.type==1##	
+	##brick_param viewtab##
+##endif##
+##endfor##
+</table>

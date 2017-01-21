@@ -1,0 +1,276 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel findaride add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN Username_fieldblock}
+<tr class="{$fielddispclass_Username}" data-fieldname="Username">
+	<td class="rnr-label">
+		{BEGIN Username_label}{$label findaride Username}{END Username_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Username_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Username_fieldblock}
+	{BEGIN FromLocation_fieldblock}
+<tr class="{$fielddispclass_FromLocation}" data-fieldname="FromLocation">
+	<td class="rnr-label">
+		{BEGIN FromLocation_label}{$label findaride FromLocation}{END FromLocation_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FromLocation_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FromLocation_fieldblock}
+	{BEGIN ToLocation_fieldblock}
+<tr class="{$fielddispclass_ToLocation}" data-fieldname="ToLocation">
+	<td class="rnr-label">
+		{BEGIN ToLocation_label}{$label findaride ToLocation}{END ToLocation_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ToLocation_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ToLocation_fieldblock}
+	{BEGIN DisplayRoute_fieldblock}
+<tr class="{$fielddispclass_DisplayRoute}" data-fieldname="DisplayRoute">
+	<td class="rnr-label">
+		{BEGIN DisplayRoute_label}{$label findaride DisplayRoute}{END DisplayRoute_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DisplayRoute_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DisplayRoute_fieldblock}
+	{BEGIN FromDate_fieldblock}
+<tr class="{$fielddispclass_FromDate}" data-fieldname="FromDate">
+	<td class="rnr-label">
+		{BEGIN FromDate_label}{$label findaride FromDate}{END FromDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FromDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FromDate_fieldblock}
+	{BEGIN ToDate_fieldblock}
+<tr class="{$fielddispclass_ToDate}" data-fieldname="ToDate">
+	<td class="rnr-label">
+		{BEGIN ToDate_label}{$label findaride ToDate}{END ToDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ToDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ToDate_fieldblock}
+	{BEGIN TransportWhat_fieldblock}
+<tr class="{$fielddispclass_TransportWhat}" data-fieldname="TransportWhat">
+	<td class="rnr-label">
+		{BEGIN TransportWhat_label}{$label findaride TransportWhat}{END TransportWhat_label}
+	</td>
+	<td class="rnr-control style3">
+		{$TransportWhat_editcontrol}&nbsp;
+	</td>
+</tr>
+{END TransportWhat_fieldblock}
+	{BEGIN TransportOfWhatPicture_fieldblock}
+<tr class="{$fielddispclass_TransportOfWhatPicture}" data-fieldname="TransportOfWhatPicture">
+	<td class="rnr-label">
+		{BEGIN TransportOfWhatPicture_label}{$label findaride TransportOfWhatPicture}{END TransportOfWhatPicture_label}
+	</td>
+	<td class="rnr-control style3">
+		{$TransportOfWhatPicture_editcontrol}&nbsp;
+	</td>
+</tr>
+{END TransportOfWhatPicture_fieldblock}
+	{BEGIN TypeOfTransport_fieldblock}
+<tr class="{$fielddispclass_TypeOfTransport}" data-fieldname="TypeOfTransport">
+	<td class="rnr-label">
+		{BEGIN TypeOfTransport_label}{$label findaride TypeOfTransport}{END TypeOfTransport_label}
+	</td>
+	<td class="rnr-control style3">
+		{$TypeOfTransport_editcontrol}&nbsp;
+	</td>
+</tr>
+{END TypeOfTransport_fieldblock}
+	{BEGIN Tons_fieldblock}
+<tr class="{$fielddispclass_Tons}" data-fieldname="Tons">
+	<td class="rnr-label">
+		{BEGIN Tons_label}{$label findaride Tons}{END Tons_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Tons_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Tons_fieldblock}
+	{BEGIN WillingToPayPerDay_fieldblock}
+<tr class="{$fielddispclass_WillingToPayPerDay}" data-fieldname="WillingToPayPerDay">
+	<td class="rnr-label">
+		{BEGIN WillingToPayPerDay_label}{$label findaride WillingToPayPerDay}{END WillingToPayPerDay_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WillingToPayPerDay_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WillingToPayPerDay_fieldblock}
+	{BEGIN CubicMeters_fieldblock}
+<tr class="{$fielddispclass_CubicMeters}" data-fieldname="CubicMeters">
+	<td class="rnr-label">
+		{BEGIN CubicMeters_label}{$label findaride CubicMeters}{END CubicMeters_label}
+	</td>
+	<td class="rnr-control style3">
+		{$CubicMeters_editcontrol}&nbsp;
+	</td>
+</tr>
+{END CubicMeters_fieldblock}
+	{BEGIN WillingToPayPerHalfDay_fieldblock}
+<tr class="{$fielddispclass_WillingToPayPerHalfDay}" data-fieldname="WillingToPayPerHalfDay">
+	<td class="rnr-label">
+		{BEGIN WillingToPayPerHalfDay_label}{$label findaride WillingToPayPerHalfDay}{END WillingToPayPerHalfDay_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WillingToPayPerHalfDay_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WillingToPayPerHalfDay_fieldblock}
+	{BEGIN WillingToPayPerTon_fieldblock}
+<tr class="{$fielddispclass_WillingToPayPerTon}" data-fieldname="WillingToPayPerTon">
+	<td class="rnr-label">
+		{BEGIN WillingToPayPerTon_label}{$label findaride WillingToPayPerTon}{END WillingToPayPerTon_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WillingToPayPerTon_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WillingToPayPerTon_fieldblock}
+	{BEGIN WillingToPayCoverCharge_fieldblock}
+<tr class="{$fielddispclass_WillingToPayCoverCharge}" data-fieldname="WillingToPayCoverCharge">
+	<td class="rnr-label">
+		{BEGIN WillingToPayCoverCharge_label}{$label findaride WillingToPayCoverCharge}{END WillingToPayCoverCharge_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WillingToPayCoverCharge_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WillingToPayCoverCharge_fieldblock}
+	{BEGIN WillingToPayPerCubicMeterPerKm_fieldblock}
+<tr class="{$fielddispclass_WillingToPayPerCubicMeterPerKm}" data-fieldname="WillingToPayPerCubicMeterPerKm">
+	<td class="rnr-label">
+		{BEGIN WillingToPayPerCubicMeterPerKm_label}{$label findaride WillingToPayPerCubicMeterPerKm}{END WillingToPayPerCubicMeterPerKm_label}
+	</td>
+	<td class="rnr-control style3">
+		{$WillingToPayPerCubicMeterPerKm_editcontrol}&nbsp;
+	</td>
+</tr>
+{END WillingToPayPerCubicMeterPerKm_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

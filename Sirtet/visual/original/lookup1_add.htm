@@ -1,0 +1,145 @@
+<!doctype html>
+<html  {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link REL="stylesheet" href="styles/default.css" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+    {END pageCSSFiles}
+    <link rel="stylesheet" href="include/sirtet_custom1.css" type="text/css">
+  </head>
+  <BODY class="{$stylename} function-add" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel lookup add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN LookupDesc_fieldblock}
+<tr class="{$fielddispclass_LookupDesc}" data-fieldname="LookupDesc">
+	<td class="rnr-label">
+		{BEGIN LookupDesc_label}{$label lookup LookupDesc}{END LookupDesc_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LookupDesc_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LookupDesc_fieldblock}
+	{BEGIN Value_fieldblock}
+<tr class="{$fielddispclass_Value}" data-fieldname="Value">
+	<td class="rnr-label">
+		{BEGIN Value_label}{$label lookup Value}{END Value_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Value_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Value_fieldblock}
+	{BEGIN SortNo_fieldblock}
+<tr class="{$fielddispclass_SortNo}" data-fieldname="SortNo">
+	<td class="rnr-label">
+		{BEGIN SortNo_label}{$label lookup SortNo}{END SortNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SortNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SortNo_fieldblock}
+	{BEGIN MasterList_fieldblock}
+<tr class="{$fielddispclass_MasterList}" data-fieldname="MasterList">
+	<td class="rnr-label">
+		{BEGIN MasterList_label}{$label lookup MasterList}{END MasterList_label}
+	</td>
+	<td class="rnr-control style3">
+		{$MasterList_editcontrol}&nbsp;
+	</td>
+</tr>
+{END MasterList_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+
+
+
+          <img id="logoimg" width="275px" src="include/Tetris.png" />
+        </div>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+            
+          </div>
+          <DIV class="rnr-center {$blockclass_center}">
+            
+          </div>
+          <DIV class="rnr-right {$blockclass_right}">
+            
+          </div>
+        </div>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </div>
+      </div>
+      {$footer}
+    {END body}
+  </body>
+</html>

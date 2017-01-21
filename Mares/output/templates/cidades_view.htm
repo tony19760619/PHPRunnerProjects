@@ -1,0 +1,265 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel cidades view}</h2>
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+					{BEGIN id_fieldblock}
+	<div class="{$fielddispclass_id} col-md-6 bs-viewcontrolgroup" data-fieldname="id">
+		<label class="control-label" for="{$labelfor_id}">
+			{$label cidades id}
+		</label>
+		<div class="" >
+			{$id_value}&nbsp;
+		</div>
+	</div>
+{END id_fieldblock}
+					{BEGIN terra_fieldblock}
+	<div class="{$fielddispclass_terra} col-md-6 bs-viewcontrolgroup" data-fieldname="terra">
+		<label class="control-label" for="{$labelfor_terra}">
+			{$label cidades terra}
+		</label>
+		<div class="" >
+			{$terra_value}&nbsp;
+		</div>
+	</div>
+{END terra_fieldblock}
+					{BEGIN regiao_fieldblock}
+	<div class="{$fielddispclass_regiao} col-md-6 bs-viewcontrolgroup" data-fieldname="regiao">
+		<label class="control-label" for="{$labelfor_regiao}">
+			{$label cidades regiao}
+		</label>
+		<div class="" >
+			{$regiao_value}&nbsp;
+		</div>
+	</div>
+{END regiao_fieldblock}
+					{BEGIN cidade_fieldblock}
+	<div class="{$fielddispclass_cidade} col-md-6 bs-viewcontrolgroup" data-fieldname="cidade">
+		<label class="control-label" for="{$labelfor_cidade}">
+			{$label cidades cidade}
+		</label>
+		<div class="" >
+			{$cidade_value}&nbsp;
+		</div>
+	</div>
+{END cidade_fieldblock}
+					{BEGIN locale_fieldblock}
+	<div class="{$fielddispclass_locale} col-md-6 bs-viewcontrolgroup" data-fieldname="locale">
+		<label class="control-label" for="{$labelfor_locale}">
+			{$label cidades locale}
+		</label>
+		<div class="" >
+			{$locale_value}&nbsp;
+		</div>
+	</div>
+{END locale_fieldblock}
+					{BEGIN longitude_fieldblock}
+	<div class="{$fielddispclass_longitude} col-md-6 bs-viewcontrolgroup" data-fieldname="longitude">
+		<label class="control-label" for="{$labelfor_longitude}">
+			{$label cidades longitude}
+		</label>
+		<div class="" >
+			{$longitude_value}&nbsp;
+		</div>
+	</div>
+{END longitude_fieldblock}
+					{BEGIN latitude_fieldblock}
+	<div class="{$fielddispclass_latitude} col-md-6 bs-viewcontrolgroup" data-fieldname="latitude">
+		<label class="control-label" for="{$labelfor_latitude}">
+			{$label cidades latitude}
+		</label>
+		<div class="" >
+			{$latitude_value}&nbsp;
+		</div>
+	</div>
+{END latitude_fieldblock}
+					{BEGIN v1diascript_fieldblock}
+	<div class="{$fielddispclass_v1diascript} col-md-6 bs-viewcontrolgroup" data-fieldname="v1diascript">
+		<label class="control-label" for="{$labelfor_v1diascript}">
+			{$label cidades v1diascript}
+		</label>
+		<div class="" >
+			{$v1diascript_value}&nbsp;
+		</div>
+	</div>
+{END v1diascript_fieldblock}
+					{BEGIN v3diasscript_fieldblock}
+	<div class="{$fielddispclass_v3diasscript} col-md-6 bs-viewcontrolgroup" data-fieldname="v3diasscript">
+		<label class="control-label" for="{$labelfor_v3diasscript}">
+			{$label cidades v3diasscript}
+		</label>
+		<div class="" >
+			{$v3diasscript_value}&nbsp;
+		</div>
+	</div>
+{END v3diasscript_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Voltar à Lista</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Fechar Janela</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+									{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Editar</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

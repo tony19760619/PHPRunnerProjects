@@ -1,0 +1,312 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel costplan search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_JobID}">
+	{BEGIN JobID_fieldblock}		
+	<td>
+		{$label costplan JobID}
+	</td>
+	<td>
+		<input type="checkbox" {$JobID_notbox}>
+	</td>
+	<td>
+		{$searchtype_JobID}
+	</td>
+	<td>
+		{$JobID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$JobID_editcontrol1}&nbsp;
+	</td>
+{END JobID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ID}">
+	{BEGIN ID_fieldblock}		
+	<td>
+		{$label costplan ID}
+	</td>
+	<td>
+		<input type="checkbox" {$ID_notbox}>
+	</td>
+	<td>
+		{$searchtype_ID}
+	</td>
+	<td>
+		{$ID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ID_editcontrol1}&nbsp;
+	</td>
+{END ID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Type}">
+	{BEGIN Type_fieldblock}		
+	<td>
+		{$label costplan Type}
+	</td>
+	<td>
+		<input type="checkbox" {$Type_notbox}>
+	</td>
+	<td>
+		{$searchtype_Type}
+	</td>
+	<td>
+		{$Type_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Type_editcontrol1}&nbsp;
+	</td>
+{END Type_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SubType}">
+	{BEGIN SubType_fieldblock}		
+	<td>
+		{$label costplan SubType}
+	</td>
+	<td>
+		<input type="checkbox" {$SubType_notbox}>
+	</td>
+	<td>
+		{$searchtype_SubType}
+	</td>
+	<td>
+		{$SubType_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SubType_editcontrol1}&nbsp;
+	</td>
+{END SubType_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SubmittedChangedApproved}">
+	{BEGIN SubmittedChangedApproved_fieldblock}		
+	<td>
+		{$label costplan SubmittedChangedApproved}
+	</td>
+	<td>
+		<input type="checkbox" {$SubmittedChangedApproved_notbox}>
+	</td>
+	<td>
+		{$searchtype_SubmittedChangedApproved}
+	</td>
+	<td>
+		{$SubmittedChangedApproved_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SubmittedChangedApproved_editcontrol1}&nbsp;
+	</td>
+{END SubmittedChangedApproved_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Files}">
+	{BEGIN Files_fieldblock}		
+	<td>
+		{$label costplan Files}
+	</td>
+	<td>
+		<input type="checkbox" {$Files_notbox}>
+	</td>
+	<td>
+		{$searchtype_Files}
+	</td>
+	<td>
+		{$Files_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Files_editcontrol1}&nbsp;
+	</td>
+{END Files_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_CommentBox}">
+	{BEGIN CommentBox_fieldblock}		
+	<td>
+		{$label costplan CommentBox}
+	</td>
+	<td>
+		<input type="checkbox" {$CommentBox_notbox}>
+	</td>
+	<td>
+		{$searchtype_CommentBox}
+	</td>
+	<td>
+		{$CommentBox_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$CommentBox_editcontrol1}&nbsp;
+	</td>
+{END CommentBox_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SendEmailTo}">
+	{BEGIN SendEmailTo_fieldblock}		
+	<td>
+		{$label costplan SendEmailTo}
+	</td>
+	<td>
+		<input type="checkbox" {$SendEmailTo_notbox}>
+	</td>
+	<td>
+		{$searchtype_SendEmailTo}
+	</td>
+	<td>
+		{$SendEmailTo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SendEmailTo_editcontrol1}&nbsp;
+	</td>
+{END SendEmailTo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_EmailNote}">
+	{BEGIN EmailNote_fieldblock}		
+	<td>
+		{$label costplan EmailNote}
+	</td>
+	<td>
+		<input type="checkbox" {$EmailNote_notbox}>
+	</td>
+	<td>
+		{$searchtype_EmailNote}
+	</td>
+	<td>
+		{$EmailNote_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$EmailNote_editcontrol1}&nbsp;
+	</td>
+{END EmailNote_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LastEditedBy}">
+	{BEGIN LastEditedBy_fieldblock}		
+	<td>
+		{$label costplan LastEditedBy}
+	</td>
+	<td>
+		<input type="checkbox" {$LastEditedBy_notbox}>
+	</td>
+	<td>
+		{$searchtype_LastEditedBy}
+	</td>
+	<td>
+		{$LastEditedBy_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LastEditedBy_editcontrol1}&nbsp;
+	</td>
+{END LastEditedBy_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LastEditedOn}">
+	{BEGIN LastEditedOn_fieldblock}		
+	<td>
+		{$label costplan LastEditedOn}
+	</td>
+	<td>
+		<input type="checkbox" {$LastEditedOn_notbox}>
+	</td>
+	<td>
+		{$searchtype_LastEditedOn}
+	</td>
+	<td>
+		{$LastEditedOn_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LastEditedOn_editcontrol1}&nbsp;
+	</td>
+{END LastEditedOn_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

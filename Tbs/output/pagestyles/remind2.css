@@ -1,0 +1,114 @@
+body.page-remind2
+{
+padding-top:10px; padding-left:10px;
+}
+.page-remind2 .rnr-c-remind,
+  .rnr-pagewrapper .page-remind2 .rnr-c-remind,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-c-remind
+{
+margin-bottom:5px;
+}
+.page-remind2 .rnr-c-remind,
+  .rnr-pagewrapper .page-remind2 .rnr-c-remind,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-c-remind
+{
+min-width:500px; display:inline-block
+}
+.page-remind2 .rnr-cw-remind,
+  .rnr-pagewrapper .page-remind2 .rnr-cw-remind,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-cw-remind
+{
+text-align: center;
+}
+.page-remind2 .rnr-b-remindheader,
+  .rnr-pagewrapper .page-remind2 .rnr-b-remindheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-remindheader
+{
+white-space: nowrap;
+}
+.page-remind2 .rnr-b-remindheader,
+  .rnr-pagewrapper .page-remind2 .rnr-b-remindheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-remindheader
+{
+text-align: left;
+}
+.page-remind2 .rnr-b-remindheader > *,
+  .rnr-pagewrapper .page-remind2 .rnr-b-remindheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-remindheader > *
+{
+font-size: 120%;
+}
+.page-remind2 .rnr-b-message,
+  .rnr-pagewrapper .page-remind2 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-remind2 .rnr-b-message,
+  .rnr-pagewrapper .page-remind2 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-message
+{
+text-align: left;
+}
+.page-remind2 .rnr-b-message > *,
+  .rnr-pagewrapper .page-remind2 .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-message > *
+{
+
+}
+.page-remind2 .rnr-c-fields,
+  .rnr-pagewrapper .page-remind2 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-remind2 .rnr-c-fields,
+  .rnr-pagewrapper .page-remind2 .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-c-fields
+{
+min-width:100px;
+}
+.page-remind2 .rnr-b-remindfields,
+  .rnr-pagewrapper .page-remind2 .rnr-b-remindfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-remindfields
+{
+white-space: nowrap;
+}
+.page-remind2 .rnr-b-remindfields,
+  .rnr-pagewrapper .page-remind2 .rnr-b-remindfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-remindfields
+{
+text-align: left;
+}
+.page-remind2 .rnr-b-remindfields > *,
+  .rnr-pagewrapper .page-remind2 .rnr-b-remindfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-remindfields > *
+{
+
+}
+.page-remind2 .rnr-b-remindbuttons,
+  .rnr-pagewrapper .page-remind2 .rnr-b-remindbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-remindbuttons
+{
+white-space: nowrap;
+}
+.page-remind2 .rnr-b-remindbuttons,
+  .rnr-pagewrapper .page-remind2 .rnr-b-remindbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-remindbuttons
+{
+text-align: left;
+}
+.page-remind2 .rnr-b-remindbuttons > *,
+  .rnr-pagewrapper .page-remind2 .rnr-b-remindbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-remind2 .rnr-b-remindbuttons > *
+{
+
+}
+body.page-remind2 .rnr-toptable
+{
+width:100%;
+}
+body.page-remind2 .rnr-top
+{
+padding-right: 5px;
+}

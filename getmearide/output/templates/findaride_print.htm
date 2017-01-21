@@ -1,0 +1,346 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel findaride print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN Username_fieldheadercolumn}
+<th class="runner-cc {$Username_class}" {$Username_style}>
+	{BEGIN Username_fieldheader}
+	<b>{$label findaride Username}</b>
+	{END Username_fieldheader}
+</th>
+{END Username_fieldheadercolumn}
+	{BEGIN id_fieldheadercolumn}
+<th class="runner-cc {$id_class}" {$id_style}>
+	{BEGIN id_fieldheader}
+	<b>{$label findaride id}</b>
+	{END id_fieldheader}
+</th>
+{END id_fieldheadercolumn}
+	{BEGIN FromLocation_fieldheadercolumn}
+<th class="runner-cc {$FromLocation_class}" {$FromLocation_style}>
+	{BEGIN FromLocation_fieldheader}
+	<b>{$label findaride FromLocation}</b>
+	{END FromLocation_fieldheader}
+</th>
+{END FromLocation_fieldheadercolumn}
+	{BEGIN ToLocation_fieldheadercolumn}
+<th class="runner-cc {$ToLocation_class}" {$ToLocation_style}>
+	{BEGIN ToLocation_fieldheader}
+	<b>{$label findaride ToLocation}</b>
+	{END ToLocation_fieldheader}
+</th>
+{END ToLocation_fieldheadercolumn}
+	{BEGIN DisplayRoute_fieldheadercolumn}
+<th class="runner-cc {$DisplayRoute_class}" {$DisplayRoute_style}>
+	{BEGIN DisplayRoute_fieldheader}
+	<b>{$label findaride DisplayRoute}</b>
+	{END DisplayRoute_fieldheader}
+</th>
+{END DisplayRoute_fieldheadercolumn}
+	{BEGIN FromDate_fieldheadercolumn}
+<th class="runner-cc {$FromDate_class}" {$FromDate_style}>
+	{BEGIN FromDate_fieldheader}
+	<b>{$label findaride FromDate}</b>
+	{END FromDate_fieldheader}
+</th>
+{END FromDate_fieldheadercolumn}
+	{BEGIN ToDate_fieldheadercolumn}
+<th class="runner-cc {$ToDate_class}" {$ToDate_style}>
+	{BEGIN ToDate_fieldheader}
+	<b>{$label findaride ToDate}</b>
+	{END ToDate_fieldheader}
+</th>
+{END ToDate_fieldheadercolumn}
+	{BEGIN TransportWhat_fieldheadercolumn}
+<th class="runner-cc {$TransportWhat_class}" {$TransportWhat_style}>
+	{BEGIN TransportWhat_fieldheader}
+	<b>{$label findaride TransportWhat}</b>
+	{END TransportWhat_fieldheader}
+</th>
+{END TransportWhat_fieldheadercolumn}
+	{BEGIN TransportOfWhatPicture_fieldheadercolumn}
+<th class="runner-cc {$TransportOfWhatPicture_class}" {$TransportOfWhatPicture_style}>
+	{BEGIN TransportOfWhatPicture_fieldheader}
+	<b>{$label findaride TransportOfWhatPicture}</b>
+	{END TransportOfWhatPicture_fieldheader}
+</th>
+{END TransportOfWhatPicture_fieldheadercolumn}
+	{BEGIN TypeOfTransport_fieldheadercolumn}
+<th class="runner-cc {$TypeOfTransport_class}" {$TypeOfTransport_style}>
+	{BEGIN TypeOfTransport_fieldheader}
+	<b>{$label findaride TypeOfTransport}</b>
+	{END TypeOfTransport_fieldheader}
+</th>
+{END TypeOfTransport_fieldheadercolumn}
+	{BEGIN Tons_fieldheadercolumn}
+<th class="runner-cc {$Tons_class}" {$Tons_style}>
+	{BEGIN Tons_fieldheader}
+	<b>{$label findaride Tons}</b>
+	{END Tons_fieldheader}
+</th>
+{END Tons_fieldheadercolumn}
+	{BEGIN WillingToPayPerDay_fieldheadercolumn}
+<th class="runner-cc {$WillingToPayPerDay_class}" {$WillingToPayPerDay_style}>
+	{BEGIN WillingToPayPerDay_fieldheader}
+	<b>{$label findaride WillingToPayPerDay}</b>
+	{END WillingToPayPerDay_fieldheader}
+</th>
+{END WillingToPayPerDay_fieldheadercolumn}
+	{BEGIN CubicMeters_fieldheadercolumn}
+<th class="runner-cc {$CubicMeters_class}" {$CubicMeters_style}>
+	{BEGIN CubicMeters_fieldheader}
+	<b>{$label findaride CubicMeters}</b>
+	{END CubicMeters_fieldheader}
+</th>
+{END CubicMeters_fieldheadercolumn}
+	{BEGIN WillingToPayPerHalfDay_fieldheadercolumn}
+<th class="runner-cc {$WillingToPayPerHalfDay_class}" {$WillingToPayPerHalfDay_style}>
+	{BEGIN WillingToPayPerHalfDay_fieldheader}
+	<b>{$label findaride WillingToPayPerHalfDay}</b>
+	{END WillingToPayPerHalfDay_fieldheader}
+</th>
+{END WillingToPayPerHalfDay_fieldheadercolumn}
+	{BEGIN WillingToPayPerTon_fieldheadercolumn}
+<th class="runner-cc {$WillingToPayPerTon_class}" {$WillingToPayPerTon_style}>
+	{BEGIN WillingToPayPerTon_fieldheader}
+	<b>{$label findaride WillingToPayPerTon}</b>
+	{END WillingToPayPerTon_fieldheader}
+</th>
+{END WillingToPayPerTon_fieldheadercolumn}
+	{BEGIN WillingToPayCoverCharge_fieldheadercolumn}
+<th class="runner-cc {$WillingToPayCoverCharge_class}" {$WillingToPayCoverCharge_style}>
+	{BEGIN WillingToPayCoverCharge_fieldheader}
+	<b>{$label findaride WillingToPayCoverCharge}</b>
+	{END WillingToPayCoverCharge_fieldheader}
+</th>
+{END WillingToPayCoverCharge_fieldheadercolumn}
+	{BEGIN WillingToPayPerCubicMeterPerKm_fieldheadercolumn}
+<th class="runner-cc {$WillingToPayPerCubicMeterPerKm_class}" {$WillingToPayPerCubicMeterPerKm_style}>
+	{BEGIN WillingToPayPerCubicMeterPerKm_fieldheader}
+	<b>{$label findaride WillingToPayPerCubicMeterPerKm}</b>
+	{END WillingToPayPerCubicMeterPerKm_fieldheader}
+</th>
+{END WillingToPayPerCubicMeterPerKm_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN Username_fieldcolumn}
+<td  class="runner-cc {$Username_class}" {$Username_style} {$recordattrs}>
+	{$Username_value}
+</td>
+{END Username_fieldcolumn}
+	{BEGIN id_fieldcolumn}
+<td  class="runner-cc {$id_class}" {$id_style} {$recordattrs}>
+	{$id_value}
+</td>
+{END id_fieldcolumn}
+	{BEGIN FromLocation_fieldcolumn}
+<td  class="runner-cc {$FromLocation_class}" {$FromLocation_style} {$recordattrs}>
+	{$FromLocation_value}
+</td>
+{END FromLocation_fieldcolumn}
+	{BEGIN ToLocation_fieldcolumn}
+<td  class="runner-cc {$ToLocation_class}" {$ToLocation_style} {$recordattrs}>
+	{$ToLocation_value}
+</td>
+{END ToLocation_fieldcolumn}
+	{BEGIN DisplayRoute_fieldcolumn}
+<td  class="runner-cc {$DisplayRoute_class}" {$DisplayRoute_style} {$recordattrs}>
+	{$DisplayRoute_value}
+</td>
+{END DisplayRoute_fieldcolumn}
+	{BEGIN FromDate_fieldcolumn}
+<td  class="runner-cc {$FromDate_class}" {$FromDate_style} {$recordattrs}>
+	{$FromDate_value}
+</td>
+{END FromDate_fieldcolumn}
+	{BEGIN ToDate_fieldcolumn}
+<td  class="runner-cc {$ToDate_class}" {$ToDate_style} {$recordattrs}>
+	{$ToDate_value}
+</td>
+{END ToDate_fieldcolumn}
+	{BEGIN TransportWhat_fieldcolumn}
+<td  class="runner-cc {$TransportWhat_class}" {$TransportWhat_style} {$recordattrs}>
+	{$TransportWhat_value}
+</td>
+{END TransportWhat_fieldcolumn}
+	{BEGIN TransportOfWhatPicture_fieldcolumn}
+<td  class="runner-cc {$TransportOfWhatPicture_class}" {$TransportOfWhatPicture_style} {$recordattrs}>
+	{$TransportOfWhatPicture_value}
+</td>
+{END TransportOfWhatPicture_fieldcolumn}
+	{BEGIN TypeOfTransport_fieldcolumn}
+<td  class="runner-cc {$TypeOfTransport_class}" {$TypeOfTransport_style} {$recordattrs}>
+	{$TypeOfTransport_value}
+</td>
+{END TypeOfTransport_fieldcolumn}
+	{BEGIN Tons_fieldcolumn}
+<td  class="runner-cc {$Tons_class}" {$Tons_style} {$recordattrs}>
+	{$Tons_value}
+</td>
+{END Tons_fieldcolumn}
+	{BEGIN WillingToPayPerDay_fieldcolumn}
+<td  class="runner-cc {$WillingToPayPerDay_class}" {$WillingToPayPerDay_style} {$recordattrs}>
+	{$WillingToPayPerDay_value}
+</td>
+{END WillingToPayPerDay_fieldcolumn}
+	{BEGIN CubicMeters_fieldcolumn}
+<td  class="runner-cc {$CubicMeters_class}" {$CubicMeters_style} {$recordattrs}>
+	{$CubicMeters_value}
+</td>
+{END CubicMeters_fieldcolumn}
+	{BEGIN WillingToPayPerHalfDay_fieldcolumn}
+<td  class="runner-cc {$WillingToPayPerHalfDay_class}" {$WillingToPayPerHalfDay_style} {$recordattrs}>
+	{$WillingToPayPerHalfDay_value}
+</td>
+{END WillingToPayPerHalfDay_fieldcolumn}
+	{BEGIN WillingToPayPerTon_fieldcolumn}
+<td  class="runner-cc {$WillingToPayPerTon_class}" {$WillingToPayPerTon_style} {$recordattrs}>
+	{$WillingToPayPerTon_value}
+</td>
+{END WillingToPayPerTon_fieldcolumn}
+	{BEGIN WillingToPayCoverCharge_fieldcolumn}
+<td  class="runner-cc {$WillingToPayCoverCharge_class}" {$WillingToPayCoverCharge_style} {$recordattrs}>
+	{$WillingToPayCoverCharge_value}
+</td>
+{END WillingToPayCoverCharge_fieldcolumn}
+	{BEGIN WillingToPayPerCubicMeterPerKm_fieldcolumn}
+<td  class="runner-cc {$WillingToPayPerCubicMeterPerKm_class}" {$WillingToPayPerCubicMeterPerKm_style} {$recordattrs}>
+	{$WillingToPayPerCubicMeterPerKm_value}
+</td>
+{END WillingToPayPerCubicMeterPerKm_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+		{BEGIN details_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN details_record}
+		<td  class="rnr-edge" colspan="18">
+			{BEGIN details_table}
+			{$details}
+			{END details_table}
+		</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+		{END details_record}
+	</tr>
+	{END details_row}
+{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

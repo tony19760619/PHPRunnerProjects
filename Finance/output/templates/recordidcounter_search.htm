@@ -1,0 +1,217 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel recordidcounter search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Name}">
+	{BEGIN Name_fieldblock}		
+	<td>
+		{$label recordidcounter Name}
+	</td>
+	<td>
+		<input type="checkbox" {$Name_notbox}>
+	</td>
+	<td>
+		{$searchtype_Name}
+	</td>
+	<td>
+		{$Name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Name_editcontrol1}&nbsp;
+	</td>
+{END Name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Prefix}">
+	{BEGIN Prefix_fieldblock}		
+	<td>
+		{$label recordidcounter Prefix}
+	</td>
+	<td>
+		<input type="checkbox" {$Prefix_notbox}>
+	</td>
+	<td>
+		{$searchtype_Prefix}
+	</td>
+	<td>
+		{$Prefix_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Prefix_editcontrol1}&nbsp;
+	</td>
+{END Prefix_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Sufix}">
+	{BEGIN Sufix_fieldblock}		
+	<td>
+		{$label recordidcounter Sufix}
+	</td>
+	<td>
+		<input type="checkbox" {$Sufix_notbox}>
+	</td>
+	<td>
+		{$searchtype_Sufix}
+	</td>
+	<td>
+		{$Sufix_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Sufix_editcontrol1}&nbsp;
+	</td>
+{END Sufix_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Number}">
+	{BEGIN Number_fieldblock}		
+	<td>
+		{$label recordidcounter Number}
+	</td>
+	<td>
+		<input type="checkbox" {$Number_notbox}>
+	</td>
+	<td>
+		{$searchtype_Number}
+	</td>
+	<td>
+		{$Number_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Number_editcontrol1}&nbsp;
+	</td>
+{END Number_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_flag}">
+	{BEGIN flag_fieldblock}		
+	<td>
+		{$label recordidcounter flag}
+	</td>
+	<td>
+		<input type="checkbox" {$flag_notbox}>
+	</td>
+	<td>
+		{$searchtype_flag}
+	</td>
+	<td>
+		{$flag_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$flag_editcontrol1}&nbsp;
+	</td>
+{END flag_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_useflag}">
+	{BEGIN useflag_fieldblock}		
+	<td>
+		{$label recordidcounter useflag}
+	</td>
+	<td>
+		<input type="checkbox" {$useflag_notbox}>
+	</td>
+	<td>
+		{$searchtype_useflag}
+	</td>
+	<td>
+		{$useflag_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$useflag_editcontrol1}&nbsp;
+	</td>
+{END useflag_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

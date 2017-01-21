@@ -1,0 +1,26 @@
+{BEGIN ##@l.id g##_fieldblock}
+<tr class="{$fielddispclass_##@l.id g##}" data-fieldname="##@l.id g##">
+		<td class="rnr-label">
+			<b>##label @TABLE.strDataSourceTable @l.id##</b>
+		</td>
+		##if  @l.id=="Subject"##
+		<td class="rnr-control style3">
+			{$##@l.id g##_value}&nbsp;
+			{$Image_value}&nbsp;
+		</td>
+		##else##
+		<td class="rnr-control style3">
+			{$##@l.id g##_value}&nbsp;
+			##if @l.id=="FromDate"##
+			{$ToDate_value}&nbsp;
+			##endif##
+			##if @l.id=="FromTime"##
+			{$ToTime_value}&nbsp;
+			##endif##
+			##if @l.id=="Location"##
+			{$Map_value}&nbsp;
+			##endif##
+		</td>
+		##endif##
+</tr>
+{END ##@l.id g##_fieldblock}

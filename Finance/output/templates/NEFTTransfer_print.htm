@@ -1,0 +1,296 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel NEFTTransfer print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_fieldheadercolumn}
+<th class="runner-cc {$id_class}" {$id_style}>
+	{BEGIN id_fieldheader}
+	<b>{$label NEFTTransfer id}</b>
+	{END id_fieldheader}
+</th>
+{END id_fieldheadercolumn}
+	{BEGIN AccountName_fieldheadercolumn}
+<th class="runner-cc {$AccountName_class}" {$AccountName_style}>
+	{BEGIN AccountName_fieldheader}
+	<b>{$label NEFTTransfer AccountName}</b>
+	{END AccountName_fieldheader}
+</th>
+{END AccountName_fieldheadercolumn}
+	{BEGIN ClientNo_fieldheadercolumn}
+<th class="runner-cc {$ClientNo_class}" {$ClientNo_style}>
+	{BEGIN ClientNo_fieldheader}
+	<b>{$label NEFTTransfer ClientNo}</b>
+	{END ClientNo_fieldheader}
+</th>
+{END ClientNo_fieldheadercolumn}
+	{BEGIN AccountNumber_fieldheadercolumn}
+<th class="runner-cc {$AccountNumber_class}" {$AccountNumber_style}>
+	{BEGIN AccountNumber_fieldheader}
+	<b>{$label NEFTTransfer AccountNumber}</b>
+	{END AccountNumber_fieldheader}
+</th>
+{END AccountNumber_fieldheadercolumn}
+	{BEGIN NEFTTransferNo_fieldheadercolumn}
+<th class="runner-cc {$NEFTTransferNo_class}" {$NEFTTransferNo_style}>
+	{BEGIN NEFTTransferNo_fieldheader}
+	<b>{$label NEFTTransfer NEFTTransferNo}</b>
+	{END NEFTTransferNo_fieldheader}
+</th>
+{END NEFTTransferNo_fieldheadercolumn}
+	{BEGIN NEFTTransferStatus_fieldheadercolumn}
+<th class="runner-cc {$NEFTTransferStatus_class}" {$NEFTTransferStatus_style}>
+	{BEGIN NEFTTransferStatus_fieldheader}
+	<b>{$label NEFTTransfer NEFTTransferStatus}</b>
+	{END NEFTTransferStatus_fieldheader}
+</th>
+{END NEFTTransferStatus_fieldheadercolumn}
+	{BEGIN DateTime_fieldheadercolumn}
+<th class="runner-cc {$DateTime_class}" {$DateTime_style}>
+	{BEGIN DateTime_fieldheader}
+	<b>{$label NEFTTransfer DateTime}</b>
+	{END DateTime_fieldheader}
+</th>
+{END DateTime_fieldheadercolumn}
+	{BEGIN Amount_fieldheadercolumn}
+<th class="runner-cc {$Amount_class}" {$Amount_style}>
+	{BEGIN Amount_fieldheader}
+	<b>{$label NEFTTransfer Amount}</b>
+	{END Amount_fieldheader}
+</th>
+{END Amount_fieldheadercolumn}
+	{BEGIN Balance_fieldheadercolumn}
+<th class="runner-cc {$Balance_class}" {$Balance_style}>
+	{BEGIN Balance_fieldheader}
+	<b>{$label NEFTTransfer Balance}</b>
+	{END Balance_fieldheader}
+</th>
+{END Balance_fieldheadercolumn}
+	{BEGIN Description_fieldheadercolumn}
+<th class="runner-cc {$Description_class}" {$Description_style}>
+	{BEGIN Description_fieldheader}
+	<b>{$label NEFTTransfer Description}</b>
+	{END Description_fieldheader}
+</th>
+{END Description_fieldheadercolumn}
+	{BEGIN InterestAmount_fieldheadercolumn}
+<th class="runner-cc {$InterestAmount_class}" {$InterestAmount_style}>
+	{BEGIN InterestAmount_fieldheader}
+	<b>{$label NEFTTransfer InterestAmount}</b>
+	{END InterestAmount_fieldheader}
+</th>
+{END InterestAmount_fieldheadercolumn}
+	{BEGIN PrincipalAmount_fieldheadercolumn}
+<th class="runner-cc {$PrincipalAmount_class}" {$PrincipalAmount_style}>
+	{BEGIN PrincipalAmount_fieldheader}
+	<b>{$label NEFTTransfer PrincipalAmount}</b>
+	{END PrincipalAmount_fieldheader}
+</th>
+{END PrincipalAmount_fieldheadercolumn}
+	{BEGIN LastModifiedBy_fieldheadercolumn}
+<th class="runner-cc {$LastModifiedBy_class}" {$LastModifiedBy_style}>
+	{BEGIN LastModifiedBy_fieldheader}
+	<b>{$label NEFTTransfer LastModifiedBy}</b>
+	{END LastModifiedBy_fieldheader}
+</th>
+{END LastModifiedBy_fieldheadercolumn}
+	{BEGIN LastModifiedDate_fieldheadercolumn}
+<th class="runner-cc {$LastModifiedDate_class}" {$LastModifiedDate_style}>
+	{BEGIN LastModifiedDate_fieldheader}
+	<b>{$label NEFTTransfer LastModifiedDate}</b>
+	{END LastModifiedDate_fieldheader}
+</th>
+{END LastModifiedDate_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_fieldcolumn}
+<td  class="runner-cc {$id_class}" {$id_style} {$recordattrs}>
+	{$id_value}
+</td>
+{END id_fieldcolumn}
+	{BEGIN AccountName_fieldcolumn}
+<td  class="runner-cc {$AccountName_class}" {$AccountName_style} {$recordattrs}>
+	{$AccountName_value}
+</td>
+{END AccountName_fieldcolumn}
+	{BEGIN ClientNo_fieldcolumn}
+<td  class="runner-cc {$ClientNo_class}" {$ClientNo_style} {$recordattrs}>
+	{$ClientNo_value}
+</td>
+{END ClientNo_fieldcolumn}
+	{BEGIN AccountNumber_fieldcolumn}
+<td  class="runner-cc {$AccountNumber_class}" {$AccountNumber_style} {$recordattrs}>
+	{$AccountNumber_value}
+</td>
+{END AccountNumber_fieldcolumn}
+	{BEGIN NEFTTransferNo_fieldcolumn}
+<td  class="runner-cc {$NEFTTransferNo_class}" {$NEFTTransferNo_style} {$recordattrs}>
+	{$NEFTTransferNo_value}
+</td>
+{END NEFTTransferNo_fieldcolumn}
+	{BEGIN NEFTTransferStatus_fieldcolumn}
+<td  class="runner-cc {$NEFTTransferStatus_class}" {$NEFTTransferStatus_style} {$recordattrs}>
+	{$NEFTTransferStatus_value}
+</td>
+{END NEFTTransferStatus_fieldcolumn}
+	{BEGIN DateTime_fieldcolumn}
+<td  class="runner-cc {$DateTime_class}" {$DateTime_style} {$recordattrs}>
+	{$DateTime_value}
+</td>
+{END DateTime_fieldcolumn}
+	{BEGIN Amount_fieldcolumn}
+<td  class="runner-cc {$Amount_class}" {$Amount_style} {$recordattrs}>
+	{$Amount_value}
+</td>
+{END Amount_fieldcolumn}
+	{BEGIN Balance_fieldcolumn}
+<td  class="runner-cc {$Balance_class}" {$Balance_style} {$recordattrs}>
+	{$Balance_value}
+</td>
+{END Balance_fieldcolumn}
+	{BEGIN Description_fieldcolumn}
+<td  class="runner-cc {$Description_class}" {$Description_style} {$recordattrs}>
+	{$Description_value}
+</td>
+{END Description_fieldcolumn}
+	{BEGIN InterestAmount_fieldcolumn}
+<td  class="runner-cc {$InterestAmount_class}" {$InterestAmount_style} {$recordattrs}>
+	{$InterestAmount_value}
+</td>
+{END InterestAmount_fieldcolumn}
+	{BEGIN PrincipalAmount_fieldcolumn}
+<td  class="runner-cc {$PrincipalAmount_class}" {$PrincipalAmount_style} {$recordattrs}>
+	{$PrincipalAmount_value}
+</td>
+{END PrincipalAmount_fieldcolumn}
+	{BEGIN LastModifiedBy_fieldcolumn}
+<td  class="runner-cc {$LastModifiedBy_class}" {$LastModifiedBy_style} {$recordattrs}>
+	{$LastModifiedBy_value}
+</td>
+{END LastModifiedBy_fieldcolumn}
+	{BEGIN LastModifiedDate_fieldcolumn}
+<td  class="runner-cc {$LastModifiedDate_class}" {$LastModifiedDate_style} {$recordattrs}>
+	{$LastModifiedDate_value}
+</td>
+{END LastModifiedDate_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,14 @@
+[Tue Dec 27 19:48:19.870244 2016] [core:warn] [pid 9200:tid 556] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Tony/Documents/PHPRunnerProjects/SnapshotCamDemo/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::b9f3:6875:2403:aad9. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 27 19:48:20.122599 2016] [mpm_winnt:notice] [pid 9200:tid 556] AH00455: Apache/2.4.10 (Win32) PHP/5.5.18 configured -- resuming normal operations
+[Tue Dec 27 19:48:20.122599 2016] [mpm_winnt:notice] [pid 9200:tid 556] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 11:50:08
+[Tue Dec 27 19:48:20.129603 2016] [core:notice] [pid 9200:tid 556] AH00094: Command line: 'C:\\Program Files\\PHPRunner9.0\\EmbeddedServer\\bin\\httpd.exe -d C:/Program Files/PHPRunner9.0/EmbeddedServer -d C:\\Program Files\\PHPRunner9.0\\EmbeddedServer -f C:\\Users\\Tony\\Documents\\PHPRunnerProjects\\SnapshotCamDemo\\tmp\\webserver.conf'
+[Tue Dec 27 19:48:20.140614 2016] [mpm_winnt:notice] [pid 9200:tid 556] AH00418: Parent: Created child process 6332
+[Tue Dec 27 19:48:21.259634 2016] [core:warn] [pid 6332:tid 568] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Tony/Documents/PHPRunnerProjects/SnapshotCamDemo/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::b9f3:6875:2403:aad9. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 27 19:48:21.282651 2016] [core:warn] [pid 6332:tid 568] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/Tony/Documents/PHPRunnerProjects/SnapshotCamDemo/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::b9f3:6875:2403:aad9. Set the 'ServerName' directive globally to suppress this message
+[Tue Dec 27 19:48:21.316685 2016] [mpm_winnt:notice] [pid 6332:tid 568] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 27 21:03:54.147667 2016] [mpm_winnt:notice] [pid 9200:tid 556] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 27 21:03:56.179054 2016] [mpm_winnt:notice] [pid 6332:tid 568] AH00364: Child: All worker threads have exited.
+[Tue Dec 27 21:03:56.210303 2016] [mpm_winnt:notice] [pid 9200:tid 556] AH00430: Parent: Child process 6332 exited successfully.

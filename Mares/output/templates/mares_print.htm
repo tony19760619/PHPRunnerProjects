@@ -1,0 +1,172 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_pdf}
+<div {$pdf_chiddenattr} data-pageid="{$pageid}" data-container="pdf" class="   col-md-12 "> 
+
+{BEGIN printbuttons}
+
+{END printbuttons}
+
+
+
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div {$pageheader_chiddenattr} data-pageid="{$pageid}" data-container="pageheader" class="    "> 
+
+{BEGIN printheader}
+	<h2 {$printheader_hiddenattr} data-pageid="{$pageid}" data-brick="printheader" >{$pagetitlelabel mares print}</h2>
+
+{END printheader}
+
+
+{BEGIN page_number}
+<span>Página <span class="rp-pageno">{$pageno}</span> de <span class="rp-pagecount">{$pagecount}</span></span>
+{END page_number}
+
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="table table-bordered rp-maintable" {$printgrid_hiddenattr} data-pageid="{$pageid}" data-brick="printgrid" >
+	<thead>
+	{BEGIN grid_header}
+		<tr class="{$gridHeader_class}" >
+		{BEGIN record_header}
+			{BEGIN id_fieldheadercolumn}
+			<th class="{$id_class}" {$id_style}  data-field="id">
+				{$label mares id}
+			</th>
+			{END id_fieldheadercolumn}
+			{BEGIN cidade_fieldheadercolumn}
+			<th class="{$cidade_class}" {$cidade_style}  data-field="cidade">
+				{$label mares cidade}
+			</th>
+			{END cidade_fieldheadercolumn}
+			{BEGIN dia_fieldheadercolumn}
+			<th class="{$dia_class}" {$dia_style}  data-field="dia">
+				{$label mares dia}
+			</th>
+			{END dia_fieldheadercolumn}
+			{BEGIN tempo_fieldheadercolumn}
+			<th class="{$tempo_class}" {$tempo_style}  data-field="tempo">
+				{$label mares tempo}
+			</th>
+			{END tempo_fieldheadercolumn}
+			{BEGIN altura_fieldheadercolumn}
+			<th class="{$altura_class}" {$altura_style}  data-field="altura">
+				{$label mares altura}
+			</th>
+			{END altura_fieldheadercolumn}
+			{BEGIN endrecordheader_block}
+			<th class="rnr-cs">&nbsp;</th>
+			{END endrecordheader_block}
+		{END record_header}
+		</tr>
+	{END grid_header}
+	</thead>
+	
+	<tbody>	
+	{BEGIN grid_row}
+		<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+			{BEGIN id_fieldcolumn}
+			<td  class="{$id_class}" {$id_style} {$recordattrs}>
+				{$id_value}
+			</td>
+			{END id_fieldcolumn}
+			{BEGIN cidade_fieldcolumn}
+			<td  class="{$cidade_class}" {$cidade_style} {$recordattrs}>
+				{$cidade_value}
+			</td>
+			{END cidade_fieldcolumn}
+			{BEGIN dia_fieldcolumn}
+			<td  class="{$dia_class}" {$dia_style} {$recordattrs}>
+				{$dia_value}
+			</td>
+			{END dia_fieldcolumn}
+			{BEGIN tempo_fieldcolumn}
+			<td  class="{$tempo_class}" {$tempo_style} {$recordattrs}>
+				{$tempo_value}
+			</td>
+			{END tempo_fieldcolumn}
+			{BEGIN altura_fieldcolumn}
+			<td  class="{$altura_class}" {$altura_style} {$recordattrs}>
+				{$altura_value}
+			</td>
+			{END altura_fieldcolumn}
+			{BEGIN endrecord_block}
+			<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+			{END endrecord_block}
+		{END grid_record}
+		</tr>
+{END grid_row}
+	</tbody>
+
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

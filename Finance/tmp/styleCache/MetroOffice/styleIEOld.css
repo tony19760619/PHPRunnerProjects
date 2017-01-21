@@ -1,0 +1,110 @@
+.preview .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab > *.runner-cc a,
+.preview  .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab > *.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab > *.runner-cc a
+{
+color: #FBFAE8
+}
+.preview .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.active > *.runner-cc a,
+.preview  .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.active > *.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.active > *.runner-cc a
+{
+color: #FE4F29
+}
+.preview .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.current > *.runner-cc a,
+.preview  .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.current > *.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.current > *.runner-cc a
+{
+color: #FE4F29
+}
+.preview .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.expanded > *.runner-cc a,
+.preview  .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.expanded > *.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.expanded > *.runner-cc a
+{
+color: #FE4F29
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-toprow > th.runner-cc a
+{
+color: #070400
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.footer > td.runner-cc a
+{
+color: #070400
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > .runner-row > td.runner-cc a.alt,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > .runner-row > td.runner-cc a.alt,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > .runner-row > td.runner-cc a.alt
+{
+color: #333333
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered > td.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a
+{
+color: #333333
+}
+body {
+	background: #F5F9FC !important;
+}
+
+body.function-list >.rnr-page
+body.function-report >.rnr-page
+body.function-chart >.rnr-page {
+ 	width: 1100px;
+   	display: table;
+   	margin: auto;
+ }
+
+.rnr-top {
+ 	width: 100%;
+}
+
+.rnr-left, .rnr-center {
+ 	background: #f4f4f4 !important;
+ }
+    

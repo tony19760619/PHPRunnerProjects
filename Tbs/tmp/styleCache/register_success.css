@@ -1,0 +1,84 @@
+.page-preview,
+  .runner-pagewrapper .page-preview,
+  .runner-pagewrapper .runner-pagewrapper .page-preview
+{
+padding-top:10px; padding-left:10px;
+}
+.page-preview .runner-c-fields,
+  .runner-pagewrapper .page-preview .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-c-fields
+{
+margin-bottom:5px;
+}
+.page-preview .runner-c-fields,
+  .runner-pagewrapper .page-preview .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-c-fields
+{
+width:500px;
+}
+body.page-preview .runner-c-fields
+{
+margin-left:auto; margin-right:auto;
+}
+.page-preview .runner-b-regheader, .page-preview .runner-b-regheader,
+.page-preview .runner-b-regheader, .page-preview .runner-b-regheader > *,
+  .runner-pagewrapper .page-preview .runner-b-regheader, .page-preview .runner-b-regheader,
+  .runner-pagewrapper .page-preview .runner-b-regheader, .page-preview .runner-b-regheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-regheader, .page-preview .runner-b-regheader,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-regheader, .page-preview .runner-b-regheader > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-regheader, .page-preview .runner-b-regheader,
+.page-preview .runner-b-regheader, .page-preview .runner-b-regheader > *,
+  .runner-pagewrapper .page-preview .runner-b-regheader, .page-preview .runner-b-regheader,
+  .runner-pagewrapper .page-preview .runner-b-regheader, .page-preview .runner-b-regheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-regheader, .page-preview .runner-b-regheader,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-regheader, .page-preview .runner-b-regheader > *
+{
+text-align: left;
+}
+.page-preview .runner-b-activation, .page-preview .runner-b-activation,
+.page-preview .runner-b-activation, .page-preview .runner-b-activation > *,
+  .runner-pagewrapper .page-preview .runner-b-activation, .page-preview .runner-b-activation,
+  .runner-pagewrapper .page-preview .runner-b-activation, .page-preview .runner-b-activation > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-activation, .page-preview .runner-b-activation,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-activation, .page-preview .runner-b-activation > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-activation, .page-preview .runner-b-activation,
+.page-preview .runner-b-activation, .page-preview .runner-b-activation > *,
+  .runner-pagewrapper .page-preview .runner-b-activation, .page-preview .runner-b-activation,
+  .runner-pagewrapper .page-preview .runner-b-activation, .page-preview .runner-b-activation > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-activation, .page-preview .runner-b-activation,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-activation, .page-preview .runner-b-activation > *
+{
+text-align: left;
+}
+.page-preview .runner-b-registered, .page-preview .runner-b-registered,
+.page-preview .runner-b-registered, .page-preview .runner-b-registered > *,
+  .runner-pagewrapper .page-preview .runner-b-registered, .page-preview .runner-b-registered,
+  .runner-pagewrapper .page-preview .runner-b-registered, .page-preview .runner-b-registered > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-registered, .page-preview .runner-b-registered,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-registered, .page-preview .runner-b-registered > *
+{
+white-space: nowrap;
+}
+.page-preview .runner-b-registered, .page-preview .runner-b-registered,
+.page-preview .runner-b-registered, .page-preview .runner-b-registered > *,
+  .runner-pagewrapper .page-preview .runner-b-registered, .page-preview .runner-b-registered,
+  .runner-pagewrapper .page-preview .runner-b-registered, .page-preview .runner-b-registered > *,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-registered, .page-preview .runner-b-registered,
+  .runner-pagewrapper .runner-pagewrapper .page-preview .runner-b-registered, .page-preview .runner-b-registered > *
+{
+text-align: left;
+}
+body.page-preview .runner-toptable
+{
+width:100%;
+}
+body.page-preview .runner-top
+{
+padding-right: 5px;
+}

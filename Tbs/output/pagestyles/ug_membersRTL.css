@@ -1,0 +1,428 @@
+body.page-ug_members
+{
+padding-top:10px; padding-left:10px;
+}
+.page-ug_members .rnr-c-ugcontrols,
+  .rnr-pagewrapper .page-ug_members .rnr-c-ugcontrols,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-ugcontrols
+{
+margin-bottom:5px;
+}
+.page-ug_members .rnr-c-ugcontrols,
+  .rnr-pagewrapper .page-ug_members .rnr-c-ugcontrols,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-ugcontrols
+{
+min-width:100px;
+}
+.page-ug_members .rnr-b-ugbuttons,
+  .rnr-pagewrapper .page-ug_members .rnr-b-ugbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-ugbuttons
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-ugbuttons,
+  .rnr-pagewrapper .page-ug_members .rnr-b-ugbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-ugbuttons
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-ugbuttons > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-ugbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-ugbuttons > *
+{
+
+}
+.page-ug_members .rnr-c-message,
+  .rnr-pagewrapper .page-ug_members .rnr-c-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-message
+{
+margin-bottom:5px;
+}
+.page-ug_members .rnr-c-message,
+  .rnr-pagewrapper .page-ug_members .rnr-c-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-message
+{
+min-width:100px;
+}
+.page-ug_members .rnr-b-message,
+  .rnr-pagewrapper .page-ug_members .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-message,
+  .rnr-pagewrapper .page-ug_members .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-message
+{
+text-align: center;
+}
+.page-ug_members .rnr-b-message > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-message > *
+{
+
+}
+.page-ug_members .rnr-c-grid,
+  .rnr-pagewrapper .page-ug_members .rnr-c-grid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-grid
+{
+margin-bottom:5px;
+}
+.page-ug_members .rnr-b-ugmemgrid,
+  .rnr-pagewrapper .page-ug_members .rnr-b-ugmemgrid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-ugmemgrid
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-ugmemgrid,
+  .rnr-pagewrapper .page-ug_members .rnr-b-ugmemgrid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-ugmemgrid
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-ugmemgrid > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-ugmemgrid > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-ugmemgrid > *
+{
+
+}
+.page-ug_members .rnr-c-pagination,
+  .rnr-pagewrapper .page-ug_members .rnr-c-pagination,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-pagination
+{
+margin-bottom:5px;
+}
+.page-ug_members .rnr-c-pagination,
+  .rnr-pagewrapper .page-ug_members .rnr-c-pagination,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-pagination
+{
+min-width:100px;
+}
+.page-ug_members .rnr-b-pagination,
+  .rnr-pagewrapper .page-ug_members .rnr-b-pagination,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-pagination
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-pagination,
+  .rnr-pagewrapper .page-ug_members .rnr-b-pagination,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-pagination
+{
+text-align: center;
+}
+.page-ug_members .rnr-b-pagination > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-pagination > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-pagination > *
+{
+
+}
+body.page-ug_members .rnr-center
+{
+padding-right: 5px;
+}
+.page-ug_members .rnr-c-left,
+  .rnr-pagewrapper .page-ug_members .rnr-c-left,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-left
+{
+margin-bottom:5px;
+}
+.page-ug_members .rnr-c-left,
+  .rnr-pagewrapper .page-ug_members .rnr-c-left,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-left
+{
+min-width:100px;
+}
+.page-ug_members .rnr-b-languages,
+  .rnr-pagewrapper .page-ug_members .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-languages
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-languages,
+  .rnr-pagewrapper .page-ug_members .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-languages
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-languages > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-languages > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-languages > *
+{
+
+}
+.page-ug_members .rnr-b-loggedas,
+  .rnr-pagewrapper .page-ug_members .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-loggedas
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-loggedas,
+  .rnr-pagewrapper .page-ug_members .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-loggedas
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-loggedas > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-loggedas > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-loggedas > *
+{
+
+}
+.page-ug_members .rnr-b-vmenu,
+  .rnr-pagewrapper .page-ug_members .rnr-b-vmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-vmenu
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-vmenu,
+  .rnr-pagewrapper .page-ug_members .rnr-b-vmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-vmenu
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-vmenu > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-vmenu > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-vmenu > *
+{
+
+}
+.page-ug_members .rnr-b-searchpanel,
+  .rnr-pagewrapper .page-ug_members .rnr-b-searchpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-searchpanel
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-searchpanel,
+  .rnr-pagewrapper .page-ug_members .rnr-b-searchpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-searchpanel
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-searchpanel > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-searchpanel > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-searchpanel > *
+{
+
+}
+body.page-ug_members  > * > * > .rnr-left
+{
+width:30%;
+}
+body.page-ug_members .rnr-left
+{
+padding-right: 5px;
+}
+.page-ug_members .rnr-c-master,
+  .rnr-pagewrapper .page-ug_members .rnr-c-master,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-master
+{
+margin-bottom:5px;
+}
+.page-ug_members .rnr-b-masterinfo,
+  .rnr-pagewrapper .page-ug_members .rnr-b-masterinfo,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-masterinfo
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-masterinfo,
+  .rnr-pagewrapper .page-ug_members .rnr-b-masterinfo,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-masterinfo
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-masterinfo > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-masterinfo > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-masterinfo > *
+{
+
+}
+.page-ug_members .rnr-c-toplinks,
+  .rnr-pagewrapper .page-ug_members .rnr-c-toplinks,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-toplinks
+{
+margin-bottom:5px;
+}
+.page-ug_members .rnr-c-toplinks,
+  .rnr-pagewrapper .page-ug_members .rnr-c-toplinks,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-toplinks
+{
+min-width:100px;
+}
+.page-ug_members .rnr-b-toplinks_print,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_print
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-toplinks_print,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_print
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-toplinks_print > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_print > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_print > *
+{
+
+}
+.page-ug_members .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_advsearch
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_advsearch
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-toplinks_advsearch > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_advsearch > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_advsearch > *
+{
+
+}
+.page-ug_members .rnr-b-toplinks_import,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_import,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_import
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-toplinks_import,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_import,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_import
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-toplinks_import > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_import > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_import > *
+{
+
+}
+.page-ug_members .rnr-b-toplinks_export,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-toplinks_export,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-toplinks_export > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export > *
+{
+
+}
+.page-ug_members .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export_links
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export_links
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-toplinks_export_links > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export_links > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-toplinks_export_links > *
+{
+
+}
+.page-ug_members .rnr-c-search,
+  .rnr-pagewrapper .page-ug_members .rnr-c-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-search
+{
+margin-bottom:5px;
+}
+.page-ug_members .rnr-c-search,
+  .rnr-pagewrapper .page-ug_members .rnr-c-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-c-search
+{
+min-width:100px;
+}
+.page-ug_members .rnr-b-search,
+  .rnr-pagewrapper .page-ug_members .rnr-b-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-search
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-search,
+  .rnr-pagewrapper .page-ug_members .rnr-b-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-search
+{
+text-align: right;
+}
+.page-ug_members .rnr-b-search > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-search > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-search > *
+{
+
+}
+.page-ug_members .rnr-b-details_found,
+  .rnr-pagewrapper .page-ug_members .rnr-b-details_found,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-details_found
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-details_found,
+  .rnr-pagewrapper .page-ug_members .rnr-b-details_found,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-details_found
+{
+text-align: left;
+}
+.page-ug_members .rnr-b-details_found > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-details_found > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-details_found > *
+{
+
+}
+.page-ug_members .rnr-b-page_of,
+  .rnr-pagewrapper .page-ug_members .rnr-b-page_of,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-page_of
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-page_of,
+  .rnr-pagewrapper .page-ug_members .rnr-b-page_of,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-page_of
+{
+text-align: left;
+}
+.page-ug_members .rnr-b-page_of > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-page_of > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-page_of > *
+{
+
+}
+.page-ug_members .rnr-b-recsperpage,
+  .rnr-pagewrapper .page-ug_members .rnr-b-recsperpage,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-recsperpage
+{
+white-space: nowrap;
+}
+.page-ug_members .rnr-b-recsperpage,
+  .rnr-pagewrapper .page-ug_members .rnr-b-recsperpage,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-recsperpage
+{
+text-align: left;
+}
+.page-ug_members .rnr-b-recsperpage > *,
+  .rnr-pagewrapper .page-ug_members .rnr-b-recsperpage > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-ug_members .rnr-b-recsperpage > *
+{
+
+}
+body.page-ug_members .rnr-top
+{
+padding-right: 5px;
+}

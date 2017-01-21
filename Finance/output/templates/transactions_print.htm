@@ -1,0 +1,560 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel transactions print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN LoanPaymentStatus_fieldheadercolumn}
+<th class="runner-cc {$LoanPaymentStatus_class}" {$LoanPaymentStatus_style}>
+	{BEGIN LoanPaymentStatus_fieldheader}
+	<b>{$label transactions LoanPaymentStatus}</b>
+	{END LoanPaymentStatus_fieldheader}
+</th>
+{END LoanPaymentStatus_fieldheadercolumn}
+	{BEGIN SelectedClientNo_fieldheadercolumn}
+<th class="runner-cc {$SelectedClientNo_class}" {$SelectedClientNo_style}>
+	{BEGIN SelectedClientNo_fieldheader}
+	<b>{$label transactions SelectedClientNo}</b>
+	{END SelectedClientNo_fieldheader}
+</th>
+{END SelectedClientNo_fieldheadercolumn}
+	{BEGIN CashDepositStatus_fieldheadercolumn}
+<th class="runner-cc {$CashDepositStatus_class}" {$CashDepositStatus_style}>
+	{BEGIN CashDepositStatus_fieldheader}
+	<b>{$label transactions CashDepositStatus}</b>
+	{END CashDepositStatus_fieldheader}
+</th>
+{END CashDepositStatus_fieldheadercolumn}
+	{BEGIN TransactionStatus_fieldheadercolumn}
+<th class="runner-cc {$TransactionStatus_class}" {$TransactionStatus_style}>
+	{BEGIN TransactionStatus_fieldheader}
+	<b>{$label transactions TransactionStatus}</b>
+	{END TransactionStatus_fieldheader}
+</th>
+{END TransactionStatus_fieldheadercolumn}
+	{BEGIN AccountName_fieldheadercolumn}
+<th class="runner-cc {$AccountName_class}" {$AccountName_style}>
+	{BEGIN AccountName_fieldheader}
+	<b>{$label transactions AccountName}</b>
+	{END AccountName_fieldheader}
+</th>
+{END AccountName_fieldheadercolumn}
+	{BEGIN TransactionNo_fieldheadercolumn}
+<th class="runner-cc {$TransactionNo_class}" {$TransactionNo_style}>
+	{BEGIN TransactionNo_fieldheader}
+	<b>{$label transactions TransactionNo}</b>
+	{END TransactionNo_fieldheader}
+</th>
+{END TransactionNo_fieldheadercolumn}
+	{BEGIN LoanCreditPaymentName_fieldheadercolumn}
+<th class="runner-cc {$LoanCreditPaymentName_class}" {$LoanCreditPaymentName_style}>
+	{BEGIN LoanCreditPaymentName_fieldheader}
+	<b>{$label transactions LoanCreditPaymentName}</b>
+	{END LoanCreditPaymentName_fieldheader}
+</th>
+{END LoanCreditPaymentName_fieldheadercolumn}
+	{BEGIN LoanCreditPaymentPurpose_fieldheadercolumn}
+<th class="runner-cc {$LoanCreditPaymentPurpose_class}" {$LoanCreditPaymentPurpose_style}>
+	{BEGIN LoanCreditPaymentPurpose_fieldheader}
+	<b>{$label transactions LoanCreditPaymentPurpose}</b>
+	{END LoanCreditPaymentPurpose_fieldheader}
+</th>
+{END LoanCreditPaymentPurpose_fieldheadercolumn}
+	{BEGIN LoanPaymentName_fieldheadercolumn}
+<th class="runner-cc {$LoanPaymentName_class}" {$LoanPaymentName_style}>
+	{BEGIN LoanPaymentName_fieldheader}
+	<b>{$label transactions LoanPaymentName}</b>
+	{END LoanPaymentName_fieldheader}
+</th>
+{END LoanPaymentName_fieldheadercolumn}
+	{BEGIN id_fieldheadercolumn}
+<th class="runner-cc {$id_class}" {$id_style}>
+	{BEGIN id_fieldheader}
+	<b>{$label transactions id}</b>
+	{END id_fieldheader}
+</th>
+{END id_fieldheadercolumn}
+	{BEGIN Amount_fieldheadercolumn}
+<th class="runner-cc {$Amount_class}" {$Amount_style}>
+	{BEGIN Amount_fieldheader}
+	<b>{$label transactions Amount}</b>
+	{END Amount_fieldheader}
+</th>
+{END Amount_fieldheadercolumn}
+	{BEGIN DateTime_fieldheadercolumn}
+<th class="runner-cc {$DateTime_class}" {$DateTime_style}>
+	{BEGIN DateTime_fieldheader}
+	<b>{$label transactions DateTime}</b>
+	{END DateTime_fieldheader}
+</th>
+{END DateTime_fieldheadercolumn}
+	{BEGIN Description_fieldheadercolumn}
+<th class="runner-cc {$Description_class}" {$Description_style}>
+	{BEGIN Description_fieldheader}
+	<b>{$label transactions Description}</b>
+	{END Description_fieldheader}
+</th>
+{END Description_fieldheadercolumn}
+	{BEGIN CashDepositNo_fieldheadercolumn}
+<th class="runner-cc {$CashDepositNo_class}" {$CashDepositNo_style}>
+	{BEGIN CashDepositNo_fieldheader}
+	<b>{$label transactions CashDepositNo}</b>
+	{END CashDepositNo_fieldheader}
+</th>
+{END CashDepositNo_fieldheadercolumn}
+	{BEGIN CashDepositType_fieldheadercolumn}
+<th class="runner-cc {$CashDepositType_class}" {$CashDepositType_style}>
+	{BEGIN CashDepositType_fieldheader}
+	<b>{$label transactions CashDepositType}</b>
+	{END CashDepositType_fieldheader}
+</th>
+{END CashDepositType_fieldheadercolumn}
+	{BEGIN WithdrawlNo_fieldheadercolumn}
+<th class="runner-cc {$WithdrawlNo_class}" {$WithdrawlNo_style}>
+	{BEGIN WithdrawlNo_fieldheader}
+	<b>{$label transactions WithdrawlNo}</b>
+	{END WithdrawlNo_fieldheader}
+</th>
+{END WithdrawlNo_fieldheadercolumn}
+	{BEGIN WithdrawlName_fieldheadercolumn}
+<th class="runner-cc {$WithdrawlName_class}" {$WithdrawlName_style}>
+	{BEGIN WithdrawlName_fieldheader}
+	<b>{$label transactions WithdrawlName}</b>
+	{END WithdrawlName_fieldheader}
+</th>
+{END WithdrawlName_fieldheadercolumn}
+	{BEGIN WithdrawlType_fieldheadercolumn}
+<th class="runner-cc {$WithdrawlType_class}" {$WithdrawlType_style}>
+	{BEGIN WithdrawlType_fieldheader}
+	<b>{$label transactions WithdrawlType}</b>
+	{END WithdrawlType_fieldheader}
+</th>
+{END WithdrawlType_fieldheadercolumn}
+	{BEGIN LoanPaymentNo_fieldheadercolumn}
+<th class="runner-cc {$LoanPaymentNo_class}" {$LoanPaymentNo_style}>
+	{BEGIN LoanPaymentNo_fieldheader}
+	<b>{$label transactions LoanPaymentNo}</b>
+	{END LoanPaymentNo_fieldheader}
+</th>
+{END LoanPaymentNo_fieldheadercolumn}
+	{BEGIN LoanPaymentPurpose_fieldheadercolumn}
+<th class="runner-cc {$LoanPaymentPurpose_class}" {$LoanPaymentPurpose_style}>
+	{BEGIN LoanPaymentPurpose_fieldheader}
+	<b>{$label transactions LoanPaymentPurpose}</b>
+	{END LoanPaymentPurpose_fieldheader}
+</th>
+{END LoanPaymentPurpose_fieldheadercolumn}
+	{BEGIN LoanCreditPaymentNo_fieldheadercolumn}
+<th class="runner-cc {$LoanCreditPaymentNo_class}" {$LoanCreditPaymentNo_style}>
+	{BEGIN LoanCreditPaymentNo_fieldheader}
+	<b>{$label transactions LoanCreditPaymentNo}</b>
+	{END LoanCreditPaymentNo_fieldheader}
+</th>
+{END LoanCreditPaymentNo_fieldheadercolumn}
+	{BEGIN AccountType_fieldheadercolumn}
+<th class="runner-cc {$AccountType_class}" {$AccountType_style}>
+	{BEGIN AccountType_fieldheader}
+	<b>{$label transactions AccountType}</b>
+	{END AccountType_fieldheader}
+</th>
+{END AccountType_fieldheadercolumn}
+	{BEGIN InterestAmount_fieldheadercolumn}
+<th class="runner-cc {$InterestAmount_class}" {$InterestAmount_style}>
+	{BEGIN InterestAmount_fieldheader}
+	<b>{$label transactions InterestAmount}</b>
+	{END InterestAmount_fieldheader}
+</th>
+{END InterestAmount_fieldheadercolumn}
+	{BEGIN PrincipalAmount_fieldheadercolumn}
+<th class="runner-cc {$PrincipalAmount_class}" {$PrincipalAmount_style}>
+	{BEGIN PrincipalAmount_fieldheader}
+	<b>{$label transactions PrincipalAmount}</b>
+	{END PrincipalAmount_fieldheader}
+</th>
+{END PrincipalAmount_fieldheadercolumn}
+	{BEGIN WithdrawlStatus_fieldheadercolumn}
+<th class="runner-cc {$WithdrawlStatus_class}" {$WithdrawlStatus_style}>
+	{BEGIN WithdrawlStatus_fieldheader}
+	<b>{$label transactions WithdrawlStatus}</b>
+	{END WithdrawlStatus_fieldheader}
+</th>
+{END WithdrawlStatus_fieldheadercolumn}
+	{BEGIN NEFTTransferStatus_fieldheadercolumn}
+<th class="runner-cc {$NEFTTransferStatus_class}" {$NEFTTransferStatus_style}>
+	{BEGIN NEFTTransferStatus_fieldheader}
+	<b>{$label transactions NEFTTransferStatus}</b>
+	{END NEFTTransferStatus_fieldheader}
+</th>
+{END NEFTTransferStatus_fieldheadercolumn}
+	{BEGIN LoanCreditApplicationStatus_fieldheadercolumn}
+<th class="runner-cc {$LoanCreditApplicationStatus_class}" {$LoanCreditApplicationStatus_style}>
+	{BEGIN LoanCreditApplicationStatus_fieldheader}
+	<b>{$label transactions LoanCreditApplicationStatus}</b>
+	{END LoanCreditApplicationStatus_fieldheader}
+</th>
+{END LoanCreditApplicationStatus_fieldheadercolumn}
+	{BEGIN LoanCreditWitness_fieldheadercolumn}
+<th class="runner-cc {$LoanCreditWitness_class}" {$LoanCreditWitness_style}>
+	{BEGIN LoanCreditWitness_fieldheader}
+	<b>{$label transactions LoanCreditWitness}</b>
+	{END LoanCreditWitness_fieldheader}
+</th>
+{END LoanCreditWitness_fieldheadercolumn}
+	{BEGIN NEFTTransferNo_fieldheadercolumn}
+<th class="runner-cc {$NEFTTransferNo_class}" {$NEFTTransferNo_style}>
+	{BEGIN NEFTTransferNo_fieldheader}
+	<b>{$label transactions NEFTTransferNo}</b>
+	{END NEFTTransferNo_fieldheader}
+</th>
+{END NEFTTransferNo_fieldheadercolumn}
+	{BEGIN NEFTTransferDepositorName_fieldheadercolumn}
+<th class="runner-cc {$NEFTTransferDepositorName_class}" {$NEFTTransferDepositorName_style}>
+	{BEGIN NEFTTransferDepositorName_fieldheader}
+	<b>{$label transactions NEFTTransferDepositorName}</b>
+	{END NEFTTransferDepositorName_fieldheader}
+</th>
+{END NEFTTransferDepositorName_fieldheadercolumn}
+	{BEGIN TransactionType_fieldheadercolumn}
+<th class="runner-cc {$TransactionType_class}" {$TransactionType_style}>
+	{BEGIN TransactionType_fieldheader}
+	<b>{$label transactions TransactionType}</b>
+	{END TransactionType_fieldheader}
+</th>
+{END TransactionType_fieldheadercolumn}
+	{BEGIN Balance_fieldheadercolumn}
+<th class="runner-cc {$Balance_class}" {$Balance_style}>
+	{BEGIN Balance_fieldheader}
+	<b>{$label transactions Balance}</b>
+	{END Balance_fieldheader}
+</th>
+{END Balance_fieldheadercolumn}
+	{BEGIN AccountNumber_fieldheadercolumn}
+<th class="runner-cc {$AccountNumber_class}" {$AccountNumber_style}>
+	{BEGIN AccountNumber_fieldheader}
+	<b>{$label transactions AccountNumber}</b>
+	{END AccountNumber_fieldheader}
+</th>
+{END AccountNumber_fieldheadercolumn}
+	{BEGIN ClientNo_fieldheadercolumn}
+<th class="runner-cc {$ClientNo_class}" {$ClientNo_style}>
+	{BEGIN ClientNo_fieldheader}
+	<b>{$label transactions ClientNo}</b>
+	{END ClientNo_fieldheader}
+</th>
+{END ClientNo_fieldheadercolumn}
+	{BEGIN LastModifiedBy_fieldheadercolumn}
+<th class="runner-cc {$LastModifiedBy_class}" {$LastModifiedBy_style}>
+	{BEGIN LastModifiedBy_fieldheader}
+	<b>{$label transactions LastModifiedBy}</b>
+	{END LastModifiedBy_fieldheader}
+</th>
+{END LastModifiedBy_fieldheadercolumn}
+	{BEGIN LastModifiedDate_fieldheadercolumn}
+<th class="runner-cc {$LastModifiedDate_class}" {$LastModifiedDate_style}>
+	{BEGIN LastModifiedDate_fieldheader}
+	<b>{$label transactions LastModifiedDate}</b>
+	{END LastModifiedDate_fieldheader}
+</th>
+{END LastModifiedDate_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN LoanPaymentStatus_fieldcolumn}
+<td  class="runner-cc {$LoanPaymentStatus_class}" {$LoanPaymentStatus_style} {$recordattrs}>
+	{$LoanPaymentStatus_value}
+</td>
+{END LoanPaymentStatus_fieldcolumn}
+	{BEGIN SelectedClientNo_fieldcolumn}
+<td  class="runner-cc {$SelectedClientNo_class}" {$SelectedClientNo_style} {$recordattrs}>
+	{$SelectedClientNo_value}
+</td>
+{END SelectedClientNo_fieldcolumn}
+	{BEGIN CashDepositStatus_fieldcolumn}
+<td  class="runner-cc {$CashDepositStatus_class}" {$CashDepositStatus_style} {$recordattrs}>
+	{$CashDepositStatus_value}
+</td>
+{END CashDepositStatus_fieldcolumn}
+	{BEGIN TransactionStatus_fieldcolumn}
+<td  class="runner-cc {$TransactionStatus_class}" {$TransactionStatus_style} {$recordattrs}>
+	{$TransactionStatus_value}
+</td>
+{END TransactionStatus_fieldcolumn}
+	{BEGIN AccountName_fieldcolumn}
+<td  class="runner-cc {$AccountName_class}" {$AccountName_style} {$recordattrs}>
+	{$AccountName_value}
+</td>
+{END AccountName_fieldcolumn}
+	{BEGIN TransactionNo_fieldcolumn}
+<td  class="runner-cc {$TransactionNo_class}" {$TransactionNo_style} {$recordattrs}>
+	{$TransactionNo_value}
+</td>
+{END TransactionNo_fieldcolumn}
+	{BEGIN LoanCreditPaymentName_fieldcolumn}
+<td  class="runner-cc {$LoanCreditPaymentName_class}" {$LoanCreditPaymentName_style} {$recordattrs}>
+	{$LoanCreditPaymentName_value}
+</td>
+{END LoanCreditPaymentName_fieldcolumn}
+	{BEGIN LoanCreditPaymentPurpose_fieldcolumn}
+<td  class="runner-cc {$LoanCreditPaymentPurpose_class}" {$LoanCreditPaymentPurpose_style} {$recordattrs}>
+	{$LoanCreditPaymentPurpose_value}
+</td>
+{END LoanCreditPaymentPurpose_fieldcolumn}
+	{BEGIN LoanPaymentName_fieldcolumn}
+<td  class="runner-cc {$LoanPaymentName_class}" {$LoanPaymentName_style} {$recordattrs}>
+	{$LoanPaymentName_value}
+</td>
+{END LoanPaymentName_fieldcolumn}
+	{BEGIN id_fieldcolumn}
+<td  class="runner-cc {$id_class}" {$id_style} {$recordattrs}>
+	{$id_value}
+</td>
+{END id_fieldcolumn}
+	{BEGIN Amount_fieldcolumn}
+<td  class="runner-cc {$Amount_class}" {$Amount_style} {$recordattrs}>
+	{$Amount_value}
+</td>
+{END Amount_fieldcolumn}
+	{BEGIN DateTime_fieldcolumn}
+<td  class="runner-cc {$DateTime_class}" {$DateTime_style} {$recordattrs}>
+	{$DateTime_value}
+</td>
+{END DateTime_fieldcolumn}
+	{BEGIN Description_fieldcolumn}
+<td  class="runner-cc {$Description_class}" {$Description_style} {$recordattrs}>
+	{$Description_value}
+</td>
+{END Description_fieldcolumn}
+	{BEGIN CashDepositNo_fieldcolumn}
+<td  class="runner-cc {$CashDepositNo_class}" {$CashDepositNo_style} {$recordattrs}>
+	{$CashDepositNo_value}
+</td>
+{END CashDepositNo_fieldcolumn}
+	{BEGIN CashDepositType_fieldcolumn}
+<td  class="runner-cc {$CashDepositType_class}" {$CashDepositType_style} {$recordattrs}>
+	{$CashDepositType_value}
+</td>
+{END CashDepositType_fieldcolumn}
+	{BEGIN WithdrawlNo_fieldcolumn}
+<td  class="runner-cc {$WithdrawlNo_class}" {$WithdrawlNo_style} {$recordattrs}>
+	{$WithdrawlNo_value}
+</td>
+{END WithdrawlNo_fieldcolumn}
+	{BEGIN WithdrawlName_fieldcolumn}
+<td  class="runner-cc {$WithdrawlName_class}" {$WithdrawlName_style} {$recordattrs}>
+	{$WithdrawlName_value}
+</td>
+{END WithdrawlName_fieldcolumn}
+	{BEGIN WithdrawlType_fieldcolumn}
+<td  class="runner-cc {$WithdrawlType_class}" {$WithdrawlType_style} {$recordattrs}>
+	{$WithdrawlType_value}
+</td>
+{END WithdrawlType_fieldcolumn}
+	{BEGIN LoanPaymentNo_fieldcolumn}
+<td  class="runner-cc {$LoanPaymentNo_class}" {$LoanPaymentNo_style} {$recordattrs}>
+	{$LoanPaymentNo_value}
+</td>
+{END LoanPaymentNo_fieldcolumn}
+	{BEGIN LoanPaymentPurpose_fieldcolumn}
+<td  class="runner-cc {$LoanPaymentPurpose_class}" {$LoanPaymentPurpose_style} {$recordattrs}>
+	{$LoanPaymentPurpose_value}
+</td>
+{END LoanPaymentPurpose_fieldcolumn}
+	{BEGIN LoanCreditPaymentNo_fieldcolumn}
+<td  class="runner-cc {$LoanCreditPaymentNo_class}" {$LoanCreditPaymentNo_style} {$recordattrs}>
+	{$LoanCreditPaymentNo_value}
+</td>
+{END LoanCreditPaymentNo_fieldcolumn}
+	{BEGIN AccountType_fieldcolumn}
+<td  class="runner-cc {$AccountType_class}" {$AccountType_style} {$recordattrs}>
+	{$AccountType_value}
+</td>
+{END AccountType_fieldcolumn}
+	{BEGIN InterestAmount_fieldcolumn}
+<td  class="runner-cc {$InterestAmount_class}" {$InterestAmount_style} {$recordattrs}>
+	{$InterestAmount_value}
+</td>
+{END InterestAmount_fieldcolumn}
+	{BEGIN PrincipalAmount_fieldcolumn}
+<td  class="runner-cc {$PrincipalAmount_class}" {$PrincipalAmount_style} {$recordattrs}>
+	{$PrincipalAmount_value}
+</td>
+{END PrincipalAmount_fieldcolumn}
+	{BEGIN WithdrawlStatus_fieldcolumn}
+<td  class="runner-cc {$WithdrawlStatus_class}" {$WithdrawlStatus_style} {$recordattrs}>
+	{$WithdrawlStatus_value}
+</td>
+{END WithdrawlStatus_fieldcolumn}
+	{BEGIN NEFTTransferStatus_fieldcolumn}
+<td  class="runner-cc {$NEFTTransferStatus_class}" {$NEFTTransferStatus_style} {$recordattrs}>
+	{$NEFTTransferStatus_value}
+</td>
+{END NEFTTransferStatus_fieldcolumn}
+	{BEGIN LoanCreditApplicationStatus_fieldcolumn}
+<td  class="runner-cc {$LoanCreditApplicationStatus_class}" {$LoanCreditApplicationStatus_style} {$recordattrs}>
+	{$LoanCreditApplicationStatus_value}
+</td>
+{END LoanCreditApplicationStatus_fieldcolumn}
+	{BEGIN LoanCreditWitness_fieldcolumn}
+<td  class="runner-cc {$LoanCreditWitness_class}" {$LoanCreditWitness_style} {$recordattrs}>
+	{$LoanCreditWitness_value}
+</td>
+{END LoanCreditWitness_fieldcolumn}
+	{BEGIN NEFTTransferNo_fieldcolumn}
+<td  class="runner-cc {$NEFTTransferNo_class}" {$NEFTTransferNo_style} {$recordattrs}>
+	{$NEFTTransferNo_value}
+</td>
+{END NEFTTransferNo_fieldcolumn}
+	{BEGIN NEFTTransferDepositorName_fieldcolumn}
+<td  class="runner-cc {$NEFTTransferDepositorName_class}" {$NEFTTransferDepositorName_style} {$recordattrs}>
+	{$NEFTTransferDepositorName_value}
+</td>
+{END NEFTTransferDepositorName_fieldcolumn}
+	{BEGIN TransactionType_fieldcolumn}
+<td  class="runner-cc {$TransactionType_class}" {$TransactionType_style} {$recordattrs}>
+	{$TransactionType_value}
+</td>
+{END TransactionType_fieldcolumn}
+	{BEGIN Balance_fieldcolumn}
+<td  class="runner-cc {$Balance_class}" {$Balance_style} {$recordattrs}>
+	{$Balance_value}
+</td>
+{END Balance_fieldcolumn}
+	{BEGIN AccountNumber_fieldcolumn}
+<td  class="runner-cc {$AccountNumber_class}" {$AccountNumber_style} {$recordattrs}>
+	{$AccountNumber_value}
+</td>
+{END AccountNumber_fieldcolumn}
+	{BEGIN ClientNo_fieldcolumn}
+<td  class="runner-cc {$ClientNo_class}" {$ClientNo_style} {$recordattrs}>
+	{$ClientNo_value}
+</td>
+{END ClientNo_fieldcolumn}
+	{BEGIN LastModifiedBy_fieldcolumn}
+<td  class="runner-cc {$LastModifiedBy_class}" {$LastModifiedBy_style} {$recordattrs}>
+	{$LastModifiedBy_value}
+</td>
+{END LastModifiedBy_fieldcolumn}
+	{BEGIN LastModifiedDate_fieldcolumn}
+<td  class="runner-cc {$LastModifiedDate_class}" {$LastModifiedDate_style} {$recordattrs}>
+	{$LastModifiedDate_value}
+</td>
+{END LastModifiedDate_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

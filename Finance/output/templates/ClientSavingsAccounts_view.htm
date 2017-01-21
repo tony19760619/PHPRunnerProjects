@@ -1,0 +1,243 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}
+<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel ClientSavingsAccounts view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN id_fieldblock}
+<tr class="{$fielddispclass_id}" data-fieldname="id">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts id}
+	</td>
+	<td class="rnr-control style3">
+		{$id_value}&nbsp;
+	</td>
+</tr>
+{END id_fieldblock}
+	{BEGIN AccountName_fieldblock}
+<tr class="{$fielddispclass_AccountName}" data-fieldname="AccountName">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts AccountName}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountName_value}&nbsp;
+	</td>
+</tr>
+{END AccountName_fieldblock}
+	{BEGIN ClientNo_fieldblock}
+<tr class="{$fielddispclass_ClientNo}" data-fieldname="ClientNo">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts ClientNo}
+	</td>
+	<td class="rnr-control style3">
+		{$ClientNo_value}&nbsp;
+	</td>
+</tr>
+{END ClientNo_fieldblock}
+	{BEGIN AccountType_fieldblock}
+<tr class="{$fielddispclass_AccountType}" data-fieldname="AccountType">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts AccountType}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountType_value}&nbsp;
+	</td>
+</tr>
+{END AccountType_fieldblock}
+	{BEGIN AccountNumber_fieldblock}
+<tr class="{$fielddispclass_AccountNumber}" data-fieldname="AccountNumber">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts AccountNumber}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountNumber_value}&nbsp;
+	</td>
+</tr>
+{END AccountNumber_fieldblock}
+	{BEGIN AccountBalance_fieldblock}
+<tr class="{$fielddispclass_AccountBalance}" data-fieldname="AccountBalance">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts AccountBalance}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountBalance_value}&nbsp;
+	</td>
+</tr>
+{END AccountBalance_fieldblock}
+	{BEGIN OpeningBalance_fieldblock}
+<tr class="{$fielddispclass_OpeningBalance}" data-fieldname="OpeningBalance">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts OpeningBalance}
+	</td>
+	<td class="rnr-control style3">
+		{$OpeningBalance_value}&nbsp;
+	</td>
+</tr>
+{END OpeningBalance_fieldblock}
+	{BEGIN InterestRate_fieldblock}
+<tr class="{$fielddispclass_InterestRate}" data-fieldname="InterestRate">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts InterestRate}
+	</td>
+	<td class="rnr-control style3">
+		{$InterestRate_value}&nbsp;
+	</td>
+</tr>
+{END InterestRate_fieldblock}
+	{BEGIN LastTransactionDate_fieldblock}
+<tr class="{$fielddispclass_LastTransactionDate}" data-fieldname="LastTransactionDate">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts LastTransactionDate}
+	</td>
+	<td class="rnr-control style3">
+		{$LastTransactionDate_value}&nbsp;
+	</td>
+</tr>
+{END LastTransactionDate_fieldblock}
+	{BEGIN SetWithdrawDate_fieldblock}
+<tr class="{$fielddispclass_SetWithdrawDate}" data-fieldname="SetWithdrawDate">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts SetWithdrawDate}
+	</td>
+	<td class="rnr-control style3">
+		{$SetWithdrawDate_value}&nbsp;
+	</td>
+</tr>
+{END SetWithdrawDate_fieldblock}
+	{BEGIN LastModifiedBy_fieldblock}
+<tr class="{$fielddispclass_LastModifiedBy}" data-fieldname="LastModifiedBy">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts LastModifiedBy}
+	</td>
+	<td class="rnr-control style3">
+		{$LastModifiedBy_value}&nbsp;
+	</td>
+</tr>
+{END LastModifiedBy_fieldblock}
+	{BEGIN LastModifiedDate_fieldblock}
+<tr class="{$fielddispclass_LastModifiedDate}" data-fieldname="LastModifiedDate">
+	<td class="rnr-label">
+		{$label ClientSavingsAccounts LastModifiedDate}
+	</td>
+	<td class="rnr-control style3">
+		{$LastModifiedDate_value}&nbsp;
+	</td>
+</tr>
+{END LastModifiedDate_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

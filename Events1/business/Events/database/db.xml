@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<operations>
+	<operation type="CREATE_TABLE">
+		<table>
+			<name>evcategories</name>
+			<type>0</type>
+			<dbfields>
+				<dbfield>
+					<name>Category</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>0</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+			</dbfields>
+			<dbkeys>
+				<dbkey>Category</dbkey>
+			</dbkeys>
+			<dbfkeys />
+			<pbclean>0</pbclean>
+		</table>
+	</operation>
+	<operation type="INSERT_RECORD">
+		<tablename>evcategories</tablename>
+		<records>
+			<names>
+				<colname>Category</colname>
+			</names>
+			<types>
+				<coltype>200</coltype>
+			</types>
+			<data>
+				<record>
+					<value>Baby Shower</value>
+				</record>
+				<record>
+					<value>Birthday Party</value>
+				</record>
+				<record>
+					<value>Bridal Shower</value>
+				</record>
+				<record>
+					<value>Business Meeting</value>
+				</record>
+				<record>
+					<value>Concert</value>
+				</record>
+				<record>
+					<value>Fundraiser</value>
+				</record>
+				<record>
+					<value>Live Show</value>
+				</record>
+				<record>
+					<value>Outdoor Event</value>
+				</record>
+				<record>
+					<value>Pet Show</value>
+				</record>
+				<record>
+					<value>Sporting Event</value>
+				</record>
+				<record>
+					<value>Trip</value>
+				</record>
+				<record>
+					<value>Wedding</value>
+				</record>
+			</data>
+		</records>
+	</operation>
+	<operation type="CREATE_TABLE">
+		<table>
+			<name>evevents</name>
+			<type>0</type>
+			<dbfields>
+				<dbfield>
+					<name>Category</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Description</name>
+					<type>201</type>
+					<size>0</size>
+					<scale>0</scale>
+					<typeName>longtext</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>EventID</name>
+					<type>3</type>
+					<size>11</size>
+					<scale>0</scale>
+					<typeName>int</typeName>
+					<defaultValue></defaultValue>
+					<nullable>0</nullable>
+					<autoInc>1</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>FromDate</name>
+					<type>7</type>
+					<size>0</size>
+					<scale>0</scale>
+					<typeName>date</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>FromTime</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Image</name>
+					<type>200</type>
+					<size>500</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Location</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Map</name>
+					<type>201</type>
+					<size>0</size>
+					<scale>0</scale>
+					<typeName>longtext</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Note</name>
+					<type>201</type>
+					<size>0</size>
+					<scale>0</scale>
+					<typeName>longtext</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Price</name>
+					<type>14</type>
+					<size>10</size>
+					<scale>0</scale>
+					<typeName>decimal</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Subject</name>
+					<type>200</type>
+					<size>250</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>ToDate</name>
+					<type>7</type>
+					<size>0</size>
+					<scale>0</scale>
+					<typeName>date</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>ToTime</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+			</dbfields>
+			<dbkeys>
+				<dbkey>EventID</dbkey>
+			</dbkeys>
+			<dbfkeys />
+			<pbclean>0</pbclean>
+		</table>
+	</operation>
+	<operation type="INSERT_RECORD">
+		<tablename>evevents</tablename>
+		<records>
+			<names>
+				<colname>Category</colname>
+				<colname>Description</colname>
+				<colname>EventID</colname>
+				<colname>FromDate</colname>
+				<colname>FromTime</colname>
+				<colname>Image</colname>
+				<colname>Location</colname>
+				<colname>Map</colname>
+				<colname>Note</colname>
+				<colname>Price</colname>
+				<colname>Subject</colname>
+				<colname>ToDate</colname>
+				<colname>ToTime</colname>
+			</names>
+			<types>
+				<coltype>200</coltype>
+				<coltype>201</coltype>
+				<coltype>3</coltype>
+				<coltype>7</coltype>
+				<coltype>200</coltype>
+				<coltype>200</coltype>
+				<coltype>200</coltype>
+				<coltype>201</coltype>
+				<coltype>201</coltype>
+				<coltype>14</coltype>
+				<coltype>200</coltype>
+				<coltype>7</coltype>
+				<coltype>200</coltype>
+			</types>
+			<data>
+				<record>
+					<value>Birthday Party</value>
+					<value>&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;Ladies &amp;amp;amp; Gentlemen.&amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;As you all know it is a great day this Sunday and we are celebrating the birthday of our dearest friend Mike. Through reliable sources we found that Mike would love to have a brand new LCD monitor for a gift and since this is Mike we are talking about here, he wants a gigantic 24&amp;quot; LCD monitor. He also said that he will be glad to pay the difference if we do not collect enough &amp;quot;bucks&amp;quot; If you would be so kind and reply back to me before tomorrow noon if you would like to pitch in for this gift. Contribution amounts are based on how much you would like to give. We are thinking that somewhere between $20 to $30 a person is reasonable. &amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;Please indicate in your response how much you are willing to contribute. If I don&amp;apos;t hear back from you by noon tomorrow I will assume that you will not partake in this endeavor. Thank you everyone and I will see you all on Sunday. &amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;Regards, &amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;Alex &amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;</value>
+					<value>1</value>
+					<value>2008-02-25</value>
+					<value>4:00 PM</value>
+					<value>me.jpg</value>
+					<value>Mike&amp;apos;s Houser1111 Garland DrrPlymouth, MN 55446</value>
+					<value>http://maps.google.com/maps?f=q&amp;amp;hl=en&amp;amp;q=1111+Garland+Dr,+Plymouth,+MN+55446&amp;amp;sll=37.0625,-95.677068&amp;amp;sspn=31.701751,58.535156&amp;amp;ie=UTF8&amp;amp;ll=45.037869,-93.495026&amp;amp;spn=0.110385,0.228653&amp;amp;z=12&amp;amp;iwloc=cent&amp;amp;om=1</value>
+					<value>Dont&amp;apos; forget the flowers:-)</value>
+					<NULL />
+					<value>Mike&amp;apos;s 27th Birthday</value>
+					<NULL />
+					<value>10:00 PM</value>
+				</record>
+				<record>
+					<value>Sporting Event</value>
+					<value>&amp;lt;FONT color=#333333&amp;gt;Minnesota Wild vs. Phoenix Coyotes&amp;lt;/FONT&amp;gt;</value>
+					<value>2</value>
+					<value>2007-03-20</value>
+					<value>5:00 PM</value>
+					<value>Wild.gif</value>
+					<value>Xcel Energy Center at St.Paul, MN</value>
+					<value>http://maps.google.com/maps?f=q&amp;amp;hl=en&amp;amp;q=xcel+energy+center,+minnesota&amp;amp;sll=37.0625,-95.677068&amp;amp;sspn=30.048013,59.238281&amp;amp;ie=UTF8&amp;amp;z=16&amp;amp;ll=44.945286,-93.101406&amp;amp;spn=0.006546,0.021501&amp;amp;om=1&amp;amp;iwloc=addr&amp;amp;mid=1172346800</value>
+					<value>gfdgd</value>
+					<value>33</value>
+					<value>Minnesota Wild Hockey</value>
+					<NULL />
+					<value>11:00 PM</value>
+				</record>
+				<record>
+					<value>Trip</value>
+					<value>&amp;lt;ADDRESS&amp;gt;&amp;amp;nbsp;Time to get your skis ready for our annual Colorado Ski Trip &amp;lt;/ADDRESS&amp;gt;&amp;lt;ADDRESS&amp;gt;&amp;lt;STRONG&amp;gt;&amp;amp;nbsp;What: Ski trip &amp;lt;/STRONG&amp;gt;&amp;lt;/ADDRESS&amp;gt;&amp;lt;ADDRESS&amp;gt;&amp;lt;STRONG&amp;gt;&amp;amp;nbsp;Where: ABasin, Copper, Vail &amp;lt;/STRONG&amp;gt;&amp;lt;/ADDRESS&amp;gt;&amp;lt;ADDRESS&amp;gt;&amp;lt;STRONG&amp;gt;&amp;amp;nbsp;When: Feb 14-19, 2007 &amp;lt;/STRONG&amp;gt;&amp;lt;/ADDRESS&amp;gt;&amp;lt;ADDRESS&amp;gt;&amp;lt;STRONG&amp;gt;&amp;amp;nbsp;Why: Cause we can!&amp;lt;/STRONG&amp;gt; &amp;lt;/ADDRESS&amp;gt;</value>
+					<value>3</value>
+					<value>2007-02-14</value>
+					<NULL />
+					<value>img_0543.jpg</value>
+					<value>Colorado</value>
+					<NULL />
+					<NULL />
+					<value>1000</value>
+					<value>Colorado Ski Trip</value>
+					<value>2007-02-19</value>
+					<NULL />
+				</record>
+				<record>
+					<value>Sporting Event</value>
+					<value>&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;We are having our 7th annual golf outing at Lake Minnetonka Golf Course on May 26th, 2007.&amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P&amp;gt;&amp;lt;STRONG&amp;gt;&amp;lt;U&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;Schedule:&amp;lt;/FONT&amp;gt;&amp;lt;/U&amp;gt;&amp;lt;/STRONG&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;9:00am&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp; Breakfast&amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;10:00am&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp; Tee off&amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;3:00pm&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp; BBQ Lunch&amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P&amp;gt;&amp;lt;FONT face=&amp;quot;Arial, Helvetica, sans-serif&amp;quot; color=#333333 size=2&amp;gt;5:00pm&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp; Live Concert&amp;lt;/FONT&amp;gt;&amp;lt;/P&amp;gt;</value>
+					<value>4</value>
+					<value>2007-05-26</value>
+					<value>9:00 AM</value>
+					<value>golf.jpg</value>
+					<value>Lake Minnetonka Golf and Country Club</value>
+					<value>http://maps.google.com/maps?f=q&amp;amp;hl=en&amp;amp;q=lake+minnetonka,+mn&amp;amp;sll=44.944775,-93.1014&amp;amp;sspn=0.006546,0.014462&amp;amp;ie=UTF8&amp;amp;z=11&amp;amp;ll=44.940501,-93.600769&amp;amp;spn=0.20948,0.688019&amp;amp;om=1&amp;amp;iwloc=addr</value>
+					<value>Bring your own clubs. Club rental and golf carts will be provided. All food and drinks are complementary</value>
+					<value>0</value>
+					<value>7th Annual Golf Outing</value>
+					<NULL />
+					<value>7:00 PM</value>
+				</record>
+				<record>
+					<value>Wedding</value>
+					<value>&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;We invite you to attend our wedding&amp;lt;?XML:NAMESPACE PREFIX = O /&amp;gt;&amp;lt;O:P&amp;gt; &amp;lt;/O:P&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;on the 28th of June, 2007 &amp;lt;O:P&amp;gt;&amp;lt;/O:P&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;at&amp;amp;nbsp;Marriott Hotel&amp;lt;BR&amp;gt;&amp;amp;nbsp; &amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;The Muhurtham is from 8:00 a.m. to 9:30 a.m. &amp;lt;O:P&amp;gt;&amp;lt;/O:P&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;Please do stay for lunch, a reception at 6:30 p.m.,&amp;lt;BR&amp;gt;and dinner.&amp;lt;O:P&amp;gt; &amp;lt;/O:P&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;We request you to also join us for a reception and dinner&amp;lt;BR&amp;gt;on the 19th of November from 6:30 p.m. onwards, &amp;lt;O:P&amp;gt;&amp;lt;/O:P&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;B style=&amp;quot;mso-bidi-font-size: 10.0pt; mso-bidi-font-weight: normal&amp;quot;&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;John&amp;amp;nbsp;&amp;lt;/FONT&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;&amp;lt;B style=&amp;quot;mso-bidi-font-weight: normal&amp;quot;&amp;gt;and Melissa&amp;lt;/B&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;P class=MsoNormal style=&amp;quot;TEXT-ALIGN: center&amp;quot; align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;mso-bidi-font-size: 10.0pt&amp;quot;&amp;gt;&amp;lt;FONT face=Verdana size=1&amp;gt;Please no gifts&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;</value>
+					<value>5</value>
+					<value>2007-06-28</value>
+					<value>8:00 AM</value>
+					<NULL />
+					<value>Marriott Hotelr333 S Figueroa St, Los Angeles, CA</value>
+					<value>http://maps.google.com/maps?f=q&amp;amp;hl=en&amp;amp;q=333+S+Figueroa+St,+Los+Angeles,+CA&amp;amp;sll=34.173749,-118.223877&amp;amp;sspn=0.244845,0.464172&amp;amp;ie=UTF8&amp;amp;z=16&amp;amp;ll=34.055504,-118.254969&amp;amp;spn=0.007662,0.021501&amp;amp;om=1</value>
+					<NULL />
+					<NULL />
+					<value>John&amp;apos;s &amp;amp; Melissa&amp;apos;s Wedding </value>
+					<NULL />
+					<value>11:00 PM</value>
+				</record>
+			</data>
+		</records>
+	</operation>
+	<operation type="CREATE_TABLE">
+		<table>
+			<name>evtellfriend</name>
+			<type>0</type>
+			<dbfields>
+				<dbfield>
+					<name>ID</name>
+					<type>3</type>
+					<size>11</size>
+					<scale>0</scale>
+					<typeName>int</typeName>
+					<defaultValue></defaultValue>
+					<nullable>0</nullable>
+					<autoInc>1</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>EmailAddress1</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>EmailAddress2</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>EmailAddress3</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>EmailAddress4</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>EmailAddress5</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>EmailBody</name>
+					<type>201</type>
+					<size>0</size>
+					<scale>0</scale>
+					<typeName>longtext</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>EmailSubject</name>
+					<type>200</type>
+					<size>250</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>FromName</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+			</dbfields>
+			<dbkeys>
+				<dbkey>ID</dbkey>
+			</dbkeys>
+			<dbfkeys />
+			<pbclean>0</pbclean>
+		</table>
+	</operation>
+	<operation type="CREATE_TABLE">
+		<table>
+			<name>evusers</name>
+			<type>0</type>
+			<dbfields>
+				<dbfield>
+					<name>Email</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Group</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>ID</name>
+					<type>3</type>
+					<size>11</size>
+					<scale>0</scale>
+					<typeName>int</typeName>
+					<defaultValue></defaultValue>
+					<nullable>0</nullable>
+					<autoInc>1</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Password</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+				<dbfield>
+					<name>Username</name>
+					<type>200</type>
+					<size>50</size>
+					<scale>0</scale>
+					<typeName>varchar</typeName>
+					<defaultValue></defaultValue>
+					<nullable>1</nullable>
+					<autoInc>0</autoInc>
+					<charset></charset>
+				</dbfield>
+			</dbfields>
+			<dbkeys>
+				<dbkey>ID</dbkey>
+			</dbkeys>
+			<dbfkeys />
+			<pbclean>0</pbclean>
+		</table>
+	</operation>
+	<operation type="INSERT_RECORD">
+		<tablename>evusers</tablename>
+		<records>
+			<names>
+				<colname>Email</colname>
+				<colname>Group</colname>
+				<colname>ID</colname>
+				<colname>Password</colname>
+				<colname>Username</colname>
+			</names>
+			<types>
+				<coltype>200</coltype>
+				<coltype>200</coltype>
+				<coltype>3</coltype>
+				<coltype>200</coltype>
+				<coltype>200</coltype>
+			</types>
+			<data>
+				<record>
+					<value>bchaplin@xlinesoft.com</value>
+					<value>admin</value>
+					<value>1</value>
+					<value>admin</value>
+					<value>admin</value>
+				</record>
+			</data>
+		</records>
+	</operation>
+</operations>

@@ -1,0 +1,84 @@
+body.page-print
+{
+padding-top:10px; padding-left:10px;
+}
+.page-print .rnr-c-grid,
+  .rnr-pagewrapper .page-print .rnr-c-grid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-c-grid
+{
+margin-bottom:5px;
+}
+.page-print .rnr-b-printgrid,
+  .rnr-pagewrapper .page-print .rnr-b-printgrid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-b-printgrid
+{
+white-space: nowrap;
+}
+.page-print .rnr-b-printgrid,
+  .rnr-pagewrapper .page-print .rnr-b-printgrid,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-b-printgrid
+{
+text-align: right;
+}
+.page-print .rnr-b-printgrid > *,
+  .rnr-pagewrapper .page-print .rnr-b-printgrid > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-b-printgrid > *
+{
+
+}
+body.page-print .rnr-center
+{
+padding-right: 5px;
+}
+.page-print .rnr-c-master,
+  .rnr-pagewrapper .page-print .rnr-c-master,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-c-master
+{
+margin-bottom:5px;
+}
+.page-print .rnr-b-masterinfoprint,
+  .rnr-pagewrapper .page-print .rnr-b-masterinfoprint,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-b-masterinfoprint
+{
+white-space: nowrap;
+}
+.page-print .rnr-b-masterinfoprint,
+  .rnr-pagewrapper .page-print .rnr-b-masterinfoprint,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-b-masterinfoprint
+{
+text-align: right;
+}
+.page-print .rnr-b-masterinfoprint > *,
+  .rnr-pagewrapper .page-print .rnr-b-masterinfoprint > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-b-masterinfoprint > *
+{
+
+}
+.page-print .rnr-c-pdf,
+  .rnr-pagewrapper .page-print .rnr-c-pdf,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-c-pdf
+{
+margin-bottom:5px;
+}
+.page-print .rnr-b-printpdf,
+  .rnr-pagewrapper .page-print .rnr-b-printpdf,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-b-printpdf
+{
+white-space: nowrap;
+}
+.page-print .rnr-b-printpdf,
+  .rnr-pagewrapper .page-print .rnr-b-printpdf,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-b-printpdf
+{
+text-align: right;
+}
+.page-print .rnr-b-printpdf > *,
+  .rnr-pagewrapper .page-print .rnr-b-printpdf > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-print .rnr-b-printpdf > *
+{
+
+}
+body.page-print .rnr-top
+{
+padding-right: 5px;
+}

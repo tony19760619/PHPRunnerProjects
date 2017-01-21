@@ -1,0 +1,84 @@
+.page-remind_success,
+  .runner-pagewrapper .page-remind_success,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success
+{
+padding-top:10px; padding-left:10px;
+}
+.page-remind_success .runner-c-fields,
+  .runner-pagewrapper .page-remind_success .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-c-fields
+{
+margin-bottom:5px;
+}
+.page-remind_success .runner-c-fields,
+  .runner-pagewrapper .page-remind_success .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-c-fields
+{
+width:500px;
+}
+body.page-remind_success .runner-c-fields
+{
+margin-left:auto; margin-right:auto;
+}
+.page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader,
+.page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader > *,
+  .runner-pagewrapper .page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader,
+  .runner-pagewrapper .page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader > *
+{
+white-space: nowrap;
+}
+.page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader,
+.page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader > *,
+  .runner-pagewrapper .page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader,
+  .runner-pagewrapper .page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-remindheader, .page-remind_success .runner-b-remindheader > *
+{
+text-align: right;
+}
+.page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message,
+.page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message > *,
+  .runner-pagewrapper .page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message,
+  .runner-pagewrapper .page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message > *
+{
+white-space: nowrap;
+}
+.page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message,
+.page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message > *,
+  .runner-pagewrapper .page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message,
+  .runner-pagewrapper .page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-weresent_message, .page-remind_success .runner-b-weresent_message > *
+{
+text-align: right;
+}
+.page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons,
+.page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons > *,
+  .runner-pagewrapper .page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons,
+  .runner-pagewrapper .page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons > *
+{
+white-space: nowrap;
+}
+.page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons,
+.page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons > *,
+  .runner-pagewrapper .page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons,
+  .runner-pagewrapper .page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons > *,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons,
+  .runner-pagewrapper .runner-pagewrapper .page-remind_success .runner-b-remindsucbuttons, .page-remind_success .runner-b-remindsucbuttons > *
+{
+text-align: right;
+}
+body.page-remind_success .runner-toptable
+{
+width:100%;
+}
+body.page-remind_success .runner-top
+{
+padding-right: 5px;
+}

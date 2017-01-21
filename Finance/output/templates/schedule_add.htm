@@ -1,0 +1,205 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel schedule add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN AccountNumber_fieldblock}
+<tr class="{$fielddispclass_AccountNumber}" data-fieldname="AccountNumber">
+	<td class="rnr-label">
+		{BEGIN AccountNumber_label}{$label schedule AccountNumber}{END AccountNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AccountNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AccountNumber_fieldblock}
+	{BEGIN PaymentNo_fieldblock}
+<tr class="{$fielddispclass_PaymentNo}" data-fieldname="PaymentNo">
+	<td class="rnr-label">
+		{BEGIN PaymentNo_label}{$label schedule PaymentNo}{END PaymentNo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PaymentNo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PaymentNo_fieldblock}
+	{BEGIN PaymentDate_fieldblock}
+<tr class="{$fielddispclass_PaymentDate}" data-fieldname="PaymentDate">
+	<td class="rnr-label">
+		{BEGIN PaymentDate_label}{$label schedule PaymentDate}{END PaymentDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PaymentDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PaymentDate_fieldblock}
+	{BEGIN PaymentAmount_fieldblock}
+<tr class="{$fielddispclass_PaymentAmount}" data-fieldname="PaymentAmount">
+	<td class="rnr-label">
+		{BEGIN PaymentAmount_label}{$label schedule PaymentAmount}{END PaymentAmount_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PaymentAmount_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PaymentAmount_fieldblock}
+	{BEGIN LoanInterest_fieldblock}
+<tr class="{$fielddispclass_LoanInterest}" data-fieldname="LoanInterest">
+	<td class="rnr-label">
+		{BEGIN LoanInterest_label}{$label schedule LoanInterest}{END LoanInterest_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanInterest_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanInterest_fieldblock}
+	{BEGIN Depreciation_fieldblock}
+<tr class="{$fielddispclass_Depreciation}" data-fieldname="Depreciation">
+	<td class="rnr-label">
+		{BEGIN Depreciation_label}{$label schedule Depreciation}{END Depreciation_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Depreciation_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Depreciation_fieldblock}
+	{BEGIN AmountPay_fieldblock}
+<tr class="{$fielddispclass_AmountPay}" data-fieldname="AmountPay">
+	<td class="rnr-label">
+		{BEGIN AmountPay_label}{$label schedule AmountPay}{END AmountPay_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AmountPay_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AmountPay_fieldblock}
+	{BEGIN Remark_fieldblock}
+<tr class="{$fielddispclass_Remark}" data-fieldname="Remark">
+	<td class="rnr-label">
+		{BEGIN Remark_label}{$label schedule Remark}{END Remark_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Remark_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Remark_fieldblock}
+	{BEGIN LoanID_fieldblock}
+<tr class="{$fielddispclass_LoanID}" data-fieldname="LoanID">
+	<td class="rnr-label">
+		{BEGIN LoanID_label}{$label schedule LoanID}{END LoanID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoanID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoanID_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

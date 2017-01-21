@@ -1,0 +1,608 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+
+{BEGIN security_block}
+<div  class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Logged on as&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Log out</a>
+	{END logoutbutton}
+
+</div></div>
+{END security_block}
+
+
+{BEGIN asearch_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_advsearch {$brickclass_toplinks_advsearch}">	<a href="offeraride_search.php" class="rnr-button" {$advsearchlink_attrs}>Advanced search</a>
+</div>
+{END asearch_link}
+
+
+{BEGIN import_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_import {$brickclass_toplinks_import}">	<a href="offeraride_import.php?{$crosstable_attrs}" class="rnr-button" {$importlink_attrs}>Import</a>
+</div>
+{END import_link}
+
+
+{BEGIN export_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_export {$brickclass_toplinks_export}">	<a target="_blank" href="offeraride_export.php" class="rnr-button" {$exportlink_attrs}>Export results</a>
+</div>
+{END export_link}
+
+
+
+{BEGIN print_friendly}
+<div  class="style1 rnr-bl rnr-b-printpanel {$brickclass_printpanel}"><div class="rnr-printpanelblock" id="printpanelblock{$id}">
+<div class="rnr-printtab">
+<a data-icon="printdown" class="rnr-printicon" id="print_friendly_togger{$id}" title="Print-friendly page"></a>
+</div>
+<div class="rnr-printpanel" >
+<table class="rnr-printscope" id="print_friendly_scope{$id}">
+	<tr>
+		<td class="rnr-printScopeCell">Scope:</td>
+		{BEGIN print_friendly_all}
+		<td class="rnr-printScopeCell"><input type="radio" id="printAll{$id}" data-href="offeraride_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">&nbsp;<label for="printAll{$id}">Print all pages</label></td>
+		{END print_friendly_all}
+
+	</tr>
+	<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printPage{$id}" data-href="offeraride_print.php?{$crosstable_attrs}" name="printScope" checked>&nbsp;<label for="printPage{$id}">Print this page</label></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">&nbsp;<label for="printSelection{$id}" style="color: gray;">Print selected</label></td>
+	</tr>
+</table>
+
+{BEGIN print_details}
+<div class="rnr-printdetails">
+<input type=checkbox id="printDetailsToggler{$id}">&nbsp;<label for="printDetailsToggler{$id}">Print details</label>
+	<div class="rnr-printdetailstables"  id="printdetailstables{$id}" style="display:none;">
+{BEGIN print_details_offeraridemessages}
+	
+		<div class="rnr-printdetialstable"><input type=checkbox value="offeraridemessages" id="printDetailsofferaridemessages{$id}" checked>&nbsp;<label for="printDetailsofferaridemessages{$id}">Messages</label></div>
+{END print_details_offeraridemessages}
+	</div>
+</div>
+{END print_details}
+
+<div class="rnr-printdetails">
+<label for="printPerPage{$id}">
+	Records Per Page:
+</label>&nbsp;<input type=number id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">&nbsp;
+</div>
+
+<div class="rnr-printbutton">
+<a href=# class="rnr-button button" id="print_friendly_button{$id}" >Print</a>
+</div>
+</div>
+</div>
+</div>
+{END print_friendly}
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}
+<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN menu_block}
+{$menu main horizontal}{END menu_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_hmenu}
+
+
+
+{BEGIN container_search}
+<div class="rnr-c rnr-ch rnr-c-search">
+
+{BEGIN searchform_block}
+<div  class="style1 rnr-bl rnr-b-search {$brickclass_search}">	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		{BEGIN searchform_showall}	
+		<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</a>
+		{END searchform_showall}
+	</span>
+</div>
+{END searchform_block}
+
+
+{BEGIN searchformbuttons_block}
+<div  class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}
+<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}" data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+</span>
+{END searchPanelTopButtons}
+</div>
+{END searchformbuttons_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>
+{END searchsaving_block}
+
+<div class="rnr-hfiller"></div>
+{BEGIN details_block}
+<div  class="style1 rnr-br rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Details found: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Page <b>{$page}</b> of <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Records Per Page:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>all</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>any</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Search</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_bigblock}
+<div class="rnr-c rnr-cv rnr-c-bigblock">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_recordcontrols} rnr-wrapper rnr-cbw-recordcontrols">
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+<div class="rnr-hfiller"></div>
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-br rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}
+		<a href="offeraride_add.php{$addlink_getparams}" class="rnr-button" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+	
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-br rnr-b-recordcontrol {$brickclass_recordcontrol}">	
+	
+		{BEGIN deleteselected_link}
+		<a href="#" class="rnr-button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a>
+	{END deleteselected_link}
+
+		{BEGIN exportselected_link}
+		<a href="#" class="rnr-button" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export selected</a>
+	{END exportselected_link}
+
+</div>
+{END record_controls_block}
+
+
+</div>
+{END container_recordcontrols}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_message} rnr-wrapper rnr-cbw-message">
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_grid} rnr-wrapper rnr-cbw-grid">
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+						<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}
+								<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		{BEGIN offeraride_dtable_column}
+									<th >&nbsp;</th>
+									{END offeraride_dtable_column}
+																										{BEGIN HomeLocation_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$HomeLocation_class}">
+									{BEGIN HomeLocation_fieldheader}
+																				<span {$HomeLocation_orderlinkattrs}>
+											{$label offeraride HomeLocation}
+										</span>
+									{END HomeLocation_fieldheader}
+									</th>
+									{END HomeLocation_fieldheadercolumn}
+
+																	{BEGIN CurrentLocation_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$CurrentLocation_class}">
+									{BEGIN CurrentLocation_fieldheader}
+																				<span {$CurrentLocation_orderlinkattrs}>
+											{$label offeraride CurrentLocation}
+										</span>
+									{END CurrentLocation_fieldheader}
+									</th>
+									{END CurrentLocation_fieldheadercolumn}
+
+																	{BEGIN TransportType_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$TransportType_class}">
+									{BEGIN TransportType_fieldheader}
+																				<span {$TransportType_orderlinkattrs}>
+											{$label offeraride TransportType}
+										</span>
+									{END TransportType_fieldheader}
+									</th>
+									{END TransportType_fieldheadercolumn}
+
+																	{BEGIN WhoDoesTheDriving_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$WhoDoesTheDriving_class}">
+									{BEGIN WhoDoesTheDriving_fieldheader}
+																				<span {$WhoDoesTheDriving_orderlinkattrs}>
+											{$label offeraride WhoDoesTheDriving}
+										</span>
+									{END WhoDoesTheDriving_fieldheader}
+									</th>
+									{END WhoDoesTheDriving_fieldheadercolumn}
+
+																	{BEGIN ChargingPerDay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ChargingPerDay_class}">
+									{BEGIN ChargingPerDay_fieldheader}
+																				<span {$ChargingPerDay_orderlinkattrs}>
+											{$label offeraride ChargingPerDay}
+										</span>
+									{END ChargingPerDay_fieldheader}
+									</th>
+									{END ChargingPerDay_fieldheadercolumn}
+
+																	{BEGIN ChargingPerHalfDay_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ChargingPerHalfDay_class}">
+									{BEGIN ChargingPerHalfDay_fieldheader}
+																				<span {$ChargingPerHalfDay_orderlinkattrs}>
+											{$label offeraride ChargingPerHalfDay}
+										</span>
+									{END ChargingPerHalfDay_fieldheader}
+									</th>
+									{END ChargingPerHalfDay_fieldheadercolumn}
+
+																	{BEGIN ChargingCoverCharge_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ChargingCoverCharge_class}">
+									{BEGIN ChargingCoverCharge_fieldheader}
+																				<span {$ChargingCoverCharge_orderlinkattrs}>
+											{$label offeraride ChargingCoverCharge}
+										</span>
+									{END ChargingCoverCharge_fieldheader}
+									</th>
+									{END ChargingCoverCharge_fieldheadercolumn}
+
+																	{BEGIN ChargingPerCubicMeterPerKm_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ChargingPerCubicMeterPerKm_class}">
+									{BEGIN ChargingPerCubicMeterPerKm_fieldheader}
+																				<span {$ChargingPerCubicMeterPerKm_orderlinkattrs}>
+											{$label offeraride ChargingPerCubicMeterPerKm}
+										</span>
+									{END ChargingPerCubicMeterPerKm_fieldheader}
+									</th>
+									{END ChargingPerCubicMeterPerKm_fieldheadercolumn}
+
+																	{BEGIN Username_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Username_class}">
+									{BEGIN Username_fieldheader}
+																				<span {$Username_orderlinkattrs}>
+											{$label offeraride Username}
+										</span>
+									{END Username_fieldheader}
+									</th>
+									{END Username_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+																		{BEGIN edit_column}
+									{BEGIN edit_link}
+																			<a class="rnr-button-img" {$editlink_attrs} data-icon="edit" title="Edit"></a>
+									{END edit_link}
+									{END edit_column}
+
+									
+									
+																		{BEGIN view_column}
+									{BEGIN view_link}
+																			<a class="rnr-button-img" {$viewlink_attrs} data-icon="view" title="View"></a>
+									{END view_link}
+									{END view_column}
+									</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+																		{BEGIN offeraride_dtable_column}
+									<td class="rnr-nowrap" {$rowstyle} {$recordattrs}>
+
+																		{BEGIN offeraridemessages_dtable_link}
+									<span>
+									<a {$offeraridemessages_dtablelink_attrs}>
+										Messages
+																			</a>
+																		&nbsp;
+									</span>
+									{END offeraridemessages_dtable_link}
+									
+									</td>
+									{END offeraride_dtable_column}
+
+										{BEGIN HomeLocation_fieldcolumn}
+	<td class="{$HomeLocation_class}" {$HomeLocation_style} {$recordattrs}>
+		{$HomeLocation_value}
+	</td>
+{END HomeLocation_fieldcolumn}
+
+	{BEGIN CurrentLocation_fieldcolumn}
+	<td class="{$CurrentLocation_class}" {$CurrentLocation_style} {$recordattrs}>
+		{$CurrentLocation_value}
+	</td>
+{END CurrentLocation_fieldcolumn}
+
+	{BEGIN TransportType_fieldcolumn}
+	<td class="{$TransportType_class}" {$TransportType_style} {$recordattrs}>
+		{$TransportType_value}
+	</td>
+{END TransportType_fieldcolumn}
+
+	{BEGIN WhoDoesTheDriving_fieldcolumn}
+	<td class="{$WhoDoesTheDriving_class}" {$WhoDoesTheDriving_style} {$recordattrs}>
+		{$WhoDoesTheDriving_value}
+	</td>
+{END WhoDoesTheDriving_fieldcolumn}
+
+	{BEGIN ChargingPerDay_fieldcolumn}
+	<td class="{$ChargingPerDay_class}" {$ChargingPerDay_style} {$recordattrs}>
+		{$ChargingPerDay_value}
+	</td>
+{END ChargingPerDay_fieldcolumn}
+
+	{BEGIN ChargingPerHalfDay_fieldcolumn}
+	<td class="{$ChargingPerHalfDay_class}" {$ChargingPerHalfDay_style} {$recordattrs}>
+		{$ChargingPerHalfDay_value}
+	</td>
+{END ChargingPerHalfDay_fieldcolumn}
+
+	{BEGIN ChargingCoverCharge_fieldcolumn}
+	<td class="{$ChargingCoverCharge_class}" {$ChargingCoverCharge_style} {$recordattrs}>
+		{$ChargingCoverCharge_value}
+	</td>
+{END ChargingCoverCharge_fieldcolumn}
+
+	{BEGIN ChargingPerCubicMeterPerKm_fieldcolumn}
+	<td class="{$ChargingPerCubicMeterPerKm_class}" {$ChargingPerCubicMeterPerKm_style} {$recordattrs}>
+		{$ChargingPerCubicMeterPerKm_value}
+	</td>
+{END ChargingPerCubicMeterPerKm_fieldcolumn}
+
+	{BEGIN Username_fieldcolumn}
+	<td class="{$Username_class}" {$Username_style} {$recordattrs}>
+		{$Username_value}
+	</td>
+{END Username_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+															
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_pagination} rnr-wrapper rnr-cbw-pagination">
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+
+</div>
+{END container_pagination}
+
+</div>
+
+
+</div>
+{END container_bigblock}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

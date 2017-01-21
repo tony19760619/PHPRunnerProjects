@@ -1,0 +1,185 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel findaridemessages add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN Date_fieldblock}
+<tr class="{$fielddispclass_Date}" data-fieldname="Date">
+	<td class="rnr-label">
+		{BEGIN Date_label}{$label findaridemessages Date}{END Date_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Date_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Date_fieldblock}
+	{BEGIN SentOrReceived_fieldblock}
+<tr class="{$fielddispclass_SentOrReceived}" data-fieldname="SentOrReceived">
+	<td class="rnr-label">
+		{BEGIN SentOrReceived_label}{$label findaridemessages SentOrReceived}{END SentOrReceived_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SentOrReceived_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SentOrReceived_fieldblock}
+	{BEGIN ID_fieldblock}
+<tr class="{$fielddispclass_ID}" data-fieldname="ID">
+	<td class="rnr-label">
+		{BEGIN ID_label}{$label findaridemessages ID}{END ID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ID_fieldblock}
+	{BEGIN FindARideID_fieldblock}
+<tr class="{$fielddispclass_FindARideID}" data-fieldname="FindARideID">
+	<td class="rnr-label">
+		{BEGIN FindARideID_label}{$label findaridemessages FindARideID}{END FindARideID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FindARideID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FindARideID_fieldblock}
+	{BEGIN FromUsername_fieldblock}
+<tr class="{$fielddispclass_FromUsername}" data-fieldname="FromUsername">
+	<td class="rnr-label">
+		{BEGIN FromUsername_label}{$label findaridemessages FromUsername}{END FromUsername_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FromUsername_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FromUsername_fieldblock}
+	{BEGIN ToUsername_fieldblock}
+<tr class="{$fielddispclass_ToUsername}" data-fieldname="ToUsername">
+	<td class="rnr-label">
+		{BEGIN ToUsername_label}{$label findaridemessages ToUsername}{END ToUsername_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ToUsername_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ToUsername_fieldblock}
+	{BEGIN Message_fieldblock}
+<tr class="{$fielddispclass_Message}" data-fieldname="Message">
+	<td class="rnr-label">
+		{BEGIN Message_label}{$label findaridemessages Message}{END Message_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Message_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Message_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

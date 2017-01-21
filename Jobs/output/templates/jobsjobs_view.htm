@@ -1,0 +1,204 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div style="white-space: nowrap;" class="rnr-brickcontents style2 rnr-b-view_header {$brickclass_view_header}"><b>{$Title1}</b>
+<HR width="400" noShade SIZE="1" align="center">
+<TABLE align="center" class="rnr-c">
+	<TR>
+		<TD>
+			<b>Location:</b>&nbsp;{$Location1}
+		</TD>
+		<td>&nbsp;&nbsp;&nbsp;</td>
+		<TD>
+			<b>Category:</b>&nbsp;{$Category1}
+		</TD>
+	</TR>
+</TABLE></div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN Title_fieldblock}
+<tr class="{$fielddispclass_Title}" data-fieldname="Title">
+	<td class="rnr-label">
+		{$label jobsjobs Title}
+	</td>
+	<td class="rnr-control style3">
+		{$Title_value}&nbsp;
+	</td>
+</tr>
+{END Title_fieldblock}
+	{BEGIN Category_fieldblock}
+<tr class="{$fielddispclass_Category}" data-fieldname="Category">
+	<td class="rnr-label">
+		{$label jobsjobs Category}
+	</td>
+	<td class="rnr-control style3">
+		{$Category_value}&nbsp;
+	</td>
+</tr>
+{END Category_fieldblock}
+	{BEGIN Description_fieldblock}
+<tr class="{$fielddispclass_Description}" data-fieldname="Description">
+	<td class="rnr-label">
+		{$label jobsjobs Description}
+	</td>
+	<td class="rnr-control style3">
+		{$Description_value}&nbsp;
+	</td>
+</tr>
+{END Description_fieldblock}
+	{BEGIN HowToApply_fieldblock}
+<tr class="{$fielddispclass_HowToApply}" data-fieldname="HowToApply">
+	<td class="rnr-label">
+		{$label jobsjobs HowToApply}
+	</td>
+	<td class="rnr-control style3">
+		{$HowToApply_value}&nbsp;
+	</td>
+</tr>
+{END HowToApply_fieldblock}
+	{BEGIN City_fieldblock}
+<tr class="{$fielddispclass_City}" data-fieldname="City">
+	<td class="rnr-label">
+		{$label jobsjobs City}
+	</td>
+	<td class="rnr-control style3">
+		{$City_value}&nbsp;
+	</td>
+</tr>
+{END City_fieldblock}
+	{BEGIN state_fieldblock}
+<tr class="{$fielddispclass_state}" data-fieldname="state">
+	<td class="rnr-label">
+		{$label jobsjobs state}
+	</td>
+	<td class="rnr-control style3">
+		{$state_value}&nbsp;
+	</td>
+</tr>
+{END state_fieldblock}
+	{BEGIN Zip_fieldblock}
+<tr class="{$fielddispclass_Zip}" data-fieldname="Zip">
+	<td class="rnr-label">
+		{$label jobsjobs Zip}
+	</td>
+	<td class="rnr-control style3">
+		{$Zip_value}&nbsp;
+	</td>
+</tr>
+{END Zip_fieldblock}
+	{BEGIN DateAdded_fieldblock}
+<tr class="{$fielddispclass_DateAdded}" data-fieldname="DateAdded">
+	<td class="rnr-label">
+		{$label jobsjobs DateAdded}
+	</td>
+	<td class="rnr-control style3">
+		{$DateAdded_value}&nbsp;
+	</td>
+</tr>
+{END DateAdded_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Edit</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

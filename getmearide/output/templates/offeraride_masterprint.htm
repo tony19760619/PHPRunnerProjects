@@ -1,0 +1,62 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}">	<h1>{$pagetitlelabel offeraride masterprint}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-masterprintfields rnr-gridtable" cellpadding="0" >
+		<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$id_class}">{$label offeraride id}</th>
+			<th class="{$HomeLocation_class}">{$label offeraride HomeLocation}</th>
+			<th class="{$CurrentLocation_class}">{$label offeraride CurrentLocation}</th>
+			<th class="{$TransportPicture_class}">{$label offeraride TransportPicture}</th>
+			<th class="{$TransportType_class}">{$label offeraride TransportType}</th>
+			<th class="{$WhoDoesTheDriving_class}">{$label offeraride WhoDoesTheDriving}</th>
+			<th class="{$ChargingPerDay_class}">{$label offeraride ChargingPerDay}</th>
+			<th class="{$ChargingPerHalfDay_class}">{$label offeraride ChargingPerHalfDay}</th>
+			<th class="{$ChargingCoverCharge_class}">{$label offeraride ChargingCoverCharge}</th>
+			<th class="{$ChargingPerCubicMeterPerKm_class}">{$label offeraride ChargingPerCubicMeterPerKm}</th>
+			<th class="{$Username_class}">{$label offeraride Username}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$id_class}">{$id_mastervalue}</td>
+			<td class="{$HomeLocation_class}">{$HomeLocation_mastervalue}</td>
+			<td class="{$CurrentLocation_class}">{$CurrentLocation_mastervalue}</td>
+			<td class="{$TransportPicture_class}">{$TransportPicture_mastervalue}</td>
+			<td class="{$TransportType_class}">{$TransportType_mastervalue}</td>
+			<td class="{$WhoDoesTheDriving_class}">{$WhoDoesTheDriving_mastervalue}</td>
+			<td class="{$ChargingPerDay_class}">{$ChargingPerDay_mastervalue}</td>
+			<td class="{$ChargingPerHalfDay_class}">{$ChargingPerHalfDay_mastervalue}</td>
+			<td class="{$ChargingCoverCharge_class}">{$ChargingCoverCharge_mastervalue}</td>
+			<td class="{$ChargingPerCubicMeterPerKm_class}">{$ChargingPerCubicMeterPerKm_mastervalue}</td>
+			<td class="{$Username_class}">{$Username_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>
